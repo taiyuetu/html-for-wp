@@ -1,0 +1,93 @@
+/* ==========================================================================
+   tokens.css — 设计令牌
+   冷杉制冷 · 工业制冷设备企业站模板
+   方向：冷钢工业（Industrial / utilitarian）
+   表面：冷纸 #EEEDE7 为底，冷钢 #0C1114 作重块；唯一强调色为"冷媒青"
+   字体声明见 fonts.css（自托管、内联、离线可用）
+   ========================================================================== */
+
+:root {
+  /* ---------- 表面 ---------- */
+  --paper: #eeede7;        /* 冷纸：主导表面色 60% */
+  --paper-2: #f7f6f2;      /* 卡片/浮层 */
+  --paper-3: #e4e3db;      /* 图纸底 */
+  --ink: #12181c;          /* 近黑（冷调） */
+  --ink-2: #232c31;
+  --steel: #0c1114;        /* 冷钢：重色块 30% */
+  --steel-2: #141b1f;
+  --steel-3: #1d262b;
+
+  /* ---------- 文本 ---------- */
+  --text: #12181c;
+  --text-muted: #5c666c;          /* 对 --paper 5.01:1 */
+  --text-faint: #7c868b;
+  --text-invert: #f2f1ec;         /* 对 --steel 16.2:1 */
+  --text-invert-muted: #98a2a8;   /* 对 --steel 6.6:1 */
+
+  /* ---------- 强调（唯一强调色） ---------- */
+  --accent: #0a6b74;              /* 亮底上的文字/按钮 5.32:1 */
+  --accent-deep: #075058;
+  --accent-bright: #35dfc6;       /* 暗底上的强调 11.2:1 */
+  --accent-soft: #cfe3e2;
+
+  /* ---------- 语义状态 ---------- */
+  --danger: #a32b22;
+  --danger-soft: #f3e2df;
+
+  /* ---------- 线（工业风的骨架，靠 1px 发丝线而非阴影） ---------- */
+  --line: rgba(18, 24, 28, 0.14);
+  --line-strong: rgba(18, 24, 28, 0.32);
+  --line-invert: rgba(242, 241, 236, 0.14);
+  --line-invert-strong: rgba(242, 241, 236, 0.34);
+
+  /* ---------- 字体 ---------- */
+  --font-display: "Anton", "Haettenschweiler", "Arial Narrow", Impact, sans-serif;
+  --font-sans: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei",
+    "Hiragino Sans GB", "Heiti SC", sans-serif;
+  --font-mono: "Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* ---------- 字阶（1.25 模块化，含流体缩放） ---------- */
+  --fs-mono: 11px;
+  --fs-2xs: 12px;
+  --fs-xs: 13px;
+  --fs-sm: 14px;
+  --fs-base: 15px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: clamp(20px, 1.6vw, 22px);
+  --fs-2xl: clamp(24px, 2.2vw, 30px);
+  --fs-3xl: clamp(28px, 3.2vw, 44px);
+  --fs-4xl: clamp(34px, 4.4vw, 60px);
+  --fs-display: clamp(38px, 5.6vw, 84px);
+
+  /* ---------- 间距（4 基数） ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 56px;
+  --space-9: 80px;
+
+  /* ---------- 布局 ---------- */
+  --container: 1360px;
+  --gutter: clamp(20px, 4vw, 56px);
+  --section-y: clamp(64px, 7.5vw, 120px);
+  --header-h: 88px;
+
+  /* ---------- 动效 ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-xs: 120ms;
+  --dur-sm: 180ms;
+  --dur: 320ms;
+  --dur-lg: 640ms;
+  --dur-xl: 900ms;
+
+  /* ---------- 阴影（仅浮层使用，页面本体靠线） ---------- */
+  --shadow-1: 0 2px 8px rgba(12, 17, 20, 0.16);
+  --shadow-2: 0 8px 28px rgba(12, 17, 20, 0.22);
+  --shadow-3: 0 24px 64px rgba(12, 17, 20, 0.32);
+}

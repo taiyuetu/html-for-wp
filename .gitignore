@@ -1,0 +1,11 @@
+# 本地助手工作数据（个人记忆/会话），不入库
+.workbuddy/
+
+# 镜像工具打包文件，非站点内容
+website-mirror.zip
+
+# 系统与编辑器产物
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

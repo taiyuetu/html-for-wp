@@ -1,0 +1,175 @@
+<!--@
+nav: news
+-->
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div>
+        <nav class="crumb" aria-label="面包屑">
+          <a href="/index.html">首页</a><span aria-hidden="true">/</span><span aria-current="page">新闻与笔记</span>
+        </nav>
+        <h1 class="page-hero__title">产线动态，<br>和没写进宣传册的问题</h1>
+        <p class="page-hero__lede">项目节点、产线变化，以及开发过程中真实踩过的坑。技术笔记里的数据来自我们自己的台架与产线。</p>
+      </div>
+      <span class="page-hero__idx" aria-hidden="true">06</span>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="tabs" role="tablist" aria-label="按栏目筛选" data-filter-group="#newsFeed">
+        <button class="tab" type="button" role="tab" data-filter="all" aria-selected="true">全部<small>08</small></button>
+        <button class="tab" type="button" role="tab" data-filter="company" aria-selected="false">公司动态<small>04</small></button>
+        <button class="tab" type="button" role="tab" data-filter="tech" aria-selected="false">技术笔记<small>04</small></button>
+      </div>
+
+      <div class="article">
+        <div class="news-grid" id="newsFeed" data-reveal-group style="grid-template-columns:minmax(0,1fr)">
+
+          <a class="news-lead" href="/news/aluminum-control-arm.html" data-tags="tech" data-reveal>
+            <span class="news-lead__tag">技术 / 轻量化 · 置顶</span>
+            <h2 class="news-lead__title">铝合金控制臂的轻量化边界：从 18% 到 26%</h2>
+            <p class="news-lead__text">一次前下控制臂从锻钢改锻铝的完整记录：第一版刚度掉了 8%，第二版局部屈曲，第三版才通过 200 万次台架。附三个刚度补偿方案的对比与成本账。</p>
+            <div class="news-lead__meta">
+              <span>2026-07-15 · 工程部 / 吴工</span>
+              <span>9 分钟阅读 →</span>
+            </div>
+          </a>
+
+          <div class="news-list">
+            <a class="news-item" href="/news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">09.12<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">苏州二厂 6 号锻造线投产：6300T，日产 1.1 万件</span>
+                <span class="news-item__excerpt">配中频感应加热与机器人上下料，模具寿命按件计数管理，主要承担铝锻控制臂毛坯。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="/news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">08.03<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">获瑞驰新能源下一代平台控制臂定点</span>
+                <span class="news-item__excerpt">覆盖前下、前上控制臂与球头总成，预计 2027 年 SOP，年需求 38 万套。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="/news/aluminum-control-arm.html" data-tags="tech">
+              <span class="news-item__date">06.08<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">盐雾 720 小时之后：涂层失效的三种形态</span>
+                <span class="news-item__excerpt">划痕起泡、边角锈蚀、电泳层剥离——分别对应前处理、膜厚与烘干曲线的问题。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="/news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">05.20<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">IATF 16949 换证审核零不符合项</span>
+                <span class="news-item__excerpt">覆盖两个基地的设计、制造与供应商管理，证书有效期延至 2028 年。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="/news/aluminum-control-arm.html" data-tags="tech">
+              <span class="news-item__date">04.02<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">锻造模具寿命管理：为什么按件数而不是按月</span>
+                <span class="news-item__excerpt">同一套模具打不同壁厚的件，磨损速率不同。按件计数 + 首末件尺寸趋势，才是可控的。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="/news/aluminum-control-arm.html" data-tags="tech">
+              <span class="news-item__date">02.18<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">球头异响的三个来源，以及怎么在台架上复现</span>
+                <span class="news-item__excerpt">锥面微动、防尘罩进水、球座预紧不足。用 5 Hz 小幅往复加载，两小时就能复现。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="/news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">01.09<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">2025 年交付 268 个项目，轻量化件占比 34%</span>
+                <span class="news-item__excerpt">铝锻控制臂与铝焊副车架需求增长明显，柳州基地重载件保持稳定。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="filter-empty">
+            <b>该栏目暂无文章</b>
+            换个栏目看看，或直接联系工程部索取技术资料。
+          </div>
+        </div>
+
+        <aside class="article__side" aria-label="侧栏">
+          <div class="side-block">
+            <h2>栏目</h2>
+            <div class="side-links">
+              <a href="/news/index.html"><span>公司动态</span><b>04</b></a>
+              <a href="/news/index.html"><span>技术笔记</span><b>04</b></a>
+              <a href="/capability/index.html"><span>工艺与检测</span><b>→</b></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>被读得最多的</h2>
+            <div class="side-links">
+              <a href="/news/aluminum-control-arm.html"><b>01</b><span>铝合金控制臂的轻量化边界</span></a>
+              <a href="/news/aluminum-control-arm.html"><b>02</b><span>盐雾 720 小时后涂层失效的三种形态</span></a>
+              <a href="/news/aluminum-control-arm.html"><b>03</b><span>锻造模具寿命：按件数而不是按月</span></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>技术月报</h2>
+            <p style="font-size:12.5px;line-height:1.8;color:var(--muted);margin-bottom:14px">每月一封，只写项目数据与工艺问题，不发促销。</p>
+            <form class="form" data-form novalidate>
+              <div class="field">
+                <label class="field__label" for="nl-email">邮箱</label>
+                <input class="input" id="nl-email" name="email" type="email" required placeholder="name@company.com">
+                <span class="field__err" role="alert"></span>
+              </div>
+              <button class="btn btn--accent btn--block btn--sm" type="submit">订阅月报</button>
+            </form>
+            <div class="form__success" role="status">
+              <b>订阅成功（演示）</b>
+              <span>接入后端后即可真实发送。</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <nav class="pager" aria-label="分页">
+        <span aria-current="page">1</span>
+        <a href="/news/index.html">2</a>
+        <a href="/news/index.html">3</a>
+        <a href="/news/index.html" aria-label="下一页">下一页 →</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta__inner">
+      <div>
+        <p class="label" style="color:rgba(243,239,230,.8);margin-bottom:14px">Ask / 提问</p>
+        <h2 class="cta__title">有具体的工艺问题？直接问工程师。</h2>
+        <p class="cta__sub">轻量化、模具、涂层、疲劳判定——技术问题不必先走销售流程。</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--accent" href="/contact/index.html#inquiry">提问 / 询价
+          <svg class="btn__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7.5h11M8.5 3l4.5 4.5L8.5 12"/></svg>
+        </a>
+        <a class="btn" href="tel:4001180806">400-118-0806</a>
+      </div>
+    </div>
+  </section>
+
+</main>

@@ -1,0 +1,697 @@
+<!--@
+nav: home
+-->
+<main id="main">
+
+  <!-- ==================== 首屏：冷钢底 + 工程图纸 ==================== -->
+  <section class="hero" data-hero aria-roledescription="轮播" aria-label="冷杉制冷 首页首屏">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+
+      <!-- 冷凝器线稿：翅片 + 盘管 + 压缩机，入场时描边生长 -->
+      <svg class="hero__art" viewBox="0 0 720 560" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+        <defs>
+          <pattern id="fins" width="12" height="10" patternUnits="userSpaceOnUse">
+            <path d="M0 0v10" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
+          </pattern>
+        </defs>
+        <g class="draw">
+          <circle cx="210" cy="90" r="34"/>
+          <circle cx="345" cy="90" r="34"/>
+          <circle cx="480" cy="90" r="34"/>
+          <path d="M210 64v52M184 90h52M345 64v52M319 90h52M480 64v52M454 90h52" stroke-width="0.9" opacity="0.5"/>
+          <rect x="150" y="140" width="420" height="190" fill="url(#fins)" stroke="none"/>
+          <rect x="150" y="140" width="420" height="190"/>
+          <rect x="124" y="140" width="26" height="190" rx="3"/>
+          <rect x="570" y="140" width="26" height="190" rx="3"/>
+          <rect x="186" y="162" width="348" height="34" rx="17" stroke-width="1" opacity="0.75"/>
+          <rect x="186" y="220" width="348" height="34" rx="17" class="accent"/>
+          <rect x="186" y="278" width="348" height="34" rx="17" stroke-width="1" opacity="0.75"/>
+          <path d="M170 366v34q0 18 18 18h52M600 366v34q0 18-18 18h-96"/>
+          <rect x="196" y="398" width="188" height="74" rx="5"/>
+          <circle cx="242" cy="435" r="21"/>
+          <circle cx="302" cy="435" r="21" class="accent"/>
+          <path d="M338 424h30M338 446h30" stroke-width="0.9" opacity="0.6"/>
+          <path d="M240 398v-18M304 398v-18M360 398v-20" stroke-dasharray="3 4" stroke-width="0.9" opacity="0.5"/>
+          <path d="M150 520h420M150 514v12M570 514v12" stroke-width="0.9" opacity="0.7"/>
+          <path d="M160 520l8-4v8zM560 520l-8-4v8z" class="solid"/>
+          <path d="M660 140v190M654 140h12M654 330h12" stroke-width="0.9" opacity="0.7"/>
+          <circle cx="530" cy="237" r="4" class="solid"/>
+          <path d="M530 233v-16h44" stroke-width="0.9" opacity="0.6" stroke-dasharray="3 4"/>
+        </g>
+      </svg>
+
+      <!-- 温度标尺：冲出右边界，刻度为设计元素 -->
+      <div class="hero__scale">
+        <span>+25</span>
+        <span>0</span>
+        <span>−25</span>
+        <span>−45</span>
+        <span>−60</span>
+      </div>
+    </div>
+
+    <div class="wrap hero__inner">
+      <div class="hero__slides">
+
+        <article class="hero-slide is-active" aria-hidden="false">
+          <p class="eyebrow">Industrial refrigeration · since 2009</p>
+          <h1 class="hero-slide__title">把温度，<br>做成<span class="hl">可验证</span>的指标</h1>
+          <p class="hero-slide__lede">从 −60℃ 速冻到 +25℃ 工艺冷却，冷杉为冷链、食品、医药与化工场景制造螺杆机组、CO₂ 系统与整库交付，随机组附带实测性能曲线。</p>
+          <div class="hero__actions">
+            <a class="btn btn--on-dark" href="/contact/index.html#inquiry">提交工况，获取选型
+              <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+            <a class="btn btn--ghost-dark" href="/products/index.html">查看六大产品线</a>
+          </div>
+        </article>
+
+        <article class="hero-slide" aria-hidden="true">
+          <p class="eyebrow">Tested · not estimated</p>
+          <p class="hero-slide__title">每一台机组，<br>都有可追溯的<span class="hl">曲线</span></p>
+          <p class="hero-slide__lede">出厂前完成 72 小时满负荷与部分负荷实测，随机交付性能曲线、材质报告、焊口探伤记录与控制柜图纸，不停留在样本册上的名义工况。</p>
+          <div class="hero__actions">
+            <a class="btn btn--on-dark" href="/about/index.html">看制造与检验
+              <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+            <a class="btn btn--ghost-dark" href="/case/index.html">查看项目实录</a>
+          </div>
+        </article>
+
+        <article class="hero-slide" aria-hidden="true">
+          <p class="eyebrow">Part-load efficiency · up to 92%</p>
+          <p class="hero-slide__title">让冷量，<br>跟着<span class="hl">负荷</span>走</p>
+          <p class="hero-slide__lede">变频螺杆加自研群控算法，按逐时负荷曲线投切机头。华东一座 3.6 万 ㎡ 变温库改造后，年耗电下降 17%，相当于少花 18 万度电。</p>
+          <div class="hero__actions">
+            <a class="btn btn--on-dark" href="/solutions/index.html">看行业方案
+              <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+            <a class="btn btn--ghost-dark" href="/contact/index.html#inquiry">算一次能耗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="hero__foot">
+      <div class="wrap">
+        <dl class="hero-specs">
+          <div class="hero-spec"><dt>制冷量</dt><dd>5 – 4200<small>kW</small></dd></div>
+          <div class="hero-spec"><dt>温区</dt><dd>−60 – +25<small>℃</small></dd></div>
+          <div class="hero-spec"><dt>累计交付</dt><dd>2400<small>+ 项目</small></dd></div>
+          <div class="hero-spec"><dt>出口</dt><dd>32<small>国家</small></dd></div>
+        </dl>
+        <div class="hero-ctrl">
+          <span class="hero-count"><b data-hero-count aria-live="polite">01</b><i>/ 03</i></span>
+          <div class="hero-bars" role="tablist" aria-label="切换首屏内容">
+            <button class="hero-bar" type="button" role="tab" aria-selected="true" aria-label="第 1 屏：把温度做成可验证的指标"><span></span></button>
+            <button class="hero-bar" type="button" role="tab" aria-selected="false" aria-label="第 2 屏：每一台机组都有可追溯的曲线"><span></span></button>
+            <button class="hero-bar" type="button" role="tab" aria-selected="false" aria-label="第 3 屏：让冷量跟着负荷走"><span></span></button>
+          </div>
+          <button class="hero-arrow" type="button" data-hero-prev aria-label="上一屏">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M13 8H3M7 4 3 8l4 4"/></svg>
+          </button>
+          <button class="hero-arrow" type="button" data-hero-next aria-label="下一屏">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 资质跑马灯 ==================== -->
+  <div class="ticker" aria-label="资质与认证">
+    <div class="ticker__track">
+      <span class="ticker__item">ISO 9001 质量管理体系</span>
+      <span class="ticker__item">特种设备制造许可 A2</span>
+      <span class="ticker__item">CE / PED</span>
+      <span class="ticker__item">ASME U Stamp</span>
+      <span class="ticker__item">CRAA 产品认证</span>
+      <span class="ticker__item">126 项专利与软著</span>
+      <span class="ticker__item">高新技术企业</span>
+      <span class="ticker__item">ISO 14001 环境管理体系</span>
+    </div>
+    <div class="ticker__track" aria-hidden="true">
+      <span class="ticker__item">ISO 9001 质量管理体系</span>
+      <span class="ticker__item">特种设备制造许可 A2</span>
+      <span class="ticker__item">CE / PED</span>
+      <span class="ticker__item">ASME U Stamp</span>
+      <span class="ticker__item">CRAA 产品认证</span>
+      <span class="ticker__item">126 项专利与软著</span>
+      <span class="ticker__item">高新技术企业</span>
+      <span class="ticker__item">ISO 14001 环境管理体系</span>
+    </div>
+  </div>
+
+  <!-- ==================== 01 关于 ==================== -->
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="about-split">
+        <div data-reveal>
+          <p class="eyebrow">About cedar cool / 01</p>
+          <h2 class="sec__title" style="margin-top:14px">只做一件事：把制冷系统从“能冷”做到“可控”</h2>
+          <p class="lede" style="margin-top:20px">冷杉制冷成立于 2009 年，在常州建有 38,000 ㎡ 的机组制造基地。我们不做全品类暖通，只围绕工业制冷做三件事：机组、控制、整库交付。</p>
+          <p class="lede" style="margin-top:14px">设计端按逐时负荷选型，制造端按压力容器标准管控焊口与气密，交付端把调试曲线一起交给客户——三件事都做完了，才算交付完成。</p>
+
+          <div class="count-grid">
+            <div>
+              <b><span data-count="2009">2009</span></b>
+              <span>成立年份 / 常州</span>
+            </div>
+            <div>
+              <b><span data-count="38">38</span>k</b>
+              <span>㎡ 制造基地</span>
+            </div>
+            <div>
+              <b><span data-count="126">126</span></b>
+              <span>项专利与软著</span>
+            </div>
+          </div>
+
+          <p style="margin-top:26px">
+            <a class="link-arrow" href="/about/index.html">了解制造基地与质量体系
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+          </p>
+        </div>
+
+        <div class="about-figure" data-reveal>
+          <figure class="blueprint">
+            <span class="blueprint__tag">DWG 2009-A</span>
+            <svg class="blueprint__art" viewBox="0 0 480 380" fill="none" stroke="currentColor" stroke-width="1.1" aria-label="常州制造基地平面示意">
+              <rect x="40" y="40" width="400" height="260"/>
+              <rect x="62" y="62" width="150" height="96"/>
+              <rect x="62" y="176" width="150" height="86"/>
+              <rect x="232" y="62" width="186" height="60"/>
+              <rect x="232" y="140" width="88" height="122"/>
+              <rect x="330" y="140" width="88" height="122"/>
+              <path d="M40 320h400" stroke-width="0.8" opacity="0.5"/>
+              <path d="M62 300v20M212 300v20M232 300v20M418 300v20" stroke-width="0.8" opacity="0.5"/>
+              <path d="M212 62v200M232 62v200M330 62v200" stroke-width="0.8" opacity="0.35" stroke-dasharray="4 4"/>
+              <path d="M300 82h100M300 96h76M300 110h88" stroke-width="0.8" opacity="0.4"/>
+              <circle cx="276" cy="200" r="14" class="accent"/>
+              <path d="M290 200h28" class="accent"/>
+              <path d="M100 300l14-14M114 300l-14-14" stroke-width="0.8" opacity="0.4"/>
+              <path d="M150 62v-22M150 40h100" stroke-width="0.8" opacity="0.5" stroke-dasharray="3 3"/>
+            </svg>
+            <figcaption class="blueprint__cap"><span>常州制造基地 / 38,000 ㎡</span><span>Scale 1:800</span></figcaption>
+          </figure>
+          <div class="about-figure__note">两条机组总装线<br>年产能 1,200 台</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 02 产品 ==================== -->
+  <section class="sec sec--paper2" id="products">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <p class="eyebrow">Products / 02</p>
+          <h2 class="sec__title">六大产品线，覆盖 −60℃ 到 +25℃</h2>
+        </div>
+        <div class="sec__aside">
+          <span class="sec__note">按工况选型，不按样本册</span>
+          <a class="link-arrow" href="/products/index.html">全部产品与参数
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="pgrid" data-reveal-group>
+        <article class="pcard pcard--wide" data-reveal>
+          <div class="pcard__art">
+            <span class="pcard__idx">LC-S / 01</span>
+            <span class="pcard__cat">主推机型</span>
+            <svg class="diagram" viewBox="0 0 240 180" aria-hidden="true">
+              <rect x="30" y="62" width="180" height="66" rx="3"/>
+              <circle cx="76" cy="95" r="20"/>
+              <circle cx="124" cy="95" r="20"/>
+              <path d="M146 79h34M146 95h34M146 111h34" class="thin"/>
+              <path d="M58 128v18M182 128v18" class="thin"/>
+              <path d="M30 74h-14v42h14" class="accent"/>
+              <path d="M180 62V44h18" class="dash"/>
+            </svg>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">水冷螺杆冷水机组<small>LC-S / WATER-COOLED SCREW CHILLER</small></h3>
+            <p class="pcard__desc">双机头独立回路，单机头故障仍可带 50% 负荷；满液式蒸发器支持整组抽管清洗。</p>
+            <div class="pcard__spec">
+              <div><span>制冷量</span><b>120 – 2400 kW</b></div>
+              <div><span>出水温度</span><b>+12 ~ −35 ℃</b></div>
+              <div><span>冷媒</span><b>R134a / R513A</b></div>
+            </div>
+            <a class="pcard__link" href="/products/lc-s.html">查看参数与曲线
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="pcard" data-reveal>
+          <div class="pcard__art">
+            <span class="pcard__idx">LC-C / 02</span>
+            <svg class="diagram" viewBox="0 0 240 180" aria-hidden="true">
+              <rect x="62" y="38" width="76" height="108" rx="3"/>
+              <path d="M62 58h76M62 78h76M62 98h76M62 118h76" class="thin"/>
+              <rect x="162" y="62" width="34" height="84" rx="17" class="accent"/>
+              <path d="M138 92h24M138 108h24" class="thin"/>
+              <path d="M100 146v14M180 146v14" class="thin"/>
+            </svg>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">CO₂ 跨临界机组<small>LC-C / R744 TRANS-CRITICAL</small></h3>
+            <div class="pcard__spec">
+              <div><span>制冷量</span><b>80 – 900 kW</b></div>
+              <div><span>温区</span><b>−50 ~ +10 ℃</b></div>
+              <div><span>GWP</span><b>1</b></div>
+            </div>
+            <a class="pcard__link" href="/products/lc-s.html">查看参数与曲线
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="pcard" data-reveal>
+          <div class="pcard__art">
+            <span class="pcard__idx">LC-E / 03</span>
+            <svg class="diagram" viewBox="0 0 240 180" aria-hidden="true">
+              <rect x="40" y="80" width="160" height="62" rx="2"/>
+              <circle cx="86" cy="58" r="20"/>
+              <circle cx="154" cy="58" r="20" class="accent"/>
+              <path d="M86 46v24M74 58h24M154 46v24M142 58h24" class="thin"/>
+              <path d="M56 112h128M56 124h128" class="thin"/>
+              <path d="M40 142h160" stroke-width="0.9" opacity="0.6"/>
+              <path d="M200 96h18v30h-18" class="thin"/>
+            </svg>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">蒸发式冷凝机组<small>LC-E / EVAPORATIVE CONDENSER</small></h3>
+            <div class="pcard__spec">
+              <div><span>排热量</span><b>150 – 1800 kW</b></div>
+              <div><span>出水温度</span><b>−40 ~ +15 ℃</b></div>
+              <div><span>冷媒</span><b>R507A / R449A</b></div>
+            </div>
+            <a class="pcard__link" href="/products/lc-s.html">查看参数与曲线
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="pcard" data-reveal>
+          <div class="pcard__art">
+            <span class="pcard__idx">LC-U / 04</span>
+            <svg class="diagram" viewBox="0 0 240 180" aria-hidden="true">
+              <rect x="56" y="46" width="128" height="92" rx="2"/>
+              <rect x="72" y="62" width="42" height="60"/>
+              <path d="M126 62h42M126 78h42M126 94h42" class="thin"/>
+              <rect x="72" y="62" width="42" height="60" class="accent"/>
+              <path d="M84 138v14M156 138v14" class="thin"/>
+              <path d="M200 70v44M194 78l6-8 6 8" class="thin"/>
+            </svg>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">冷库一体机<small>LC-U / UNIT COOLER PACKAGE</small></h3>
+            <div class="pcard__spec">
+              <div><span>制冷量</span><b>8 – 120 kW</b></div>
+              <div><span>库温</span><b>−45 ~ +15 ℃</b></div>
+              <div><span>冷媒</span><b>R448A</b></div>
+            </div>
+            <a class="pcard__link" href="/products/lc-s.html">查看参数与曲线
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="pcard" data-reveal>
+          <div class="pcard__art">
+            <span class="pcard__idx">LC-M / 05</span>
+            <svg class="diagram" viewBox="0 0 240 180" aria-hidden="true">
+              <path d="M46 120 74 54h92l28 66Z"/>
+              <circle cx="98" cy="88" r="18"/>
+              <circle cx="142" cy="88" r="18" class="accent"/>
+              <path d="M98 76v24M86 88h24M142 76v24M130 88h24" class="thin"/>
+              <path d="M46 120h148v14H46z"/>
+              <path d="M120 134v12" class="thin"/>
+            </svg>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">风冷模块机组<small>LC-M / AIR-COOLED MODULAR</small></h3>
+            <div class="pcard__spec">
+              <div><span>制冷量</span><b>30 – 160 kW</b></div>
+              <div><span>出水温度</span><b>+20 ~ −15 ℃</b></div>
+              <div><span>冷媒</span><b>R410A</b></div>
+            </div>
+            <a class="pcard__link" href="/products/lc-s.html">查看参数与曲线
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="pcard" data-reveal>
+          <div class="pcard__art">
+            <span class="pcard__idx">LC-H / 06</span>
+            <svg class="diagram" viewBox="0 0 240 180" aria-hidden="true">
+              <rect x="52" y="56" width="108" height="70" rx="2"/>
+              <circle cx="84" cy="91" r="18" class="accent"/>
+              <path d="M84 79v24M72 91h24M118 76h28M118 91h28M118 106h28" class="thin"/>
+              <path d="M160 74h20v34h-20" class="thin"/>
+              <path d="M70 126v16M142 126v16" class="thin"/>
+              <path d="M188 91h18M200 83l8 8-8 8" class="thin"/>
+            </svg>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">工业余热热泵<small>LC-H / HIGH-TEMP HEAT PUMP</small></h3>
+            <div class="pcard__spec">
+              <div><span>制热量</span><b>100 – 2000 kW</b></div>
+              <div><span>出水温度</span><b>最高 75 ℃</b></div>
+              <div><span>冷媒</span><b>R1234ze</b></div>
+            </div>
+            <a class="pcard__link" href="/products/lc-s.html">查看参数与曲线
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <a class="pcard pcard--more" href="/contact/index.html#inquiry" data-reveal>
+          <div>
+            <p class="mono">Custom / 非标</p>
+            <h3>样本册之外，<br>还有非标工况</h3>
+            <p>防爆、防腐、集装箱式、余热联供——按现场条件重新设计机组。</p>
+          </div>
+          <span class="pcard__link">说说你的工况
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 03 核心能力 ==================== -->
+  <section class="sec" id="capability">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <p class="eyebrow">How we work / 03</p>
+          <h2 class="sec__title">四个环节，每个都能被检验</h2>
+        </div>
+        <div class="sec__aside">
+          <span class="sec__note">设计 → 制造 → 控制 → 交付</span>
+        </div>
+      </div>
+
+      <ol class="rows" data-reveal-group>
+        <li class="rows__item" data-reveal>
+          <span class="rows__idx">01</span>
+          <h3 class="rows__title">设计与选型</h3>
+          <p class="rows__desc">按逐时负荷曲线选型，而不是按面积估算。提供能耗模拟、投资回收测算与两种以上配置对比，避免“大马拉小车”。</p>
+          <span class="rows__go" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </span>
+        </li>
+        <li class="rows__item" data-reveal>
+          <span class="rows__idx">02</span>
+          <h3 class="rows__title">制造与检验</h3>
+          <p class="rows__desc">压力容器 A2 制造资质；换热器 100% 氦检，焊口射线探伤比例可追溯；整机 72 小时连续运行记录随货交付。</p>
+          <span class="rows__go" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </span>
+        </li>
+        <li class="rows__item" data-reveal>
+          <span class="rows__idx">03</span>
+          <h3 class="rows__title">控制与群控</h3>
+          <p class="rows__desc">自研 PLC 控制柜，支持 Modbus / BACnet / OPC UA；多机头按负荷自动投切，部分负荷效率稳定在 92% 以上。</p>
+          <span class="rows__go" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </span>
+        </li>
+        <li class="rows__item" data-reveal>
+          <span class="rows__idx">04</span>
+          <h3 class="rows__title">交付与服务</h3>
+          <p class="rows__desc">驻场调试、操作培训、48 小时备件响应；远程诊断看板可查每台机组的历史曲线与报警记录，不做“交付即失联”。</p>
+          <span class="rows__go" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==================== 数据带 ==================== -->
+  <section class="sec sec--dark sec--tight" aria-label="公司数据">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat">
+          <p class="stat__num"><span data-count="2400">2400</span><span class="stat__unit">+</span></p>
+          <p class="stat__label">Projects delivered</p>
+          <p class="stat__cn">累计交付项目</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num"><span data-count="32">32</span><span class="stat__unit">国</span></p>
+          <p class="stat__label">Export markets</p>
+          <p class="stat__cn">产品出口国家</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num"><span data-count="48">48</span><span class="stat__unit">h</span></p>
+          <p class="stat__label">Spare parts response</p>
+          <p class="stat__cn">备件响应时效</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num"><span data-count="17">17</span><span class="stat__unit">%</span></p>
+          <p class="stat__label">Energy saved / retrofit</p>
+          <p class="stat__cn">改造项目平均节电</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 04 行业应用 ==================== -->
+  <section class="sec sec--paper2" id="industries">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <p class="eyebrow">Industries / 04</p>
+          <h2 class="sec__title">五个行业，五套不同的温区与冗余策略</h2>
+        </div>
+        <div class="sec__aside">
+          <a class="link-arrow" href="/solutions/index.html">查看行业方案
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="industries" data-reveal-group>
+        <a class="industry" href="/solutions/index.html" data-reveal>
+          <span class="idx">01</span>
+          <h3>冷链物流园区</h3>
+          <span class="industry__sub">变温库 · 穿堂 · 月台</span>
+          <div class="tempbar">
+            <div class="tempbar__track"><span class="tempbar__range" style="left:18%;right:44%"></span></div>
+            <div class="tempbar__labels"><span>−60</span><span>+25</span></div>
+          </div>
+          <span class="range">−25 ~ +5 ℃</span>
+        </a>
+        <a class="industry" href="/solutions/index.html" data-reveal>
+          <span class="idx">02</span>
+          <h3>食品加工与速冻</h3>
+          <span class="industry__sub">速冻隧道 · 单冻机</span>
+          <div class="tempbar">
+            <div class="tempbar__track"><span class="tempbar__range" style="left:8%;right:52%"></span></div>
+            <div class="tempbar__labels"><span>−60</span><span>+25</span></div>
+          </div>
+          <span class="range">−38 ~ 0 ℃</span>
+        </a>
+        <a class="industry" href="/solutions/index.html" data-reveal>
+          <span class="idx">03</span>
+          <h3>医药与生物制品</h3>
+          <span class="industry__sub">GSP 冷库 · 血浆库</span>
+          <div class="tempbar">
+            <div class="tempbar__track"><span class="tempbar__range" style="left:26%;right:36%"></span></div>
+            <div class="tempbar__labels"><span>−60</span><span>+25</span></div>
+          </div>
+          <span class="range">−30 ~ +8 ℃</span>
+        </a>
+        <a class="industry" href="/solutions/index.html" data-reveal>
+          <span class="idx">04</span>
+          <h3>数据中心与工艺冷却</h3>
+          <span class="industry__sub">冷冻水 · 间接蒸发</span>
+          <div class="tempbar">
+            <div class="tempbar__track"><span class="tempbar__range" style="left:44%;right:12%"></span></div>
+            <div class="tempbar__labels"><span>−60</span><span>+25</span></div>
+          </div>
+          <span class="range">+10 ~ +20 ℃</span>
+        </a>
+        <a class="industry" href="/solutions/index.html" data-reveal>
+          <span class="idx">05</span>
+          <h3>化工与新能源</h3>
+          <span class="industry__sub">低温盐水 · 防爆区</span>
+          <div class="tempbar">
+            <div class="tempbar__track"><span class="tempbar__range" style="left:4%;right:58%"></span></div>
+            <div class="tempbar__labels"><span>−60</span><span>+25</span></div>
+          </div>
+          <span class="range">−45 ~ −5 ℃</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 05 案例 ==================== -->
+  <section class="sec" id="cases">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <p class="eyebrow">Selected work / 05</p>
+          <h2 class="sec__title">项目不看效果图，看实测数据</h2>
+        </div>
+        <div class="sec__aside">
+          <a class="link-arrow" href="/case/index.html">全部工程案例
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cases" data-reveal-group>
+        <a class="case" href="/case/index.html" data-reveal>
+          <div class="case__art">
+            <span class="case__badge">冷链物流</span>
+            <svg viewBox="0 0 400 210" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+              <path d="M40 170h320M60 170V80h100v90M180 170V60h120v110" />
+              <path d="M60 104h100M60 128h100M180 84h120M180 108h120M180 132h120" stroke-width="0.8" opacity="0.45"/>
+              <rect x="188" y="140" width="30" height="30" class="accent"/>
+              <path d="M310 170v-40h28v40" />
+              <path d="M324 130v-14M318 122l6-6 6 6" stroke-width="0.8" opacity="0.6"/>
+              <path d="M20 190h360" stroke-width="0.8" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="case__body">
+            <span class="case__meta">江苏 · 2024 / 华东冷链物流园</span>
+            <h3 class="case__title">3.6 万 ㎡ 变温库，三台机组按库温自动投切</h3>
+            <div class="case__metrics">
+              <div>库温<b>−25 ~ +5 ℃</b></div>
+              <div>装机<b>3 × 1600 kW</b></div>
+              <div>年耗电<b>↓ 17%</b></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="case" href="/case/index.html" data-reveal>
+          <div class="case__art">
+            <span class="case__badge">医药冷链</span>
+            <svg viewBox="0 0 400 210" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+              <rect x="80" y="50" width="240" height="120" />
+              <path d="M80 86h240M80 122h240" stroke-width="0.8" opacity="0.45"/>
+              <rect x="100" y="62" width="60" height="16" />
+              <rect x="100" y="98" width="60" height="16" />
+              <rect x="100" y="134" width="60" height="16" class="accent"/>
+              <path d="M200 62h100M200 98h70M200 134h88" stroke-width="0.8" opacity="0.4"/>
+              <circle cx="300" cy="150" r="9" />
+              <path d="M300 141v-8" stroke-width="0.8" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="case__body">
+            <span class="case__meta">浙江 · 2025 / 生物制品 GSP 冷库</span>
+            <h3 class="case__title">2–8℃ 疫苗库，双机冗余与 ±0.3℃ 波动控制</h3>
+            <div class="case__metrics">
+              <div>库温<b>2 ~ 8 ℃</b></div>
+              <div>冗余<b>N+1 双机</b></div>
+              <div>波动<b>±0.3 ℃</b></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 06 新闻 ==================== -->
+  <section class="sec" id="news" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <p class="eyebrow">Notes &amp; news / 06</p>
+          <h2 class="sec__title">项目记录与技术笔记</h2>
+        </div>
+        <div class="sec__aside">
+          <a class="link-arrow" href="/news/index.html">全部资讯
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="news-grid" data-reveal-group>
+        <a class="news-feature" href="/news/co2-commissioning.html" data-reveal>
+          <span class="news-feature__tag">调试记录</span>
+          <h3 class="news-feature__title">CO₂ 跨临界机组在冷链园区的 72 小时调试记录</h3>
+          <p class="news-feature__text">从气密试验、抽真空到高压控制整定，记录一次 R744 系统从“能跑”到“稳定”的全过程，附 12 个容易被忽略的细节。</p>
+          <div class="news-feature__meta">
+            <span>2026-09-18 · 技术组</span>
+            <span>阅读 8 分钟 →</span>
+          </div>
+        </a>
+
+        <div class="news-list" data-reveal>
+          <a class="news-item" href="/news/co2-commissioning.html">
+            <span class="news-item__date"><b>08.06</b><span>2026</span></span>
+            <span>
+              <span class="news-item__title">常州基地二期投产：新增 12,000 ㎡ 换热器产线</span>
+              <span class="news-item__excerpt">新产线配备自动胀管与氦检工位，换热器月产能提升至 180 台。</span>
+            </span>
+            <span class="news-item__go" aria-hidden="true">→</span>
+          </a>
+          <a class="news-item" href="/news/co2-commissioning.html">
+            <span class="news-item__date"><b>07.22</b><span>2026</span></span>
+            <span>
+              <span class="news-item__title">R513A 与 R744：两条冷媒路线的成本与能效对比</span>
+              <span class="news-item__excerpt">按 10 年周期计算初投资、维护费用与能耗，给出三条选型分界线。</span>
+            </span>
+            <span class="news-item__go" aria-hidden="true">→</span>
+          </a>
+          <a class="news-item" href="/news/co2-commissioning.html">
+            <span class="news-item__date"><b>05.09</b><span>2026</span></span>
+            <span>
+              <span class="news-item__title">冷杉通过 ASME U 钢印换证审核</span>
+              <span class="news-item__excerpt">审核覆盖设计文件、焊接工艺评定与无损检测记录，零不符合项通过。</span>
+            </span>
+            <span class="news-item__go" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 合作伙伴 ==================== -->
+  <section class="sec sec--paper2 sec--tight" aria-labelledby="partners-title">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <p class="eyebrow">Partners / 07</p>
+          <h2 class="sec__title" id="partners-title">与我们长期配合的业主与总包</h2>
+        </div>
+      </div>
+      <div class="partners" data-reveal>
+        <div class="partner"><b>华东冷链</b><span>Cold Chain</span></div>
+        <div class="partner"><b>北纬乳业</b><span>Dairy</span></div>
+        <div class="partner"><b>康泰生物</b><span>Bio Pharma</span></div>
+        <div class="partner"><b>云枢数据</b><span>Data Center</span></div>
+        <div class="partner"><b>河畔精酿</b><span>Brewery</span></div>
+        <div class="partner"><b>恒盛化工</b><span>Chemical</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="cta">
+    <div class="wrap cta__inner">
+      <div>
+        <p class="eyebrow">Get a selection</p>
+        <h2 class="cta__title">把库温、负荷和场地条件给我们，<br>剩下的用一台机组解决。</h2>
+        <p class="cta__sub">提交工况后 1 个工作日内返回选型方案、装机容量与预算区间；如需现场踏勘，江浙沪区域 48 小时内到达。</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--on-dark" href="/contact/index.html#inquiry">提交工况参数
+          <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+        </a>
+        <a class="btn btn--ghost-dark" href="tel:4008261180">400-826-1180</a>
+      </div>
+    </div>
+  </section>
+
+</main>

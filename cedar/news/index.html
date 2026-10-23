@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新闻资讯｜冷杉制冷</title>
+<meta name="description" content="冷杉制冷的项目进展、产线动态与技术文章：CO₂ 跨临界系统调试、冷媒替代路线、冷凝压力控制与维保清单。">
+<meta name="theme-color" content="#0c1114">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="冷杉制冷">
+<meta property="og:title" content="新闻资讯｜冷杉制冷">
+<meta property="og:description" content="冷杉制冷的项目进展、产线动态与技术文章：CO₂ 跨临界系统调试、冷媒替代路线、冷凝压力控制与维保清单。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <div class="topbar__group">
+      <span class="topbar__dot" aria-hidden="true"></span>
+      <span>制造基地 · 江苏常州</span>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <span>工作日 8:30–18:00</span>
+    </div>
+    <div class="topbar__group">
+      <a class="topbar__tel" href="tel:4008261180">400-826-1180</a>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <span class="topbar__readout"><i>车间</i><b>−25.0℃</b></span>
+      <span class="topbar__readout"><i>室外</i><b>18.4℃</b></span>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="logo" href="../index.html" aria-label="冷杉制冷 首页">
+      <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <path d="M20 3.5 32.5 19.5h-6.7l9.7 13.3H4.5l9.7-13.3H7.5Z" fill="currentColor"/>
+          <rect x="18.6" y="31.4" width="2.8" height="6" fill="currentColor"/>
+        </svg>
+      <span class="logo__text"><b>冷杉制冷</b><i>CEDAR COOL</i></span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="../index.html">首页</a>
+        </li>
+        <li class="nav__item">
+          <button class="nav__link" type="button" data-mega aria-expanded="false" aria-controls="mega-products">产品中心<i class="caret" aria-hidden="true"></i></button>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../solutions/index.html">行业方案</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../case/index.html">工程案例</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../about/index.html">关于冷杉</a>
+        </li>
+        <li class="nav__item is-active">
+          <a class="nav__link" href="../news/index.html" aria-current="page">新闻资讯</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../contact/index.html">联系我们</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--solid btn--sm" href="../contact/index.html#inquiry">获取选型方案</a>
+      <button class="nav-toggle" type="button" data-drawer-open aria-expanded="false" aria-controls="drawer" aria-label="打开菜单">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mega" id="mega-products">
+    <div class="wrap mega__inner">
+      <div class="mega__col">
+        <p class="mega__title">制冷机组</p>
+        <ul class="mega__list">
+            <li><a href="../products/lc-s.html"><span>水冷螺杆冷水机组</span><small>LC-S · 120–2400 kW</small></a></li>
+            <li><a href="../products/lc-s.html"><span>CO₂ 跨临界机组</span><small>LC-C · 80–900 kW</small></a></li>
+            <li><a href="../products/lc-s.html"><span>风冷模块机组</span><small>LC-M · 30–160 kW</small></a></li>
+        </ul>
+      </div>
+      <div class="mega__col">
+        <p class="mega__title">冷冻与冷库</p>
+        <ul class="mega__list">
+            <li><a href="../products/lc-s.html"><span>蒸发式冷凝机组</span><small>LC-E · 150–1800 kW</small></a></li>
+            <li><a href="../products/lc-s.html"><span>冷库一体机</span><small>LC-U · 8–120 kW</small></a></li>
+            <li><a href="../products/lc-s.html"><span>工业余热热泵</span><small>LC-H · 100–2000 kW</small></a></li>
+        </ul>
+      </div>
+      <div class="mega__col">
+        <p class="mega__title">工程服务</p>
+        <ul class="mega__list">
+            <li><a href="../contact/index.html#inquiry"><span>负荷计算与选型</span></a></li>
+            <li><a href="../solutions/index.html"><span>安装调试与培训</span></a></li>
+            <li><a href="../contact/index.html"><span>维保与备件供应</span></a></li>
+            <li><a href="../case/index.html"><span>群控与节能改造</span></a></li>
+        </ul>
+      </div>
+      <div class="mega__col">
+        <div class="mega__promo">
+          <span class="mono">NEW / LC-C 480</span>
+          <p>CO₂ 跨临界机组，−50℃ 工况下实测 COP 1.62，GWP = 1。</p>
+          <a href="../products/lc-s.html">查看机型参数 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__scrim" aria-hidden="true"></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="站点导航">
+    <div class="drawer__head">
+      <a class="logo" href="../index.html">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <path d="M20 3.5 32.5 19.5h-6.7l9.7 13.3H4.5l9.7-13.3H7.5Z" fill="currentColor"/>
+          <rect x="18.6" y="31.4" width="2.8" height="6" fill="currentColor"/>
+        </svg>
+        <span class="logo__text"><b>冷杉制冷</b><i>CEDAR COOL</i></span>
+      </a>
+      <button class="drawer__close" type="button" data-drawer-close aria-label="关闭菜单">×</button>
+    </div>
+
+    <div class="drawer__group"><a class="drawer__link" href="../index.html">首页</a></div>
+    <div class="drawer__group">
+      <button class="drawer__toggle" type="button" aria-expanded="false">产品中心<i class="caret" aria-hidden="true"></i></button>
+      <div class="drawer__sub"><div>
+        <a href="../products/index.html">全部产品</a>
+        <a href="../products/lc-s.html">水冷螺杆冷水机组 LC-S</a>
+        <a href="../products/lc-s.html">CO₂ 跨临界机组 LC-C</a>
+        <a href="../products/lc-s.html">蒸发式冷凝机组 LC-E</a>
+        <a href="../products/lc-s.html">冷库一体机 LC-U</a>
+      </div></div>
+    </div>
+    <div class="drawer__group"><a class="drawer__link" href="../solutions/index.html">行业方案</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../case/index.html">工程案例</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../about/index.html">关于冷杉</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../news/index.html">新闻资讯</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../contact/index.html">联系我们</a></div>
+
+    <div class="drawer__foot">
+      <span>选型与技术咨询</span>
+      <strong>400-826-1180</strong>
+      <span>sales@cedarcool.cn</span>
+      <span>江苏省常州市武进区科创路 18 号</span>
+    </div>
+
+    <div style="margin-top:18px">
+      <a class="btn btn--solid btn--block" href="../contact/index.html#inquiry">提交工况，获取选型方案</a>
+    </div>
+  </div>
+</div>
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div>
+        <nav class="crumb" aria-label="面包屑">
+          <a href="../index.html">首页</a><span aria-hidden="true">/</span><span aria-current="page">新闻资讯</span>
+        </nav>
+        <h1 class="page-hero__title">项目记录与技术笔记</h1>
+        <p class="page-hero__lede">这里不发通稿。写的是调试记录、选型判断和运行数据，以及我们踩过的坑——包括那些不太好看的。</p>
+      </div>
+      <span class="page-hero__idx" aria-hidden="true">06</span>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="tabs" role="tablist" aria-label="按栏目筛选资讯" data-filter-group="#newsFeed">
+        <button class="tab" type="button" role="tab" data-filter="all" aria-selected="true">全部<small>08</small></button>
+        <button class="tab" type="button" role="tab" data-filter="company" aria-selected="false">公司动态<small>03</small></button>
+        <button class="tab" type="button" role="tab" data-filter="tech" aria-selected="false">技术笔记<small>03</small></button>
+        <button class="tab" type="button" role="tab" data-filter="project" aria-selected="false">项目记录<small>02</small></button>
+      </div>
+
+      <div class="article">
+        <div class="news-feed" id="newsFeed" data-reveal-group>
+
+          <a class="news-feature" href="../news/co2-commissioning.html" data-tags="project tech" data-reveal>
+            <span class="news-feature__tag">调试记录 · 置顶</span>
+            <h2 class="news-feature__title">CO₂ 跨临界机组在冷链园区的 72 小时调试记录</h2>
+            <p class="news-feature__text">从气密试验、抽真空到高压控制整定，记录一次 R744 系统从“能跑”到“稳定”的全过程。包含 12 个容易被忽略的细节，以及三处我们返工的地方。</p>
+            <div class="news-feature__meta">
+              <span>2026-09-18 · 技术组 / 王工</span>
+              <span>8 分钟阅读 →</span>
+            </div>
+          </a>
+
+          <div class="news-list">
+            <a class="news-item" href="../news/co2-commissioning.html" data-tags="company">
+              <span class="news-item__date"><b>08.06</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">常州基地二期投产：新增 12,000 ㎡ 换热器产线</span>
+                <span class="news-item__excerpt">新产线配备自动胀管与氦检工位，换热器月产能提升至 180 台，交付周期缩短约 10 天。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="../news/co2-commissioning.html" data-tags="tech">
+              <span class="news-item__date"><b>07.22</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">R513A 与 R744：两条冷媒路线的成本与能效对比</span>
+                <span class="news-item__excerpt">按 10 年周期计算初投资、维护费用与能耗，给出三条选型分界线：规模、温区与运行小时数。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="../news/co2-commissioning.html" data-tags="tech">
+              <span class="news-item__date"><b>06.11</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">冬季冷凝压力过低？一份蒸发式冷凝器的运行调整清单</span>
+                <span class="news-item__excerpt">冷凝压力低于 12 bar 时，膨胀阀供液不足、回油困难。七条调整动作，按优先级排列。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="../news/co2-commissioning.html" data-tags="company">
+              <span class="news-item__date"><b>05.09</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">冷杉通过 ASME U 钢印换证审核</span>
+                <span class="news-item__excerpt">审核覆盖设计文件、焊接工艺评定与无损检测记录，以零不符合项通过，证书有效期至 2029 年。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="../news/co2-commissioning.html" data-tags="project">
+              <span class="news-item__date"><b>04.02</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">项目记录</span>
+                <span class="news-item__title">云枢数据张北节点：4.2 MW 间接蒸发冷却系统投运</span>
+                <span class="news-item__excerpt">连续 30 天运行 PUE 1.23，干空气能利用小时数达到 5,100 h，过渡季压缩机完全停机。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="../news/co2-commissioning.html" data-tags="tech">
+              <span class="news-item__date"><b>02.18</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">冷库冲霜：为什么定时冲霜总是冲不干净</span>
+                <span class="news-item__excerpt">按时间冲霜忽略了结霜速率的变化。用翅片温差触发，配合排水伴热，除霜水温度可稳定在 8℃ 以上。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="../news/co2-commissioning.html" data-tags="company">
+              <span class="news-item__date"><b>01.12</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">2025 年交付 268 个项目，改造类占比升至 34%</span>
+                <span class="news-item__excerpt">既有系统改造需求增长明显，主要集中在机头变频改造与群控升级两类。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="filter-empty">
+            <b>该栏目暂无文章</b>
+            换个栏目看看，或直接联系工程师索取技术资料。
+          </div>
+        </div>
+
+        <aside class="article__side" aria-label="侧栏">
+          <div class="side-block">
+            <h2>栏目</h2>
+            <div class="side-links">
+              <a href="../news/index.html"><span>公司动态</span><b>03</b></a>
+              <a href="../news/index.html"><span>技术笔记</span><b>03</b></a>
+              <a href="../news/index.html"><span>项目记录</span><b>02</b></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>被读得最多的</h2>
+            <div class="side-links">
+              <a href="../news/co2-commissioning.html"><b>01</b><span>CO₂ 跨临界机组 72 小时调试记录</span></a>
+              <a href="../news/co2-commissioning.html"><b>02</b><span>R513A 与 R744 的成本与能效对比</span></a>
+              <a href="../news/co2-commissioning.html"><b>03</b><span>冬季冷凝压力过低的调整清单</span></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>技术月报</h2>
+            <p style="font-size:13px;line-height:1.8;color:var(--text-muted);margin-bottom:14px">每月一封，只写调试记录与选型判断，不发促销。</p>
+            <form class="form" data-form novalidate>
+              <div class="field">
+                <label class="field__label" for="nl-email">邮箱</label>
+                <input class="input" id="nl-email" name="email" type="email" required placeholder="name@company.com">
+                <span class="field__err" role="alert"></span>
+              </div>
+              <button class="btn btn--solid btn--block btn--sm" type="submit">订阅月报</button>
+            </form>
+            <div class="form__success" role="status">
+              <b>订阅成功（演示）</b>
+              <span>接入后端后即可真实发送。</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <nav class="pager" aria-label="分页">
+        <span aria-current="page">1</span>
+        <a href="../news/index.html">2</a>
+        <a href="../news/index.html">3</a>
+        <a href="../news/index.html" aria-label="下一页">下一页 →</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta__inner">
+      <div>
+        <p class="eyebrow">Ask a question</p>
+        <h2 class="cta__title">有具体的工况问题？<br>直接问工程师。</h2>
+        <p class="cta__sub">选型、冷媒、控制逻辑、老系统改造——技术问题不需要先走销售流程。</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--on-dark" href="../contact/index.html#inquiry">提问 / 询价
+          <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+        </a>
+        <a class="btn btn--ghost-dark" href="tel:4008261180">400-826-1180</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="logo" href="../index.html" aria-label="冷杉制冷 首页">
+          <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <path d="M20 3.5 32.5 19.5h-6.7l9.7 13.3H4.5l9.7-13.3H7.5Z" fill="currentColor"/>
+          <rect x="18.6" y="31.4" width="2.8" height="6" fill="currentColor"/>
+        </svg>
+          <span class="logo__text"><b>冷杉制冷</b><i>CEDAR COOL</i></span>
+        </a>
+        <p>冷杉制冷科技（江苏）有限公司<br>工业制冷机组制造 · 冷库与工艺冷却整包交付</p>
+        <div class="footer__qr">
+          <img src="../assets/img/qr.svg" width="76" height="76" alt="微信二维码（示例）">
+          <span>扫码添加<br>选型工程师</span>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">产品中心</p>
+        <div class="footer__links">
+          <a href="../products/lc-s.html">水冷螺杆冷水机组</a>
+          <a href="../products/lc-s.html">CO₂ 跨临界机组</a>
+          <a href="../products/lc-s.html">蒸发式冷凝机组</a>
+          <a href="../products/lc-s.html">冷库一体机</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">行业方案</p>
+        <div class="footer__links">
+          <a href="../solutions/index.html">冷链物流园区</a>
+          <a href="../solutions/index.html">食品加工与速冻</a>
+          <a href="../solutions/index.html">医药与生物制品</a>
+          <a href="../solutions/index.html">数据中心与工艺冷却</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">关于冷杉</p>
+        <div class="footer__links">
+          <a href="../about/index.html">公司简介</a>
+          <a href="../about/index.html">制造与检验</a>
+          <a href="../case/index.html">工程案例</a>
+          <a href="../news/index.html">新闻资讯</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">联系我们</p>
+        <div class="footer__contact">
+          <strong>400-826-1180</strong>
+          <a href="mailto:sales@cedarcool.cn">sales@cedarcool.cn</a>
+          <span>江苏省常州市武进区科创路 18 号</span>
+          <span>周一至周六 8:30–18:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 冷杉制冷科技（江苏）有限公司　苏ICP备00000000号-1（模板占位）</span>
+      <div class="footer__legal">
+        <a href="../about/index.html">企业资质</a>
+        <a href="../contact/index.html">隐私条款</a>
+        <a href="../sitemap.xml">网站地图</a>
+        <button class="footer__top-link" type="button" data-top>回到顶部 ↑</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer__mark" aria-hidden="true">CEDAR COOL</div>
+</footer>
+
+<div class="rail" aria-label="快捷联系">
+  <a class="rail__btn" href="tel:4008261180" aria-label="拨打服务热线">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 3h3l1.6 4-2 1.4a11 11 0 0 0 5 5l1.4-2 4 1.6v3a2 2 0 0 1-2 2A15 15 0 0 1 2 5a2 2 0 0 1 2-2Z"/></svg>
+  </a>
+  <button class="rail__btn" type="button" aria-label="微信二维码">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 3a6 6 0 0 0-2.4 11.5L5 18l3.2-1.4A6 6 0 1 0 8 3Z"/><path d="M12 8.5a4.5 4.5 0 1 1 3.6 6.9L18 17l-2.3-.9"/></svg>
+    <span class="rail__qr"><img src="../assets/img/qr.svg" width="104" height="104" alt="微信二维码（示例）"><span>扫码加选型工程师</span></span>
+  </button>
+  <button class="rail__btn" type="button" data-top aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg>
+  </button>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

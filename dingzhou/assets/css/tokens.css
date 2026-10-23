@@ -1,0 +1,84 @@
+/* ==========================================================================
+   tokens.css — 鼎轴底盘 / DINGZHOU CHASSIS
+   方向：重工业编辑体（Industrial editorial）
+   骨白纸面 + 石墨重块 + 单一熔橙强调色；0 圆角、0 卡片阴影，靠 1px 线与字重建立秩序
+   字体声明见 fonts.css
+   ========================================================================== */
+
+:root {
+  /* ---------- 表面 ---------- */
+  --bone: #e8e3d9;        /* 主导表面：暖调骨白 */
+  --bone-2: #f3efe6;      /* 亮面板 / 卡片 */
+  --bone-3: #dcd6c9;      /* 次级面板 / 图纸底 */
+  --graphite: #17171a;    /* 石墨重块 */
+  --graphite-2: #212125;
+  --graphite-3: #2c2c31;
+
+  /* ---------- 文本 ---------- */
+  --text: #1b1b1e;        /* 13.4:1 on bone */
+  --muted: #5f5b54;       /* 5.3:1 on bone */
+  --text-on-dark: #f3efe6;
+  --muted-on-dark: #a5a099;
+  --line: rgba(23, 23, 26, 0.16);
+  --line-strong: rgba(23, 23, 26, 0.36);
+  --line-on-dark: rgba(243, 239, 230, 0.16);
+  --line-on-dark-strong: rgba(243, 239, 230, 0.36);
+
+  /* ---------- 强调（唯一） ---------- */
+  --accent: #a83211;         /* 亮底文字 / 线条 5.25:1 */
+  --accent-deep: #8a2910;
+  --band: #c03a12;           /* 色带底色，配骨白文字 4.75:1 */
+  --accent-bright: #ff6a33;  /* 暗底强调 6.27:1 */
+  --accent-soft: #efd9cf;
+
+  /* ---------- 状态 ---------- */
+  --danger: #9c2a1b;
+  --danger-soft: #f2dcd5;
+
+  /* ---------- 字体 ---------- */
+  --font-serif: "DZ Serif SC", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  --font-sans: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei",
+    "Hiragino Sans GB", sans-serif;
+  --font-display: "Archivo Black", "Haettenschweiler", Impact, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* ---------- 字阶 ---------- */
+  --fs-mono: 11px;
+  --fs-xs: 12.5px;
+  --fs-sm: 14px;
+  --fs-base: 15.5px;
+  --fs-md: 17px;
+  --fs-lg: 20px;
+  --fs-xl: clamp(21px, 1.7vw, 24px);
+  --fs-2xl: clamp(26px, 2.4vw, 34px);
+  --fs-3xl: clamp(32px, 4vw, 52px);
+  --fs-4xl: clamp(38px, 5vw, 68px);
+  --fs-display: clamp(44px, 6.4vw, 96px);
+
+  /* ---------- 间距 ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 44px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---------- 布局 ---------- */
+  --container: 1400px;
+  --gutter: clamp(20px, 3.6vw, 52px);
+  --section-y: clamp(72px, 9vw, 132px);
+  --header-h: 86px;
+  --rail: 78px;
+
+  /* ---------- 动效 ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-xs: 120ms;
+  --dur-sm: 180ms;
+  --dur: 320ms;
+  --dur-lg: 640ms;
+  --dur-xl: 1000ms;
+}

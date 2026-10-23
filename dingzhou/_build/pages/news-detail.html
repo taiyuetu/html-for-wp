@@ -1,0 +1,218 @@
+<!--@
+nav: news
+-->
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div>
+        <nav class="crumb" aria-label="面包屑">
+          <a href="/index.html">首页</a><span aria-hidden="true">/</span>
+          <a href="/news/index.html">新闻与笔记</a><span aria-hidden="true">/</span>
+          <span aria-current="page">技术</span>
+        </nav>
+        <h1 class="page-hero__title">铝合金控制臂的<br>轻量化边界</h1>
+        <p class="page-hero__lede">从锻钢改锻铝，减重从 18% 做到 26%，代价是三轮改图和一次局部屈曲。这篇记录过程，也记录我们在哪一步停下来。</p>
+      </div>
+      <span class="page-hero__idx" aria-hidden="true">N-01</span>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap article">
+
+      <article>
+        <header class="article__head">
+          <div class="article__tags" style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="tag">技术笔记</span>
+            <span class="tag">轻量化</span>
+          </div>
+          <div class="article__meta">
+            <span>2026-07-15</span><span>工程部 / 吴工</span><span>9 分钟阅读</span>
+          </div>
+        </header>
+
+        <div class="prose">
+          <p>项目是长风汽车 C 级纯电平台的前下控制臂。原方案是 40Cr 锻钢，单件 4.3 kg。整车目标要求前悬架簧下质量降 3 kg，分摊到左右两根下控制臂，每根要减 1.5 kg 左右——相当于减重 35%，这在锻铝件上不现实。最后的实际结果是减重 26%（1.1 kg），并通过 200 万次台架。</p>
+
+          <h2 id="s1">一、为什么不是“直接换材料”</h2>
+          <p>铝的弹性模量只有钢的三分之一（约 70 GPa vs 206 GPa）。同样几何形状下，刚度会掉到原来的三分之一。所以“换材料”这个动作本身，只能带来重量下降 60%，同时刚度下降 65%——车开起来会明显发飘，转向响应变慢。</p>
+          <p>真正的轻量化设计是：<strong>用几何补刚度，用材料减重量</strong>。补刚度的效率，决定了轻量化的上限。</p>
+
+          <h2 id="s2">二、第一版：减重 26%，侧向刚度掉 8%</h2>
+          <p>第一版按等强度原则重画截面：把钢件的 4.5 mm 壁厚改成铝件 7 mm，并在弯矩最大处加高腹板。CAE 结果显示：重量 3.2 kg（减重 26%），但侧向刚度只有原钢件的 92%，一阶模态从 148 Hz 降到 131 Hz。</p>
+          <p>92% 的刚度在主观评价上还能接受，但问题是：模态频率掉到了整车约束的临界区，路面激励容易激起摆臂共振。这一版没进样件。</p>
+
+          <blockquote>
+            <p>轻量化不是把材料换掉，而是把材料从“不承力”的地方搬到“承力”的地方。搬得对不对，看的是刚度恢复率，不是减重百分比。</p>
+          </blockquote>
+
+          <h2 id="s3">三、三个刚度补偿方案</h2>
+          <p>第二版同时做了三条路线，用同一套 CAE 边界条件对比：</p>
+          <ul>
+            <li><strong>方案 A：整体加厚腹板。</strong>从 7 mm 加到 9 mm，刚度恢复到 99%，但重量回到 3.6 kg，减重只剩 16%。</li>
+            <li><strong>方案 B：变截面 + 局部加高。</strong>只在球头颈与衬套座之间加高 8 mm，其余减薄，刚度 97%，重量 3.35 kg。</li>
+            <li><strong>方案 C：B + 衬套刚度调整。</strong>把衬套径向刚度从 2 800 N/mm 提到 3 400 N/mm，主观转向响应补偿，整机层面等效刚度达标，重量不变。</li>
+          </ul>
+          <p>方案 C 的问题是：衬套变硬会把路面冲击更多地传进车身，NVH 团队不同意。最后选的是 B，再用一条 3 mm 的加强筋把模态拉回 142 Hz。</p>
+
+          <figure>
+            <svg class="dwg" viewBox="0 0 640 300" aria-label="三个版本的重量与刚度对比柱状图">
+              <g class="thin">
+                <path d="M70 40h520M70 100h520M70 160h520M70 220h520"/>
+              </g>
+              <path d="M70 250h520M70 40v210" stroke-width="1.2"/>
+              <text x="48" y="44" text-anchor="end">110</text>
+              <text x="48" y="104" text-anchor="end">100</text>
+              <text x="48" y="164" text-anchor="end">90</text>
+              <text x="48" y="224" text-anchor="end">80</text>
+              <text x="40" y="30">刚度指数</text>
+
+              <g fill="currentColor" fill-opacity="0.12">
+                <rect x="110" y="52" width="54" height="198"/>
+                <rect x="254" y="88" width="54" height="162"/>
+                <rect x="398" y="70" width="54" height="180"/>
+                <rect x="542" y="64" width="24" height="186" fill-opacity="0.2"/>
+              </g>
+              <g stroke-width="1.3">
+                <rect x="110" y="52" width="54" height="198"/>
+                <rect x="254" y="88" width="54" height="162"/>
+                <rect x="398" y="70" width="54" height="180"/>
+              </g>
+              <rect x="542" y="64" width="24" height="186" class="accent" stroke-width="1.6"/>
+
+              <g text-anchor="middle">
+                <text x="137" y="270">钢件 4.3 kg</text>
+                <text x="281" y="270">铝 V1 3.2 kg</text>
+                <text x="425" y="270">铝 V3 3.35 kg</text>
+                <text x="554" y="270">目标</text>
+              </g>
+              <g text-anchor="middle">
+                <text x="137" y="44">100</text>
+                <text x="281" y="80">92</text>
+                <text x="425" y="62">99</text>
+                <text x="554" y="56">100</text>
+              </g>
+            </svg>
+            <figcaption>图 1　三个版本的侧向刚度指数对比（钢件 = 100）。纵轴为刚度指数，柱下为单件重量。</figcaption>
+          </figure>
+
+          <h2 id="s4">四、加强筋的位置，比厚度更重要</h2>
+          <p>第三版的加强筋不是加在最厚的地方，而是加在球头颈到衬套座的传力路径上——那里是扭转与弯曲叠加的区域。加了 3 mm 筋之后，模态从 131 Hz 回到 142 Hz，重量只增加 0.15 kg。</p>
+          <p>同一时期我们还试过把筋加在臂体中部，效果只有前者的三分之一。原因很直接：中部主要受弯，加筋对弯曲刚度贡献有限；颈部是弯扭组合，筋的抗扭效率更高。</p>
+
+          <h2 id="s5">五、疲劳：从 120 万次到 200 万次</h2>
+          <p>第一轮台架只做到 120 万次就在球头颈根部出现 1.8 mm 裂纹。CAE 复核发现该处的应力集中系数被低估：圆角 R3 在网格里被简化成了直角。把圆角改到 R6、并把筋的过渡段拉长之后，第二轮做到 200 万次无裂纹。</p>
+          <p>这类问题的教训不是“CAE 不准”，而是建模时对制造特征的忽略。现在我们的规范里，所有锻件圆角必须按图纸建出来，不允许用直角代替。</p>
+
+          <h2 id="s6">六、成本账：单件 +42 元，值不值</h2>
+          <p>锻铝件的材料与模具成本高于锻钢：单件成本从 118 元涨到 160 元，涨 42 元。按年供 42 万套（左右各一件）计算，年成本增加约 3 500 万元。</p>
+          <p>换回来的是簧下质量减 2.2 kg（左右合计），对整车电耗的贡献约 0.8%，按该车型年销 12 万辆、百公里 13 kWh、年均 1.5 万公里估算，用户端每年省电约 190 kWh。这笔账能不能算平，取决于车型定位与积分政策，不是零件厂能决定的。</p>
+
+          <h2 id="s7">七、边界在哪里</h2>
+          <div class="table-wrap">
+            <table class="spec-table">
+              <caption>三个方案的完整对比 / R = −1 三点弯曲</caption>
+              <thead>
+                <tr><th scope="col">方案</th><th scope="col">重量 kg</th><th scope="col">刚度指数</th><th scope="col">疲劳 万次</th><th scope="col">单件成本</th><th scope="col">结论</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">钢件 40Cr</th><td class="num">4.30</td><td class="num">100</td><td class="num">220</td><td class="num">118 元</td><td>基准</td></tr>
+                <tr><th scope="row">铝 V1 等强度</th><td class="num">3.20</td><td class="num">92</td><td class="num">120</td><td class="num">160 元</td><td>模态不达标</td></tr>
+                <tr><th scope="row">铝 V2 局部加高</th><td class="num">3.35</td><td class="num">97</td><td class="num">160</td><td class="num">158 元</td><td>圆角不足</td></tr>
+                <tr><th scope="row">铝 V3 + R6 圆角</th><td class="num">3.35</td><td class="num">99</td><td class="num">200</td><td class="num">160 元</td><td>量产</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>这条零件的轻量化边界大约在 26–28%。再往上，要么把衬套改成液压式（成本涨 60 元，NVH 风险），要么改成两根连杆 + 球头的分体结构（模具与总装工艺全变）。这不是材料问题，是连接方式的问题。</p>
+          <p>所以我们给客户的建议通常是：先看整车层面还有没有别的减重空间。底盘件的轻量化，做到 25% 左右性价比最高；再往上，投入产出比会快速恶化。</p>
+        </div>
+
+        <div class="article__foot">
+          <div class="article__tags" style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="tag">轻量化</span>
+            <span class="tag">控制臂</span>
+            <span class="tag">疲劳</span>
+          </div>
+          <a class="arrow-link" href="/news/index.html">返回列表
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 7H2M6 3 2 7l4 4"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <aside class="article__side" aria-label="文章侧栏">
+        <div class="side-block">
+          <h2>本文目录</h2>
+          <div class="side-links">
+            <a href="#s1"><b>01</b><span>为什么不是“直接换材料”</span></a>
+            <a href="#s2"><b>02</b><span>第一版：刚度掉 8%</span></a>
+            <a href="#s3"><b>03</b><span>三个刚度补偿方案</span></a>
+            <a href="#s4"><b>04</b><span>加强筋的位置</span></a>
+            <a href="#s5"><b>05</b><span>疲劳：120 万到 200 万</span></a>
+            <a href="#s6"><b>06</b><span>成本账</span></a>
+            <a href="#s7"><b>07</b><span>边界在哪里</span></a>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <h2>相关零件</h2>
+          <div class="side-links">
+            <a href="/products/control-arm.html"><span>CA-210 锻铝控制臂</span><b>→</b></a>
+            <a href="/products/control-arm.html"><span>BJ-120 球头总成</span><b>→</b></a>
+            <a href="/capability/index.html"><span>疲劳台架能力</span><b>→</b></a>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <h2>有类似项目？</h2>
+          <p style="font-size:12.5px;line-height:1.8;color:var(--muted);margin-bottom:14px">把安装点、载荷谱与重量目标发过来，48 小时给一版可行性评估。</p>
+          <a class="btn btn--accent btn--block btn--sm" href="/contact/index.html#inquiry">联系工程部</a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="sec sec--panel sec--tight">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <h2 class="head__title">接着读</h2>
+        <div class="head__aside">
+          <a class="arrow-link" href="/news/index.html">全部资讯
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="news-list" data-reveal>
+        <a class="news-item" href="/news/aluminum-control-arm.html">
+          <span class="news-item__date">06.08<span>2026</span></span>
+          <span>
+            <span class="news-item__cat">技术笔记</span>
+            <span class="news-item__title">盐雾 720 小时之后：涂层失效的三种形态</span>
+            <span class="news-item__excerpt">划痕起泡、边角锈蚀、电泳层剥离——分别对应前处理、膜厚与烘干曲线。</span>
+          </span>
+          <span class="news-item__go" aria-hidden="true">→</span>
+        </a>
+        <a class="news-item" href="/news/aluminum-control-arm.html">
+          <span class="news-item__date">04.02<span>2026</span></span>
+          <span>
+            <span class="news-item__cat">技术笔记</span>
+            <span class="news-item__title">锻造模具寿命管理：为什么按件数而不是按月</span>
+            <span class="news-item__excerpt">同一套模具打不同壁厚的件，磨损速率不同。按件计数 + 首末件趋势才可控。</span>
+          </span>
+          <span class="news-item__go" aria-hidden="true">→</span>
+        </a>
+        <a class="news-item" href="/news/aluminum-control-arm.html">
+          <span class="news-item__date">02.18<span>2026</span></span>
+          <span>
+            <span class="news-item__cat">技术笔记</span>
+            <span class="news-item__title">球头异响的三个来源，以及怎么在台架上复现</span>
+            <span class="news-item__excerpt">锥面微动、防尘罩进水、球座预紧不足。5 Hz 小幅往复加载两小时就能复现。</span>
+          </span>
+          <span class="news-item__go" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>

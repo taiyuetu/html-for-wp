@@ -1,0 +1,209 @@
+<!--@
+nav: news
+-->
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div>
+        <nav class="crumb" aria-label="面包屑">
+          <a href="/index.html">首页</a><span aria-hidden="true">/</span>
+          <a href="/news/index.html">新闻资讯</a><span aria-hidden="true">/</span>
+          <span aria-current="page">调试记录</span>
+        </nav>
+        <h1 class="page-hero__title">CO₂ 跨临界机组在冷链园区的 72 小时调试记录</h1>
+        <p class="page-hero__lede">项目位于江苏，三间 −25℃ 冷冻库，总库容 18,000 m³。这篇文章记录从气密试验到满负荷测试的全过程，包括三处返工。</p>
+      </div>
+      <span class="page-hero__idx" aria-hidden="true">N-01</span>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap article">
+
+      <article>
+        <header class="article__head">
+          <div class="article__tags">
+            <span class="tag">调试记录</span>
+            <span class="tag">CO₂ / R744</span>
+          </div>
+          <div class="article__meta">
+            <span>2026-09-18</span><span>技术组 / 王工</span><span>8 分钟阅读</span>
+          </div>
+        </header>
+
+        <div class="prose">
+          <p>这套系统是园区三期改造的一部分：原有的 R507A 机组继续服务高温库，新建的三间 −25℃ 冷冻库改用 CO₂ 跨临界机组，热回收用于库区地面防冻胀。选择 R744 的原因很直接——园区在 2024 年被纳入地方冷媒管控名单，R507A 的充注量被限制，而 CO₂ 的 GWP 是 1。</p>
+
+          <p>跨临界系统的调试和常规氟利昂系统不是一回事。高压侧压力随环境温度变化，充注量、气冷器出口温度、高压阀开度三个参数互相牵制。下面按三天的时间顺序记录。</p>
+
+          <h2 id="s1">第一天：气密、抽真空与“不合格的焊口”</h2>
+          <p>CO₂ 系统的运行压力高，气密试验用干燥氮气分两级升压：先到 25 bar 保压 30 分钟，再升至 52 bar 保压 24 小时。第一轮就出了问题——2 号库回气管的一个三通焊口在 48 bar 时压降 0.3 bar/小时。</p>
+          <p>拆保温、打磨、着色探伤，发现是一道未熔合。这类缺陷在氟利昂系统里可能被运行压力“容忍”，但在 CO₂ 系统里迟早会漏。返工后重新试压，24 小时压降为零。</p>
+          <blockquote>
+            <p>跨临界系统没有“差不多”。气密阶段多花的 8 小时，换来的是以后三年不用半夜出去查漏。</p>
+          </blockquote>
+
+          <h2 id="s2">第二天：充注与高压控制整定</h2>
+          <p>抽真空到 50 Pa 以下并保持 4 小时，抽真空期间对管路进行 40℃ 加热以驱除吸附水分。充注按重量法，先充 70%，运行后按气冷器出口过冷度补足。</p>
+          <p>高压控制的整定是这天的主要工作。初始参数下，高压阀响应过快，环境温度从 26℃ 升到 33℃ 时，高压侧在 78–92 bar 之间来回振荡，气冷器出口温度波动 6℃。调整方式：</p>
+          <ul>
+            <li>高压阀 PID 的比例带从 8 bar 放宽到 14 bar；</li>
+            <li>积分时间由 45 s 延长到 120 s；</li>
+            <li>增加“环境温度前馈”，用 15 分钟滑动平均替代瞬时值；</li>
+            <li>高压上限保护从 95 bar 下调至 92 bar，避免频繁触发。</li>
+          </ul>
+          <p>整定后，同样的环境温度阶跃下高压侧波动收敛到 ±3 bar，气冷器出口温度波动 1.2℃。</p>
+
+          <h2 id="s3">第三天：部分负荷与群控联调</h2>
+          <p>第三天做 100%、75%、50%、25% 四档负荷测试。跨临界机组在低负荷下的效率衰减比预期小，主要得益于两个措施：一是压缩机带经济器，二是库温控制采用“蒸发器出口过热度 + 库温”双回路，避免低负荷时蒸发器“饿液”。</p>
+
+          <figure>
+            <svg viewBox="0 0 640 300" fill="none" stroke="currentColor" stroke-width="1" aria-label="部分负荷 COP 曲线对比">
+              <g stroke-width="0.7" opacity="0.25">
+                <path d="M70 40h520M70 100h520M70 160h520M70 220h520"/>
+                <path d="M70 40v190M200 40v190M330 40v190M460 40v190M590 40v190"/>
+              </g>
+              <path d="M70 230h520M70 40v190" stroke-width="1.2"/>
+              <path class="accent" d="M70 210 200 178 330 152 460 140 590 134" stroke-width="2"/>
+              <path d="M70 214 200 186 330 166 460 160 590 158" stroke-width="1.4" stroke-dasharray="5 5" opacity="0.75"/>
+              <g stroke="none" fill="currentColor" font-family="monospace" font-size="11">
+                <text x="36" y="44">2.0</text>
+                <text x="36" y="104">1.7</text>
+                <text x="36" y="164">1.4</text>
+                <text x="36" y="224">1.1</text>
+                <text x="62" y="252">25%</text>
+                <text x="188" y="252">40%</text>
+                <text x="318" y="252">55%</text>
+                <text x="448" y="252">75%</text>
+                <text x="570" y="252">100%</text>
+                <text x="74" y="30">COP</text>
+              </g>
+              <g stroke="none" fill="currentColor" font-family="monospace" font-size="10" opacity="0.7">
+                <text x="430" y="122">变频 + 经济器</text>
+                <text x="430" y="182">定频</text>
+              </g>
+              <circle cx="460" cy="140" r="3.5" fill="currentColor" stroke="none"/>
+            </svg>
+            <figcaption>图 1　LC-C 480 部分负荷 COP 实测曲线。测试工况：库温 −25℃，环境温度 32℃，数据取自机组控制器导出记录。</figcaption>
+          </figure>
+
+          <h2 id="s4">三处返工，以及原因</h2>
+          <ol>
+            <li><strong>回气管三通焊口未熔合</strong>——焊工按氟利昂系统的电流参数施焊，壁厚增加后电流未调整。后续把所有 CO₂ 管路焊口的工艺卡单独列出。</li>
+            <li><strong>安全阀整定值错误</strong>——出厂默认 90 bar，与实际设计压力 80 bar 不符。整定值必须在铭牌与竣工资料中同时体现，不能只写“按设计”。</li>
+            <li><strong>库温传感器位置</strong>——最初安装在冷风机回风侧，受除霜影响波动大。改到库中心 1.5 m 高度并加防辐射罩后，控温精度从 ±1.2℃ 提升到 ±0.4℃。</li>
+          </ol>
+
+          <h2 id="s5">关键参数实测</h2>
+          <div class="table-wrap">
+            <table class="spec-table">
+              <caption>72 小时调试关键参数 / 2026-09-12 至 09-15</caption>
+              <thead>
+                <tr><th scope="col">参数</th><th scope="col">设计值</th><th scope="col">实测值</th><th scope="col">偏差</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">库温</th><td class="num">−25.0 ℃</td><td class="num">−25.3 ℃</td><td class="num">−0.3 K</td></tr>
+                <tr><th scope="row">高压侧压力</th><td class="num">≤ 92 bar</td><td class="num">88.4 bar</td><td class="num">−3.6 bar</td></tr>
+                <tr><th scope="row">气冷器出口温度</th><td class="num">≤ 38 ℃</td><td class="num">36.1 ℃</td><td class="num">−1.9 K</td></tr>
+                <tr><th scope="row">满负荷 COP</th><td class="num">1.62</td><td class="num">1.66</td><td class="num">+2.5%</td></tr>
+                <tr><th scope="row">50% 负荷 COP</th><td class="num">1.38</td><td class="num">1.51</td><td class="num">+9.4%</td></tr>
+                <tr><th scope="row">库温波动（24 h）</th><td class="num">±1.0 K</td><td class="num">±0.4 K</td><td class="num">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="s6">写在最后</h2>
+          <p>调试完成后，机组进入群控：三间库按库温偏差投切机头，夜间 22:00 至次日 6:00 允许库温上浮 1.5℃，把冷量集中在低谷电时段。运行 30 天的数据看，日均耗电比原 R507A 系统低 11%，如果把热回收替代的库区采暖算进去，综合能耗下降约 16%。</p>
+          <p>这套系统不是没有代价：初投资比氟利昂方案高 22%，管路与阀件要求更高，调试周期长 3–5 天。是否值得，取决于冷媒管控政策、运行小时数与热回收需求——这三条我们在方案阶段会和业主一条条算清楚。</p>
+        </div>
+
+        <div class="article__foot">
+          <div class="article__tags">
+            <span class="tag">CO₂ / R744</span>
+            <span class="tag">调试</span>
+            <span class="tag">冷链</span>
+          </div>
+          <a class="link-arrow" href="/news/index.html">返回列表
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 7H2M6 3 2 7l4 4"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <aside class="article__side" aria-label="文章侧栏">
+        <div class="side-block">
+          <h2>本文目录</h2>
+          <div class="side-links">
+            <a href="#s1"><b>01</b><span>气密、抽真空与不合格的焊口</span></a>
+            <a href="#s2"><b>02</b><span>充注与高压控制整定</span></a>
+            <a href="#s3"><b>03</b><span>部分负荷与群控联调</span></a>
+            <a href="#s4"><b>04</b><span>三处返工与原因</span></a>
+            <a href="#s5"><b>05</b><span>关键参数实测</span></a>
+            <a href="#s6"><b>06</b><span>写在最后</span></a>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <h2>相关机型</h2>
+          <div class="side-links">
+            <a href="/products/lc-s.html"><span>CO₂ 跨临界机组 LC-C</span><b>→</b></a>
+            <a href="/products/lc-s.html"><span>CO₂ 复叠冷冻机组 LC-C2</span><b>→</b></a>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <h2>有类似工况？</h2>
+          <p style="font-size:13px;line-height:1.8;color:var(--text-muted);margin-bottom:14px">把库温、库容与所在地发给我们，48 小时内给一版初选方案。</p>
+          <a class="btn btn--solid btn--block btn--sm" href="/contact/index.html#inquiry">联系选型工程师</a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="sec sec--paper2 sec--tight">
+    <div class="wrap">
+      <div class="sec__head">
+        <div>
+          <p class="eyebrow">Read next</p>
+          <h2 class="sec__title">接着读</h2>
+        </div>
+        <div class="sec__aside">
+          <a class="link-arrow" href="/news/index.html">全部资讯
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="news-list" data-reveal>
+        <a class="news-item" href="/news/co2-commissioning.html">
+          <span class="news-item__date"><b>07.22</b><span>2026</span></span>
+          <span>
+            <span class="news-item__cat">技术笔记</span>
+            <span class="news-item__title">R513A 与 R744：两条冷媒路线的成本与能效对比</span>
+            <span class="news-item__excerpt">按 10 年周期计算初投资、维护费用与能耗，给出三条选型分界线。</span>
+          </span>
+          <span class="news-item__go" aria-hidden="true">→</span>
+        </a>
+        <a class="news-item" href="/news/co2-commissioning.html">
+          <span class="news-item__date"><b>06.11</b><span>2026</span></span>
+          <span>
+            <span class="news-item__cat">技术笔记</span>
+            <span class="news-item__title">冬季冷凝压力过低？一份蒸发式冷凝器的运行调整清单</span>
+            <span class="news-item__excerpt">冷凝压力低于 12 bar 时，膨胀阀供液不足、回油困难。七条调整动作。</span>
+          </span>
+          <span class="news-item__go" aria-hidden="true">→</span>
+        </a>
+        <a class="news-item" href="/news/co2-commissioning.html">
+          <span class="news-item__date"><b>04.02</b><span>2026</span></span>
+          <span>
+            <span class="news-item__cat">项目记录</span>
+            <span class="news-item__title">云枢数据张北节点：4.2 MW 间接蒸发冷却系统投运</span>
+            <span class="news-item__excerpt">连续 30 天运行 PUE 1.23，过渡季压缩机完全停机。</span>
+          </span>
+          <span class="news-item__go" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>

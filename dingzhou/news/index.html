@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新闻与工程笔记｜鼎轴底盘</title>
+<meta name="description" content="鼎轴的产线动态、项目定点与技术笔记：铝合金控制臂的轻量化边界、盐雾试验后的涂层失效分析、锻造模具寿命管理。">
+<meta name="theme-color" content="#e8e3d9">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="鼎轴底盘">
+<meta property="og:title" content="新闻与工程笔记｜鼎轴底盘">
+<meta property="og:description" content="鼎轴的产线动态、项目定点与技术笔记：铝合金控制臂的轻量化边界、盐雾试验后的涂层失效分析、锻造模具寿命管理。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div class="topbar">
+  <div class="topbar__inner">
+    <div class="topbar__group">
+      <span class="topbar__mark" aria-hidden="true"></span>
+      <span class="topbar__site">苏州 · 柳州 两基地制造</span>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <span class="topbar__cert">IATF 16949 : 2016</span>
+    </div>
+    <div class="topbar__group">
+      <span class="topbar__hours">工作日 8:00–17:30</span>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <a class="topbar__tel" href="tel:4001180806">400-118-0806</a>
+      <span class="topbar__sep" aria-hidden="true"></span>
+      <a class="topbar__cta" href="../contact/index.html#inquiry">询价 <span>→</span></a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="logo" href="../index.html" aria-label="鼎轴底盘 首页">
+      <svg class="logo__mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true" focusable="false">
+          <circle cx="12.5" cy="27.5" r="7.6"/>
+          <circle cx="31" cy="10.5" r="4.8"/>
+          <path d="M17.6 22.2 26.8 15"/>
+          <circle cx="12.5" cy="27.5" r="2.1" fill="currentColor" stroke="none"/>
+        </svg>
+      <span class="logo__text"><b>鼎轴底盘</b><i>DINGZHOU CHASSIS</i></span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="../index.html">首页</a>
+        </li>
+        <li class="nav__item">
+          <button class="nav__link" type="button" data-mega aria-expanded="false" aria-controls="mega-parts">产品谱系<i class="caret" aria-hidden="true"></i></button>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../capability/index.html">工艺与检测</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../case/index.html">配套项目</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../about/index.html">关于鼎轴</a>
+        </li>
+        <li class="nav__item is-active">
+          <a class="nav__link" href="../news/index.html" aria-current="page">新闻</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../contact/index.html">联系</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--accent btn--sm" href="../contact/index.html#inquiry">获取报价</a>
+      <button class="nav-toggle" type="button" data-drawer-open aria-expanded="false" aria-controls="drawer" aria-label="打开菜单">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mega" id="mega-parts">
+    <div class="wrap mega__inner">
+      <div>
+        <p class="mega__title">产品谱系 / 六大品类</p>
+        <ul class="mega__parts">
+            <li><a href="../products/control-arm.html"><i>01</i>控制臂总成</a></li>
+            <li><a href="../products/control-arm.html"><i>02</i>球头总成</a></li>
+            <li><a href="../products/control-arm.html"><i>03</i>稳定杆连杆</a></li>
+            <li><a href="../products/control-arm.html"><i>04</i>副车架总成</a></li>
+            <li><a href="../products/control-arm.html"><i>05</i>转向节</a></li>
+            <li><a href="../products/control-arm.html"><i>06</i>衬套 / 液压衬套</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mega__title">工艺与服务</p>
+        <ul class="mega__links">
+            <li><a href="../capability/index.html">热模锻</a></li>
+            <li><a href="../capability/index.html">五轴机加</a></li>
+            <li><a href="../capability/index.html">机器人焊接</a></li>
+            <li><a href="../capability/index.html">疲劳与材料实验室</a></li>
+            <li><a href="../contact/index.html#inquiry">PPAP / APQP 资料</a></li>
+        </ul>
+      </div>
+      <div class="mega__promo">
+        <span class="label">New / CA-210</span>
+        <p>6082-T6 锻铝控制臂，单件 3.2 kg，孔位公差 ±0.05 mm。</p>
+        <a href="../products/control-arm.html">查看零件参数 →</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__scrim" aria-hidden="true"></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="站点导航">
+    <div class="drawer__head">
+      <a class="logo" href="../index.html">
+        <svg class="logo__mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true" focusable="false">
+          <circle cx="12.5" cy="27.5" r="7.6"/>
+          <circle cx="31" cy="10.5" r="4.8"/>
+          <path d="M17.6 22.2 26.8 15"/>
+          <circle cx="12.5" cy="27.5" r="2.1" fill="currentColor" stroke="none"/>
+        </svg>
+        <span class="logo__text"><b>鼎轴底盘</b><i>DINGZHOU</i></span>
+      </a>
+      <button class="drawer__close" type="button" data-drawer-close aria-label="关闭菜单">×</button>
+    </div>
+
+    <div class="drawer__group"><a class="drawer__link" href="../index.html">首页</a></div>
+    <div class="drawer__group">
+      <button class="drawer__toggle" type="button" aria-expanded="false">产品谱系<i class="caret" aria-hidden="true"></i></button>
+      <div class="drawer__sub"><div>
+        <a href="../products/index.html"><i>00</i>全部产品</a>
+        <a href="../products/control-arm.html"><i>01</i>控制臂总成</a>
+        <a href="../products/control-arm.html"><i>02</i>球头总成</a>
+        <a href="../products/control-arm.html"><i>03</i>稳定杆连杆</a>
+        <a href="../products/control-arm.html"><i>04</i>副车架总成</a>
+        <a href="../products/control-arm.html"><i>05</i>转向节</a>
+        <a href="../products/control-arm.html"><i>06</i>衬套 / 液压衬套</a>
+      </div></div>
+    </div>
+    <div class="drawer__group"><a class="drawer__link" href="../capability/index.html">工艺与检测</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../case/index.html">配套项目</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../about/index.html">关于鼎轴</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../news/index.html">新闻</a></div>
+    <div class="drawer__group"><a class="drawer__link" href="../contact/index.html">联系</a></div>
+
+    <div class="drawer__foot">
+      <span>询价 / 技术对接</span>
+      <strong>400-118-0806</strong>
+      <span>sales@dingzhou-chassis.cn</span>
+      <span>苏州市相城区春申湖西路 66 号</span>
+    </div>
+
+    <div style="margin-top:20px">
+      <a class="btn btn--accent btn--block" href="../contact/index.html#inquiry">提交图纸，获取报价</a>
+    </div>
+  </div>
+</div>
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div>
+        <nav class="crumb" aria-label="面包屑">
+          <a href="../index.html">首页</a><span aria-hidden="true">/</span><span aria-current="page">新闻与笔记</span>
+        </nav>
+        <h1 class="page-hero__title">产线动态，<br>和没写进宣传册的问题</h1>
+        <p class="page-hero__lede">项目节点、产线变化，以及开发过程中真实踩过的坑。技术笔记里的数据来自我们自己的台架与产线。</p>
+      </div>
+      <span class="page-hero__idx" aria-hidden="true">06</span>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="tabs" role="tablist" aria-label="按栏目筛选" data-filter-group="#newsFeed">
+        <button class="tab" type="button" role="tab" data-filter="all" aria-selected="true">全部<small>08</small></button>
+        <button class="tab" type="button" role="tab" data-filter="company" aria-selected="false">公司动态<small>04</small></button>
+        <button class="tab" type="button" role="tab" data-filter="tech" aria-selected="false">技术笔记<small>04</small></button>
+      </div>
+
+      <div class="article">
+        <div class="news-grid" id="newsFeed" data-reveal-group style="grid-template-columns:minmax(0,1fr)">
+
+          <a class="news-lead" href="../news/aluminum-control-arm.html" data-tags="tech" data-reveal>
+            <span class="news-lead__tag">技术 / 轻量化 · 置顶</span>
+            <h2 class="news-lead__title">铝合金控制臂的轻量化边界：从 18% 到 26%</h2>
+            <p class="news-lead__text">一次前下控制臂从锻钢改锻铝的完整记录：第一版刚度掉了 8%，第二版局部屈曲，第三版才通过 200 万次台架。附三个刚度补偿方案的对比与成本账。</p>
+            <div class="news-lead__meta">
+              <span>2026-07-15 · 工程部 / 吴工</span>
+              <span>9 分钟阅读 →</span>
+            </div>
+          </a>
+
+          <div class="news-list">
+            <a class="news-item" href="../news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">09.12<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">苏州二厂 6 号锻造线投产：6300T，日产 1.1 万件</span>
+                <span class="news-item__excerpt">配中频感应加热与机器人上下料，模具寿命按件计数管理，主要承担铝锻控制臂毛坯。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="../news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">08.03<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">获瑞驰新能源下一代平台控制臂定点</span>
+                <span class="news-item__excerpt">覆盖前下、前上控制臂与球头总成，预计 2027 年 SOP，年需求 38 万套。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="../news/aluminum-control-arm.html" data-tags="tech">
+              <span class="news-item__date">06.08<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">盐雾 720 小时之后：涂层失效的三种形态</span>
+                <span class="news-item__excerpt">划痕起泡、边角锈蚀、电泳层剥离——分别对应前处理、膜厚与烘干曲线的问题。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="../news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">05.20<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">IATF 16949 换证审核零不符合项</span>
+                <span class="news-item__excerpt">覆盖两个基地的设计、制造与供应商管理，证书有效期延至 2028 年。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="../news/aluminum-control-arm.html" data-tags="tech">
+              <span class="news-item__date">04.02<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">锻造模具寿命管理：为什么按件数而不是按月</span>
+                <span class="news-item__excerpt">同一套模具打不同壁厚的件，磨损速率不同。按件计数 + 首末件尺寸趋势，才是可控的。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="../news/aluminum-control-arm.html" data-tags="tech">
+              <span class="news-item__date">02.18<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">球头异响的三个来源，以及怎么在台架上复现</span>
+                <span class="news-item__excerpt">锥面微动、防尘罩进水、球座预紧不足。用 5 Hz 小幅往复加载，两小时就能复现。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+            <a class="news-item" href="../news/aluminum-control-arm.html" data-tags="company">
+              <span class="news-item__date">01.09<span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">2025 年交付 268 个项目，轻量化件占比 34%</span>
+                <span class="news-item__excerpt">铝锻控制臂与铝焊副车架需求增长明显，柳州基地重载件保持稳定。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="filter-empty">
+            <b>该栏目暂无文章</b>
+            换个栏目看看，或直接联系工程部索取技术资料。
+          </div>
+        </div>
+
+        <aside class="article__side" aria-label="侧栏">
+          <div class="side-block">
+            <h2>栏目</h2>
+            <div class="side-links">
+              <a href="../news/index.html"><span>公司动态</span><b>04</b></a>
+              <a href="../news/index.html"><span>技术笔记</span><b>04</b></a>
+              <a href="../capability/index.html"><span>工艺与检测</span><b>→</b></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>被读得最多的</h2>
+            <div class="side-links">
+              <a href="../news/aluminum-control-arm.html"><b>01</b><span>铝合金控制臂的轻量化边界</span></a>
+              <a href="../news/aluminum-control-arm.html"><b>02</b><span>盐雾 720 小时后涂层失效的三种形态</span></a>
+              <a href="../news/aluminum-control-arm.html"><b>03</b><span>锻造模具寿命：按件数而不是按月</span></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>技术月报</h2>
+            <p style="font-size:12.5px;line-height:1.8;color:var(--muted);margin-bottom:14px">每月一封，只写项目数据与工艺问题，不发促销。</p>
+            <form class="form" data-form novalidate>
+              <div class="field">
+                <label class="field__label" for="nl-email">邮箱</label>
+                <input class="input" id="nl-email" name="email" type="email" required placeholder="name@company.com">
+                <span class="field__err" role="alert"></span>
+              </div>
+              <button class="btn btn--accent btn--block btn--sm" type="submit">订阅月报</button>
+            </form>
+            <div class="form__success" role="status">
+              <b>订阅成功（演示）</b>
+              <span>接入后端后即可真实发送。</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <nav class="pager" aria-label="分页">
+        <span aria-current="page">1</span>
+        <a href="../news/index.html">2</a>
+        <a href="../news/index.html">3</a>
+        <a href="../news/index.html" aria-label="下一页">下一页 →</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta__inner">
+      <div>
+        <p class="label" style="color:rgba(243,239,230,.8);margin-bottom:14px">Ask / 提问</p>
+        <h2 class="cta__title">有具体的工艺问题？直接问工程师。</h2>
+        <p class="cta__sub">轻量化、模具、涂层、疲劳判定——技术问题不必先走销售流程。</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--accent" href="../contact/index.html#inquiry">提问 / 询价
+          <svg class="btn__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7.5h11M8.5 3l4.5 4.5L8.5 12"/></svg>
+        </a>
+        <a class="btn" href="tel:4001180806">400-118-0806</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="logo" href="../index.html" aria-label="鼎轴底盘 首页">
+          <svg class="logo__mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true" focusable="false">
+          <circle cx="12.5" cy="27.5" r="7.6"/>
+          <circle cx="31" cy="10.5" r="4.8"/>
+          <path d="M17.6 22.2 26.8 15"/>
+          <circle cx="12.5" cy="27.5" r="2.1" fill="currentColor" stroke="none"/>
+        </svg>
+          <span class="logo__text"><b>鼎轴底盘</b><i>DINGZHOU CHASSIS</i></span>
+        </a>
+        <p>鼎轴底盘科技（苏州）有限公司<br>控制臂 · 球头 · 副车架 · 转向节</p>
+      </div>
+
+      <div>
+        <p class="footer__title">产品</p>
+        <div class="footer__links">
+          <a href="../products/control-arm.html">控制臂总成</a>
+          <a href="../products/control-arm.html">球头总成</a>
+          <a href="../products/control-arm.html">稳定杆连杆</a>
+          <a href="../products/index.html">全部产品</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__title">能力</p>
+        <div class="footer__links">
+          <a href="../capability/index.html">工艺与产线</a>
+          <a href="../capability/index.html">检测与试验</a>
+          <a href="../capability/index.html">质量体系</a>
+          <a href="../case/index.html">配套项目</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__title">公司</p>
+        <div class="footer__links">
+          <a href="../about/index.html">关于鼎轴</a>
+          <a href="../about/index.html">两基地</a>
+          <a href="../news/index.html">新闻与笔记</a>
+          <a href="../contact/index.html">联系我们</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__title">联系</p>
+        <div class="footer__contact">
+          <strong>400-118-0806</strong>
+          <a href="mailto:sales@dingzhou-chassis.cn">sales@dingzhou-chassis.cn</a>
+          <span>苏州市相城区春申湖西路 66 号</span>
+          <span>周一至周六 8:00–17:30</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 鼎轴底盘科技（苏州）有限公司　苏ICP备00000000号-1（模板占位）</span>
+      <div class="footer__legal">
+        <a href="../capability/index.html">质量声明</a>
+        <a href="../contact/index.html">隐私条款</a>
+        <a href="../sitemap.xml">网站地图</a>
+        <button class="footer__top-link" type="button" data-top>回到顶部 ↑</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer__word" aria-hidden="true">DINGZHOU</div>
+</footer>
+
+<div class="rail" aria-label="快捷联系">
+  <a class="rail__btn" href="tel:4001180806" aria-label="拨打询价电话">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 3h3l1.6 4-2 1.4a11 11 0 0 0 5 5l1.4-2 4 1.6v3a2 2 0 0 1-2 2A15 15 0 0 1 2 5a2 2 0 0 1 2-2Z"/></svg>
+  </a>
+  <button class="rail__btn" type="button" aria-label="微信二维码">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 3a6 6 0 0 0-2.4 11.5L5 18l3.2-1.4A6 6 0 1 0 8 3Z"/><path d="M12 8.5a4.5 4.5 0 1 1 3.6 6.9L18 17l-2.3-.9"/></svg>
+    <span class="rail__qr"><img src="../assets/img/qr.svg" width="108" height="108" alt="微信二维码（示意）"><span>扫码加销售工程师</span></span>
+  </button>
+  <button class="rail__btn" type="button" data-top aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg>
+  </button>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

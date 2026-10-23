@@ -1,0 +1,182 @@
+<!--@
+nav: news
+-->
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div>
+        <nav class="crumb" aria-label="面包屑">
+          <a href="/index.html">首页</a><span aria-hidden="true">/</span><span aria-current="page">新闻资讯</span>
+        </nav>
+        <h1 class="page-hero__title">项目记录与技术笔记</h1>
+        <p class="page-hero__lede">这里不发通稿。写的是调试记录、选型判断和运行数据，以及我们踩过的坑——包括那些不太好看的。</p>
+      </div>
+      <span class="page-hero__idx" aria-hidden="true">06</span>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="tabs" role="tablist" aria-label="按栏目筛选资讯" data-filter-group="#newsFeed">
+        <button class="tab" type="button" role="tab" data-filter="all" aria-selected="true">全部<small>08</small></button>
+        <button class="tab" type="button" role="tab" data-filter="company" aria-selected="false">公司动态<small>03</small></button>
+        <button class="tab" type="button" role="tab" data-filter="tech" aria-selected="false">技术笔记<small>03</small></button>
+        <button class="tab" type="button" role="tab" data-filter="project" aria-selected="false">项目记录<small>02</small></button>
+      </div>
+
+      <div class="article">
+        <div class="news-feed" id="newsFeed" data-reveal-group>
+
+          <a class="news-feature" href="/news/co2-commissioning.html" data-tags="project tech" data-reveal>
+            <span class="news-feature__tag">调试记录 · 置顶</span>
+            <h2 class="news-feature__title">CO₂ 跨临界机组在冷链园区的 72 小时调试记录</h2>
+            <p class="news-feature__text">从气密试验、抽真空到高压控制整定，记录一次 R744 系统从“能跑”到“稳定”的全过程。包含 12 个容易被忽略的细节，以及三处我们返工的地方。</p>
+            <div class="news-feature__meta">
+              <span>2026-09-18 · 技术组 / 王工</span>
+              <span>8 分钟阅读 →</span>
+            </div>
+          </a>
+
+          <div class="news-list">
+            <a class="news-item" href="/news/co2-commissioning.html" data-tags="company">
+              <span class="news-item__date"><b>08.06</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">常州基地二期投产：新增 12,000 ㎡ 换热器产线</span>
+                <span class="news-item__excerpt">新产线配备自动胀管与氦检工位，换热器月产能提升至 180 台，交付周期缩短约 10 天。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="/news/co2-commissioning.html" data-tags="tech">
+              <span class="news-item__date"><b>07.22</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">R513A 与 R744：两条冷媒路线的成本与能效对比</span>
+                <span class="news-item__excerpt">按 10 年周期计算初投资、维护费用与能耗，给出三条选型分界线：规模、温区与运行小时数。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="/news/co2-commissioning.html" data-tags="tech">
+              <span class="news-item__date"><b>06.11</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">冬季冷凝压力过低？一份蒸发式冷凝器的运行调整清单</span>
+                <span class="news-item__excerpt">冷凝压力低于 12 bar 时，膨胀阀供液不足、回油困难。七条调整动作，按优先级排列。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="/news/co2-commissioning.html" data-tags="company">
+              <span class="news-item__date"><b>05.09</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">冷杉通过 ASME U 钢印换证审核</span>
+                <span class="news-item__excerpt">审核覆盖设计文件、焊接工艺评定与无损检测记录，以零不符合项通过，证书有效期至 2029 年。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="/news/co2-commissioning.html" data-tags="project">
+              <span class="news-item__date"><b>04.02</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">项目记录</span>
+                <span class="news-item__title">云枢数据张北节点：4.2 MW 间接蒸发冷却系统投运</span>
+                <span class="news-item__excerpt">连续 30 天运行 PUE 1.23，干空气能利用小时数达到 5,100 h，过渡季压缩机完全停机。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="/news/co2-commissioning.html" data-tags="tech">
+              <span class="news-item__date"><b>02.18</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">技术笔记</span>
+                <span class="news-item__title">冷库冲霜：为什么定时冲霜总是冲不干净</span>
+                <span class="news-item__excerpt">按时间冲霜忽略了结霜速率的变化。用翅片温差触发，配合排水伴热，除霜水温度可稳定在 8℃ 以上。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+
+            <a class="news-item" href="/news/co2-commissioning.html" data-tags="company">
+              <span class="news-item__date"><b>01.12</b><span>2026</span></span>
+              <span>
+                <span class="news-item__cat">公司动态</span>
+                <span class="news-item__title">2025 年交付 268 个项目，改造类占比升至 34%</span>
+                <span class="news-item__excerpt">既有系统改造需求增长明显，主要集中在机头变频改造与群控升级两类。</span>
+              </span>
+              <span class="news-item__go" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="filter-empty">
+            <b>该栏目暂无文章</b>
+            换个栏目看看，或直接联系工程师索取技术资料。
+          </div>
+        </div>
+
+        <aside class="article__side" aria-label="侧栏">
+          <div class="side-block">
+            <h2>栏目</h2>
+            <div class="side-links">
+              <a href="/news/index.html"><span>公司动态</span><b>03</b></a>
+              <a href="/news/index.html"><span>技术笔记</span><b>03</b></a>
+              <a href="/news/index.html"><span>项目记录</span><b>02</b></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>被读得最多的</h2>
+            <div class="side-links">
+              <a href="/news/co2-commissioning.html"><b>01</b><span>CO₂ 跨临界机组 72 小时调试记录</span></a>
+              <a href="/news/co2-commissioning.html"><b>02</b><span>R513A 与 R744 的成本与能效对比</span></a>
+              <a href="/news/co2-commissioning.html"><b>03</b><span>冬季冷凝压力过低的调整清单</span></a>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <h2>技术月报</h2>
+            <p style="font-size:13px;line-height:1.8;color:var(--text-muted);margin-bottom:14px">每月一封，只写调试记录与选型判断，不发促销。</p>
+            <form class="form" data-form novalidate>
+              <div class="field">
+                <label class="field__label" for="nl-email">邮箱</label>
+                <input class="input" id="nl-email" name="email" type="email" required placeholder="name@company.com">
+                <span class="field__err" role="alert"></span>
+              </div>
+              <button class="btn btn--solid btn--block btn--sm" type="submit">订阅月报</button>
+            </form>
+            <div class="form__success" role="status">
+              <b>订阅成功（演示）</b>
+              <span>接入后端后即可真实发送。</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <nav class="pager" aria-label="分页">
+        <span aria-current="page">1</span>
+        <a href="/news/index.html">2</a>
+        <a href="/news/index.html">3</a>
+        <a href="/news/index.html" aria-label="下一页">下一页 →</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta__inner">
+      <div>
+        <p class="eyebrow">Ask a question</p>
+        <h2 class="cta__title">有具体的工况问题？<br>直接问工程师。</h2>
+        <p class="cta__sub">选型、冷媒、控制逻辑、老系统改造——技术问题不需要先走销售流程。</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--on-dark" href="/contact/index.html#inquiry">提问 / 询价
+          <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+        </a>
+        <a class="btn btn--ghost-dark" href="tel:4008261180">400-826-1180</a>
+      </div>
+    </div>
+  </section>
+
+</main>
