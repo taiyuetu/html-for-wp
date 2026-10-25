@@ -766,6 +766,7 @@ body.is-locked .head {
 .menu.is-open .menu__list li:nth-child(6) a { transition-delay: 310ms; }
 .menu.is-open .menu__list li:nth-child(7) a { transition-delay: 360ms; }
 .menu.is-open .menu__list li:nth-child(8) a { transition-delay: 410ms; }
+.menu.is-open .menu__list li:nth-child(9) a { transition-delay: 460ms; }
 
 .menu__foot {
   margin-top: var(--s5);

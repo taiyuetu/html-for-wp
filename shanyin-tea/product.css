@@ -1,0 +1,323 @@
+/* ============================================================================
+   SHANYIN 山隐 — single product page
+   ----------------------------------------------------------------------------
+   Loads after style.css and archive.css (which carries the lot plates and
+   status stamps shared with the archive). This file only describes what the
+   product page adds on top:
+
+   01  phero       — breadcrumb, framed plate, name / price / spec ledger
+   02  plot        — dark narrative band with the lot's own figures
+   03  pbrew       — per-lot brewing ritual (reuses .ritual__head + .steps)
+   04  ppapers     — assurance, reusing the homepage cert grid
+   05  pnext       — three continuing lots as compact rows
+   06  responsive  — 1100 / 860 / 640
+   ========================================================================== */
+
+
+/* ========================================================== 01 PHERO === */
+.phero {
+  padding-top: calc(var(--head-h) + clamp(28px, 5vw, 56px));
+  padding-bottom: clamp(64px, 9vw, 120px);
+}
+
+.pcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: clamp(28px, 4vw, 48px);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.pcrumb a { color: var(--color-accent); }
+.pcrumb a:hover,
+.pcrumb a:focus-visible { color: var(--ink); }
+.pcrumb [data-crumb] { color: var(--color-muted); }
+
+.phero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: var(--gap) clamp(32px, 5vw, 88px);
+  align-items: start;
+}
+
+.phero__fig { position: relative; }
+
+.phero__frame { position: relative; }
+.phero__frame .ph { box-shadow: var(--shadow-2); }
+.phero__plate { --ar: 4 / 5; }
+
+.phero__body { padding-top: clamp(0px, 3vw, 40px); }
+
+.phero__kicker {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: clamp(18px, 2.5vw, 30px);
+}
+.phero__kicker-lot {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.phero__name {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+
+.phero__han {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: var(--color-muted);
+  margin-bottom: clamp(20px, 3vw, 34px);
+}
+
+.phero__price {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: clamp(16px, 2vw, 24px);
+}
+.phero__per {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.phero__lead {
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  color: var(--color-muted);
+  max-width: 30rem;
+  text-wrap: pretty;
+  margin-bottom: clamp(24px, 3vw, 36px);
+}
+
+.phero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3) var(--s4);
+  margin-bottom: clamp(32px, 4.5vw, 56px);
+}
+
+/* Spec ledger under the actions — same rhythm as the tea cards */
+.pspec { max-width: 30rem; }
+.pspec > div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding-block: 11px;
+  border-top: 1px solid var(--color-line);
+  font-size: var(--fs-sm);
+}
+.pspec > div:last-child { border-bottom: 1px solid var(--color-line); }
+.pspec dt {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  padding-top: 2px;
+}
+.pspec dd { text-align: right; }
+
+
+/* =========================================================== 02 PLOT === */
+.plot .grid { align-items: start; }
+
+.plot__body { grid-column: 1 / span 6; }
+.plot__body .h2 { margin-bottom: clamp(24px, 3vw, 40px); }
+
+/* The lot's own figures run as a right-hand mini ledger */
+.plot__figures {
+  grid-column: 8 / span 5;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: clamp(0px, 8vw, 120px);
+  padding-top: 0;
+  border-top: 0;
+}
+.plot__figures > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s4);
+  padding-block: 18px;
+  border-top: 1px solid var(--color-line);
+}
+.plot__figures dt { margin-bottom: 0; }
+.plot__figures dd {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.8vw, 1.625rem);
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* ========================================================== 03 PBREW === */
+.pbrew__steps {
+  max-width: 44rem;
+  margin-top: clamp(40px, 6vw, 72px);
+}
+
+
+/* ======================================================== 04 PPAPERS === */
+.ppapers .grid { align-items: start; }
+
+.ppapers__intro { grid-column: 1 / span 5; }
+.ppapers__intro .h2 { margin-bottom: clamp(20px, 2.6vw, 32px); }
+.ppapers__intro .quality__note { margin-top: 0; }
+
+.ppapers__list { grid-column: 7 / span 6; margin-top: 0; }
+
+
+/* ========================================================== 05 PNEXT === */
+.lrows { border-top: 1px solid var(--color-line); }
+
+.lrow { border-bottom: 1px solid var(--color-line-soft); }
+
+.lrow__link {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1.6fr) auto 28px;
+  column-gap: clamp(16px, 2vw, 28px);
+  align-items: center;
+  padding-block: clamp(14px, 1.8vw, 20px);
+  transition: background-color var(--dur-base) ease;
+}
+.lrow__link:hover { background: rgba(111, 143, 114, 0.07); }
+
+.lrow__thumb {
+  display: block;
+  width: 100%;
+  box-shadow: var(--shadow-1);
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+.lrow__link:hover .lrow__thumb,
+.lrow__link:focus-visible .lrow__thumb { transform: scale(1.05); }
+
+.lrow__id {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.lrow__lot {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+  font-variant-numeric: tabular-nums;
+}
+.lrow__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  transition: letter-spacing var(--dur-base) var(--ease-out);
+}
+.lrow__link:hover .lrow__name,
+.lrow__link:focus-visible .lrow__name { letter-spacing: 0.005em; }
+.lrow__han {
+  font-size: var(--fs-sm);
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+}
+
+.lrow__buy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+}
+.lrow__price {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.lrow__per {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.lrow__arrow {
+  justify-self: end;
+  font-size: 1rem;
+  color: var(--color-accent);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+.lrow__link:hover .lrow__arrow,
+.lrow__link:focus-visible .lrow__arrow { transform: translateX(6px); }
+
+/* A sold lot in the continuation reads as history, as in the archive */
+.lrow[data-status="sold"] .lrow__name,
+.lrow[data-status="sold"] .lrow__price { color: rgba(26, 26, 26, 0.45); }
+.lrow[data-status="sold"] .lrow__thumb { filter: grayscale(0.35) opacity(0.85); }
+
+.pnext__more {
+  margin-top: clamp(28px, 4vw, 44px);
+  text-align: right;
+}
+
+
+/* ====================================================== 06 RESPONSIVE == */
+
+@media (max-width: 1100px) {
+  .phero__grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  }
+}
+
+@media (max-width: 860px) {
+  /* Hero stacks: plate above, details below */
+  .phero__grid { grid-template-columns: 1fr; }
+  .phero__fig { max-width: 30rem; }
+  .phero__body { padding-top: var(--s5); }
+
+  /* Narrative and papers stack like the origin/quality sections */
+  .plot__body { grid-column: 1 / -1; }
+  .plot__figures {
+    grid-column: 1 / -1;
+    margin-top: var(--s5);
+  }
+
+  .ppapers__intro { grid-column: 1 / -1; }
+  .ppapers__list { grid-column: 1 / -1; margin-top: var(--s5); }
+
+  /* The brew masthead keeps its two-column grid on the homepage; on this
+     page it stacks, as the other split heads do */
+  .ritual__head {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: var(--s4);
+  }
+  .ritual__head .prose { grid-column: 1; padding-bottom: 0; }
+}
+
+@media (max-width: 640px) {
+  .phero__plate { --ar: 1 / 1; }
+  .phero__actions { width: 100%; }
+  .phero__actions .btn { flex: 1 1 auto; }
+
+  .lrow__link { grid-template-columns: 56px minmax(0, 1fr) auto; }
+  .lrow__arrow { display: none; }
+}

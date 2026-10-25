@@ -1,0 +1,563 @@
+/* ============================================================================
+   SHANYIN 山隐 — shared inner-page components
+   ----------------------------------------------------------------------------
+   Loads after style.css and archive.css on the about / contact / news /
+   404 / search pages. archive.css carries the dark masthead (.phead), the
+   lot plates (.ph--t*) and the status stamps (.stat); this file adds:
+
+   01  phead--slim  — shorter masthead modifier
+   02  creed        — manifesto rows (about)
+   03  people       — portrait cards (about)
+   04  contact      — split form + details
+   05  news         — featured dispatch, index rows, single article
+   06  search       — form, result rows, chips
+   07  lost         — 404
+   08  responsive   — 1100 / 860 / 640
+   ========================================================================== */
+
+
+/* ===================================================== 01 PHEAD--SLIM == */
+.phead--slim { min-height: clamp(460px, 66svh, 660px); }
+
+/* --- Portrait plates (about) ----------------------------------------------
+   Warmer, closer hues than the landscape plates — these read as people. */
+.ph--p1 {
+  --ph-img:
+    radial-gradient(44% 36% at 62% 26%, rgba(198, 168, 92, 0.32), transparent 70%),
+    radial-gradient(60% 50% at 16% 92%, rgba(10, 29, 21, 0.6), transparent 72%),
+    linear-gradient(158deg, #22362a 0%, #4a4a36 52%, #8b7f5e 100%);
+}
+.ph--p2 {
+  --ph-img:
+    radial-gradient(46% 38% at 34% 24%, rgba(245, 241, 232, 0.20), transparent 70%),
+    radial-gradient(56% 44% at 88% 88%, rgba(198, 168, 92, 0.22), transparent 70%),
+    linear-gradient(162deg, #1e3128 0%, #3f5648 52%, #7c8a6e 100%);
+}
+.ph--p3 {
+  --ph-img:
+    radial-gradient(48% 40% at 56% 30%, rgba(245, 241, 232, 0.26), transparent 70%),
+    linear-gradient(164deg, #243429 0%, #4f6152 54%, #93a189 100%);
+}
+
+/* --- Journal plates (news) ------------------------------------------------- */
+.ph--n1 {
+  --ph-img:
+    radial-gradient(50% 40% at 70% 22%, rgba(198, 168, 92, 0.24), transparent 68%),
+    radial-gradient(60% 48% at 14% 90%, rgba(8, 19, 15, 0.62), transparent 70%),
+    linear-gradient(166deg, #1a3327 0%, #33503e 52%, #5d7a5c 100%);
+}
+.ph--n2 {
+  --ph-img:
+    radial-gradient(46% 38% at 40% 26%, rgba(245, 241, 232, 0.30), transparent 68%),
+    radial-gradient(52% 42% at 86% 86%, rgba(111, 143, 114, 0.35), transparent 70%),
+    linear-gradient(160deg, #27402f 0%, #4c6a4b 54%, #a4b58c 100%);
+}
+.ph--n3 {
+  --ph-img:
+    radial-gradient(46% 38% at 30% 26%, rgba(245, 241, 232, 0.14), transparent 70%),
+    repeating-linear-gradient(92deg, rgba(245, 241, 232, 0.05) 0 1px, transparent 1px 26px),
+    linear-gradient(164deg, #0d2018 0%, #1c3a2c 54%, #47604a 100%);
+}
+
+
+/* ========================================================== 02 CREED == */
+/* The "what we will not do" list — a manifesto set like wall text */
+.creed { max-width: 46rem; }
+.creed li {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  column-gap: clamp(16px, 2.4vw, 32px);
+  align-items: baseline;
+  padding-block: clamp(16px, 2.4vw, 26px);
+  border-top: 1px solid var(--color-line);
+}
+.creed li:last-child { border-bottom: 1px solid var(--color-line); }
+.creed__no {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--color-accent);
+}
+.creed h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 400;
+  line-height: 1.16;
+  margin-bottom: 6px;
+}
+.creed p {
+  font-size: 0.9375rem;
+  line-height: 1.66;
+  color: var(--color-muted);
+  max-width: 36rem;
+  text-wrap: pretty;
+}
+
+
+/* ========================================================= 03 PEOPLE == */
+.people {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 52px);
+  align-items: start;
+  margin-top: clamp(24px, 3vw, 40px);
+}
+
+.person__frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--forest);
+  box-shadow: var(--shadow-2);
+}
+.person__frame .ph { transition: transform var(--dur-slow) var(--ease-out); }
+.person:hover .person__frame .ph { transform: scale(1.035); }
+
+.person__role {
+  display: block;
+  margin-top: var(--s3);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+.person__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 6px;
+}
+.person__line {
+  font-size: var(--fs-sm);
+  line-height: 1.65;
+  color: var(--color-muted);
+  margin-top: 10px;
+  max-width: 22rem;
+  text-wrap: pretty;
+}
+
+
+/* ========================================================= 04 CONTACT = */
+.cwrap {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  gap: var(--gap) clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+
+.cinfo > div + div { margin-top: var(--s5); }
+.cinfo h3 {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--s3);
+}
+.cinfo p {
+  font-size: var(--fs-sm);
+  line-height: 1.8;
+  color: var(--color-muted);
+}
+.cinfo a { color: var(--color-text); transition: color var(--dur-fast) ease; }
+.cinfo a:hover,
+.cinfo a:focus-visible { color: var(--color-accent); }
+
+.cmap { margin-top: clamp(48px, 7vw, 88px); }
+.cmap .ph { box-shadow: var(--shadow-2); }
+
+
+/* =========================================================== 05 NEWS == */
+/* --- featured dispatch ---------------------------------------------------- */
+.nfeat {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: var(--gap) clamp(32px, 5vw, 88px);
+  align-items: center;
+}
+.nfeat__frame {
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+}
+.nfeat__frame .ph { transition: transform var(--dur-slow) var(--ease-out); }
+.nfeat:hover .nfeat__frame .ph { transform: scale(1.02); }
+
+.nmeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 18px;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+.nmeta .nmeta__cat { color: var(--color-accent); }
+.nmeta i {
+  flex: none;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  opacity: 0.6;
+}
+
+.nfeat__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
+  font-weight: 300;
+  line-height: 1.02;
+  letter-spacing: var(--tracking-tight);
+  margin-top: clamp(14px, 2vw, 22px);
+}
+.nfeat__dek {
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-top: clamp(14px, 2vw, 22px);
+  max-width: 30rem;
+  text-wrap: pretty;
+}
+.nfeat .link-sweep { margin-top: clamp(20px, 2.6vw, 30px); }
+
+/* --- index rows ------------------------------------------------------------ */
+.nrows { border-top: 1px solid var(--color-line); margin-top: clamp(48px, 7vw, 88px); }
+.nrow { border-bottom: 1px solid var(--color-line-soft); }
+.nrow__link {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) auto 28px;
+  column-gap: clamp(16px, 2vw, 32px);
+  align-items: center;
+  padding-block: clamp(16px, 2.2vw, 24px);
+  transition: background-color var(--dur-base) ease;
+}
+.nrow__link:hover { background: rgba(111, 143, 114, 0.07); }
+
+.nrow__date {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+.nrow__text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.nrow__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 1.9vw, 1.75rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  transition: letter-spacing var(--dur-base) var(--ease-out);
+}
+.nrow__link:hover .nrow__title,
+.nrow__link:focus-visible .nrow__title { letter-spacing: 0.005em; }
+.nrow__dek {
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+  color: var(--color-muted);
+  max-width: 40rem;
+  text-wrap: pretty;
+}
+.nrow__cat {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+  border: 1px solid currentColor;
+  padding: 4px 10px 5px;
+  white-space: nowrap;
+}
+.nrow__arrow {
+  justify-self: end;
+  font-size: 1rem;
+  color: var(--color-accent);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+.nrow__link:hover .nrow__arrow,
+.nrow__link:focus-visible .nrow__arrow { transform: translateX(6px); }
+
+.nletters {
+  margin-top: clamp(40px, 6vw, 72px);
+  padding-top: var(--s4);
+  border-top: 1px solid var(--color-line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s3) var(--s5);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.125rem, 1.8vw, 1.5rem);
+  color: var(--color-muted);
+}
+
+/* --- single article --------------------------------------------------------- */
+.npost__head { max-width: 46rem; }
+.npost__head .nmeta { margin-bottom: clamp(18px, 2.4vw, 28px); }
+.npost__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.4vw, 3.75rem);
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+}
+.npost__dek {
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-top: clamp(16px, 2.4vw, 26px);
+  max-width: 34rem;
+  text-wrap: pretty;
+}
+
+.npost__fig { margin-block: clamp(40px, 6vw, 72px); }
+.npost__fig .ph { box-shadow: var(--shadow-2); }
+
+.npost__body { max-width: 36rem; }
+.npost__body p {
+  font-size: var(--fs-body);
+  line-height: 1.78;
+  color: var(--color-text);
+  text-wrap: pretty;
+}
+.npost__body p + p { margin-top: 1.2em; }
+
+.npost__quote {
+  max-width: 36rem;
+  margin-block: clamp(32px, 4.5vw, 52px);
+  padding-left: clamp(20px, 2.6vw, 32px);
+  border-left: 2px solid var(--gold-ink);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.375rem, 2.2vw, 1.875rem);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+
+.npost__nav {
+  margin-top: clamp(48px, 7vw, 88px);
+  padding-top: var(--s5);
+  border-top: 1px solid var(--color-line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+.npost__nav a { display: block; }
+.npost__nav .npost__dir {
+  display: block;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+.npost__nav .npost__next-t {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.15;
+  transition: color var(--dur-fast) ease;
+}
+.npost__nav a:hover .npost__next-t,
+.npost__nav a:focus-visible .npost__next-t { color: var(--color-accent); }
+.npost__nav a:last-child { text-align: right; }
+.npost__back { margin-top: var(--s6); }
+
+/* figures live inside the article column, not the grid */
+.npost__fig { max-width: 56rem; }
+
+
+/* ========================================================== 06 SEARCH = */
+.sform {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--s3) var(--s4);
+  max-width: 40rem;
+}
+.sform .sfield { flex: 1 1 240px; }
+.sform label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+.sform input {
+  width: 100%;
+  padding: 10px 0 12px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.3);
+  border-radius: 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--ink);
+  transition: border-color var(--dur-base) ease;
+}
+.sform input::placeholder { color: rgba(26, 26, 26, 0.34); }
+.sform input:hover { border-bottom-color: rgba(26, 26, 26, 0.5); }
+.sform input:focus {
+  outline: none;
+  border-bottom-color: var(--gold-ink);
+  background: rgba(198, 168, 92, 0.06);
+}
+.sform input:focus-visible { outline: 2px solid var(--gold-ink); outline-offset: 4px; }
+
+.smeta {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+  margin-top: clamp(20px, 3vw, 32px);
+}
+
+.srows { border-top: 1px solid var(--color-line); margin-top: var(--s3); }
+.srow {
+  display: block;
+  padding-block: clamp(16px, 2.2vw, 24px);
+  border-bottom: 1px solid var(--color-line-soft);
+  transition: background-color var(--dur-base) ease;
+}
+.srow:hover { background: rgba(111, 143, 114, 0.07); }
+.srow__type {
+  display: inline-block;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+  border: 1px solid currentColor;
+  padding: 3px 8px 4px;
+  margin-bottom: 10px;
+}
+.srow__title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  transition: letter-spacing var(--dur-base) var(--ease-out);
+}
+.srow:hover .srow__title { letter-spacing: 0.005em; }
+.srow__x {
+  display: block;
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-top: 8px;
+  max-width: 44rem;
+  text-wrap: pretty;
+}
+
+.sempty {
+  padding-block: clamp(40px, 6vw, 72px);
+  border-bottom: 1px solid var(--color-line-soft);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.25rem, 2vw, 1.625rem);
+  line-height: 1.4;
+  color: var(--color-muted);
+  max-width: 30rem;
+}
+
+.schips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--s5);
+}
+.schips__label {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-right: 8px;
+}
+
+
+/* ============================================================ 07 LOST = */
+.lost { min-height: 100svh; }
+
+/* The error code as a watermark, escaping the grid like the soil pin does */
+.lost__no {
+  position: absolute;
+  right: var(--gutter);
+  bottom: clamp(120px, 18vh, 200px);
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: clamp(7rem, 20vw, 16rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: rgba(245, 241, 232, 0.07);
+  pointer-events: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.lost .sform input {
+  color: var(--rice);
+  border-bottom-color: rgba(245, 241, 232, 0.35);
+}
+.lost .sform input::placeholder { color: rgba(245, 241, 232, 0.4); }
+.lost .sform input:hover { border-bottom-color: rgba(245, 241, 232, 0.55); }
+.lost .sform input:focus {
+  border-bottom-color: var(--gold);
+  background: rgba(245, 241, 232, 0.05);
+}
+.lost .sform label { color: rgba(245, 241, 232, 0.6); }
+.lost .sform { max-width: 34rem; margin-top: clamp(28px, 4vh, 44px); }
+
+/* Paper-on-dark solid button, as in the other dark mastheads */
+.lost .btn--solid,
+.phead .btn--solid {
+  background: var(--rice);
+  color: var(--forest-deep);
+  border-color: var(--rice);
+  box-shadow: inset 0 0 0 1px rgba(15, 42, 31, 0.12);
+}
+.lost .btn--solid:hover,
+.lost .btn--solid:focus-visible,
+.phead .btn--solid:hover,
+.phead .btn--solid:focus-visible {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+
+/* ====================================================== 08 RESPONSIVE == */
+@media (max-width: 1100px) {
+  .cwrap { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); }
+  .nfeat { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
+}
+
+@media (max-width: 860px) {
+  .people { grid-template-columns: 1fr; gap: var(--s6); }
+  .person__line { max-width: 30rem; }
+
+  .cwrap { grid-template-columns: 1fr; }
+  .cinfo { margin-top: var(--s6); }
+
+  .nfeat { grid-template-columns: 1fr; align-items: start; }
+  .nfeat__frame .ph { aspect-ratio: 16 / 10; }
+  .nrow__link { grid-template-columns: 84px minmax(0, 1fr) 28px; }
+  .nrow__cat { display: none; }
+
+  .npost__nav { grid-template-columns: 1fr; gap: var(--s4); }
+  .npost__nav a:last-child { text-align: left; }
+}
+
+@media (max-width: 640px) {
+  .nrow__link { grid-template-columns: 1fr 28px; }
+  .nrow__date { grid-column: 1 / -1; margin-bottom: -6px; }
+  .nrow__arrow { display: none; }
+  .lost__no { opacity: 0.6; }
+}
