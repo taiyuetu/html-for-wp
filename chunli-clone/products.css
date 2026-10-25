@@ -1,0 +1,88 @@
+/* ============================================================
+   Products archive page — category board styles (fresh code)
+   Inner-page banner styles live in theme.css.
+   ============================================================ */
+
+/* ---------- category board ---------- */
+.page-main { padding: 50px 0; }
+
+.cate-board {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cate-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  width: 49%;
+  padding: 0 1.5% 1.5%;
+  margin-bottom: 3%;
+}
+/* soft rounded panel behind each row */
+.cate-row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background: var(--hover-wash);
+  border-radius: 30px 0 30px 0;
+  z-index: -1;
+}
+/* mirror every second row */
+.cate-row:nth-child(2n) { flex-direction: row-reverse; }
+
+.cate-shot {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  background: #fff;
+}
+.cate-shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .15s linear;
+}
+.cate-row:hover .cate-shot img { transform: scale(1.02); }
+
+.cate-blurb { flex: 1; padding: 40px 0 0 4%; }
+.cate-row:nth-child(2n) .cate-blurb { padding-left: 0; padding-right: 4%; }
+
+.cate-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink);
+  transition: color .15s linear;
+}
+.cate-row:hover .cate-name { color: var(--green); }
+.cate-desc { margin-top: 20px; color: var(--muted); }
+.cate-blurb .pill-btn { margin-top: 20px; }
+
+/* slightly smaller pill used on this page */
+.pill-btn.sm { min-width: 150px; height: 45px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1024px) {
+  .page-main { padding: 30px 0; }
+  .cate-row { width: 100%; flex-wrap: wrap; padding: 0 20px; }
+  .cate-shot { width: 100%; }
+  .cate-row .cate-blurb,
+  .cate-row:nth-child(2n) .cate-blurb { padding: 20px 0; }
+  .cate-name { font-size: 20px; }
+  .cate-desc { margin-top: 15px; }
+  .cate-blurb .pill-btn { margin-top: 20px; }
+}

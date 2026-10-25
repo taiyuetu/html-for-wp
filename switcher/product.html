@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AX-LN-101 — Rocker Switch 1-gang | AXIOM</title>
+  <meta name="description" content="AX-LN-101 Rocker Switch 1-gang — LINEA 55 system family. 10 AX · 250 V~ · flush-mounted. Technical data, mounting details, BIM objects and datasheets.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#F4F3F0">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="AX-LN-101 — Rocker Switch 1-gang | AXIOM">
+  <meta property="og:description" content="Single-pole rocker switch on the 55 mm LINEA platform. Technical data, mounting and downloads.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231B1B19'/%3E%3Crect x='9' y='9' width='14' height='14' fill='none' stroke='%23F4F3F0' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="header__inner">
+      <a class="brand" href="index.html" aria-label="AXIOM Electrical Systems — home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">AXIOM<small>Electrical Systems</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html#systems">Systems</a></li>
+          <li><a href="products.html" class="is-active" aria-current="page">Products</a></li>
+          <li><a href="index.html#finishes">Finishes</a></li>
+          <li><a href="index.html#applications">Applications</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--line btn--sm" href="contact.html">Request Specification</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- shared SVG drawing definitions -->
+    <svg class="svg-defs" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="phw-ln" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFEEEA"/><stop offset="1" stop-color="#E3E1DB"/></linearGradient>
+        <linearGradient id="phw-fz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F1F0EC"/><stop offset="1" stop-color="#E7E5E0"/></linearGradient>
+        <linearGradient id="phw-s70" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E7E2"/><stop offset="1" stop-color="#DDDAD3"/></linearGradient>
+        <linearGradient id="phw-sl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DFD6C6"/><stop offset="1" stop-color="#C8BBA4"/></linearGradient>
+        <linearGradient id="phw-at" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#262624"/><stop offset="1" stop-color="#191917"/></linearGradient>
+        <pattern id="pa-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B1B19" stroke-opacity=".05"/></pattern>
+
+        <g id="p-ticks" stroke="#B5B3AC" fill="none">
+          <path d="M18 470v14M11 477h14"/>
+          <path d="M382 470v14M375 477h14"/>
+        </g>
+
+        <!-- parametric plate drawings — colours via CSS custom properties -->
+        <g id="i-rocker1">
+          <rect x="10" y="12" width="136" height="136" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="3" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="40" y="40" width="56" height="56" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <line x1="68" y1="46" x2="68" y2="90" stroke="var(--pf-detail, #8B897F)" opacity=".35"/>
+        </g>
+        <g id="i-rocker2">
+          <rect x="10" y="12" width="136" height="136" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="3" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="20" y="46" width="44" height="44" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <rect x="72" y="46" width="44" height="44" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+        </g>
+        <g id="i-dimmer">
+          <rect x="10" y="12" width="136" height="136" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="3" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <line x1="68" y1="28" x2="68" y2="108" stroke="var(--pf-module-stroke, #A5A39B)" stroke-width="3"/>
+          <rect x="50" y="56" width="36" height="14" rx="2" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+        </g>
+        <g id="i-socket">
+          <rect x="10" y="12" width="136" height="136" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="3" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <circle cx="68" cy="68" r="32" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="56" cy="74" r="4.5" fill="var(--pf-detail, #8B897F)"/>
+          <circle cx="80" cy="74" r="4.5" fill="var(--pf-detail, #8B897F)"/>
+          <path d="M44 54h10M82 54h10" stroke="var(--pf-module-stroke, #A5A39B)" stroke-width="3"/>
+        </g>
+        <g id="i-socket-usb">
+          <rect x="10" y="12" width="136" height="136" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="3" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <circle cx="68" cy="56" r="24" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="59" cy="61" r="3.5" fill="var(--pf-detail, #8B897F)"/>
+          <circle cx="77" cy="61" r="3.5" fill="var(--pf-detail, #8B897F)"/>
+          <path d="M50 42h8M78 42h8" stroke="var(--pf-module-stroke, #A5A39B)" stroke-width="2.5"/>
+          <rect x="46" y="92" width="44" height="14" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <rect x="54" y="96" width="9" height="6" fill="var(--pf-detail, #8B897F)"/>
+          <rect x="73" y="96" width="9" height="6" fill="var(--pf-detail, #8B897F)"/>
+        </g>
+        <g id="i-data">
+          <rect x="10" y="12" width="136" height="136" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="3" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="52" y="42" width="32" height="34" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <rect x="60" y="48" width="16" height="14" fill="var(--pf-detail, #8B897F)" opacity=".55"/>
+          <line x1="52" y1="90" x2="84" y2="90" stroke="var(--pf-module-stroke, #A5A39B)"/>
+        </g>
+        <g id="i-blank">
+          <rect x="10" y="12" width="136" height="136" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="3" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+        </g>
+
+        <g id="i-rocker1-fz">
+          <rect x="6" y="8" width="132" height="132" fill="#1B1B19" opacity=".1"/>
+          <rect x="12" y="14" width="120" height="120" fill="var(--pf-plate, #FBFAF7)"/>
+          <line x1="12.5" y1="15" x2="131.5" y2="15" stroke="#FFFFFF" opacity=".7"/>
+          <rect x="42" y="44" width="60" height="60" fill="var(--pf-module, #EDEBE6)"/>
+          <line x1="72" y1="50" x2="72" y2="98" stroke="var(--pf-detail, #8B897F)" opacity=".35"/>
+        </g>
+        <g id="i-socket-fz">
+          <rect x="6" y="8" width="132" height="132" fill="#1B1B19" opacity=".1"/>
+          <rect x="12" y="14" width="120" height="120" fill="var(--pf-plate, #FBFAF7)"/>
+          <line x1="12.5" y1="15" x2="131.5" y2="15" stroke="#FFFFFF" opacity=".7"/>
+          <circle cx="72" cy="74" r="28" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="61" cy="79" r="4" fill="var(--pf-detail, #8B897F)"/>
+          <circle cx="83" cy="79" r="4" fill="var(--pf-detail, #8B897F)"/>
+          <path d="M50 62h9M85 62h9" stroke="var(--pf-module-stroke, #A5A39B)" stroke-width="2.5"/>
+        </g>
+        <g id="i-data-fz">
+          <rect x="6" y="8" width="132" height="132" fill="#1B1B19" opacity=".1"/>
+          <rect x="12" y="14" width="120" height="120" fill="var(--pf-plate, #FBFAF7)"/>
+          <line x1="12.5" y1="15" x2="131.5" y2="15" stroke="#FFFFFF" opacity=".7"/>
+          <rect x="56" y="48" width="32" height="34" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <rect x="64" y="54" width="16" height="14" fill="var(--pf-detail, #8B897F)" opacity=".55"/>
+          <line x1="56" y1="94" x2="88" y2="94" stroke="var(--pf-module-stroke, #A5A39B)"/>
+        </g>
+
+        <g id="i-rocker1-s70">
+          <rect x="10" y="12" width="136" height="136" rx="8" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="8" fill="#DDDBD5" stroke="#A9A8A2"/>
+          <rect x="12" y="12" width="112" height="112" rx="4" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="50" y="50" width="36" height="36" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <line x1="68" y1="55" x2="68" y2="81" stroke="var(--pf-detail, #8B897F)" opacity=".35"/>
+        </g>
+        <g id="i-socket-s70">
+          <rect x="10" y="12" width="136" height="136" rx="8" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="8" fill="#DDDBD5" stroke="#A9A8A2"/>
+          <rect x="12" y="12" width="112" height="112" rx="4" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <circle cx="68" cy="68" r="26" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="58" cy="73" r="4" fill="var(--pf-detail, #8B897F)"/>
+          <circle cx="78" cy="73" r="4" fill="var(--pf-detail, #8B897F)"/>
+          <path d="M52 52h9M75 52h9" stroke="var(--pf-module-stroke, #A5A39B)" stroke-width="2.5"/>
+        </g>
+        <g id="i-socket-usb-s70">
+          <rect x="10" y="12" width="136" height="136" rx="8" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="136" height="136" rx="8" fill="#DDDBD5" stroke="#A9A8A2"/>
+          <rect x="12" y="12" width="112" height="112" rx="4" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <circle cx="68" cy="54" r="20" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="60" cy="58" r="3" fill="var(--pf-detail, #8B897F)"/>
+          <circle cx="76" cy="58" r="3" fill="var(--pf-detail, #8B897F)"/>
+          <rect x="50" y="86" width="36" height="12" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <rect x="57" y="89" width="8" height="6" fill="var(--pf-detail, #8B897F)"/>
+          <rect x="71" y="89" width="8" height="6" fill="var(--pf-detail, #8B897F)"/>
+        </g>
+
+        <g id="i-touch4">
+          <rect x="8" y="12" width="140" height="180" fill="#000" opacity=".3"/>
+          <rect x="0" y="0" width="140" height="180" rx="6" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="12" y="12" width="116" height="136" rx="3" fill="var(--pf-module, #EDEBE6)"/>
+          <circle cx="47" cy="58" r="14" fill="none" stroke="var(--pf-glow, #C9B995)" opacity=".35"/>
+          <circle cx="47" cy="58" r="8" fill="var(--pf-glow, #C9B995)"/>
+          <circle cx="93" cy="58" r="8" fill="var(--pf-point, #454540)"/>
+          <circle cx="47" cy="102" r="8" fill="var(--pf-point, #454540)"/>
+          <circle cx="93" cy="102" r="8" fill="var(--pf-point, #454540)"/>
+          <rect x="58" y="158" width="24" height="3" rx="1.5" fill="var(--pf-detail, #8B897F)"/>
+        </g>
+        <g id="i-touch8">
+          <rect x="8" y="12" width="140" height="180" fill="#000" opacity=".3"/>
+          <rect x="0" y="0" width="140" height="180" rx="6" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="12" y="12" width="116" height="136" rx="3" fill="var(--pf-module, #EDEBE6)"/>
+          <circle cx="47" cy="38" r="13" fill="none" stroke="var(--pf-glow, #C9B995)" opacity=".35"/>
+          <circle cx="47" cy="38" r="7" fill="var(--pf-glow, #C9B995)"/>
+          <circle cx="93" cy="38" r="7" fill="var(--pf-point, #454540)"/>
+          <circle cx="47" cy="72" r="7" fill="var(--pf-point, #454540)"/>
+          <circle cx="93" cy="72" r="7" fill="var(--pf-point, #454540)"/>
+          <circle cx="47" cy="106" r="7" fill="var(--pf-point, #454540)"/>
+          <circle cx="93" cy="106" r="13" fill="none" stroke="var(--pf-glow, #C9B995)" opacity=".35"/>
+          <circle cx="93" cy="106" r="7" fill="var(--pf-glow, #C9B995)"/>
+          <circle cx="47" cy="140" r="7" fill="var(--pf-point, #454540)"/>
+          <circle cx="93" cy="140" r="7" fill="var(--pf-point, #454540)"/>
+          <rect x="58" y="158" width="24" height="3" rx="1.5" fill="var(--pf-detail, #8B897F)"/>
+        </g>
+        <g id="i-blind">
+          <rect x="8" y="12" width="140" height="180" fill="#000" opacity=".3"/>
+          <rect x="0" y="0" width="140" height="180" rx="6" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="12" y="12" width="116" height="136" rx="3" fill="var(--pf-module, #EDEBE6)"/>
+          <circle cx="70" cy="58" r="17" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-point, #454540)"/>
+          <path d="M70 50l9 13h-18z" fill="var(--pf-glow, #C9B995)"/>
+          <circle cx="70" cy="110" r="17" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-point, #454540)"/>
+          <path d="M70 118l-9-13h18z" fill="var(--pf-detail, #8B897F)"/>
+          <rect x="58" y="158" width="24" height="3" rx="1.5" fill="var(--pf-detail, #8B897F)"/>
+        </g>
+        <g id="i-scene">
+          <rect x="8" y="12" width="140" height="180" fill="#000" opacity=".3"/>
+          <rect x="0" y="0" width="140" height="180" rx="6" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-plate-stroke, #B5B3AC)"/>
+          <rect x="12" y="12" width="116" height="136" rx="3" fill="var(--pf-module, #EDEBE6)"/>
+          <rect x="28" y="30" width="84" height="12" rx="2" fill="var(--pf-point, #454540)" opacity=".55"/>
+          <rect x="28" y="30" width="52" height="12" rx="2" fill="var(--pf-glow, #C9B995)"/>
+          <rect x="28" y="62" width="84" height="12" rx="2" fill="var(--pf-point, #454540)" opacity=".55"/>
+          <rect x="28" y="62" width="30" height="12" rx="2" fill="var(--pf-detail, #8B897F)"/>
+          <rect x="28" y="94" width="84" height="12" rx="2" fill="var(--pf-point, #454540)" opacity=".55"/>
+          <rect x="28" y="94" width="66" height="12" rx="2" fill="var(--pf-detail, #8B897F)"/>
+          <rect x="28" y="126" width="84" height="12" rx="2" fill="var(--pf-point, #454540)" opacity=".55"/>
+          <rect x="58" y="158" width="24" height="3" rx="1.5" fill="var(--pf-detail, #8B897F)"/>
+        </g>
+
+        <g id="i-frame3">
+          <rect x="10" y="10" width="164" height="104" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="164" height="104" fill="none" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="3"/>
+          <line x1="55" y1="0" x2="55" y2="104" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="1.5"/>
+          <line x1="110" y1="0" x2="110" y2="104" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="1.5"/>
+          <rect x="14" y="34" width="28" height="36" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <line x1="82.5" y1="24" x2="82.5" y2="80" stroke="var(--pf-module-stroke, #A5A39B)" stroke-width="2"/>
+          <rect x="72" y="48" width="21" height="8" rx="2" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="137" cy="52" r="16" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="131" cy="55" r="2.5" fill="var(--pf-detail, #8B897F)"/>
+          <circle cx="143" cy="55" r="2.5" fill="var(--pf-detail, #8B897F)"/>
+        </g>
+        <g id="i-frame5">
+          <rect x="10" y="10" width="260" height="104" fill="#1B1B19" opacity=".07"/>
+          <rect x="0" y="0" width="260" height="104" fill="none" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="3"/>
+          <line x1="52" y1="0" x2="52" y2="104" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="1.5"/>
+          <line x1="104" y1="0" x2="104" y2="104" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="1.5"/>
+          <line x1="156" y1="0" x2="156" y2="104" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="1.5"/>
+          <line x1="208" y1="0" x2="208" y2="104" stroke="var(--pf-plate-stroke, #B5B3AC)" stroke-width="1.5"/>
+          <rect x="14" y="37" width="24" height="30" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <rect x="66" y="37" width="24" height="30" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <line x1="130" y1="26" x2="130" y2="78" stroke="var(--pf-module-stroke, #A5A39B)" stroke-width="2"/>
+          <rect x="119" y="48" width="22" height="8" rx="2" fill="var(--pf-plate, #FBFAF7)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="182" cy="52" r="14" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <circle cx="177" cy="55" r="2" fill="var(--pf-detail, #8B897F)"/>
+          <circle cx="187" cy="55" r="2" fill="var(--pf-detail, #8B897F)"/>
+          <rect x="222" y="42" width="24" height="20" rx="2" fill="var(--pf-module, #EDEBE6)" stroke="var(--pf-module-stroke, #A5A39B)"/>
+          <rect x="228" y="47" width="12" height="10" fill="var(--pf-detail, #8B897F)" opacity=".55"/>
+        </g>
+      </defs>
+    </svg>
+
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="page-banner" aria-label="Product">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="products.html">Products</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" id="pf-crumb">AX-LN-101</li>
+          </ol>
+        </nav>
+        <div class="page-banner__row">
+          <div>
+            <p class="eyebrow">Single Reference</p>
+            <h1 id="pf-title">Rocker Switch 1-gang</h1>
+          </div>
+          <p class="page-banner__meta" id="pf-banner-meta">LINEA 55 · SWITCH · AX-LN-101<br>EN 60669-1 · ENEC+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT HERO ============ -->
+    <section class="section" id="product-detail" aria-label="Product overview">
+      <div class="container">
+        <div class="product-hero">
+          <figure class="product-hero__figure">
+            <div class="product-hero__stage pf-al" id="pf-stage">
+              <svg viewBox="0 0 800 640" aria-hidden="true" focusable="false">
+                <rect id="pf-wall" width="800" height="640" fill="url(#phw-ln)"/>
+                <rect width="800" height="640" fill="url(#pa-grid)"/>
+                <use id="pf-use" href="#i-rocker1" transform="translate(235 150) scale(2.43)"/>
+                <text id="pf-svg-label" class="svg-mono" x="24" y="42">AX-LN · 1:1.2</text>
+                <text class="svg-mono sm-hide" x="24" y="60" opacity=".55">SCALE 1:1 · MOUNTING DETAIL</text>
+                <g stroke="#B5B3AC" fill="none">
+                  <path d="M28 24v18M19 33h18"/>
+                  <path d="M772 24v18M763 33h18"/>
+                  <path d="M28 598v18M19 607h18"/>
+                  <path d="M772 598v18M763 607h18"/>
+                </g>
+              </svg>
+            </div>
+            <figcaption class="figure-meta">
+              <span id="pf-meta-code">AX-LN-101</span>
+              <span>Plate geometry — 1:1</span>
+              <span id="pf-meta-finish">AL-01 · BRUSHED ALUMINUM</span>
+            </figcaption>
+          </figure>
+
+          <div class="product-hero__aside">
+            <a class="eyebrow eyebrow-link" id="pf-family-link" href="products.html#linea">LINEA 55</a>
+            <p class="lead" id="pf-intro">The base reference of the LINEA 55 platform: a single-pole rocker switch with snap-action silver-alloy contacts on the standard 55 mm carrier.</p>
+            <p class="product-hero__meta" id="pf-meta">10 AX · 250 V~ · Flush-mounted</p>
+            <div class="tag-row" id="pf-tags"><span class="tag">LINEA 55</span><span class="tag">Switch</span></div>
+
+            <dl class="keyfacts" id="pf-keyfacts">
+              <div><dt>Function</dt><dd>1-way switch (single-pole)</dd></div>
+              <div><dt>Rated current</dt><dd>10 AX</dd></div>
+              <div><dt>Rated voltage</dt><dd>250 V~</dd></div>
+              <div><dt>Contact</dt><dd>Snap-action, silver alloy</dd></div>
+            </dl>
+
+            <div class="finish-picker">
+              <p class="finish-picker__label">Finish — <span id="pf-finish-label">AL-01 · Brushed Aluminum</span></p>
+              <div class="finish-picker__chips" id="pf-finish-chips" role="group" aria-label="Select finish">
+                <button class="finish-chip mat-al is-active" type="button" data-finish="AL-01" data-cls="pf-al" data-label="Brushed Aluminum" aria-pressed="true" aria-label="Finish AL-01 — Brushed Aluminum"></button>
+                <button class="finish-chip mat-anz" type="button" data-finish="AN-04" data-cls="pf-anz" data-label="Anodized Bronze" aria-pressed="false" aria-label="Finish AN-04 — Anodized Bronze"></button>
+                <button class="finish-chip mat-glass" type="button" data-finish="GL-02" data-cls="pf-glass" data-label="Black Glass" aria-pressed="false" aria-label="Finish GL-02 — Black Glass"></button>
+                <button class="finish-chip mat-cer" type="button" data-finish="CE-01" data-cls="pf-cer" data-label="Ceramic White" aria-pressed="false" aria-label="Finish CE-01 — Ceramic White"></button>
+                <button class="finish-chip mat-stone" type="button" data-finish="ST-03" data-cls="pf-stone" data-label="Sandstone" aria-pressed="false" aria-label="Finish ST-03 — Sandstone"></button>
+                <button class="finish-chip mat-steel" type="button" data-finish="CS-01" data-cls="pf-steel" data-label="Coated Steel" aria-pressed="false" aria-label="Finish CS-01 — Coated Steel"></button>
+              </div>
+            </div>
+
+            <div class="product-actions">
+              <a class="btn btn--solid" href="index.html#contact">Request Datasheet</a>
+              <a class="btn btn--line" id="pf-back" href="products.html#linea">Back to Archive</a>
+            </div>
+            <p class="product-note">PRICE ON SPECIFICATION · MOQ 10 UNITS · LEAD TIME 2 WEEKS</p>
+          </div>
+        </div>
+
+        <!-- ============ TABS ============ -->
+        <div class="tabs" data-tabs>
+          <div class="tabs__nav" role="tablist" aria-label="Product information">
+            <button class="tabs__tab is-active" id="tab-overview" type="button" role="tab" aria-selected="true" aria-controls="panel-overview">Overview</button>
+            <button class="tabs__tab" id="tab-tech" type="button" role="tab" aria-selected="false" aria-controls="panel-tech" tabindex="-1">Technical Data</button>
+            <button class="tabs__tab" id="tab-mounting" type="button" role="tab" aria-selected="false" aria-controls="panel-mounting" tabindex="-1">Mounting &amp; Wiring</button>
+            <button class="tabs__tab" id="tab-downloads" type="button" role="tab" aria-selected="false" aria-controls="panel-downloads" tabindex="-1">Downloads</button>
+          </div>
+
+          <div class="tabs__panel is-active" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
+            <p class="lead" id="pf-ov-body">Function lives in the insert, not the plate. The switch insert carries a snap-action contact in silver alloy on a glass-fibre carrier, clipped into the standard 55 mm unit and terminated with 0.5 N·m torque terminals.</p>
+            <ul class="feature-list">
+              <li><strong>Interchangeable inserts.</strong> Switch, dimmer, socket and data share one carrier geometry across all families.</li>
+              <li><strong>55 mm platform.</strong> Ø 60 mm machine back box, single-screw carrier, 32 mm minimum depth.</li>
+              <li><strong>Tool-free mounting.</strong> Insert and rocker clip in without tools; plates mount screw-less.</li>
+              <li><strong>Batch-controlled finishes.</strong> Every finish coded, archived and re-orderable for five years.</li>
+            </ul>
+            <div class="tile-pair">
+              <div class="tile-ph"><span>DETAIL — SHADOW GAP 2 MM</span></div>
+              <div class="tile-ph"><span>PLATE BUILD-UP — 4 MM</span></div>
+            </div>
+          </div>
+
+          <div class="tabs__panel" id="panel-tech" role="tabpanel" aria-labelledby="tab-tech" hidden>
+            <div class="spec-table-wrap">
+              <table class="spec-table">
+                <caption class="sr-only">Technical data — <span id="pf-tech-code">AX-LN-101</span></caption>
+                <tbody id="pf-specs">
+                  <tr><th scope="row">Function</th><td>1-way switch (single-pole)</td></tr>
+                  <tr><th scope="row">Rated current</th><td>10 AX</td></tr>
+                  <tr><th scope="row">Rated voltage</th><td>250 V~</td></tr>
+                  <tr><th scope="row">Contact</th><td>Snap-action, silver alloy</td></tr>
+                  <tr><th scope="row">Rated switching life</th><td>40 000 cycles · EN 60669-1</td></tr>
+                  <tr><th scope="row">Fixing centres</th><td>55 mm</td></tr>
+                  <tr><th scope="row">Mounting depth</th><td>32 mm min. back box</td></tr>
+                  <tr><th scope="row">Ingress protection</th><td>IP20</td></tr>
+                  <tr><th scope="row">Glow-wire test</th><td>850 °C · live parts</td></tr>
+                  <tr><th scope="row">Ambient temperature</th><td>−5 °C … +40 °C</td></tr>
+                  <tr><th scope="row">Standards</th><td>EN 60669-1 · CE · ENEC+</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="compliance-line compliance-line--light">
+              <span class="cert-badge cert-badge--light">EN 60669-1</span>
+              <span class="cert-badge cert-badge--light">CE</span>
+              <span class="cert-badge cert-badge--light">ENEC+</span>
+              <span class="cert-badge cert-badge--light">RoHS 2011/65/EU</span>
+            </p>
+          </div>
+
+          <div class="tabs__panel" id="panel-mounting" role="tabpanel" aria-labelledby="tab-mounting" hidden>
+            <ol class="steps">
+              <li><span class="steps__num">01</span><div><h3>Verify the back box</h3><p>Ø 60 mm machine box, 55 mm fixing centres, 32 mm minimum depth. For FLUSH ZERO, coordinate the box set with the skim-coat build-up.</p></div></li>
+              <li><span class="steps__num">02</span><div><h3>Terminate the conductors</h3><p>2 × 1.5–2.5 mm² on the insert terminals, torque 0.5 N·m. Through-wiring continues on the terminal pair.</p></div></li>
+              <li><span class="steps__num">03</span><div><h3>Clip insert and rocker</h3><p>Insert clips onto the carrier tool-free; the rocker snaps onto the insert axis in one movement.</p></div></li>
+              <li><span class="steps__num">04</span><div><h3>Mount the plate</h3><p>Screw-less plate clips on flush; align the shadow gap evenly at 2 mm on all sides.</p></div></li>
+            </ol>
+            <div class="tile-pair">
+              <div class="tile-ph"><span>BACK BOX Ø 60 MM — SECTION</span></div>
+              <div class="tile-ph"><span>WIRING — 2 × 1.5 MM²</span></div>
+            </div>
+          </div>
+
+          <div class="tabs__panel" id="panel-downloads" role="tabpanel" aria-labelledby="tab-downloads" hidden>
+            <div class="spec-table-wrap">
+              <table class="spec-table dl-table">
+                <thead>
+                  <tr><th scope="col">File</th><th scope="col">Type</th><th scope="col">Size</th></tr>
+                </thead>
+                <tbody id="pf-downloads">
+                  <tr><td>AX-LN-101_Datasheet</td><td class="mono">PDF</td><td class="mono">1.2 MB</td></tr>
+                  <tr><td>AX-LN-101_BIM_Object</td><td class="mono">RVT</td><td class="mono">4.8 MB</td></tr>
+                  <tr><td>AX-LN-101_BIM_Object</td><td class="mono">IFC</td><td class="mono">2.1 MB</td></tr>
+                  <tr><td>AX-LN-101_Mounting_Details</td><td class="mono">DWG</td><td class="mono">860 KB</td></tr>
+                  <tr><td>AX-LN-101_Declaration_of_Performance</td><td class="mono">PDF</td><td class="mono">240 KB</td></tr>
+                  <tr><td>AX-LN-101_ENEC_Certificate</td><td class="mono">PDF</td><td class="mono">320 KB</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="downloads-note">All files are generated per product code and finish. For project-specific documentation, contact the <a href="index.html#contact">specification desk</a>.</p>
+          </div>
+        </div>
+
+        <!-- ============ RELATED ============ -->
+        <section class="related" aria-labelledby="pf-related-title">
+          <header class="related__head">
+            <p class="eyebrow">Same System Family</p>
+            <h2 id="pf-related-title">Continue in <span id="pf-related-family">LINEA 55</span></h2>
+          </header>
+          <div class="products__grid" id="pf-related">
+            <article class="product-card">
+              <figure class="product-card__figure">
+                <svg viewBox="0 0 400 500" aria-hidden="true" focusable="false">
+                  <rect width="400" height="500" fill="url(#phw-ln)"/>
+                  <rect width="400" height="500" fill="url(#pa-grid)"/>
+                  <use href="#i-rocker2" transform="translate(132 182)"/>
+                  <use href="#p-ticks"/>
+                  <text class="svg-mono" x="20" y="34">AX-LN · 1:1.2</text>
+                </svg>
+              </figure>
+              <div class="product-card__body">
+                <p class="product-card__code">AX-LN-102</p>
+                <h3>Rocker Switch 2-gang</h3>
+                <p class="product-card__meta">10 AX · 250 V~ · Flush-mounted</p>
+                <div class="product-card__foot"><a class="card-link" href="product.html?p=AX-LN-102">View Product</a></div>
+              </div>
+            </article>
+            <article class="product-card">
+              <figure class="product-card__figure">
+                <svg viewBox="0 0 400 500" aria-hidden="true" focusable="false">
+                  <rect width="400" height="500" fill="url(#phw-ln)"/>
+                  <rect width="400" height="500" fill="url(#pa-grid)"/>
+                  <use href="#i-dimmer" transform="translate(132 182)"/>
+                  <use href="#p-ticks"/>
+                  <text class="svg-mono" x="20" y="34">AX-LN · 1:1.2</text>
+                </svg>
+              </figure>
+              <div class="product-card__body">
+                <p class="product-card__code">AX-LN-210</p>
+                <h3>Universal Push-Dimmer</h3>
+                <p class="product-card__meta">LED 3–250 W · Leading / trailing edge</p>
+                <div class="product-card__foot"><a class="card-link" href="product.html?p=AX-LN-210">View Product</a></div>
+              </div>
+            </article>
+            <article class="product-card">
+              <figure class="product-card__figure">
+                <svg viewBox="0 0 400 500" aria-hidden="true" focusable="false">
+                  <rect width="400" height="500" fill="url(#phw-ln)"/>
+                  <rect width="400" height="500" fill="url(#pa-grid)"/>
+                  <use href="#i-socket" transform="translate(132 182)"/>
+                  <use href="#p-ticks"/>
+                  <text class="svg-mono" x="20" y="34">AX-LN · 1:1.2</text>
+                </svg>
+              </figure>
+              <div class="product-card__body">
+                <p class="product-card__code">AX-LN-301</p>
+                <h3>Socket Outlet</h3>
+                <p class="product-card__meta">16 A · 250 V~ · Shuttered</p>
+                <div class="product-card__foot"><a class="card-link" href="product.html?p=AX-LN-301">View Product</a></div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer__texture" aria-hidden="true"></div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="AXIOM Electrical Systems — home">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">AXIOM<small>Electrical Systems</small></span>
+        </a>
+        <p>Architectural electrical systems.<br>Modular, flush-integrated, batch-controlled. Since 1978.</p>
+      </div>
+      <nav class="footer__col" aria-label="Systems">
+        <h4>Systems</h4>
+        <ul>
+          <li><a href="products.html#linea">LINEA 55</a></li>
+          <li><a href="products.html#flushzero">FLUSH ZERO</a></li>
+          <li><a href="products.html#solid70">SOLID 70</a></li>
+          <li><a href="products.html#stone">STONE LINE</a></li>
+          <li><a href="products.html#axis">AXIS TOUCH</a></li>
+          <li><a href="products.html#modu">MODU FRAME</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Company">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News &amp; Press</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Careers</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Resources">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="products.html">Technical Datasheets</a></li>
+          <li><a href="contact.html">BIM Objects — Revit / IFC</a></li>
+          <li><a href="contact.html">DWG Mounting Details</a></li>
+          <li><a href="contact.html">Certificates &amp; Declarations</a></li>
+          <li><a href="contact.html">Tender Texts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> AXIOM Electrical Systems GmbH · Imprint · Privacy · Terms</p>
+      <p class="footer__certs">EN 60669-1 · EN 60884-1 · ISO 9001 · ISO 14001</p>
+    </div>
+  </footer>
+</body>
+</html>
