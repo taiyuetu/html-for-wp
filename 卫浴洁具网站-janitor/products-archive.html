@@ -1,0 +1,575 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our complete collection of luxury sanitary ware and bathroom solutions">
+    <title>Product Archive | Luxury Sanitary Ware</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-products-archive">
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">LUXURY BATH</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="products-archive.html">Products</a></li>
+                <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+                <li><a href="index.html#applications">Applications</a></li>
+                <li><a href="index.html#quality">Quality</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-search-toggle" id="navSearchToggle" aria-label="Open search" aria-expanded="false" aria-controls="navSearch">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 14h-.79l-.28-.27a6 6 0 1 0-.71.71l.27.28v.79l4.75 4.75a1 1 0 0 0 1.41-1.41L15.5 14zm-5.5 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="nav-search" id="navSearch">
+            <form class="nav-search-form" action="search-results.html" method="get">
+                <input type="search" name="q" placeholder="Search collections, products, finishes" aria-label="Search site">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="page-banner-image">
+            <div class="image-placeholder"></div>
+        </div>
+        <div class="page-banner-overlay">
+            <div class="container">
+                <div class="page-banner-content">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">Products</span>
+                    </nav>
+                    <h1 class="page-banner-title">Product Collection</h1>
+                    <p class="page-banner-subtitle">Discover our complete range of luxury sanitary ware and bathroom solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Archive Section -->
+    <section class="archive-section">
+        <div class="container">
+            <div class="archive-layout">
+                <!-- Sidebar -->
+                <aside class="archive-sidebar">
+                    <!-- Mobile Filter Toggle -->
+                    <button class="filter-toggle" id="filterToggle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" y1="6" x2="20" y2="6"/>
+                            <line x1="4" y1="12" x2="20" y2="12"/>
+                            <line x1="4" y1="18" x2="20" y2="18"/>
+                            <circle cx="7" cy="6" r="2" fill="currentColor"/>
+                            <circle cx="17" cy="12" r="2" fill="currentColor"/>
+                            <circle cx="10" cy="18" r="2" fill="currentColor"/>
+                        </svg>
+                        <span>Filters</span>
+                    </button>
+
+                    <div class="sidebar-filters" id="sidebarFilters">
+                        <!-- Filter Header -->
+                        <div class="filter-header">
+                            <h3>Filter Products</h3>
+                            <button class="filter-reset" id="filterReset">Reset All</button>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Categories</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="washbasins">
+                                    <span class="filter-label">Washbasins</span>
+                                    <span class="filter-count">(24)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="toilets">
+                                    <span class="filter-label">Toilets</span>
+                                    <span class="filter-count">(18)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="bathtubs">
+                                    <span class="filter-label">Bathtubs</span>
+                                    <span class="filter-count">(16)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="faucets">
+                                    <span class="filter-label">Faucets</span>
+                                    <span class="filter-count">(32)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="showers">
+                                    <span class="filter-label">Shower Systems</span>
+                                    <span class="filter-count">(20)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="accessories">
+                                    <span class="filter-label">Accessories</span>
+                                    <span class="filter-count">(45)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="furniture">
+                                    <span class="filter-label">Furniture</span>
+                                    <span class="filter-count">(28)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="wellness">
+                                    <span class="filter-label">Wellness</span>
+                                    <span class="filter-count">(12)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Style Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Style</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="style" value="modern">
+                                    <span class="filter-label">Modern</span>
+                                    <span class="filter-count">(68)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="style" value="contemporary">
+                                    <span class="filter-label">Contemporary</span>
+                                    <span class="filter-count">(52)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="style" value="minimalist">
+                                    <span class="filter-label">Minimalist</span>
+                                    <span class="filter-count">(45)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="style" value="traditional">
+                                    <span class="filter-label">Traditional</span>
+                                    <span class="filter-count">(30)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Finish Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Finish</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="finish" value="chrome">
+                                    <span class="filter-label">Brushed Chrome</span>
+                                    <span class="filter-count">(42)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="finish" value="gold">
+                                    <span class="filter-label">Champagne Gold</span>
+                                    <span class="filter-count">(35)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="finish" value="matte-black">
+                                    <span class="filter-label">Matte Black</span>
+                                    <span class="filter-count">(38)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="finish" value="white">
+                                    <span class="filter-label">White Ceramic</span>
+                                    <span class="filter-count">(76)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Price Range</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="all" checked>
+                                    <span class="filter-label">All Prices</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="0-500">
+                                    <span class="filter-label">Under $500</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="500-1000">
+                                    <span class="filter-label">$500 - $1,000</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="1000-2500">
+                                    <span class="filter-label">$1,000 - $2,500</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="2500+">
+                                    <span class="filter-label">$2,500+</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Application Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Application</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="application" value="residential">
+                                    <span class="filter-label">Residential</span>
+                                    <span class="filter-count">(95)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="application" value="hospitality">
+                                    <span class="filter-label">Hospitality</span>
+                                    <span class="filter-count">(78)</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="application" value="commercial">
+                                    <span class="filter-label">Commercial</span>
+                                    <span class="filter-count">(62)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Apply Filters Button (Mobile) -->
+                        <button class="filter-apply" id="filterApply">Apply Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <main class="archive-main">
+                    <!-- Toolbar -->
+                    <div class="archive-toolbar">
+                        <div class="archive-results">
+                            <span class="results-count">Showing <strong>1-24</strong> of <strong>195</strong> products</span>
+                        </div>
+                        <div class="archive-controls">
+                            <div class="view-switcher">
+                                <button class="view-btn active" data-view="grid" title="Grid View">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="7" height="7"/>
+                                        <rect x="14" y="3" width="7" height="7"/>
+                                        <rect x="14" y="14" width="7" height="7"/>
+                                        <rect x="3" y="14" width="7" height="7"/>
+                                    </svg>
+                                </button>
+                                <button class="view-btn" data-view="list" title="List View">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="8" y1="6" x2="21" y2="6"/>
+                                        <line x1="8" y1="12" x2="21" y2="12"/>
+                                        <line x1="8" y1="18" x2="21" y2="18"/>
+                                        <rect x="3" y="4" width="2" height="4"/>
+                                        <rect x="3" y="10" width="2" height="4"/>
+                                        <rect x="3" y="16" width="2" height="4"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="sort-dropdown">
+                                <select id="sortBy" class="sort-select">
+                                    <option value="featured">Sort by: Featured</option>
+                                    <option value="newest">Newest First</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="name-az">Name: A to Z</option>
+                                    <option value="name-za">Name: Z to A</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Active Filters -->
+                    <div class="active-filters" id="activeFilters">
+                        <!-- Active filter tags will be inserted here by JavaScript -->
+                    </div>
+
+                    <!-- Product Grid -->
+                    <div class="archive-products" id="archiveProducts">
+                        <!-- Product Item 1 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                                <span class="product-badge">New</span>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Washbasins</span>
+                                <h3 class="archive-product-title">Elegance Countertop Basin</h3>
+                                <p class="archive-product-excerpt">Premium ceramic with soft edges and flawless glaze finish</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$850</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 2 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Toilets</span>
+                                <h3 class="archive-product-title">Smart Wall-Hung Toilet</h3>
+                                <p class="archive-product-excerpt">Touchless operation with advanced water-saving technology</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$2,450</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 3 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                                <span class="product-badge badge-sale">Sale</span>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Bathtubs</span>
+                                <h3 class="archive-product-title">Freestanding Soaking Tub</h3>
+                                <p class="archive-product-excerpt">Sculptural design with ergonomic comfort and deep soaking</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$3,200 <del>$3,800</del></span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 4 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Faucets</span>
+                                <h3 class="archive-product-title">Precision Basin Faucet</h3>
+                                <p class="archive-product-excerpt">Champagne gold finish with ceramic disc cartridge</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$680</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 5 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                                <span class="product-badge">Featured</span>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Shower Systems</span>
+                                <h3 class="archive-product-title">Rainfall Shower System</h3>
+                                <p class="archive-product-excerpt">Thermostatic control with multiple spray patterns</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$1,850</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 6 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Accessories</span>
+                                <h3 class="archive-product-title">Towel Bar Collection</h3>
+                                <p class="archive-product-excerpt">Matte black finish with coordinated mounting hardware</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$220</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 7 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Furniture</span>
+                                <h3 class="archive-product-title">Double Vanity Cabinet</h3>
+                                <p class="archive-product-excerpt">Integrated storage with soft-close drawers and premium finish</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$2,950</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 8 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                                <span class="product-badge">New</span>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Washbasins</span>
+                                <h3 class="archive-product-title">Minimalist Vessel Sink</h3>
+                                <p class="archive-product-excerpt">Geometric design with ultra-smooth glazing</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$720</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 9 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Wellness</span>
+                                <h3 class="archive-product-title">Steam Shower Enclosure</h3>
+                                <p class="archive-product-excerpt">Spa-grade experience with digital controls and chromotherapy</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$5,200</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 10 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Toilets</span>
+                                <h3 class="archive-product-title">Rimless Floor-Mounted Toilet</h3>
+                                <p class="archive-product-excerpt">Hygienic design with powerful dual-flush system</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$1,450</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 11 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Faucets</span>
+                                <h3 class="archive-product-title">Waterfall Bath Filler</h3>
+                                <p class="archive-product-excerpt">Dramatic flow with temperature control and chrome finish</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$980</span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Product Item 12 -->
+                        <article class="archive-product-item">
+                            <div class="archive-product-image">
+                                <div class="image-placeholder"></div>
+                                <span class="product-badge badge-sale">Sale</span>
+                            </div>
+                            <div class="archive-product-info">
+                                <span class="archive-product-category">Bathtubs</span>
+                                <h3 class="archive-product-title">Corner Whirlpool Tub</h3>
+                                <p class="archive-product-excerpt">Space-efficient design with massage jets and LED lighting</p>
+                                <div class="archive-product-meta">
+                                    <span class="archive-product-price">$2,800 <del>$3,400</del></span>
+                                    <a href="#" class="archive-product-link">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="pagination" aria-label="Product pagination">
+                        <button class="pagination-btn pagination-prev" disabled>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"/>
+                            </svg>
+                            Previous
+                        </button>
+                        <div class="pagination-numbers">
+                            <button class="pagination-number active">1</button>
+                            <button class="pagination-number">2</button>
+                            <button class="pagination-number">3</button>
+                            <button class="pagination-number">4</button>
+                            <span class="pagination-ellipsis">...</span>
+                            <button class="pagination-number">9</button>
+                        </div>
+                        <button class="pagination-btn pagination-next">
+                            Next
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"/>
+                            </svg>
+                        </button>
+                    </nav>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-texture"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">LUXURY BATH</h3>
+                    <p class="footer-text">Defining excellence in sanitary ware and architectural bathroom solutions since 1990.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Washbasins</a></li>
+                        <li><a href="#">Toilets</a></li>
+                        <li><a href="#">Bathtubs</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Shower Systems</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>        </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>        </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Find a Distributor</a></li>
+                        <li><a href="#">Technical Documentation</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Installation Guides</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>        </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxury Bath. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+

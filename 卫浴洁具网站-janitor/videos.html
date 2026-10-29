@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch our collection of product demonstrations, installation guides, and design inspiration videos">
+    <title>Video Library | Luxury Sanitary Ware</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-videos">
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">LUXURY BATH</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="products-archive.html">Products</a></li>
+                <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+                <li><a href="index.html#applications">Applications</a></li>
+                <li><a href="index.html#quality">Quality</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-search-toggle" id="navSearchToggle" aria-label="Open search" aria-expanded="false" aria-controls="navSearch">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 14h-.79l-.28-.27a6 6 0 1 0-.71.71l.27.28v.79l4.75 4.75a1 1 0 0 0 1.41-1.41L15.5 14zm-5.5 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="nav-search" id="navSearch">
+            <form class="nav-search-form" action="search-results.html" method="get">
+                <input type="search" name="q" placeholder="Search collections, products, finishes" aria-label="Search site">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="page-banner-image">
+            <div class="image-placeholder"></div>
+        </div>
+        <div class="page-banner-overlay">
+            <div class="container">
+                <div class="page-banner-content">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">Videos</span>
+                    </nav>
+                    <h1 class="page-banner-title">Video Library</h1>
+                    <p class="page-banner-subtitle">Explore our collection of product demonstrations and design inspiration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Intro -->
+    <section class="video-intro">
+        <div class="container">
+            <div class="intro-content reveal">
+                <span class="section-label">Watch & Learn</span>
+                <h2 class="section-title">Bringing Design to Life</h2>
+                <p class="intro-text">
+                    Discover our comprehensive video library featuring product demonstrations, installation tutorials, design inspiration, and behind-the-scenes looks at our manufacturing process. Whether you're a professional installer or a homeowner planning your dream bathroom, our videos provide valuable insights and guidance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Navigation -->
+    <section class="video-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Videos</button>
+                    <button class="filter-btn" data-filter="product-demos">Product Demos</button>
+                    <button class="filter-btn" data-filter="installation">Installation Guides</button>
+                    <button class="filter-btn" data-filter="design">Design Inspiration</button>
+                    <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+                    <button class="filter-btn" data-filter="testimonials">Testimonials</button>
+                </div>
+                <div class="filter-type">
+                    <button class="type-btn active" data-type="all">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+                            <line x1="7" y1="2" x2="7" y2="22"/>
+                            <line x1="17" y1="2" x2="17" y2="22"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <line x1="2" y1="7" x2="7" y2="7"/>
+                            <line x1="2" y1="17" x2="7" y2="17"/>
+                            <line x1="17" y1="17" x2="22" y2="17"/>
+                            <line x1="17" y1="7" x2="22" y2="7"/>
+                        </svg>
+                        All
+                    </button>
+                    <button class="type-btn" data-type="youtube">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        YouTube
+                    </button>
+                    <button class="type-btn" data-type="hosted">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        Hosted
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video -->
+    <section class="featured-video">
+        <div class="container">
+            <div class="featured-header">
+                <span class="section-label">Featured</span>
+                <h2 class="section-title">Latest Release</h2>
+            </div>
+            <div class="featured-container reveal">
+                <div class="featured-player" id="featuredPlayer" data-video-id="dQw4w9WgXcQ" data-type="youtube">
+                    <div class="video-thumbnail">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="featured-info">
+                    <h3 class="featured-title">2026 Product Collection Launch</h3>
+                    <p class="featured-description">Discover our latest innovations in luxury sanitary ware. This comprehensive showcase presents our new collection featuring cutting-edge design, advanced technology, and sustainable materials.</p>
+                    <div class="video-meta">
+                        <span class="video-duration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            8:42
+                        </span>
+                        <span class="video-views">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            125K views
+                        </span>
+                        <span class="video-date">2 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Grid -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-grid" id="videoGrid">
+                
+                <!-- YouTube Video 1 -->
+                <div class="video-card" data-category="product-demos" data-type="youtube">
+                    <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ" data-type="youtube">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge youtube-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </span>
+                        <span class="video-duration">5:23</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Luxury Washbasin Collection Overview</h3>
+                        <p class="video-description">Explore our premium washbasin designs featuring innovative materials and timeless aesthetics.</p>
+                        <div class="video-stats">
+                            <span class="video-views">45K views</span>
+                            <span class="video-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hosted Video 1 -->
+                <div class="video-card" data-category="installation" data-type="hosted">
+                    <div class="video-thumbnail" data-video-src="videos/installation-guide.mp4" data-type="hosted">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge hosted-badge">HD</span>
+                        <span class="video-duration">12:15</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Professional Installation Guide</h3>
+                        <p class="video-description">Step-by-step installation tutorial for our wall-hung toilet systems with detailed instructions.</p>
+                        <div class="video-stats">
+                            <span class="video-views">32K views</span>
+                            <span class="video-date">2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Video 2 -->
+                <div class="video-card" data-category="design" data-type="youtube">
+                    <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ" data-type="youtube">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge youtube-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </span>
+                        <span class="video-duration">7:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Modern Bathroom Design Trends 2026</h3>
+                        <p class="video-description">Discover the latest design trends featuring minimalist aesthetics and smart technology.</p>
+                        <div class="video-stats">
+                            <span class="video-views">89K views</span>
+                            <span class="video-date">3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hosted Video 2 -->
+                <div class="video-card" data-category="manufacturing" data-type="hosted">
+                    <div class="video-thumbnail" data-video-src="videos/manufacturing-process.mp4" data-type="hosted">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge hosted-badge">4K</span>
+                        <span class="video-duration">15:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Behind the Scenes: Manufacturing Excellence</h3>
+                        <p class="video-description">Take a tour of our state-of-the-art facility and witness our meticulous production process.</p>
+                        <div class="video-stats">
+                            <span class="video-views">28K views</span>
+                            <span class="video-date">1 month ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Video 3 -->
+                <div class="video-card" data-category="product-demos" data-type="youtube">
+                    <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ" data-type="youtube">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge youtube-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </span>
+                        <span class="video-duration">4:15</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Smart Shower System Features</h3>
+                        <p class="video-description">Experience the future of showering with our intelligent temperature control and water-saving technology.</p>
+                        <div class="video-stats">
+                            <span class="video-views">52K views</span>
+                            <span class="video-date">5 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hosted Video 3 -->
+                <div class="video-card" data-category="testimonials" data-type="hosted">
+                    <div class="video-thumbnail" data-video-src="videos/customer-testimonial.mp4" data-type="hosted">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge hosted-badge">HD</span>
+                        <span class="video-duration">3:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Client Success Story: Manhattan Penthouse</h3>
+                        <p class="video-description">Hear from satisfied clients about their luxury bathroom transformation project.</p>
+                        <div class="video-stats">
+                            <span class="video-views">18K views</span>
+                            <span class="video-date">2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Video 4 -->
+                <div class="video-card" data-category="installation" data-type="youtube">
+                    <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ" data-type="youtube">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge youtube-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </span>
+                        <span class="video-duration">9:20</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Bathtub Installation & Plumbing Tips</h3>
+                        <p class="video-description">Professional tips for installing freestanding bathtubs with proper plumbing connections.</p>
+                        <div class="video-stats">
+                            <span class="video-views">41K views</span>
+                            <span class="video-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hosted Video 4 -->
+                <div class="video-card" data-category="design" data-type="hosted">
+                    <div class="video-thumbnail" data-video-src="videos/design-showcase.mp4" data-type="hosted">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge hosted-badge">4K</span>
+                        <span class="video-duration">6:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Luxury Hotel Bathroom Showcase</h3>
+                        <p class="video-description">Explore stunning hotel bathroom installations featuring our premium product line.</p>
+                        <div class="video-stats">
+                            <span class="video-views">63K views</span>
+                            <span class="video-date">4 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Video 5 -->
+                <div class="video-card" data-category="product-demos" data-type="youtube">
+                    <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ" data-type="youtube">
+                        <div class="image-placeholder"></div>
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <span class="video-badge youtube-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </span>
+                        <span class="video-duration">5:50</span>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Touchless Faucet Technology</h3>
+                        <p class="video-description">Discover our innovative touchless faucet systems with advanced sensor technology.</p>
+                        <div class="video-stats">
+                            <span class="video-views">37K views</span>
+                            <span class="video-date">6 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="video-load-more">
+                <button class="btn btn-secondary" id="loadMoreBtn">Load More Videos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal Player -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-container">
+            <button class="video-modal-close" id="videoModalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            
+            <div class="video-modal-content">
+                <!-- YouTube Player -->
+                <div class="youtube-player" id="youtubePlayer" style="display: none;">
+                    <iframe 
+                        id="youtubeIframe"
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- Custom Video Player -->
+                <div class="custom-player" id="customPlayer" style="display: none;">
+                    <video id="videoElement" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Playlists Section -->
+    <section class="video-playlists">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Curated Collections</span>
+                <h2 class="section-title">Video Playlists</h2>
+            </div>
+
+            <div class="playlists-grid">
+                <div class="playlist-card reveal">
+                    <div class="playlist-thumbnail">
+                        <div class="image-placeholder"></div>
+                        <div class="playlist-count">12 videos</div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3 class="playlist-title">Complete Installation Series</h3>
+                        <p class="playlist-description">Everything you need to know about installing our products professionally.</p>
+                    </div>
+                </div>
+
+                <div class="playlist-card reveal">
+                    <div class="playlist-thumbnail">
+                        <div class="image-placeholder"></div>
+                        <div class="playlist-count">8 videos</div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3 class="playlist-title">Design Masterclass</h3>
+                        <p class="playlist-description">Learn from top designers about creating stunning bathroom spaces.</p>
+                    </div>
+                </div>
+
+                <div class="playlist-card reveal">
+                    <div class="playlist-thumbnail">
+                        <div class="image-placeholder"></div>
+                        <div class="playlist-count">15 videos</div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3 class="playlist-title">Product Deep Dives</h3>
+                        <p class="playlist-description">In-depth reviews of our entire product collection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-texture"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">LUXURY BATH</h3>
+                    <p class="footer-text">Defining excellence in sanitary ware and architectural bathroom solutions since 1990.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Washbasins</a></li>
+                        <li><a href="#">Toilets</a></li>
+                        <li><a href="#">Bathtubs</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Shower Systems</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>        </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>        </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Find a Distributor</a></li>
+                        <li><a href="#">Technical Documentation</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Installation Guides</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>        </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxury Bath. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+

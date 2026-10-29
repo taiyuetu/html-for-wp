@@ -1,0 +1,763 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium sanitary ware and bathroom solutions for residential, commercial, and luxury hospitality projects">
+    <title>Luxury Sanitary Ware | Premium Bathroom Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-home">
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">LUXURY BATH</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#craftsmanship">Craftsmanship</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#quality">Quality</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-search-toggle" id="navSearchToggle" aria-label="Open search" aria-expanded="false"
+                    aria-controls="navSearch">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27a6 6 0 1 0-.71.71l.27.28v.79l4.75 4.75a1 1 0 0 0 1.41-1.41L15.5 14zm-5.5 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="nav-search" id="navSearch">
+            <form class="nav-search-form" action="search-results.html" method="get">
+                <input type="search" name="q" placeholder="Search collections, products, finishes"
+                    aria-label="Search site">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero hero-slider" id="hero">
+        <div class="hero-slides">
+            <article class="hero-slide is-active">
+                <div class="hero-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Defining Luxury Through Precision</h1>
+                        <p class="hero-subtitle">Architectural-grade sanitary ware crafted for discerning spaces
+                            worldwide</p>
+                        <div class="hero-cta">
+                            <a href="#products" class="btn btn-primary">Explore Collections</a>
+                            <a href="#contact" class="btn btn-secondary">Start Your Project</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hero-slide">
+                <div class="hero-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Designed for Modern Sanctuaries</h1>
+                        <p class="hero-subtitle">Curated collections that balance spa serenity with architectural
+                            performance.</p>
+                        <div class="hero-cta">
+                            <a href="#categories" class="btn btn-primary">Discover Categories</a>
+                            <a href="#craftsmanship" class="btn btn-secondary">See Craftsmanship</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hero-slide">
+                <div class="hero-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Project-Ready From Spec to Install</h1>
+                        <p class="hero-subtitle">Technical documentation, finish coordination, and global support in one
+                            place.</p>
+                        <div class="hero-cta">
+                            <a href="#quality" class="btn btn-primary">Quality Standards</a>
+                            <a href="#contact" class="btn btn-secondary">Talk to Specialists</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="hero-controls">
+            <button class="hero-btn hero-prev" type="button" aria-label="Previous slide">Prev</button>
+            <div class="hero-dots" role="tablist" aria-label="Hero slides">
+                <button class="hero-dot is-active" type="button" aria-label="Go to slide 1"
+                    aria-selected="true"></button>
+                <button class="hero-dot" type="button" aria-label="Go to slide 2" aria-selected="false"></button>
+                <button class="hero-dot" type="button" aria-label="Go to slide 3" aria-selected="false"></button>
+            </div>
+            <button class="hero-btn hero-next" type="button" aria-label="Next slide">Next</button>
+        </div>
+    </section>
+
+    <!-- Feature Slider -->
+    <section class="feature-slider" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Featured Highlights</span>
+                <h2 class="section-title">Signature Moments in Every Space</h2>
+                <p class="section-intro">A rotating look at our most requested finishes, forms, and project-ready
+                    packages.</p>
+            </div>
+
+            <div class="slider-shell">
+                <div class="slider-track">
+                    <article class="slide-card">
+                        <div class="slide-image"></div>
+                        <div class="slide-content">
+                            <span class="slide-tag">Matte Brass</span>
+                            <h3 class="slide-title">Atelier Curve Collection</h3>
+                            <p class="slide-text">Soft-arched faucets and handles refined for boutique hospitality and
+                                modern residences.</p>
+                        </div>
+                    </article>
+                    <article class="slide-card">
+                        <div class="slide-image"></div>
+                        <div class="slide-content">
+                            <span class="slide-tag">Wellness Suite</span>
+                            <h3 class="slide-title">Rain Ritual Shower Set</h3>
+                            <p class="slide-text">Thermostatic precision paired with multi-spray rain heads and sculpted
+                                controls.</p>
+                        </div>
+                    </article>
+                    <article class="slide-card">
+                        <div class="slide-image"></div>
+                        <div class="slide-content">
+                            <span class="slide-tag">Architect Series</span>
+                            <h3 class="slide-title">Floating Vanity System</h3>
+                            <p class="slide-text">Statement cabinetry with integrated lighting, storage, and coordinated
+                                hardware.</p>
+                        </div>
+                    </article>
+                    <article class="slide-card">
+                        <div class="slide-image"></div>
+                        <div class="slide-content">
+                            <span class="slide-tag">Project Kit</span>
+                            <h3 class="slide-title">Signature Bathroom Pack</h3>
+                            <p class="slide-text">Curated basin, faucet, and accessory pairing ready for specification
+                                packages.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn slider-prev" type="button" aria-label="Previous slide">Prev</button>
+                    <button class="slider-btn slider-next" type="button" aria-label="Next slide">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-label">Our Heritage</span>
+                    <h2 class="section-title">Engineering Excellence in Every Detail</h2>
+                    <p class="section-text">
+                        For over three decades, we have been at the forefront of sanitary ware innovation, combining
+                        traditional craftsmanship with cutting-edge manufacturing technology. Our products grace luxury
+                        residences, five-star hotels, and iconic architectural projects across six continents.
+                    </p>
+                    <p class="section-text">
+                        Every piece begins with precision engineering and ends with meticulous hand-finishing. We don't
+                        just manufacture bathroom fixtures—we create lasting statements of quality and design integrity.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Years of Excellence</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">85</div>
+                            <div class="stat-label">Countries Served</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Range</span>
+                <h2 class="section-title">Product Categories</h2>
+                <p class="section-intro">Comprehensive solutions for every aspect of luxury bathroom design</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Washbasins</h3>
+                    <p class="category-description">Countertop, undermount, wall-hung, and pedestal designs in premium
+                        ceramic</p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Toilets</h3>
+                    <p class="category-description">Wall-hung, floor-mounted, and intelligent systems with advanced
+                        technology</p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Bathtubs</h3>
+                    <p class="category-description">Freestanding, built-in, and corner bathtubs in various materials and
+                        styles</p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Faucets</h3>
+                    <p class="category-description">Basin, bathtub, and kitchen faucets in brushed chrome, gold, and
+                        matte black</p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Shower Systems</h3>
+                    <p class="category-description">Rainfall showers, thermostatic mixers, and complete shower solutions
+                    </p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Accessories</h3>
+                    <p class="category-description">Towel bars, soap dispensers, mirrors, and coordinated finishing
+                        touches</p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Furniture</h3>
+                    <p class="category-description">Vanities, storage cabinets, and integrated bathroom furniture
+                        systems</p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+
+                <div class="category-item reveal">
+                    <div class="category-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <h3 class="category-name">Wellness</h3>
+                    <p class="category-description">Spa systems, steam showers, and therapeutic bathroom solutions</p>
+                    <a href="#products" class="category-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Collections Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Product Portfolio</span>
+                <h2 class="section-title">Collections That Define Spaces</h2>
+                <p class="section-intro">From minimalist basins to intelligent toilet systems, each collection
+                    represents the pinnacle of design and engineering.</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <span class="product-category">Washbasins</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Signature Basin Collection</h3>
+                        <p class="product-description">Sculptural forms in premium ceramic. Available in countertop,
+                            undermount, and wall-hung configurations.</p>
+                        <a href="#" class="product-link">View Collection →</a>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <span class="product-category">Toilets</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Intelligent Toilet Systems</h3>
+                        <p class="product-description">Smart technology meets timeless design. Touchless operation,
+                            self-cleaning, and water-saving innovation.</p>
+                        <a href="#" class="product-link">View Collection →</a>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <span class="product-category">Bathtubs</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Freestanding Bathtub Series</h3>
+                        <p class="product-description">Architectural centerpieces crafted from premium materials.
+                            Ergonomic comfort with museum-quality aesthetics.</p>
+                        <a href="#" class="product-link">View Collection →</a>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <span class="product-category">Faucets</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Precision Faucet Systems</h3>
+                        <p class="product-description">Engineered for longevity. Available in brushed chrome, champagne
+                            gold, and matte black finishes.</p>
+                        <a href="#" class="product-link">View Collection →</a>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <span class="product-category">Shower Systems</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rainfall Shower Collection</h3>
+                        <p class="product-description">Spa-grade shower experiences. Multi-function systems with
+                            thermostatic precision control.</p>
+                        <a href="#" class="product-link">View Collection →</a>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <span class="product-category">Accessories</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Architectural Accessories</h3>
+                        <p class="product-description">Coordinated finishing touches. Towel bars, shelving, and mirrors
+                            in matching metal finishes.</p>
+                        <a href="#" class="product-link">View Collection →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section class="craftsmanship" id="craftsmanship">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Manufacturing Excellence</span>
+                <h2 class="section-title">Materials & Craftsmanship</h2>
+            </div>
+            <div class="craft-blocks">
+                <div class="craft-block reveal">
+                    <div class="craft-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="craft-content">
+                        <h3 class="craft-title">Premium Ceramic Formation</h3>
+                        <p class="craft-text">Our proprietary clay blend is fired at precisely controlled temperatures
+                            exceeding 1250°C. This process creates non-porous, incredibly durable surfaces that maintain
+                            their luster for decades.</p>
+                    </div>
+                </div>
+                <div class="craft-block craft-block-reverse reveal">
+                    <div class="craft-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="craft-content">
+                        <h3 class="craft-title">Advanced Glazing Technology</h3>
+                        <p class="craft-text">Multiple layers of specialized glaze are applied and fired separately. The
+                            result: surfaces that resist staining, are easy to clean, and maintain antibacterial
+                            properties.</p>
+                    </div>
+                </div>
+                <div class="craft-block reveal">
+                    <div class="craft-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="craft-content">
+                        <h3 class="craft-title">Precision Metal Finishing</h3>
+                        <p class="craft-text">Each metal component undergoes multi-stage finishing: polishing, coating,
+                            and final inspection. Available in brushed chrome, PVD champagne gold, and electroplated
+                            matte black.</p>
+                    </div>
+                </div>
+                <div class="craft-block craft-block-reverse reveal">
+                    <div class="craft-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="craft-content">
+                        <h3 class="craft-title">Hand-Finishing Detail</h3>
+                        <p class="craft-text">Despite advanced automation, every piece receives human inspection and
+                            hand-finishing. Edges are refined, surfaces are verified, and quality is confirmed by
+                            trained artisans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications" id="applications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Project Applications</span>
+                <h2 class="section-title">Designed for Distinguished Spaces</h2>
+            </div>
+            <div class="application-grid">
+                <div class="application-card reveal">
+                    <div class="application-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="application-overlay">
+                        <h3 class="application-title">Luxury Residential</h3>
+                        <p class="application-text">Private residences and penthouses where every detail matters</p>
+                    </div>
+                </div>
+                <div class="application-card reveal">
+                    <div class="application-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="application-overlay">
+                        <h3 class="application-title">Five-Star Hospitality</h3>
+                        <p class="application-text">Hotels and resorts demanding uncompromising quality</p>
+                    </div>
+                </div>
+                <div class="application-card reveal">
+                    <div class="application-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="application-overlay">
+                        <h3 class="application-title">Commercial Architecture</h3>
+                        <p class="application-text">Corporate spaces that reflect brand excellence</p>
+                    </div>
+                </div>
+                <div class="application-card reveal">
+                    <div class="application-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="application-overlay">
+                        <h3 class="application-title">Wellness & Spa</h3>
+                        <p class="application-text">Environments designed for ultimate relaxation and rejuvenation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality & Sustainability Section -->
+    <section class="quality" id="quality">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Certifications & Standards</span>
+                <h2 class="section-title">Quality & Sustainability</h2>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-visual reveal">
+                    <div class="quality-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <p class="quality-caption">State-of-the-art testing laboratory</p>
+                </div>
+                <div class="quality-content reveal">
+                    <div class="quality-features">
+                        <div class="quality-feature">
+                            <div class="quality-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="quality-feature-content">
+                                <h4 class="quality-feature-title">ISO 9001:2015 Certified</h4>
+                                <p class="quality-feature-text">Internationally recognized quality management systems
+                                </p>
+                            </div>
+                        </div>
+                        <div class="quality-feature">
+                            <div class="quality-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                                </svg>
+                            </div>
+                            <div class="quality-feature-content">
+                                <h4 class="quality-feature-title">Water Efficiency</h4>
+                                <p class="quality-feature-text">Up to 50% water savings without compromising performance
+                                </p>
+                            </div>
+                        </div>
+                        <div class="quality-feature">
+                            <div class="quality-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                            </div>
+                            <div class="quality-feature-content">
+                                <h4 class="quality-feature-title">Durability Testing</h4>
+                                <p class="quality-feature-text">Every product tested for 25+ years of continuous use</p>
+                            </div>
+                        </div>
+                        <div class="quality-feature">
+                            <div class="quality-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                            </div>
+                            <div class="quality-feature-content">
+                                <h4 class="quality-feature-title">Sustainable Manufacturing</h4>
+                                <p class="quality-feature-text">Recycled materials, reduced emissions, responsible
+                                    sourcing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence Section -->
+    <section class="global" id="global">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Worldwide Reach</span>
+                <h2 class="section-title">Global Presence</h2>
+            </div>
+            <div class="global-content reveal">
+                <div class="global-map">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="global-stats">
+                    <div class="global-stat">
+                        <div class="global-stat-number">85+</div>
+                        <div class="global-stat-label">Countries</div>
+                    </div>
+                    <div class="global-stat">
+                        <div class="global-stat-number">12</div>
+                        <div class="global-stat-label">Manufacturing Facilities</div>
+                    </div>
+                    <div class="global-stat">
+                        <div class="global-stat-number">200+</div>
+                        <div class="global-stat-label">Authorized Distributors</div>
+                    </div>
+                    <div class="global-stat">
+                        <div class="global-stat-number">24/7</div>
+                        <div class="global-stat-label">Technical Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-image reveal">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="contact-content reveal">
+                    <span class="section-label">Start Your Project</span>
+                    <h2 class="section-title">Let's Create Something Exceptional</h2>
+                    <p class="section-text">Whether you're an architect, designer, developer, or distributor, our team
+                        is ready to collaborate on your next project.</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType">
+                                <option value="">Select type</option>
+                                <option value="residential">Luxury Residential</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="wellness">Wellness & Spa</option>
+                                <option value="distribution">Distribution Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <strong>Global Headquarters</strong>
+                            <p>inquiry@luxurybath.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <strong>Distributor Relations</strong>
+                            <p>partners@luxurybath.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <strong>Technical Support</strong>
+                            <p>support@luxurybath.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-texture"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">LUXURY BATH</h3>
+                    <p class="footer-text">Defining excellence in sanitary ware and architectural bathroom solutions
+                        since 1990.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Washbasins</a></li>
+                        <li><a href="#">Toilets</a></li>
+                        <li><a href="#">Bathtubs</a></li>
+                        <li><a href="#">Faucets</a></li>
+                        <li><a href="#">Shower Systems</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Find a Distributor</a></li>
+                        <li><a href="#">Technical Documentation</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Installation Guides</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxury Bath. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="floating-widget">
+        <div class="floating-item">
+            <button class="floating-btn" type="button" aria-label="WhatsApp QR code">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                        d="M12 2a10 10 0 0 0-8.55 15.15L2 22l4.99-1.31A10 10 0 1 0 12 2zm5.77 14.27c-.25.7-1.45 1.33-2 1.4-.52.07-1.18.1-1.9-.12-.43-.13-.99-.32-1.7-.65-3-1.32-4.96-4.54-5.11-4.75-.14-.2-1.22-1.62-1.22-3.1 0-1.48.77-2.2 1.04-2.5.28-.3.6-.37.8-.37.2 0 .4 0 .58.01.18.01.43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.35.02.56-.1.2-.15.35-.3.54-.15.2-.32.43-.46.58-.14.15-.28.31-.12.61.16.3.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.2 1.33.3.13.48.11.66-.07.18-.18.77-.89.98-1.2.2-.3.4-.25.67-.15.28.1 1.76.83 2.06.98.3.15.5.23.57.36.07.13.07.74-.18 1.44z" />
+                </svg>
+            </button>
+            <div class="floating-pop qr-pop">
+                <div class="qr-box"></div>
+                <span>Scan to chat</span>
+            </div>
+        </div>
+
+        <div class="floating-item">
+            <button class="floating-btn" type="button" aria-label="Email information">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                        d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z" />
+                </svg>
+            </button>
+            <div class="floating-pop email-pop">
+                <strong>email@luxurybath.com</strong>
+                <span>Response within 24 hours</span>
+            </div>
+        </div>
+
+        <div class="floating-item">
+            <button class="floating-btn floating-top" type="button" aria-label="Go to top">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 5l7 7-1.4 1.4L12 7.8 6.4 13.4 5 12l7-7z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
