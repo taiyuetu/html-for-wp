@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Elementum Precision Culinary Engineering</title>
+    <meta name="description"
+        content="Explore our gallery of luxury kitchen installations, product details, and design inspiration from Elementum.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">ELEMENTUM</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Collection</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-search">
+                        <button class="search-toggle" id="searchToggle" aria-label="Open Search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <div class="container">
+                <div class="search-bar">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="search" id="searchInput" placeholder="Search products, articles, or pages..." autocomplete="off">
+                    <button class="search-close" id="searchClose" aria-label="Close Search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-suggestions">
+                    <div class="suggestions-section">
+                        <h4>Popular Searches</h4>
+                        <ul class="suggestions-list">
+                            <li><a href="products.html">Series X Pro Oven</a></li>
+                            <li><a href="products.html">Induction Cooktops</a></li>
+                            <li><a href="products.html">Wine Cellars</a></li>
+                            <li><a href="about.html">Warranty Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="suggestions-section">
+                        <h4>Quick Links</h4>
+                        <ul class="suggestions-list">
+                            <li><a href="products.html">All Products</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="news.html">News & Updates</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner gallery-banner">
+            <div class="banner-bg">
+                <img src="assets/images/hero_luxury_kitchen.png" alt="Gallery">
+            </div>
+            <div class="banner-overlay"></div>
+            <div class="container banner-content">
+                <span class="eyebrow">Inspiration</span>
+                <h1>Gallery <br><span>Showcase</span></h1>
+            </div>
+        </section>
+
+        <!-- Breadcrumbs -->
+        <div class="product-breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Gallery</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter-section">
+            <div class="container">
+                <div class="gallery-toolbar">
+                    <div class="gallery-info">
+                        <h2>Image Gallery</h2>
+                        <p class="gallery-count"><span id="imageCount">24</span> Images</p>
+                    </div>
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="installations">Installations</button>
+                        <button class="filter-btn" data-filter="products">Products</button>
+                        <button class="filter-btn" data-filter="details">Details</button>
+                        <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-grid-section section-padding">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-category="installations" data-index="0">
+                        <div class="gallery-image">
+                            <img src="assets/images/hero_luxury_kitchen.png" alt="Modern Luxury Kitchen" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Modern Luxury Kitchen</h3>
+                                    <p>Penthouse Installation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-category="products" data-index="1">
+                        <div class="gallery-image">
+                            <img src="assets/images/oven_closeup_dark.png" alt="Series X Pro Oven" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Series X Pro Oven</h3>
+                                    <p>Precision Thermal Control</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-category="products" data-index="2">
+                        <div class="gallery-image">
+                            <img src="assets/images/cooktop_induction_flat.png" alt="Induction Cooktop" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Zonal Induction Surface</h3>
+                                    <p>Adaptive Heating Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-category="details" data-index="3">
+                        <div class="gallery-image">
+                            <img src="assets/images/material_brushed_steel_macro.png" alt="Material Detail" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Brushed Steel Detail</h3>
+                                    <p>Premium Material Finish</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-category="products" data-index="4">
+                        <div class="gallery-image">
+                            <img src="assets/images/range_hood_professional.png" alt="Range Hood" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>AeroSilent Extraction</h3>
+                                    <p>Professional Ventilation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-category="products" data-index="5">
+                        <div class="gallery-image">
+                            <img src="assets/images/refrigerator_luxury_minimalist.png" alt="Refrigerator" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Minimalist Refrigeration</h3>
+                                    <p>Seamless Integration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item" data-category="lifestyle" data-index="6">
+                        <div class="gallery-image">
+                            <img src="assets/images/smart_kitchen_ui_app.png" alt="Smart Kitchen" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Connected Intelligence</h3>
+                                    <p>Smart Kitchen Interface</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item" data-category="products" data-index="7">
+                        <div class="gallery-image">
+                            <img src="assets/images/steam_oven_luxury_built_in.png" alt="Steam Oven" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Combi-Steam Oven</h3>
+                                    <p>Professional Precision</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 9 -->
+                    <div class="gallery-item" data-category="products" data-index="8">
+                        <div class="gallery-image">
+                            <img src="assets/images/wine_cellar_luxury_built_in.png" alt="Wine Cellar" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Vintner Series</h3>
+                                    <p>Climate-Controlled Storage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate items for pagination demo (Items 10-18) -->
+                    <div class="gallery-item" data-category="installations" data-index="9">
+                        <div class="gallery-image">
+                            <img src="assets/images/hero_luxury_kitchen.png" alt="Contemporary Kitchen" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Contemporary Design</h3>
+                                    <p>Villa Installation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="details" data-index="10">
+                        <div class="gallery-image">
+                            <img src="assets/images/material_brushed_steel_macro.png" alt="Precision Detail" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Precision Engineering</h3>
+                                    <p>Material Excellence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="products" data-index="11">
+                        <div class="gallery-image">
+                            <img src="assets/images/oven_closeup_dark.png" alt="Thermal Control" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-view-btn" aria-label="View image">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                                <div class="gallery-info-overlay">
+                                    <h3>Thermal Precision</h3>
+                                    <p>Advanced Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="gallery-pagination" aria-label="Gallery Pagination">
+                    <ul class="pagination-list">
+                        <li>
+                            <button class="pagination-link prev" id="prevPage" aria-label="Previous Page">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15,18 9,12 15,6"></polyline>
+                                </svg>
+                                Previous
+                            </button>
+                        </li>
+                        <li><button class="pagination-link active" data-page="1">1</button></li>
+                        <li><button class="pagination-link" data-page="2">2</button></li>
+                        <li><button class="pagination-link" data-page="3">3</button></li>
+                        <li>
+                            <button class="pagination-link next" id="nextPage" aria-label="Next Page">
+                                Next
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9,18 15,12 9,6"></polyline>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+        </button>
+
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+        </button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+
+        <div class="lightbox-counter">
+            <span id="lightboxCounter"></span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer dark-bg">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">ELEMENTUM</a>
+                    <p>Global Headquarters<br>Zurich, Switzerland</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-form">
+                    <h4>Stay Informed</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" aria-label="Email Address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elementum Appliances. All rights reserved.</p>
+                <div class="legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

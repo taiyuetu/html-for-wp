@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AXION Group - News Article</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-template page-news-article">
+  <header id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="AXION home">
+          <div class="logo-mark">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="17" stroke="#1C1C1C" stroke-width="1.5"/>
+              <circle cx="18" cy="18" r="10" stroke="#B8924A" stroke-width="1.5"/>
+              <circle cx="18" cy="18" r="4" fill="#B8924A"/>
+              <line x1="18" y1="1" x2="18" y2="8" stroke="#1C1C1C" stroke-width="1.5"/>
+              <line x1="18" y1="28" x2="18" y2="35" stroke="#1C1C1C" stroke-width="1.5"/>
+              <line x1="1" y1="18" x2="8" y2="18" stroke="#1C1C1C" stroke-width="1.5"/>
+              <line x1="28" y1="18" x2="35" y2="18" stroke="#1C1C1C" stroke-width="1.5"/>
+              <line x1="4.5" y1="4.5" x2="9.7" y2="9.7" stroke="#1C1C1C" stroke-width="1"/>
+              <line x1="31.5" y1="31.5" x2="26.3" y2="26.3" stroke="#1C1C1C" stroke-width="1"/>
+              <line x1="31.5" y1="4.5" x2="26.3" y2="9.7" stroke="#1C1C1C" stroke-width="1"/>
+              <line x1="4.5" y1="31.5" x2="9.7" y2="26.3" stroke="#1C1C1C" stroke-width="1"/>
+            </svg>
+          </div>
+          <div>
+            <span class="logo-text">AXION</span>
+            <span class="logo-sub">Precision Bearing Group</span>
+          </div>
+        </a>
+
+        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <div class="nav-dropdown nav-dropdown-simple">
+            <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              About
+              <svg class="nav-dropdown-caret" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-submenu" aria-label="About submenu">
+              <a href="about-us.html" class="nav-submenu-link">About Us</a>
+              <a href="index.html#why" class="nav-submenu-link">Why AXION</a>
+              <a href="news-list.html" class="nav-submenu-link" aria-current="page">News & Insights</a>
+              <a href="contact-us.html" class="nav-submenu-link">Contact</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              Products
+              <svg class="nav-dropdown-caret" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-mega" aria-label="Products submenu">
+              <div class="nav-mega-inner">
+                <div class="nav-mega-col">
+                  <div class="nav-mega-label">Browse Categories</div>
+                  <a href="products-archive.html#passenger" class="nav-mega-link">
+                    <span>Passenger Car Hub Bearings</span>
+                    <small>Compact, high-efficiency assemblies</small>
+                  </a>
+                  <a href="products-archive.html#truck" class="nav-mega-link">
+                    <span>SUV and Light Truck</span>
+                    <small>Higher load ratings and durability</small>
+                  </a>
+                  <a href="products-archive.html#commercial" class="nav-mega-link">
+                    <span>Commercial and EV</span>
+                    <small>Fleet and next-generation drivetrains</small>
+                  </a>
+                  <a href="products-archive.html#performance" class="nav-mega-link">
+                    <span>Performance and Off-Highway</span>
+                    <small>Motorsport and agricultural use cases</small>
+                  </a>
+                </div>
+                <div class="nav-mega-col">
+                  <div class="nav-mega-label">Quick Access</div>
+                  <a href="products-archive.html" class="nav-mega-link nav-mega-link-plain">Full Products Archive</a>
+                  <a href="index.html#categories" class="nav-mega-link nav-mega-link-plain">Homepage Product Categories</a>
+                  <a href="index.html#products" class="nav-mega-link nav-mega-link-plain">Featured Products</a>
+                </div>
+                <div class="nav-mega-col nav-mega-feature">
+                  <div class="nav-mega-label">Featured Range</div>
+                  <div class="nav-mega-card">
+                    <div class="nav-mega-card-kicker">Top Seller</div>
+                    <div class="nav-mega-card-title">AXH-3842 Front Hub Unit</div>
+                    <p>Integrated ABS ring and precision-sealed construction for global passenger platforms.</p>
+                    <a href="product-details.html" class="nav-mega-card-link">Current product</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="news-list.html" class="nav-link" aria-current="page">News</a>
+          <a href="contact-us.html" class="nav-cta">Contact AXION</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about-us.html" class="nav-link">About Us</a>
+    <a href="index.html#why" class="nav-link">Why AXION</a>
+    <a href="news-list.html" class="nav-link" aria-current="page">News & Insights</a>
+    <a href="contact-us.html" class="nav-link">Contact</a>
+    <a href="products-archive.html" class="nav-link">Products Archive</a>
+    <a href="products-archive.html#passenger" class="nav-link">Passenger Car</a>
+    <a href="products-archive.html#truck" class="nav-link">SUV and Truck</a>
+    <a href="products-archive.html#commercial" class="nav-link">Commercial and EV</a>
+  </div>
+
+  <main class="news-article-page">
+    <section class="news-hero">
+      <div class="news-hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="news-hero-grid">
+          <div class="news-hero-copy reveal">
+            <div class="page-hero-breadcrumb">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <a href="news-list.html">News & Insights</a>
+              <span>/</span>
+              <span>Article</span>
+            </div>
+            <div class="news-hero-kicker">Operations</div>
+            <h1 class="news-hero-title">A faster quotation path for recurring programs</h1>
+            <p class="news-hero-lead">
+              A premium editorial template for company updates, technical notes, and program announcements. The
+              layout gives the headline room to breathe, keeps the article readable, and makes the page feel designed
+              rather than assembled.
+            </p>
+            <div class="news-hero-meta" aria-label="Article metadata">
+              <span>April 8, 2026</span>
+              <span>4 minute read</span>
+              <span>AXION Editorial Team</span>
+            </div>
+            <div class="news-hero-actions">
+              <a href="#article" class="btn-primary">
+                Read story
+                <svg class="arr" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </a>
+              <a href="news-list.html" class="btn-outline">
+                Back to news
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <aside class="news-hero-visual reveal reveal-delay-1" aria-label="Story visual">
+            <div class="news-hero-visual-frame">
+              <div class="news-hero-visual-note">
+                <span>Featured update</span>
+                <strong>Quote requests now start with a cleaner brief.</strong>
+                <p>The team is shortening the path from enquiry to answer by standardising the first contact.</p>
+              </div>
+              <img
+                class="news-hero-visual-image"
+                alt="Abstract bearing process illustration"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='1400' viewBox='0 0 1200 1400'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23161310'/%3E%3Cstop offset='55%25' stop-color='%232a241d'/%3E%3Cstop offset='100%25' stop-color='%23b8924a' stop-opacity='0.38'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='62%25' cy='40%25' r='44%25'%3E%3Cstop offset='0%25' stop-color='%23f1e5cf' stop-opacity='0.42'/%3E%3Cstop offset='100%25' stop-color='%23f1e5cf' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1200' height='1400' fill='url(%23g1)'/%3E%3Crect width='1200' height='1400' fill='url(%23g2)'/%3E%3Ccircle cx='760' cy='640' r='290' fill='none' stroke='%23f6efe2' stroke-opacity='0.26' stroke-width='4'/%3E%3Ccircle cx='760' cy='640' r='190' fill='none' stroke='%23f6efe2' stroke-opacity='0.2' stroke-width='4' stroke-dasharray='18 14'/%3E%3Ccircle cx='760' cy='640' r='96' fill='none' stroke='%23f6efe2' stroke-opacity='0.16' stroke-width='4'/%3E%3Ccircle cx='760' cy='640' r='36' fill='%23f6efe2' fill-opacity='0.24'/%3E%3Cpath d='M100 1120c140-120 268-118 372-10 98 102 210 154 346 120 134-34 210-118 342-174' fill='none' stroke='%23f6efe2' stroke-opacity='0.18' stroke-width='18' stroke-linecap='round'/%3E%3Cpath d='M220 300h210' stroke='%23b8924a' stroke-opacity='0.7' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M220 332h320' stroke='%23f6efe2' stroke-opacity='0.35' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M220 366h260' stroke='%23f6efe2' stroke-opacity='0.22' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"
+              />
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="article" class="article-section">
+      <div class="container">
+        <div class="article-layout">
+          <aside class="story-sidebar">
+            <div class="story-panel reveal">
+              <div class="story-panel-label">On this page</div>
+              <a href="#overview" class="story-panel-link">Overview</a>
+              <a href="#changes" class="story-panel-link">What changes</a>
+              <a href="#why" class="story-panel-link">Why it matters</a>
+              <a href="#next" class="story-panel-link">Next steps</a>
+            </div>
+
+            <div class="story-panel reveal reveal-delay-1">
+              <div class="story-panel-label">Story facts</div>
+              <div class="story-fact">
+                <span>Date</span>
+                <strong>April 8, 2026</strong>
+              </div>
+              <div class="story-fact">
+                <span>Category</span>
+                <strong>Operations</strong>
+              </div>
+              <div class="story-fact">
+                <span>Read time</span>
+                <strong>4 minutes</strong>
+              </div>
+            </div>
+
+            <div class="story-panel reveal reveal-delay-2">
+              <div class="story-panel-label">Related links</div>
+              <a href="news-list.html" class="story-panel-link">Back to news list</a>
+              <a href="about-us.html" class="story-panel-link">About AXION</a>
+              <a href="contact-us.html" class="story-panel-link">Contact us</a>
+            </div>
+          </aside>
+
+          <article class="story-prose reveal" id="overview">
+            <p class="story-lead">
+              Repeated quote requests are often slowed down by the same missing details: reference codes, vehicle
+              application, volume expectations, and packaging requirements. The new intake path fixes that by asking
+              for the essentials at the start.
+            </p>
+
+            <p class="story-dropcap">
+              Buyers usually know the program, but not every request arrives with the same level of detail. By
+              standardising the first exchange, AXION can route enquiries to the right team faster, reply with more
+              precision, and avoid unnecessary back-and-forth.
+            </p>
+
+            <div class="story-stats" aria-label="Article highlights">
+              <div class="story-stat">
+                <span>01</span>
+                <strong>Faster handoff</strong>
+                <p>Sales and engineering receive the same key data on the first pass.</p>
+              </div>
+              <div class="story-stat">
+                <span>02</span>
+                <strong>Cleaner intake</strong>
+                <p>Reference codes, pack requirements, and volumes stay in one brief.</p>
+              </div>
+              <div class="story-stat">
+                <span>03</span>
+                <strong>Better answers</strong>
+                <p>Fewer gaps means the first reply is more likely to be useful.</p>
+              </div>
+            </div>
+
+            <figure class="story-figure" aria-label="Editorial illustration">
+              <img
+                alt="Editorial illustration of a precision bearing"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23f8f4ec'/%3E%3Cstop offset='100%25' stop-color='%23e6dccd'/%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='60%25' cy='38%25' r='42%25'%3E%3Cstop offset='0%25' stop-color='%23b8924a' stop-opacity='0.26'/%3E%3Cstop offset='100%25' stop-color='%23b8924a' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1600' height='900' fill='url(%23bg)'/%3E%3Crect width='1600' height='900' fill='url(%23glow)'/%3E%3Ccircle cx='1070' cy='450' r='220' fill='none' stroke='%233a3a3a' stroke-width='7'/%3E%3Ccircle cx='1070' cy='450' r='150' fill='none' stroke='%23b8924a' stroke-width='7' stroke-dasharray='20 14'/%3E%3Ccircle cx='1070' cy='450' r='80' fill='none' stroke='%23949494' stroke-width='7'/%3E%3Ccircle cx='1070' cy='450' r='28' fill='%23b8924a' fill-opacity='0.32'/%3E%3Cpath d='M120 640c180-80 290-80 420-20 130 60 240 66 336 12 98-54 196-70 330-44 104 20 170 22 254-20' fill='none' stroke='%23b8924a' stroke-opacity='0.3' stroke-width='16' stroke-linecap='round'/%3E%3C/svg%3E"
+              />
+            </figure>
+
+            <section id="changes" class="story-section">
+              <div class="story-eyebrow">What changes</div>
+              <h2>The new request flow captures the useful details first</h2>
+              <p>
+                The goal is simple: make the first reply useful. The form and the supporting content now ask for the
+                information AXION actually needs to assess fitment, response time, and production context.
+              </p>
+              <ul class="story-list">
+                <li>Reference code and application are captured before the request is routed.</li>
+                <li>Volume bands are visible early, so the commercial response matches the buyer's reality.</li>
+                <li>Packaging and labeling notes stay attached to the same enquiry.</li>
+                <li>Technical questions can be separated from the buying request if needed.</li>
+              </ul>
+            </section>
+
+            <section id="why" class="story-section">
+              <div class="story-eyebrow">Why it matters</div>
+              <h2>Less friction for buyers, clearer context for the team</h2>
+              <p>
+                A better intake path reduces repetition on both sides. Customers spend less time clarifying basics,
+                and the AXION team spends more time answering the parts that actually matter.
+              </p>
+              <div class="story-quote">
+                The fastest quote usually starts with the right application data.
+              </div>
+              <p>
+                That same discipline carries through the rest of the site. The archive can point people to the right
+                product family, and the contact page can collect a better brief without feeling heavy.
+              </p>
+            </section>
+
+            <section id="next" class="story-section">
+              <div class="story-eyebrow">Next steps</div>
+              <h2>Use the contact form when you need a pricing or fitment answer</h2>
+              <p>
+                Include the part number if you have it. If not, describe the application and the team can help narrow
+                it down.
+              </p>
+            </section>
+
+            <div class="story-callout">
+              <div>
+                <div class="story-callout-label">Need a quote</div>
+                <h3>Send the request through contact us and we will route it quickly.</h3>
+              </div>
+              <div class="story-callout-actions">
+                <a href="contact-us.html" class="btn-primary">
+                  Contact AXION
+                  <svg class="arr" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </a>
+                <a href="products-archive.html" class="btn-outline">
+                  Browse products
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="container">
+        <div class="section-label reveal">Related stories</div>
+        <h2 class="section-title reveal reveal-delay-1">More updates from AXION</h2>
+        <div class="story-teasers">
+          <a class="story-teaser reveal" href="single-news.html">
+            <div>
+              <div class="story-teaser-meta">Operations</div>
+              <h3>How AXION is tightening quote handoff between sales and engineering.</h3>
+            </div>
+            <span>Read</span>
+          </a>
+          <a class="story-teaser reveal reveal-delay-1" href="single-news.html">
+            <div>
+              <div class="story-teaser-meta">Engineering</div>
+              <h3>A better way to compare hub bearing reference codes across platforms.</h3>
+            </div>
+            <span>Read</span>
+          </a>
+          <a class="story-teaser reveal reveal-delay-2" href="single-news.html">
+            <div>
+              <div class="story-teaser-meta">Partnerships</div>
+              <h3>Distributor support that stays close to the buying cycle.</h3>
+            </div>
+            <span>Read</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-footer-cta">
+      <div class="container">
+        <div class="article-footer-cta-inner">
+          <div>
+            <div class="section-label" style="margin-bottom: 12px;">Stay connected</div>
+            <h2 class="section-title" style="color: var(--white); max-width: 13ch;">If the story matters, the contact form should be one click away.</h2>
+          </div>
+          <div class="story-callout-actions">
+            <a href="contact-us.html" class="btn-primary">
+              Contact AXION
+              <svg class="arr" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="news-list.html" class="btn-outline" style="border-color: rgba(255,255,255,0.22); color: var(--white);">
+              Back to news
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="17" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <circle cx="18" cy="18" r="10" stroke="#B8924A" stroke-width="1.5"/>
+                <circle cx="18" cy="18" r="4" fill="#B8924A"/>
+                <line x1="18" y1="1" x2="18" y2="8" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <line x1="18" y1="28" x2="18" y2="35" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <line x1="1" y1="18" x2="8" y2="18" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <line x1="28" y1="18" x2="35" y2="18" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <span class="logo-text">AXION</span>
+              <span class="logo-sub" style="color: rgba(255,255,255,0.3);">Precision Bearing Group</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Engineering precision wheel hub bearing solutions for the world's leading automotive manufacturers since 1989.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="mailto:info@axionbearing.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Product categories">
+          <div class="footer-col-title">Products</div>
+          <ul class="footer-links">
+            <li><a href="products-archive.html" class="footer-link">Passenger Car Hub Bearings</a></li>
+            <li><a href="products-archive.html#truck" class="footer-link">SUV & Light Truck Assemblies</a></li>
+            <li><a href="products-archive.html#commercial" class="footer-link">Commercial Vehicle Hubs</a></li>
+            <li><a href="products-archive.html#commercial" class="footer-link">EV & Hybrid Systems</a></li>
+            <li><a href="products-archive.html#performance" class="footer-link">Motorsport Bearings</a></li>
+            <li><a href="products-archive.html#performance" class="footer-link">Agricultural Hubs</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Company links">
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="about-us.html" class="footer-link">About AXION</a></li>
+            <li><a href="index.html#why" class="footer-link">Manufacturing</a></li>
+            <li><a href="index.html#why" class="footer-link">Quality & Certifications</a></li>
+            <li><a href="news-list.html" class="footer-link">News & Insights</a></li>
+            <li><a href="#" class="footer-link">Investor Relations</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="footer-contact-text">
+              <strong>Global HQ</strong>
+              AXION Tower, 88 Precision Way, Singapore 638355
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div class="footer-contact-text">
+              <strong>Sales</strong>
+              +65 6123 4567
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="footer-contact-text">
+              <strong>Email</strong>
+              sales@axionbearing.com
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">Copyright 2026 AXION Precision Bearing Group. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

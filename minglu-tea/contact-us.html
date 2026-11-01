@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Míng Lù — Get in touch with our team. We'd love to hear from you." />
+  <title>Contact Us — Míng Lù</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAV -->
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-logo">Míng Lù</a>
+    <ul class="nav-links">
+      <li><a href="about-us.html">About</a></li>
+      <li class="nav-item-has-children">
+        <a href="products.html">Products</a>
+        <span class="nav-dropdown-toggle"></span>
+        <div class="mega-menu">
+          <div class="mega-menu__inner">
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Green Teas</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Dragon Well (Longjing)</a></li>
+                <li><a href="products.html">Snail Spring (Biluochun)</a></li>
+                <li><a href="products.html">Jade Dew (Gyokuro)</a></li>
+                <li><a href="products.html">White Leaf (Anji Bai)</a></li>
+                <li><a href="products.html">Cloud Mist (Yunwu)</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Oolong</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Da Hong Pao</a></li>
+                <li><a href="products.html">Tie Guan Yin</a></li>
+                <li><a href="products.html">Phoenix Oolong</a></li>
+                <li><a href="products.html">Dong Ding Oolong</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Pu-erh</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Raw Pu-erh (Sheng)</a></li>
+                <li><a href="products.html">Ripe Pu-erh (Shou)</a></li>
+                <li><a href="products.html">Aged Collection</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section mega-menu__section--featured">
+              <h4 class="mega-menu__title">Featured</h4>
+              <p class="mega-menu__desc">Our limited spring harvest selection. Pre-orders now open.</p>
+              <a href="products.html" class="mega-menu__cta">View Collection →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="index.html#harvest">Heritage</a></li>
+      <li><a href="index.html#quality">Quality</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="search-container">
+        <button class="search-toggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <div class="search-dropdown">
+          <form class="search-form">
+            <input type="text" class="search-input" placeholder="Search teas..." />
+            <button type="submit" class="search-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ PAGE BANNER -->
+  <section class="page-banner" id="pageBanner">
+    <div class="page-banner__bg">
+      <div class="page-banner__img-placeholder">
+        <div class="page-banner__img-inner"></div>
+      </div>
+      <div class="page-banner__overlay"></div>
+    </div>
+    <div class="page-banner__content">
+      <h1 class="page-banner__title reveal-up">
+        Get in<br/><em>Touch</em>.
+      </h1>
+      <p class="page-banner__sub reveal-fade delay-1">
+        Questions about our teas? We're here to help. Reach out anytime.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CONTACT CONTENT -->
+  <section class="contact-section section">
+    <div class="contact-section__container">
+      
+      <!-- CONTACT FORM -->
+      <div class="contact-form-col reveal-up">
+        <h2 class="section-heading reveal-up">Send us a<br/><em>Message</em></h2>
+        
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+              <label for="type">Type of Inquiry</label>
+              <select id="type" name="type">
+                <option value="">Select an option</option>
+                <option value="samples">Tea Samples</option>
+                <option value="wholesale">Wholesale</option>
+                <option value="press">Press Inquiry</option>
+                <option value="partnership">Partnership</option>
+                <option value="general">General Question</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us more..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+
+        <div class="contact-confirmation" id="formConfirm">
+          <p>Thank you for reaching out. We'll be in touch within 24 hours.</p>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <aside class="contact-info-col reveal-left">
+        
+        <div class="contact-info-card">
+          <h3 class="contact-info-card__title">Direct Contact</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Email</span>
+            <a href="mailto:hello@minglutea.com" class="contact-info-value">hello@minglutea.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Phone</span>
+            <a href="tel:+86-571-8888-0000" class="contact-info-value">+86 (571) 8888-0000</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">WeChat</span>
+            <span class="contact-info-value">minglutea</span>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3 class="contact-info-card__title">Office Hours</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Monday – Friday</span>
+            <span class="contact-info-value">9:00 AM – 6:00 PM CST</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Saturday – Sunday</span>
+            <span class="contact-info-value">By Appointment</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Response Time</span>
+            <span class="contact-info-value">Within 24 hours</span>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3 class="contact-info-card__title">Location</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Headquarters</span>
+            <span class="contact-info-value">
+              Hangzhou, Zhejiang<br/>
+              China
+            </span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Founded</span>
+            <span class="contact-info-value">2015</span>
+          </div>
+        </div>
+
+        <div class="contact-info-card contact-info-card--featured">
+          <h3 class="contact-info-card__title">Special Requests</h3>
+          <p class="contact-info-card__text">
+            Looking for wholesale pricing? Custom samples? Special events? Let us know — we love working with passionate tea enthusiasts.
+          </p>
+        </div>
+
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FAQ -->
+  <section class="faq section reveal-up">
+    <div class="faq__container">
+      <h2 class="section-heading text-center reveal-up">
+        Frequently<br/><em>Asked Questions</em>
+      </h2>
+
+      <div class="faq__grid">
+        
+        <div class="faq-item reveal-up">
+          <h3 class="faq-item__question">What does "single-origin" mean?</h3>
+          <p class="faq-item__answer">
+            Each tea comes from a specific garden or region, never blended with teas from elsewhere. This allows us to preserve the unique character of each tea's terroir.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-up delay-1">
+          <h3 class="faq-item__question">How do I know which tea to choose?</h3>
+          <p class="faq-item__answer">
+            Visit our Products page for detailed descriptions of each tea. We recommend starting with Lóng Jǐng if you prefer lighter, more delicate teas, or Gyokuro for something deeper and more umami-rich.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-up delay-2">
+          <h3 class="faq-item__question">Do you offer samples?</h3>
+          <p class="faq-item__answer">
+            Yes! We offer sample packs so you can explore our collection. Contact us for details and pricing on our sample program.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-up delay-3">
+          <h3 class="faq-item__question">What's your shipping policy?</h3>
+          <p class="faq-item__answer">
+            We ship worldwide via DHL Express. Packaging is designed to preserve tea quality and freshness. Typical delivery is 7-14 business days.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-up">
+          <h3 class="faq-item__question">How should I store my tea?</h3>
+          <p class="faq-item__answer">
+            Store in a cool, dry place in an airtight container. Avoid exposure to light, strong odors, and humidity. Properly stored tea can maintain quality for years.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-up delay-1">
+          <h3 class="faq-item__question">Are you available for wholesale?</h3>
+          <p class="faq-item__answer">
+            Absolutely! We work with tea shops, restaurants, and specialty retailers. Contact us to discuss wholesale opportunities and pricing.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ MAP SECTION -->
+  <section class="location-map section">
+    <div class="location-map__container">
+      <h2 class="section-heading text-center reveal-up">
+        Find Us on the<br/><em>Map</em>
+      </h2>
+      
+      <div class="map-container reveal-up delay-1">
+        <div class="map-placeholder">
+          <div class="map-placeholder__content">
+            <div class="map-placeholder__icon">📍</div>
+            <p class="map-placeholder__text">Hangzhou, Zhejiang, China</p>
+            <p class="map-placeholder__subtext">In the heart of tea country</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__col">
+        <h4 class="footer__heading">Míng Lù</h4>
+        <p class="footer__text">Rare single-origin green teas from ancient mountain gardens, sourced with reverence and crafted with patience.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Connect</h4>
+        <ul class="footer__links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WeChat</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Míng Lù. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    const form = document.getElementById('contactForm');
+    const confirm = document.getElementById('formConfirm');
+
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const btn = form.querySelector('.btn-submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        form.style.display = 'none';
+        confirm.style.display = 'block';
+        confirm.classList.add('visible');
+      }, 1200);
+    });
+  </script>
+</body>
+</html>

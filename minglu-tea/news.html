@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Míng Lù News — Latest updates from our tea gardens, harvest reports, and stories from the world of fine tea." />
+  <title>News — Míng Lù</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAV -->
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-logo">Míng Lù</a>
+    <ul class="nav-links">
+      <li><a href="about-us.html">About</a></li>
+      <li class="nav-item-has-children">
+        <a href="products.html">Products</a>
+        <span class="nav-dropdown-toggle"></span>
+        <div class="mega-menu">
+          <div class="mega-menu__inner">
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Green Teas</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Dragon Well (Longjing)</a></li>
+                <li><a href="products.html">Snail Spring (Biluochun)</a></li>
+                <li><a href="products.html">Jade Dew (Gyokuro)</a></li>
+                <li><a href="products.html">White Leaf (Anji Bai)</a></li>
+                <li><a href="products.html">Cloud Mist (Yunwu)</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Oolong</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Da Hong Pao</a></li>
+                <li><a href="products.html">Tie Guan Yin</a></li>
+                <li><a href="products.html">Phoenix Oolong</a></li>
+                <li><a href="products.html">Dong Ding Oolong</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Pu-erh</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Raw Pu-erh (Sheng)</a></li>
+                <li><a href="products.html">Ripe Pu-erh (Shou)</a></li>
+                <li><a href="products.html">Aged Collection</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section mega-menu__section--featured">
+              <h4 class="mega-menu__title">Featured</h4>
+              <p class="mega-menu__desc">Our limited spring harvest selection. Pre-orders now open.</p>
+              <a href="products.html" class="mega-menu__cta">View Collection →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="news.html" class="nav-active">News</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="search-container">
+        <button class="search-toggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <div class="search-dropdown">
+          <form class="search-form">
+            <input type="text" class="search-input" placeholder="Search teas..." />
+            <button type="submit" class="search-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header__bg">
+      <div class="page-header__img-placeholder"></div>
+      <div class="page-header__vignette"></div>
+    </div>
+    <div class="page-header__content">
+      <span class="page-header__eyebrow reveal-fade">Journal</span>
+      <h1 class="page-header__title reveal-up">News &<br/><em>Stories</em></h1>
+      <p class="page-header__sub reveal-fade delay-2">
+        Updates from our gardens, harvest reports,<br/>and the quiet art of tea.
+      </p>
+    </div>
+  </section>
+
+  <!-- BREADCRUMBS -->
+  <div class="breadcrumbs">
+    <div class="breadcrumbs__inner">
+      <a href="index.html" class="breadcrumbs__link">Home</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__current">News</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ NEWS LIST -->
+  <section class="news-list section">
+    <div class="news-list__container">
+      
+      <!-- SIDEBAR -->
+      <aside class="news-list__sidebar reveal-left">
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">Categories</h3>
+          <ul class="sidebar-menu">
+            <li><a href="#" class="sidebar-menu__link active">All News</a></li>
+            <li><a href="#" class="sidebar-menu__link">Harvest Reports</a></li>
+            <li><a href="#" class="sidebar-menu__link">Origin Stories</a></li>
+            <li><a href="#" class="sidebar-menu__link">Craft & Process</a></li>
+            <li><a href="#" class="sidebar-menu__link">Events</a></li>
+            <li><a href="#" class="sidebar-menu__link">Quality & Certification</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card sidebar-card--featured">
+          <h3 class="sidebar-card__title">Subscribe</h3>
+          <p class="sidebar-card__text">
+            Receive seasonal harvest updates and stories from our gardens directly to your inbox.
+          </p>
+          <input type="email" class="sidebar-card__input" placeholder="Your email address" />
+          <a href="#" class="sidebar-card__link">Subscribe →</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">Archive</h3>
+          <ul class="sidebar-menu">
+            <li><a href="#" class="sidebar-menu__link">2025</a></li>
+            <li><a href="#" class="sidebar-menu__link">2024</a></li>
+            <li><a href="#" class="sidebar-menu__link">2023</a></li>
+            <li><a href="#" class="sidebar-menu__link">2022</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- NEWS GRID -->
+      <main class="news-list__main">
+        
+        <div class="news-grid">
+        
+          <article class="news-card reveal-up">
+            <a href="news-detail.html" class="news-card__link">
+              <div class="news-card__image">
+                <div class="img-placeholder img-placeholder--news-1">
+                  <div class="news-card__date">
+                    <span class="news-card__day">15</span>
+                    <span class="news-card__month">Mar</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card__body">
+                <span class="news-card__category">Harvest</span>
+                <h2 class="news-card__title">Spring Flush 2025 — The First Harvest Begins</h2>
+                <p class="news-card__excerpt">As the mountain mists begin to lift, our farmers gather the first buds of the season. This year's conditions promise exceptional character.</p>
+                <span class="news-card__read-more">Read More →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card reveal-up delay-1">
+            <a href="news-detail.html" class="news-card__link">
+              <div class="news-card__image">
+                <div class="img-placeholder img-placeholder--news-2">
+                  <div class="news-card__date">
+                    <span class="news-card__day">02</span>
+                    <span class="news-card__month">Mar</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card__body">
+                <span class="news-card__category">Origin</span>
+                <h2 class="news-card__title">A New Garden Joins the Míng Lù Collection</h2>
+                <p class="news-card__excerpt">We are proud to announce our partnership with a fourth-generation family garden in Mengding Mountain, adding a rare alpine yellow tea to our offerings.</p>
+                <span class="news-card__read-more">Read More →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card reveal-up delay-2">
+            <a href="news-detail.html" class="news-card__link">
+              <div class="news-card__image">
+                <div class="img-placeholder img-placeholder--news-3">
+                  <div class="news-card__date">
+                    <span class="news-card__day">18</span>
+                    <span class="news-card__month">Feb</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card__body">
+                <span class="news-card__category">Craft</span>
+                <h2 class="news-card__title">The Art of Hand-Roasting — A Master's Perspective</h2>
+                <p class="news-card__excerpt">Master Li shares insights from sixty years of wok-roasting tea, and why no machine can replicate the judgment of an experienced hand.</p>
+                <span class="news-card__read-more">Read More →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card reveal-up delay-1">
+            <a href="news-detail.html" class="news-card__link">
+              <div class="news-card__image">
+                <div class="img-placeholder img-placeholder--news-4">
+                  <div class="news-card__date">
+                    <span class="news-card__day">05</span>
+                    <span class="news-card__month">Feb</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card__body">
+                <span class="news-card__category">Events</span>
+                <h2 class="news-card__title">Míng Lù at the World Tea Summit 2025</h2>
+                <p class="news-card__excerpt">Join us in Shanghai for an intimate tasting session exploring the 2024 autumn harvest, followed by a conversation on sustainable tea cultivation.</p>
+                <span class="news-card__read-more">Read More →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card reveal-up delay-2">
+            <a href="news-detail.html" class="news-card__link">
+              <div class="news-card__image">
+                <div class="img-placeholder img-placeholder--news-5">
+                  <div class="news-card__date">
+                    <span class="news-card__day">22</span>
+                    <span class="news-card__month">Jan</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card__body">
+                <span class="news-card__category">Quality</span>
+                <h2 class="news-card__title">Twelve Years of Pesticide-Free Excellence</h2>
+                <p class="news-card__excerpt">Our commitment to organic cultivation reaches a milestone: twelve consecutive years of clean test results from independent laboratories.</p>
+                <span class="news-card__read-more">Read More →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card reveal-up delay-3">
+            <a href="news-detail.html" class="news-card__link">
+              <div class="news-card__image">
+                <div class="img-placeholder img-placeholder--news-6">
+                  <div class="news-card__date">
+                    <span class="news-card__day">10</span>
+                    <span class="news-card__month">Jan</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card__body">
+                <span class="news-card__category">Origin</span>
+                <h2 class="news-card__title">Winter in the High Mountains</h2>
+                <p class="news-card__excerpt">A photographic journey through our gardens in Yunnan, where the tea trees rest beneath winter snow, gathering strength for the spring flush.</p>
+                <span class="news-card__read-more">Read More →</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination reveal-fade">
+          <a href="#" class="pagination__arrow pagination__arrow--prev">← Previous</a>
+          <div class="pagination__pages">
+            <a href="#" class="pagination__page">1</a>
+            <a href="#" class="pagination__page active">2</a>
+            <a href="#" class="pagination__page">3</a>
+            <span class="pagination__ellipsis">…</span>
+            <a href="#" class="pagination__page">12</a>
+          </div>
+          <a href="#" class="pagination__arrow pagination__arrow--next">Next →</a>
+        </div>
+
+      </main>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Míng Lù</span>
+        <span class="footer__tagline">Ancient Teas · Rare Origins</span>
+      </div>
+      <div class="footer__links">
+        <a href="about-us.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="news.html">News</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact-us.html">Contact</a>
+      </div>
+      <div class="footer__contact">
+        <span>trade@minglu-tea.com</span>
+        <span>Yunnan · Shanghai · Singapore</span>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© 2025 Míng Lù Tea · All rights reserved</span>
+      <span class="footer__lang">明路 · The Clear Path</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

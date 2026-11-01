@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Home | Premium Home Appliances</title>
+    <meta
+      name="description"
+      content="Precision-crafted luxury home appliances for modern living. Kitchen, laundry, cooling and air care systems designed with quiet excellence."
+    />
+    <meta name="author" content="Atelier Home" />
+    <meta property="og:title" content="Atelier Home | Premium Home Appliances" />
+    <meta
+      property="og:description"
+      content="Precision-crafted luxury home appliances for modern living."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./src/assets/hero-kitchen.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="./src/assets/hero-kitchen.jpg" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container nav-inner">
+        <a href="#top" class="brand">Atelier</a>
+        <div class="nav-links desktop-nav">
+          <a href="#products">Products</a>
+          <a href="#smart-living">Smart Living</a>
+          <a href="#craftsmanship">Craftsmanship</a>
+          <a href="#sustainability">Sustainability</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div id="mobile-nav" class="mobile-nav">
+        <a href="#products">Products</a>
+        <a href="#smart-living">Smart Living</a>
+        <a href="#craftsmanship">Craftsmanship</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <img
+          src="./src/assets/hero-kitchen.jpg"
+          alt="Premium kitchen with built-in appliances"
+          class="hero-image"
+        />
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow hero-intro fade-up" style="--delay: 200ms;">The Art of Living Well</p>
+          <h1 class="hero-title fade-up" style="--delay: 400ms;">
+            Precision Crafted
+            <br />
+            for Modern Living
+          </h1>
+          <p class="hero-copy fade-up" style="--delay: 600ms;">
+            Where engineering excellence meets timeless design. Appliances that
+            elevate every moment at home.
+          </p>
+          <div class="hero-actions fade-up" style="--delay: 800ms;">
+            <a href="#products" class="button button-hero">Discover Collection</a>
+            <a href="#craftsmanship" class="button button-hero-outline">Our Story</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section brand-story">
+        <div class="container two-column">
+          <div class="reveal media-frame portrait">
+            <img
+              src="./src/assets/brand-story.jpg"
+              alt="Designer kitchen with natural light"
+            />
+          </div>
+
+          <div class="reveal reveal-delay-2">
+            <p class="eyebrow">Our Heritage</p>
+            <h2 class="section-title">
+              A Legacy of
+              <br />
+              Quiet Excellence
+            </h2>
+            <div class="body-copy stack">
+              <p>
+                For over four decades, we have pursued a singular vision: to
+                create home appliances that are as beautiful as they are
+                intelligent. Every product begins with the understanding that
+                your home deserves nothing less than perfection.
+              </p>
+              <p>
+                Our engineers and designers work in concert, balancing form with
+                function, innovation with intuition. The result is a collection
+                that transforms daily rituals into moments of quiet luxury.
+              </p>
+            </div>
+
+            <div class="metrics">
+              <div>
+                <p class="metric-value">43</p>
+                <p class="metric-label">Years of Craft</p>
+              </div>
+              <div class="metric-divider"></div>
+              <div>
+                <p class="metric-value">2.4M</p>
+                <p class="metric-label">Homes Worldwide</p>
+              </div>
+              <div class="metric-divider"></div>
+              <div>
+                <p class="metric-value">17</p>
+                <p class="metric-label">Design Awards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section section-muted">
+        <div class="container">
+          <div class="reveal section-heading center">
+            <p class="eyebrow">Collections</p>
+            <h2 class="section-title center">Explore by Category</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="reveal reveal-delay-1 card">
+              <div class="media-frame card-media tall">
+                <img src="./src/assets/cat-kitchen.jpg" alt="Kitchen collection" />
+              </div>
+              <h3>Kitchen</h3>
+              <p>Ovens, cooktops &amp; integrated systems</p>
+              <a href="#contact" class="button button-outline button-small">Explore</a>
+            </article>
+
+            <article class="reveal reveal-delay-2 card">
+              <div class="media-frame card-media tall">
+                <img src="./src/assets/cat-laundry.jpg" alt="Laundry collection" />
+              </div>
+              <h3>Laundry</h3>
+              <p>Washing &amp; drying perfected</p>
+              <a href="#contact" class="button button-outline button-small">Explore</a>
+            </article>
+
+            <article class="reveal reveal-delay-3 card">
+              <div class="media-frame card-media tall">
+                <img src="./src/assets/cat-cooling.jpg" alt="Cooling collection" />
+              </div>
+              <h3>Cooling</h3>
+              <p>Refrigeration redefined</p>
+              <a href="#contact" class="button button-outline button-small">Explore</a>
+            </article>
+
+            <article class="reveal reveal-delay-4 card">
+              <div class="media-frame card-media tall">
+                <img src="./src/assets/cat-aircare.jpg" alt="Air care collection" />
+              </div>
+              <h3>Air Care</h3>
+              <p>Purified living environments</p>
+              <a href="#contact" class="button button-outline button-small">Explore</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="reveal section-heading center">
+            <p class="eyebrow">Featured</p>
+            <h2 class="section-title center">Signature Pieces</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="reveal reveal-delay-1 card">
+              <div class="media-frame card-media square light-panel">
+                <img src="./src/assets/cat-kitchen.jpg" alt="Serie Noire Oven" class="contain" />
+              </div>
+              <h3>Serie Noire Oven</h3>
+              <p>Dual convection • Self-cleaning • 72L capacity</p>
+              <a href="#contact" class="button button-outline button-small">View Details</a>
+            </article>
+
+            <article class="reveal reveal-delay-2 card">
+              <div class="media-frame card-media square light-panel">
+                <img src="./src/assets/cat-cooling.jpg" alt="Frost-Free Column" class="contain" />
+              </div>
+              <h3>Frost-Free Column</h3>
+              <p>BioFresh • Whisper-quiet 32dB • A+++ rated</p>
+              <a href="#contact" class="button button-outline button-small">View Details</a>
+            </article>
+
+            <article class="reveal reveal-delay-3 card">
+              <div class="media-frame card-media square light-panel">
+                <img src="./src/assets/cat-aircare.jpg" alt="AirSense Pro" class="contain" />
+              </div>
+              <h3>AirSense Pro</h3>
+              <p>HEPA 14 • Smart sensor • 68m² coverage</p>
+              <a href="#contact" class="button button-outline button-small">View Details</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="smart-living" class="section section-dark">
+        <div class="container dark-stack">
+          <div class="reveal section-heading center">
+            <p class="eyebrow">Technology</p>
+            <h2 class="section-title center on-dark">Intelligent by Design</h2>
+          </div>
+
+          <div class="reveal feature-row">
+            <div class="media-frame wide">
+              <img src="./src/assets/smart-living.jpg" alt="Connected smart home controls" />
+            </div>
+            <div class="feature-copy">
+              <p class="eyebrow">Connected Home</p>
+              <h3 class="feature-title on-dark">Every Appliance, One Touch Away</h3>
+              <p class="body-copy on-dark">
+                Our intelligent ecosystem connects every appliance through a
+                single, intuitive interface. Monitor, adjust, and optimize your
+                home from anywhere in the world.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal feature-row reverse">
+            <div class="media-frame wide">
+              <img src="./src/assets/lifestyle-1.jpg" alt="Integrated architectural kitchen" />
+            </div>
+            <div class="feature-copy">
+              <p class="eyebrow">Seamless Integration</p>
+              <h3 class="feature-title on-dark">Designed to Disappear Into Your Home</h3>
+              <p class="body-copy on-dark">
+                Flush-mount installations, custom panel-ready finishes, and
+                whisper-quiet operation mean our appliances become part of your
+                architecture, never an afterthought.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="craftsmanship" class="section">
+        <div class="container">
+          <div class="reveal section-heading center">
+            <p class="eyebrow">Materials</p>
+            <h2 class="section-title center">Crafted to Perfection</h2>
+          </div>
+
+          <div class="materials-grid">
+            <article class="reveal reveal-delay-1 material-card">
+              <div class="media-frame square">
+                <img src="./src/assets/material-steel.jpg" alt="Brushed steel finish" />
+              </div>
+              <h4>Brushed Steel</h4>
+              <p>Hand-finished, fingerprint-resistant</p>
+            </article>
+
+            <article class="reveal reveal-delay-2 material-card">
+              <div class="media-frame square">
+                <img src="./src/assets/material-glass.jpg" alt="Matte glass finish" />
+              </div>
+              <h4>Matte Glass</h4>
+              <p>Scratch-resistant ceramic coating</p>
+            </article>
+
+            <article class="reveal reveal-delay-3 material-card">
+              <div class="media-frame square">
+                <img src="./src/assets/material-steel.jpg" alt="Warm bronze finish" />
+              </div>
+              <h4>Warm Bronze</h4>
+              <p>PVD-coated titanium alloy</p>
+            </article>
+
+            <article class="reveal reveal-delay-4 material-card">
+              <div class="media-frame square">
+                <img src="./src/assets/material-glass.jpg" alt="Arctic white finish" />
+              </div>
+              <h4>Arctic White</h4>
+              <p>Anti-microbial enamel surface</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <div class="reveal section-heading center">
+            <p class="eyebrow">Inspiration</p>
+            <h2 class="section-title center">Live Beautifully</h2>
+          </div>
+
+          <div class="reveal lifestyle-grid">
+            <article class="tile tile-large">
+              <img src="./src/assets/hero-kitchen.jpg" alt="The modern kitchen" />
+              <div class="tile-overlay"></div>
+              <p>The Modern Kitchen</p>
+            </article>
+            <article class="tile">
+              <img src="./src/assets/brand-story.jpg" alt="Light and space interior" />
+              <div class="tile-overlay"></div>
+              <p>Light &amp; Space</p>
+            </article>
+            <article class="tile">
+              <img src="./src/assets/lifestyle-1.jpg" alt="Open living environment" />
+              <div class="tile-overlay"></div>
+              <p>Open Living</p>
+            </article>
+            <article class="tile tile-wide">
+              <img src="./src/assets/showroom.jpg" alt="Curated showroom space" />
+              <div class="tile-overlay"></div>
+              <p>Curated Spaces</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sustainability" class="section">
+        <div class="container two-column">
+          <div class="reveal">
+            <p class="eyebrow">Responsibility</p>
+            <h2 class="section-title">
+              Innovation With
+              <br />
+              Purpose
+            </h2>
+            <p class="body-copy">
+              Every appliance is designed with its full lifecycle in mind, from
+              responsibly sourced materials to energy-efficient operation and
+              end-of-life recyclability. We believe luxury and sustainability
+              are inseparable.
+            </p>
+
+            <div class="stat-grid">
+              <div>
+                <p class="metric-value">38%</p>
+                <p class="stat-label">Energy Reduction Since 2018</p>
+              </div>
+              <div>
+                <p class="metric-value">92%</p>
+                <p class="stat-label">Recyclable Components</p>
+              </div>
+              <div>
+                <p class="metric-value">A+++</p>
+                <p class="stat-label">Efficiency Rating Standard</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-2 media-frame portrait">
+            <img src="./src/assets/sustainability.jpg" alt="Sustainable technology design" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-dark">
+        <div class="container two-column">
+          <div class="reveal">
+            <p class="eyebrow">Experience</p>
+            <h2 class="section-title on-dark">Visit Our Showroom</h2>
+            <p class="body-copy on-dark">
+              Experience our collection in person. Our design consultants are
+              available to guide you through every detail.
+            </p>
+
+            <form class="contact-form">
+              <input type="text" name="name" placeholder="Full Name" />
+              <input type="email" name="email" placeholder="Email Address" />
+              <textarea name="message" rows="3" placeholder="Your Message"></textarea>
+              <button type="submit" class="button button-hero">Book a Visit</button>
+            </form>
+          </div>
+
+          <div class="reveal reveal-delay-2 media-frame portrait">
+            <img src="./src/assets/showroom.jpg" alt="Luxury appliance showroom" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <p class="brand">Atelier</p>
+            <p>
+              Precision-crafted home appliances for those who appreciate the
+              finer details of modern living.
+            </p>
+          </div>
+
+          <div>
+            <p class="footer-heading">Products</p>
+            <ul>
+              <li><a href="#products">Kitchen</a></li>
+              <li><a href="#products">Laundry</a></li>
+              <li><a href="#products">Cooling</a></li>
+              <li><a href="#products">Air Care</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="footer-heading">Company</p>
+            <ul>
+              <li><a href="#top">Our Story</a></li>
+              <li><a href="#contact">Careers</a></li>
+              <li><a href="#contact">Press</a></li>
+              <li><a href="#sustainability">Sustainability</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="footer-heading">Support</p>
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Warranty</a></li>
+              <li><a href="#contact">Service</a></li>
+              <li><a href="#contact">Find a Dealer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Atelier Home. All rights reserved.</p>
+          <div class="footer-meta">
+            <a href="#top">Privacy</a>
+            <a href="#top">Terms</a>
+            <a href="#top">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Lumière Scented Candles</title>
+    <meta name="description" content="Browse our complete collection of premium scented candles">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products-page.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-fire"></i>
+                Lumière
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    
+                    <!-- Collections with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index.html#collections" class="nav__link">
+                            <span>Collections</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Botanical Garden</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Oriental Spice</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-lemon"></i>
+                                    <span>Citrus Refresh</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Cozy Comfort</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Products with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="products.html" class="nav__link active-link">
+                            <span>Products</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-star"></i>
+                                    <span>Best Sellers</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-sparkles"></i>
+                                    <span>New Arrivals</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-gift"></i>
+                                    <span>Gift Sets</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-percent"></i>
+                                    <span>Sale Items</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Services with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index.html#services" class="nav__link">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Custom Fragrances</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-box-open"></i>
+                                    <span>Private Labeling</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Bulk Manufacturing</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Consultation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav__item"><a href="index.html#sustainability" class="nav__link">Sustainability</a></li>
+                    <li class="nav__item"><a href="index.html#testimonials" class="nav__link">Testimonials</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__search" id="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav__cart" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="nav__cart-count">0</span>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-bar__container container">
+                <form class="search-bar__form" id="search-form">
+                    <input type="search" class="search-bar__input" placeholder="Search for products, collections..." aria-label="Search">
+                    <button type="submit" class="search-bar__submit" aria-label="Submit search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button class="search-bar__close" id="search-close" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header__content">
+                <h1 class="page-header__title">Our Products</h1>
+                <p class="page-header__description">Discover our complete collection of handcrafted scented candles</p>
+                <div class="breadcrumb">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
+                    <span class="breadcrumb__separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="breadcrumb__current">Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Archive Section -->
+    <section class="products-archive section">
+        <div class="container">
+            <div class="products-archive__layout">
+                
+                <!-- Sidebar -->
+                <aside class="products-sidebar" id="products-sidebar">
+                    <div class="sidebar-header">
+                        <h3 class="sidebar-header__title">Filters</h3>
+                        <button class="sidebar-close" id="sidebar-close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Filter: Search -->
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-widget__title">Search Products</h4>
+                        <form class="sidebar-search">
+                            <input type="search" class="sidebar-search__input" placeholder="Search...">
+                            <button type="submit" class="sidebar-search__button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Filter: Categories -->
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-widget__title">Categories</h4>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="category" value="all" checked>
+                                    <span>All Products</span>
+                                    <span class="count">(48)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="category" value="botanical">
+                                    <span>Botanical Garden</span>
+                                    <span class="count">(12)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="category" value="oriental">
+                                    <span>Oriental Spice</span>
+                                    <span class="count">(10)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="category" value="citrus">
+                                    <span>Citrus Refresh</span>
+                                    <span class="count">(14)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="category" value="cozy">
+                                    <span>Cozy Comfort</span>
+                                    <span class="count">(12)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Filter: Price Range -->
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-widget__title">Price Range</h4>
+                        <div class="price-filter">
+                            <input type="range" class="price-range" min="0" max="100" value="100" id="price-range">
+                            <div class="price-filter__values">
+                                <span>$0</span>
+                                <span id="max-price">$100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter: Size -->
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-widget__title">Size</h4>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="size" value="small">
+                                    <span>Small (4 oz)</span>
+                                    <span class="count">(16)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="size" value="medium">
+                                    <span>Medium (8 oz)</span>
+                                    <span class="count">(20)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="size" value="large">
+                                    <span>Large (16 oz)</span>
+                                    <span class="count">(12)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Filter: Rating -->
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-widget__title">Rating</h4>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="rating" value="5">
+                                    <span class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="count">(28)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="rating" value="4">
+                                    <span class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span>& Up</span>
+                                    <span class="count">(15)</span>
+                                </label>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="filter-checkbox" data-filter="rating" value="3">
+                                    <span class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span>& Up</span>
+                                    <span class="count">(5)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Filter: Tags -->
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-widget__title">Tags</h4>
+                        <div class="tag-cloud">
+                            <button class="tag" data-tag="bestseller">Best Seller</button>
+                            <button class="tag" data-tag="new">New</button>
+                            <button class="tag" data-tag="sale">On Sale</button>
+                            <button class="tag" data-tag="organic">Organic</button>
+                            <button class="tag" data-tag="vegan">Vegan</button>
+                            <button class="tag" data-tag="gift">Gift Set</button>
+                        </div>
+                    </div>
+
+                    <!-- Clear Filters Button -->
+                    <button class="btn btn--outline clear-filters">
+                        <i class="fas fa-redo"></i>
+                        Clear All Filters
+                    </button>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="products-main">
+                    
+                    <!-- Toolbar -->
+                    <div class="products-toolbar">
+                        <div class="products-toolbar__left">
+                            <button class="btn-filter-toggle" id="filter-toggle">
+                                <i class="fas fa-sliders-h"></i>
+                                Filters
+                            </button>
+                            <p class="products-count">Showing <span id="products-count">48</span> products</p>
+                        </div>
+                        <div class="products-toolbar__right">
+                            <div class="view-mode">
+                                <button class="view-mode__btn active" data-view="grid">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-mode__btn" data-view="list">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                            <select class="sort-select" id="sort-select">
+                                <option value="default">Sort by: Default</option>
+                                <option value="popularity">Sort by: Popularity</option>
+                                <option value="rating">Sort by: Rating</option>
+                                <option value="price-low">Sort by: Price (Low to High)</option>
+                                <option value="price-high">Sort by: Price (High to Low)</option>
+                                <option value="newest">Sort by: Newest</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-grid">
+                        
+                        <!-- Product items will be added here by JavaScript -->
+                        
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination__btn pagination__btn--prev" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="pagination__btn active">1</button>
+                        <button class="pagination__btn">2</button>
+                        <button class="pagination__btn">3</button>
+                        <button class="pagination__btn">4</button>
+                        <button class="pagination__btn pagination__btn--next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="products-page.js"></script>
+</body>
+</html>

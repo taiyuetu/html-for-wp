@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <!-- ============================================================
+    Premium Automotive Industrial Manufacturer Website
+    Page: News & Insights Archive
+    Company: Apex Bearing Technologies
+    ============================================================ -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with the latest news, product launches, industry insights, and trade show announcements from Apex Bearing Technologies.">
+    <meta name="keywords" content="wheel hub bearing news, automotive bearing industry, bearing manufacturing news, trade show schedule, Apex Bearing updates">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="News & Insights | Apex Bearing Technologies">
+    <meta property="og:description" content="Latest news, product updates, and industry insights from the world of wheel hub bearings.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=1200">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+
+    <title>News &amp; Insights | Wheel Hub Bearing Industry Updates — Apex Bearing Technologies</title>
+
+    <!-- Page-Specific Styles -->
+    <style>
+        /* ==========================================================
+           PAGE BANNER
+           ========================================================== */
+        .page-banner {
+            position: relative;
+            min-height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: var(--header-height);
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .page-banner__bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .page-banner__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.15;
+            filter: grayscale(0.4) brightness(0.6);
+        }
+
+        .page-banner__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(10,10,10,0.3) 50%, var(--bg-primary) 100%);
+            z-index: 1;
+        }
+
+        .page-banner__content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: var(--space-3xl) var(--space-xl);
+        }
+
+        .page-banner__breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            font-size: var(--text-sm);
+            color: var(--text-tertiary);
+            margin-bottom: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .page-banner__breadcrumb a {
+            color: var(--text-secondary);
+            transition: color var(--transition-fast);
+        }
+
+        .page-banner__breadcrumb a:hover {
+            color: var(--accent-primary);
+        }
+
+        .page-banner__breadcrumb .sep {
+            color: var(--text-muted);
+            user-select: none;
+        }
+
+        .page-banner__breadcrumb .current {
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        .page-banner__title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: var(--space-md);
+        }
+
+        .page-banner__title .text-accent {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-primary-hover));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-banner__desc {
+            font-size: var(--text-lg);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .page-banner__stats {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-2xl);
+            flex-wrap: wrap;
+        }
+
+        .page-banner__stat {
+            text-align: center;
+        }
+
+        .page-banner__stat-number {
+            font-size: var(--text-2xl);
+            font-weight: 900;
+            color: var(--accent-primary);
+        }
+
+        .page-banner__stat-label {
+            font-size: var(--text-xs);
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        /* ==========================================================
+           NEWS LAYOUT (Sidebar + Grid)
+           ========================================================== */
+        .news-archive {
+            padding: var(--space-4xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .news-archive__layout {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: var(--space-3xl);
+            align-items: start;
+        }
+
+        /* ==========================================================
+           SIDEBAR
+           ========================================================== */
+        .news-archive__sidebar {
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-xl));
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .sidebar-widget {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            transition: border-color var(--transition-fast);
+        }
+
+        .sidebar-widget:hover {
+            border-color: rgba(0,102,204,0.25);
+        }
+
+        .sidebar-widget__title {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .sidebar-widget__title .icon {
+            color: var(--accent-primary);
+        }
+
+        /* Search Widget */
+        .sidebar-search {
+            position: relative;
+        }
+
+        .sidebar-search__input {
+            width: 100%;
+            padding: 12px 44px 12px 16px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: var(--text-sm);
+            color: var(--text-primary);
+            outline: none;
+            transition: all var(--transition-fast);
+        }
+
+        .sidebar-search__input:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--accent-primary-glow);
+        }
+
+        .sidebar-search__input::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        .sidebar-search__btn {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-tertiary);
+            border-radius: 50%;
+            transition: all var(--transition-fast);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar-search__btn:hover {
+            color: var(--accent-primary);
+            background: var(--accent-primary-glow);
+        }
+
+        /* Category Pills */
+        .sidebar-categories {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .sidebar-categories__item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            user-select: none;
+        }
+
+        .sidebar-categories__item:hover {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        .sidebar-categories__item--active {
+            background: var(--accent-primary-glow);
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        .sidebar-categories__count {
+            margin-left: auto;
+            font-size: var(--text-xs);
+            color: var(--text-tertiary);
+            background: var(--bg-tertiary);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        /* Recent Posts Widget */
+        .sidebar-recent {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .sidebar-recent__item {
+            display: flex;
+            gap: var(--space-md);
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: opacity var(--transition-fast);
+        }
+
+        .sidebar-recent__item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .sidebar-recent__item:hover {
+            opacity: 0.8;
+        }
+
+        .sidebar-recent__thumb {
+            width: 64px;
+            height: 48px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            flex-shrink: 0;
+            background: var(--bg-tertiary);
+        }
+
+        .sidebar-recent__thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-recent__info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .sidebar-recent__title {
+            font-size: var(--text-xs);
+            font-weight: 600;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .sidebar-recent__date {
+            font-size: 0.7rem;
+            color: var(--text-tertiary);
+        }
+
+        /* Tags Cloud */
+        .sidebar-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .sidebar-tags__tag {
+            font-size: var(--text-xs);
+            padding: 6px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            color: var(--text-secondary);
+            font-weight: 500;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        .sidebar-tags__tag:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        .sidebar-tags__tag--active {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: #fff;
+        }
+
+        /* Newsletter CTA Widget */
+        .sidebar-cta {
+            background: var(--gradient-accent-dark);
+            border: none;
+            color: #fff;
+            text-align: center;
+        }
+
+        .sidebar-cta__icon {
+            margin-bottom: var(--space-md);
+            display: inline-flex;
+            padding: var(--space-md);
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+        }
+
+        .sidebar-cta h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .sidebar-cta p {
+            font-size: var(--text-xs);
+            color: rgba(255,255,255,0.75);
+            margin-bottom: var(--space-lg);
+            line-height: 1.6;
+        }
+
+        .sidebar-cta .sidebar-subscribe {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .sidebar-cta .sidebar-subscribe__input {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: var(--radius-md);
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            font-size: var(--text-sm);
+            outline: none;
+            transition: border-color var(--transition-fast);
+        }
+
+        .sidebar-cta .sidebar-subscribe__input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .sidebar-cta .sidebar-subscribe__input:focus {
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .sidebar-cta .btn {
+            width: 100%;
+            background: #fff;
+            color: var(--accent-primary);
+            font-weight: 700;
+            font-size: var(--text-sm);
+            padding: 12px 20px;
+            border: none;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .sidebar-cta .btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        /* ==========================================================
+           MAIN CONTENT AREA
+           ========================================================== */
+        .news-archive__main {
+            min-width: 0;
+        }
+
+        .news-archive__toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        .news-archive__count {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+        }
+
+        .news-archive__count strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .news-archive__sort {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+        }
+
+        .news-archive__sort select {
+            padding: 8px 36px 8px 14px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: var(--text-sm);
+            color: var(--text-primary);
+            outline: none;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23a0a0a0' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            transition: all var(--transition-fast);
+        }
+
+        .news-archive__sort select:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--accent-primary-glow);
+        }
+
+        /* ==========================================================
+           FEATURED POST (Hero Card)
+           ========================================================== */
+        .featured-post {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: var(--space-2xl);
+            transition: all var(--transition-base);
+        }
+
+        .featured-post:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow), var(--shadow-lg);
+        }
+
+        .featured-post__image {
+            position: relative;
+            overflow: hidden;
+            min-height: 360px;
+            background: var(--bg-tertiary);
+        }
+
+        .featured-post__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .featured-post:hover .featured-post__image img {
+            transform: scale(1.05);
+        }
+
+        .featured-post__badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            font-size: 0.625rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+            background: var(--accent-primary);
+            color: #fff;
+            z-index: 2;
+        }
+
+        .featured-post__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--space-2xl);
+        }
+
+        .featured-post__meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .featured-post__category {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-primary);
+            padding: 3px 10px;
+            border: 1px solid rgba(0,102,204,0.3);
+            border-radius: 100px;
+            background: var(--accent-primary-glow);
+        }
+
+        .featured-post__date {
+            font-size: var(--text-xs);
+            color: var(--text-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .featured-post__title {
+            font-size: var(--text-2xl);
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: var(--space-md);
+        }
+
+        .featured-post__title a {
+            color: var(--text-primary);
+            transition: color var(--transition-fast);
+        }
+
+        .featured-post__title a:hover {
+            color: var(--accent-primary);
+        }
+
+        .featured-post__excerpt {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: var(--space-lg);
+        }
+
+        .featured-post__read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--accent-primary);
+            transition: gap var(--transition-fast);
+        }
+
+        .featured-post__read-more:hover {
+            gap: 12px;
+        }
+
+        /* ==========================================================
+           NEWS GRID (2 Columns)
+           ========================================================== */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        /* News Card */
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all var(--transition-base);
+            display: flex;
+            flex-direction: column;
+            animation: cardFadeIn 400ms ease both;
+        }
+
+        .news-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-glow), var(--shadow-lg);
+            border-color: var(--accent-primary);
+        }
+
+        .news-card.hidden {
+            display: none;
+        }
+
+        @keyframes cardFadeIn {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .news-card__img-wrap {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            background: var(--bg-tertiary);
+        }
+
+        .news-card__img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .news-card:hover .news-card__img-wrap img {
+            transform: scale(1.08);
+        }
+
+        .news-card__category {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            font-size: 0.625rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+            z-index: 2;
+        }
+
+        .news-card__category--press {
+            background: var(--accent-primary);
+            color: #fff;
+        }
+
+        .news-card__category--product {
+            background: var(--accent-secondary);
+            color: #fff;
+        }
+
+        .news-card__category--trade {
+            background: var(--accent-warning);
+            color: #fff;
+        }
+
+        .news-card__category--insight {
+            background: #8833cc;
+            color: #fff;
+        }
+
+        .news-card__body {
+            padding: var(--space-lg);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card__meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            flex-wrap: wrap;
+        }
+
+        .news-card__date {
+            font-size: 0.7rem;
+            color: var(--text-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .news-card__reading-time {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .news-card__title {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            line-height: 1.4;
+        }
+
+        .news-card__title a {
+            color: var(--text-primary);
+            transition: color var(--transition-fast);
+        }
+
+        .news-card__title a:hover {
+            color: var(--accent-primary);
+        }
+
+        .news-card__excerpt {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            flex: 1;
+            margin-bottom: var(--space-md);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-card__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .news-card__author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .news-card__author-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--bg-tertiary);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .news-card__author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .news-card__author-name {
+            font-size: var(--text-xs);
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .news-card__read-link {
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap var(--transition-fast);
+        }
+
+        .news-card__read-link:hover {
+            gap: 8px;
+        }
+
+        /* ==========================================================
+           PAGINATION
+           ========================================================== */
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .pagination__btn {
+            min-width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 12px;
+            font-size: var(--text-sm);
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .pagination__btn:hover:not(.pagination__btn--disabled):not(.pagination__btn--active) {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            background: var(--accent-primary-glow);
+        }
+
+        .pagination__btn--active {
+            background: var(--gradient-accent);
+            border-color: var(--accent-primary);
+            color: #fff;
+            box-shadow: 0 2px 12px rgba(0,102,204,0.3);
+        }
+
+        .pagination__btn--disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .pagination__ellipsis {
+            min-width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-weight: 600;
+            user-select: none;
+        }
+
+        .pagination__info {
+            text-align: center;
+            margin-top: var(--space-md);
+            font-size: var(--text-xs);
+            color: var(--text-tertiary);
+        }
+
+        /* ==========================================================
+           NO RESULTS STATE
+           ========================================================== */
+        .news-archive__empty {
+            text-align: center;
+            padding: var(--space-4xl) var(--space-2xl);
+            background: var(--bg-card);
+            border: 1px dashed var(--border-color);
+            border-radius: var(--radius-lg);
+        }
+
+        .news-archive__empty-icon {
+            font-size: 3rem;
+            margin-bottom: var(--space-lg);
+            opacity: 0.5;
+        }
+
+        .news-archive__empty h3 {
+            font-size: var(--text-xl);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .news-archive__empty p {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-lg);
+        }
+
+        .news-archive__empty .btn {
+            display: inline-flex;
+        }
+
+        /* ==========================================================
+           RESPONSIVE BREAKPOINTS
+           ========================================================== */
+        @media (max-width: 1024px) {
+            .news-archive__layout {
+                grid-template-columns: 1fr;
+            }
+
+            .news-archive__sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-md);
+                order: -1;
+            }
+
+            .sidebar-cta {
+                grid-column: 1 / -1;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-post {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-post__image {
+                aspect-ratio: 16/9;
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .news-archive__sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .news-archive__toolbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .page-banner {
+                min-height: 280px;
+            }
+
+            .page-banner__stats {
+                gap: var(--space-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__ring">
+            <div class="loader__ring-inner"></div>
+        </div>
+        <span class="loader__text">APEX BEARING</span>
+    </div>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo" aria-label="Apex Bearing Technologies Home">
+                <svg class="header__logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                </svg>
+                <div class="header__logo-text">
+                    <span class="header__logo-name">APEX</span>
+                    <span class="header__logo-sub">BEARING TECHNOLOGIES</span>
+                </div>
+            </a>
+
+            <nav class="header__nav" id="mainNav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--mega">
+                        <a href="products-archive.html" class="header__nav-link">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu__grid">
+                                <div class="mega-menu__col">
+                                    <h4 class="mega-menu__title">By Category</h4>
+                                    <ul class="mega-menu__links">
+                                        <li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearings</a></li>
+                                        <li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li>
+                                        <li><a href="products-archive.html?cat=gen1">Gen 1 Hub Units</a></li>
+                                        <li><a href="products-archive.html?cat=gen2">Gen 2 Hub Units</a></li>
+                                        <li><a href="products-archive.html?cat=gen3">Gen 3 Hub Units</a></li>
+                                        <li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu__col">
+                                    <h4 class="mega-menu__title">By Vehicle Brand</h4>
+                                    <ul class="mega-menu__links">
+                                        <li><a href="products-archive.html?brand=toyota">Toyota · Honda · Nissan</a></li>
+                                        <li><a href="products-archive.html?brand=bmw">BMW · Mercedes · Audi</a></li>
+                                        <li><a href="products-archive.html?brand=hyundai">Hyundai · Kia</a></li>
+                                        <li><a href="products-archive.html?brand=ford">Ford · Chevrolet</a></li>
+                                        <li><a href="products-archive.html?brand=ev-brands">BYD · Tesla · Geely</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu__col mega-menu__col--featured">
+                                    <div class="mega-menu__card">
+                                        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db118?w=400&q=80" alt="Featured" loading="lazy">
+                                        <span>New: EV Hub Bearings</span>
+                                        <a href="products-archive.html?cat=ev">Explore →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="index.html#manufacturing" class="header__nav-link">Manufacturing</a></li>
+                    <li class="header__nav-item"><a href="index.html#quality" class="header__nav-link">Quality</a></li>
+                    <li class="header__nav-item"><a href="news-list.html" class="header__nav-link" style="color:var(--accent-primary)">News</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="header__action-btn" id="searchToggle" aria-label="Toggle search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <button class="header__action-btn" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="header__action-btn header__lang" aria-label="Language">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <span>EN</span>
+                </button>
+                <button class="header__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-overlay__box">
+                <input type="text" class="search-overlay__input" placeholder="Search news, events, product updates..." aria-label="Search news">
+                <button class="search-overlay__close" id="searchClose" aria-label="Close search">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    MOBILE MENU
+    ============================================================ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul>
+                <li><a href="products-archive.html">Products Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#manufacturing">Manufacturing</a></li>
+                <li><a href="index.html#quality">Quality</a></li>
+                <li><a href="news-list.html">News & Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu__cta">
+                <a href="contact.html" class="btn btn--primary">Become a Distributor</a>
+                <a href="#" class="btn btn--outline">Download Catalog</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main>
+
+        <!-- ========================================================
+        PAGE BANNER
+        ========================================================= -->
+        <section class="page-banner">
+            <div class="page-banner__bg">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=1920&q=80" alt="Industry news background">
+            </div>
+            <div class="page-banner__overlay"></div>
+            <div class="page-banner__content">
+                <nav class="page-banner__breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="sep">/</span>
+                    <span class="current">News &amp; Insights</span>
+                </nav>
+                <h1 class="page-banner__title">
+                    News <span class="text-accent">&amp; Insights</span>
+                </h1>
+                <p class="page-banner__desc">
+                    Stay informed with the latest product launches, industry trends, trade show schedules, and technical insights from the world of wheel hub bearings.
+                </p>
+                <div class="page-banner__stats">
+                    <div class="page-banner__stat">
+                        <div class="page-banner__stat-number" id="totalArticlesStats">12</div>
+                        <div class="page-banner__stat-label">Articles</div>
+                    </div>
+                    <div class="page-banner__stat">
+                        <div class="page-banner__stat-number">4</div>
+                        <div class="page-banner__stat-label">Categories</div>
+                    </div>
+                    <div class="page-banner__stat">
+                        <div class="page-banner__stat-number">Weekly</div>
+                        <div class="page-banner__stat-label">Updates</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+        NEWS ARCHIVE (Sidebar + Grid + Pagination)
+        ========================================================= -->
+        <section class="news-archive">
+            <div class="container">
+                <div class="news-archive__layout">
+
+                    <!-- ============================================
+                    SIDEBAR
+                    ============================================ -->
+                    <aside class="news-archive__sidebar" id="newsSidebar">
+
+                        <!-- Search Widget -->
+                        <div class="sidebar-widget sidebar-search">
+                            <input
+                                type="text"
+                                class="sidebar-search__input"
+                                id="sidebarSearch"
+                                placeholder="Search articles..."
+                                aria-label="Search articles"
+                            >
+                            <button class="sidebar-search__btn" aria-label="Search">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            </button>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">
+                                <span>Categories</span>
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                            </h3>
+                            <div class="sidebar-categories" id="categoryFilters">
+                                <label class="sidebar-categories__item sidebar-categories__item--active" data-cat="all">
+                                    All Articles
+                                    <span class="sidebar-categories__count" id="countAll">12</span>
+                                </label>
+                                <label class="sidebar-categories__item" data-cat="press">
+                                    Press Releases
+                                    <span class="sidebar-categories__count" id="countPress">4</span>
+                                </label>
+                                <label class="sidebar-categories__item" data-cat="product">
+                                    Product Updates
+                                    <span class="sidebar-categories__count" id="countProduct">3</span>
+                                </label>
+                                <label class="sidebar-categories__item" data-cat="trade">
+                                    Trade Shows
+                                    <span class="sidebar-categories__count" id="countTrade">2</span>
+                                </label>
+                                <label class="sidebar-categories__item" data-cat="insight">
+                                    Technical Insights
+                                    <span class="sidebar-categories__count" id="countInsight">3</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Recent Posts -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">
+                                <span>Recent Posts</span>
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </h3>
+                            <div class="sidebar-recent" id="sidebarRecentPosts">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Popular Tags -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">
+                                <span>Popular Tags</span>
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                            </h3>
+                            <div class="sidebar-tags" id="tagFilters">
+                                <span class="sidebar-tags__tag" data-tag="EV">EV Bearings</span>
+                                <span class="sidebar-tags__tag" data-tag="OEM">OEM</span>
+                                <span class="sidebar-tags__tag" data-tag="Quality">Quality Standards</span>
+                                <span class="sidebar-tags__tag" data-tag="Manufacturing">Manufacturing</span>
+                                <span class="sidebar-tags__tag" data-tag="Global">Global Export</span>
+                                <span class="sidebar-tags__tag" data-tag="Automechanika">Automechanika</span>
+                                <span class="sidebar-tags__tag" data-tag="Sustainability">Sustainability</span>
+                                <span class="sidebar-tags__tag" data-tag="R&D">R&amp;D</span>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter CTA Widget -->
+                        <div class="sidebar-widget sidebar-cta">
+                            <div class="sidebar-cta__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <h4>Subscribe to Newsletter</h4>
+                            <p>Get the latest news, product launches, and industry insights delivered to your inbox.</p>
+                            <div class="sidebar-subscribe">
+                                <input type="email" class="sidebar-subscribe__input" id="subscribeEmail" placeholder="your@email.com" aria-label="Email for newsletter">
+                                <button class="btn" id="subscribeBtn">Subscribe</button>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- ============================================
+                    MAIN NEWS GRID
+                    ============================================ -->
+                    <div class="news-archive__main">
+
+                        <!-- Toolbar -->
+                        <div class="news-archive__toolbar">
+                            <div class="news-archive__count">
+                                Showing <strong id="showingCount">1-6</strong> of <strong id="totalCount">12</strong> articles
+                            </div>
+                            <div class="news-archive__sort">
+                                <label for="sortBy">Sort by:</label>
+                                <select id="sortBy">
+                                    <option value="latest">Latest First</option>
+                                    <option value="oldest">Oldest First</option>
+                                    <option value="popular">Most Read</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Featured Post (Latest / Most Important) -->
+                        <div class="featured-post" id="featuredPost">
+                            <!-- Populated by JavaScript -->
+                        </div>
+
+                        <!-- News Grid -->
+                        <div class="news-grid" id="newsGrid">
+                            <!-- Populated by JavaScript -->
+                        </div>
+
+                        <!-- Empty State -->
+                        <div class="news-archive__empty" id="newsEmpty" style="display:none;">
+                            <div class="news-archive__empty-icon">📰</div>
+                            <h3>No Articles Found</h3>
+                            <p>Try adjusting your filters or search terms.</p>
+                            <button class="btn btn--primary" id="resetFiltersBtn">Reset All Filters</button>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav class="pagination" id="pagination" aria-label="Articles pagination">
+                            <!-- Populated by JavaScript -->
+                        </nav>
+
+                        <p class="pagination__info" id="paginationInfo"></p>
+
+                    </div><!-- /news-archive__main -->
+
+                </div><!-- /news-archive__layout -->
+            </div><!-- /container -->
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--about">
+                    <a href="index.html" class="footer__logo">
+                        <svg viewBox="0 0 40 40" width="40" height="40">
+                            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                        </svg>
+                        <span>APEX BEARING TECHNOLOGIES</span>
+                    </a>
+                    <p>Global manufacturer of premium wheel hub bearings and wheel hub assembly units. IATF 16949 certified. Serving 80+ countries worldwide.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products-archive.html">Product Catalog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#manufacturing">Manufacturing</a></li>
+                        <li><a href="news-list.html">News &amp; Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearing</a></li>
+                        <li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li>
+                        <li><a href="products-archive.html?cat=gen1">Generation 1 Hub Unit</a></li>
+                        <li><a href="products-archive.html?cat=gen2">Generation 2 Hub Unit</a></li>
+                        <li><a href="products-archive.html?cat=gen3">Generation 3 Hub Unit</a></li>
+                        <li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+86 138 0000 0000</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>export@apexbearing.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024-2026 Apex Bearing Technologies. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Trade</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    FLOATING BUTTONS
+    ============================================================ -->
+    <a href="https://wa.me/8613800000000" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+        <span class="floating-whatsapp__pulse"></span>
+    </a>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="script.js"></script>
+
+    <!-- News List Page Specific JavaScript -->
+    <script>
+    (function () {
+        'use strict';
+
+        /* ==========================================================
+           NEWS ARTICLE DATA (12 Sample Articles)
+           ========================================================== */
+        const articles = [
+            {
+                id: 1,
+                slug: 'apex-launches-ev-hub-bearing-line',
+                title: 'Apex Launches Next-Generation EV Hub Bearing Line for 2026',
+                excerpt: 'Our new low-friction, low-noise hub bearing assemblies are purpose-engineered for electric vehicles, delivering 15% greater energy efficiency and 8 dB noise reduction.',
+                content: '',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-06-20',
+                dateFormatted: 'June 20, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['EV', 'Product Launch', 'R&D'],
+                featured: true,
+                image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&q=80',
+                views: 1240
+            },
+            {
+                id: 2,
+                slug: 'iatf-16949-recertification-2026',
+                title: 'Apex Bearing Achieves IATF 16949 Recertification with Zero Non-Conformities',
+                excerpt: 'Our quality management system once again passes the rigorous IATF 16949 audit with a perfect score, reinforcing our commitment to automotive excellence.',
+                content: '',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-06-10',
+                dateFormatted: 'June 10, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '3 min read',
+                tags: ['Quality', 'Certification', 'Manufacturing'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80',
+                views: 980
+            },
+            {
+                id: 3,
+                slug: 'automechanika-frankfurt-2026',
+                title: 'Visit Apex at Automechanika Frankfurt 2026 — Hall 4.1, Booth C22',
+                excerpt: 'Join us at the world\'s leading trade fair for the automotive aftermarket. We\'ll showcase our complete hub bearing lineup and offer exclusive distributor pricing.',
+                content: '',
+                category: 'trade',
+                categoryLabel: 'Trade Show',
+                date: '2026-05-28',
+                dateFormatted: 'May 28, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '5 min read',
+                tags: ['Automechanika', 'Trade Show', 'Global'],
+                featured: true,
+                image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+                views: 1560
+            },
+            {
+                id: 4,
+                slug: 'gen3-hub-unit-advancements',
+                title: 'Technical Deep-Dive: Gen 3 Hub Unit Advancements and ABS Integration',
+                excerpt: 'Explore the engineering behind Generation 3 hub units with fully integrated ABS sensors — improving safety, reliability, and assembly efficiency for modern vehicles.',
+                content: '',
+                category: 'insight',
+                categoryLabel: 'Technical Insight',
+                date: '2026-05-15',
+                dateFormatted: 'May 15, 2026',
+                author: 'Dr. Li Wei',
+                authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80',
+                readingTime: '7 min read',
+                tags: ['R&D', 'Manufacturing', 'Quality'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1565043666747-69f6646db118?w=800&q=80',
+                views: 720
+            },
+            {
+                id: 5,
+                slug: 'warehouse-expansion-zhejiang-2026',
+                title: 'Announcing 50,000 m² Warehouse Expansion in Zhejiang Province',
+                excerpt: 'Our new smart warehouse facility increases storage capacity by 200% and features automated inventory management, enabling same-day dispatch for 90% of orders.',
+                content: '',
+                category: 'product',
+                categoryLabel: 'Product Update',
+                date: '2026-04-22',
+                dateFormatted: 'April 22, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['Manufacturing', 'Global', 'Logistics'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+                views: 850
+            },
+            {
+                id: 6,
+                slug: 'low-noise-bearing-technology',
+                title: 'How Low-Noise Bearing Technology Is Shaping the Premium Vehicle Aftermarket',
+                excerpt: 'An analysis of how advanced sealing, precision grinding, and optimized raceway geometries are reducing cabin noise by up to 4 dB in premium vehicles.',
+                content: '',
+                category: 'insight',
+                categoryLabel: 'Technical Insight',
+                date: '2026-04-08',
+                dateFormatted: 'April 8, 2026',
+                author: 'Dr. Li Wei',
+                authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80',
+                readingTime: '6 min read',
+                tags: ['R&D', 'Quality', 'Sustainability'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80',
+                views: 680
+            },
+            {
+                id: 7,
+                slug: 'new-oem-partnership-2026',
+                title: 'Apex Secures OEM Supply Agreement with Major European Automaker',
+                excerpt: 'We\'re proud to announce a multi-year OEM supply agreement for wheel hub bearing assemblies, starting with a European luxury vehicle platform launching in 2027.',
+                content: '',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-03-18',
+                dateFormatted: 'March 18, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '3 min read',
+                tags: ['OEM', 'Partnership', 'Global'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
+                views: 1120
+            },
+            {
+                id: 8,
+                slug: 'sustainability-report-2025',
+                title: '2025 Sustainability Report: Carbon Footprint Reduced by 22%',
+                excerpt: 'Our annual sustainability report highlights major progress: 22% carbon reduction, 95% waste recycling rate, and 40% renewable energy usage across manufacturing facilities.',
+                content: '',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-02-28',
+                dateFormatted: 'February 28, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '5 min read',
+                tags: ['Sustainability', 'Manufacturing'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80',
+                views: 760
+            },
+            {
+                id: 9,
+                slug: 'bearing-failure-analysis-guide',
+                title: 'Common Hub Bearing Failure Modes and How to Prevent Them',
+                excerpt: 'A practical guide for distributors and mechanics: identifying premature wear, contamination, improper installation, and lubrication failure in wheel hub bearings.',
+                content: '',
+                category: 'insight',
+                categoryLabel: 'Technical Insight',
+                date: '2026-02-10',
+                dateFormatted: 'February 10, 2026',
+                author: 'Dr. Li Wei',
+                authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80',
+                readingTime: '8 min read',
+                tags: ['Quality', 'Technical', 'Training'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1625047509168-a7e6e2c4d5a4?w=800&q=80',
+                views: 1450
+            },
+            {
+                id: 10,
+                slug: 'truck-heavy-duty-hub-launch',
+                title: 'New Heavy-Duty Hub Assembly for Commercial Truck Applications',
+                excerpt: 'Introducing our heavy-duty wheel hub assembly line designed for commercial trucks and buses, with 500,000 km service life and enhanced load capacity.',
+                content: '',
+                category: 'product',
+                categoryLabel: 'Product Update',
+                date: '2026-01-25',
+                dateFormatted: 'January 25, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['Product Launch', 'OEM', 'Manufacturing'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1631531892256-3eb5b6234883?w=800&q=80',
+                views: 920
+            },
+            {
+                id: 11,
+                slug: 'aapex-las-vegas-2026-recap',
+                title: 'AAPEX Las Vegas 2026: Key Takeaways and Customer Highlights',
+                excerpt: 'Our team returns from AAPEX Las Vegas with record booth traffic, 200+ new distributor leads, and positive feedback on our expanded Gen 3 product range.',
+                content: '',
+                category: 'trade',
+                categoryLabel: 'Trade Show',
+                date: '2026-01-12',
+                dateFormatted: 'January 12, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['Trade Show', 'Global', 'Partnership'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+                views: 600
+            },
+            {
+                id: 12,
+                slug: 'digital-catalog-platform-2026',
+                title: 'Launching Our Interactive Digital Product Catalog Platform',
+                excerpt: 'Our new digital catalog platform features cross-reference search, 3D model viewing, and real-time stock availability — accessible 24/7 for distributors worldwide.',
+                content: '',
+                category: 'product',
+                categoryLabel: 'Product Update',
+                date: '2025-12-15',
+                dateFormatted: 'December 15, 2025',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '3 min read',
+                tags: ['Digital', 'Global', 'Innovation'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+                views: 540
+            }
+        ];
+
+        /* ==========================================================
+           CATEGORY CONFIG
+           ========================================================== */
+        const categoryConfig = {
+            press: { label: 'Press Release', cssClass: 'news-card__category--press' },
+            product: { label: 'Product Update', cssClass: 'news-card__category--product' },
+            trade: { label: 'Trade Show', cssClass: 'news-card__category--trade' },
+            insight: { label: 'Technical Insight', cssClass: 'news-card__category--insight' }
+        };
+
+        /* ==========================================================
+           STATE
+           ========================================================== */
+        const state = {
+            currentPage: 1,
+            perPage: 6,
+            activeCategory: 'all',
+            activeTag: null,
+            searchQuery: '',
+            sortBy: 'latest',
+        };
+
+        /* ==========================================================
+           DOM REFS
+           ========================================================== */
+        const newsGrid = document.getElementById('newsGrid');
+        const featuredPost = document.getElementById('featuredPost');
+        const newsEmpty = document.getElementById('newsEmpty');
+        const pagination = document.getElementById('pagination');
+        const showingCount = document.getElementById('showingCount');
+        const totalCount = document.getElementById('totalCount');
+        const paginationInfo = document.getElementById('paginationInfo');
+        const sidebarSearch = document.getElementById('sidebarSearch');
+        const sortBySelect = document.getElementById('sortBy');
+        const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+        const sidebarRecentPosts = document.getElementById('sidebarRecentPosts');
+        const totalArticlesStats = document.getElementById('totalArticlesStats');
+
+        /* ==========================================================
+           FILTERING & SORTING LOGIC
+           ========================================================== */
+        function getFilteredArticles() {
+            let filtered = [...articles];
+
+            // Category filter
+            if (state.activeCategory !== 'all') {
+                filtered = filtered.filter(a => a.category === state.activeCategory);
+            }
+
+            // Tag filter
+            if (state.activeTag) {
+                filtered = filtered.filter(a => a.tags.includes(state.activeTag));
+            }
+
+            // Search filter
+            if (state.searchQuery.trim().length >= 2) {
+                const q = state.searchQuery.toLowerCase();
+                filtered = filtered.filter(a =>
+                    a.title.toLowerCase().includes(q) ||
+                    a.excerpt.toLowerCase().includes(q) ||
+                    a.tags.some(t => t.toLowerCase().includes(q)) ||
+                    a.author.toLowerCase().includes(q)
+                );
+            }
+
+            // Sort
+            switch (state.sortBy) {
+                case 'oldest':
+                    filtered.sort((a, b) => new Date(a.date) - new Date(b.date));
+                    break;
+                case 'popular':
+                    filtered.sort((a, b) => b.views - a.views);
+                    break;
+                case 'latest':
+                default:
+                    filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    break;
+            }
+
+            return filtered;
+        }
+
+        /* ==========================================================
+           RENDER FEATURED POST
+           ========================================================== */
+        function renderFeaturedPost(filtered) {
+            // Find the first featured article in the filtered set
+            const featured = filtered.find(a => a.featured);
+            if (!featured) {
+                featuredPost.style.display = 'none';
+                return;
+            }
+
+            featuredPost.style.display = 'grid';
+
+            const catConfig = categoryConfig[featured.category] || { label: featured.categoryLabel };
+
+            featuredPost.innerHTML = `
+                <div class="featured-post__image">
+                    <img src="${featured.image}" alt="${featured.title}" loading="eager">
+                    <span class="featured-post__badge">Featured</span>
+                </div>
+                <div class="featured-post__body">
+                    <div class="featured-post__meta">
+                        <span class="featured-post__category">${catConfig.label}</span>
+                        <span class="featured-post__date">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            ${featured.dateFormatted}
+                        </span>
+                        <span style="font-size:0.7rem;color:var(--text-muted)">${featured.readingTime}</span>
+                    </div>
+                    <h2 class="featured-post__title">
+                        <a href="news-post.html?id=${featured.id}">${featured.title}</a>
+                    </h2>
+                    <p class="featured-post__excerpt">${featured.excerpt}</p>
+                    <a href="news-post.html?id=${featured.id}" class="featured-post__read-more">
+                        Read Full Article
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            `;
+        }
+
+        /* ==========================================================
+           RENDER NEWS CARDS
+           ========================================================== */
+        function renderNewsCards() {
+            const filtered = getFilteredArticles();
+            const total = filtered.length;
+            const totalPages = Math.ceil(total / state.perPage);
+
+            // Clamp current page
+            if (state.currentPage > totalPages) state.currentPage = Math.max(1, totalPages);
+            if (state.currentPage < 1) state.currentPage = 1;
+
+            const start = (state.currentPage - 1) * state.perPage;
+            const end = Math.min(start + state.perPage, total);
+            const pageItems = filtered.slice(start, end);
+
+            // Featured post
+            renderFeaturedPost(filtered);
+
+            // Update total stats
+            if (totalArticlesStats) totalArticlesStats.textContent = total;
+
+            // Update category counts
+            updateCategoryCounts(filtered);
+
+            // Update recent posts sidebar
+            renderRecentPosts();
+
+            // Show/hide empty state
+            if (total === 0) {
+                newsGrid.innerHTML = '';
+                newsEmpty.style.display = 'block';
+                pagination.innerHTML = '';
+                showingCount.textContent = '0-0';
+                totalCount.textContent = '0';
+                paginationInfo.textContent = '';
+                return;
+            }
+
+            newsEmpty.style.display = 'none';
+
+            // Exclude featured article from grid if on first page
+            let gridItems = pageItems;
+            const featuredArticle = filtered.find(a => a.featured);
+            if (state.currentPage === 1 && featuredArticle && gridItems.includes(featuredArticle)) {
+                gridItems = gridItems.filter(a => a.id !== featuredArticle.id);
+            }
+
+            // Render grid cards
+            newsGrid.innerHTML = gridItems.map((a, i) => {
+                const catConfig = categoryConfig[a.category] || { label: a.categoryLabel, cssClass: '' };
+                return `
+                    <article class="news-card" style="animation-delay:${i * 60}ms" data-cat="${a.category}">
+                        <div class="news-card__img-wrap">
+                            <img src="${a.image}" alt="${a.title}" loading="lazy">
+                            <span class="news-card__category ${catConfig.cssClass}">${catConfig.label}</span>
+                        </div>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__date">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    ${a.dateFormatted}
+                                </span>
+                                <span class="news-card__reading-time">${a.readingTime}</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="news-post.html?id=${a.id}">${a.title}</a>
+                            </h3>
+                            <p class="news-card__excerpt">${a.excerpt}</p>
+                            <div class="news-card__footer">
+                                <div class="news-card__author">
+                                    <div class="news-card__author-avatar">
+                                        <img src="${a.authorAvatar}" alt="${a.author}" loading="lazy">
+                                    </div>
+                                    <span class="news-card__author-name">${a.author}</span>
+                                </div>
+                                <a href="news-post.html?id=${a.id}" class="news-card__read-link">
+                                    Read More
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+
+            // Update count display - adjust for featured article being shown separately
+            const adjustedStart = start + 1;
+            const adjustedEnd = end;
+            showingCount.textContent = total === 0 ? '0-0' : `${adjustedStart}-${adjustedEnd}`;
+            totalCount.textContent = total;
+
+            // Render pagination
+            renderPagination(totalPages, total);
+
+            // Pagination info
+            if (totalPages > 1) {
+                paginationInfo.textContent = `Page ${state.currentPage} of ${totalPages} · ${total} articles`;
+            } else {
+                paginationInfo.textContent = `${total} articles found`;
+            }
+        }
+
+        /* ==========================================================
+           RENDER PAGINATION
+           ========================================================== */
+        function renderPagination(totalPages, total) {
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+
+            // Previous
+            html += `<button class="pagination__btn ${state.currentPage === 1 ? 'pagination__btn--disabled' : ''}" data-page="${state.currentPage - 1}" aria-label="Previous page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>`;
+
+            // Page numbers with ellipsis
+            const maxVisible = 5;
+            let pages = [];
+
+            if (totalPages <= maxVisible + 2) {
+                pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+            } else {
+                pages.push(1);
+                if (state.currentPage > 3) pages.push('...');
+                const startP = Math.max(2, state.currentPage - 1);
+                const endP = Math.min(totalPages - 1, state.currentPage + 1);
+                for (let i = startP; i <= endP; i++) pages.push(i);
+                if (state.currentPage < totalPages - 2) pages.push('...');
+                pages.push(totalPages);
+            }
+
+            pages.forEach(p => {
+                if (p === '...') {
+                    html += '<span class="pagination__ellipsis">&hellip;</span>';
+                } else {
+                    html += `<button class="pagination__btn ${p === state.currentPage ? 'pagination__btn--active' : ''}" data-page="${p}" aria-label="Page ${p}" ${p === state.currentPage ? 'aria-current="page"' : ''}>${p}</button>`;
+                }
+            });
+
+            // Next
+            html += `<button class="pagination__btn ${state.currentPage === totalPages ? 'pagination__btn--disabled' : ''}" data-page="${state.currentPage + 1}" aria-label="Next page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>`;
+
+            pagination.innerHTML = html;
+
+            // Attach click handlers
+            pagination.querySelectorAll('.pagination__btn:not(.pagination__btn--disabled)').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const page = parseInt(btn.dataset.page, 10);
+                    if (page && page >= 1 && page <= totalPages) {
+                        state.currentPage = page;
+                        renderNewsCards();
+                        newsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        }
+
+        /* ==========================================================
+           UPDATE CATEGORY COUNTS
+           ========================================================== */
+        function updateCategoryCounts(filtered) {
+            const counts = { all: filtered.length };
+            filtered.forEach(a => {
+                counts[a.category] = (counts[a.category] || 0) + 1;
+            });
+
+            const countEls = {
+                all: document.getElementById('countAll'),
+                press: document.getElementById('countPress'),
+                product: document.getElementById('countProduct'),
+                trade: document.getElementById('countTrade'),
+                insight: document.getElementById('countInsight')
+            };
+
+            Object.keys(countEls).forEach(key => {
+                if (countEls[key]) {
+                    countEls[key].textContent = counts[key] || 0;
+                }
+            });
+        }
+
+        /* ==========================================================
+           RENDER RECENT POSTS SIDEBAR
+           ========================================================== */
+        function renderRecentPosts() {
+            if (!sidebarRecentPosts) return;
+
+            const recent = [...articles]
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
+                .slice(0, 4);
+
+            sidebarRecentPosts.innerHTML = recent.map(a => `
+                <a href="news-post.html?id=${a.id}" class="sidebar-recent__item" style="text-decoration:none;color:inherit;">
+                    <div class="sidebar-recent__thumb">
+                        <img src="${a.image}" alt="${a.title}" loading="lazy">
+                    </div>
+                    <div class="sidebar-recent__info">
+                        <div class="sidebar-recent__title">${a.title}</div>
+                        <span class="sidebar-recent__date">${a.dateFormatted}</span>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        /* ==========================================================
+           CATEGORY FILTER HANDLERS
+           ========================================================== */
+        function initCategoryFilters() {
+            const categoryItems = document.querySelectorAll('#categoryFilters .sidebar-categories__item');
+
+            categoryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    categoryItems.forEach(el => el.classList.remove('sidebar-categories__item--active'));
+                    item.classList.add('sidebar-categories__item--active');
+
+                    state.activeCategory = item.dataset.cat;
+                    state.currentPage = 1;
+                    renderNewsCards();
+                });
+            });
+        }
+
+        /* ==========================================================
+           TAG FILTER HANDLERS
+           ========================================================== */
+        function initTagFilters() {
+            const tagEls = document.querySelectorAll('#tagFilters .sidebar-tags__tag');
+
+            tagEls.forEach(tag => {
+                tag.addEventListener('click', () => {
+                    const tagValue = tag.dataset.tag;
+
+                    if (state.activeTag === tagValue) {
+                        // Deselect
+                        state.activeTag = null;
+                        tag.classList.remove('sidebar-tags__tag--active');
+                    } else {
+                        // Select new
+                        tagEls.forEach(t => t.classList.remove('sidebar-tags__tag--active'));
+                        tag.classList.add('sidebar-tags__tag--active');
+                        state.activeTag = tagValue;
+                    }
+
+                    state.currentPage = 1;
+                    renderNewsCards();
+                });
+            });
+        }
+
+        /* ==========================================================
+           SEARCH HANDLER (Debounced)
+           ========================================================== */
+        function initSearch() {
+            if (!sidebarSearch) return;
+            let debounceTimer;
+
+            sidebarSearch.addEventListener('input', () => {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    state.searchQuery = sidebarSearch.value;
+                    state.currentPage = 1;
+                    renderNewsCards();
+                }, 300);
+            });
+        }
+
+        /* ==========================================================
+           SORT HANDLER
+           ========================================================== */
+        function initSort() {
+            if (!sortBySelect) return;
+            sortBySelect.addEventListener('change', () => {
+                state.sortBy = sortBySelect.value;
+                state.currentPage = 1;
+                renderNewsCards();
+            });
+        }
+
+        /* ==========================================================
+           RESET FILTERS
+           ========================================================== */
+        function initResetFilters() {
+            if (!resetFiltersBtn) return;
+
+            resetFiltersBtn.addEventListener('click', () => {
+                state.activeCategory = 'all';
+                state.activeTag = null;
+                state.searchQuery = '';
+                state.sortBy = 'latest';
+                state.currentPage = 1;
+
+                document.querySelectorAll('#categoryFilters .sidebar-categories__item').forEach(el => el.classList.remove('sidebar-categories__item--active'));
+                const allCat = document.querySelector('#categoryFilters .sidebar-categories__item[data-cat="all"]');
+                if (allCat) allCat.classList.add('sidebar-categories__item--active');
+
+                document.querySelectorAll('#tagFilters .sidebar-tags__tag').forEach(t => t.classList.remove('sidebar-tags__tag--active'));
+                if (sidebarSearch) sidebarSearch.value = '';
+                if (sortBySelect) sortBySelect.value = 'latest';
+
+                renderNewsCards();
+            });
+        }
+
+        /* ==========================================================
+           NEWSLETTER SUBSCRIBE
+           ========================================================== */
+        function initNewsletter() {
+            const emailInput = document.getElementById('subscribeEmail');
+            const btn = document.getElementById('subscribeBtn');
+
+            if (!btn || !emailInput) return;
+
+            btn.addEventListener('click', () => {
+                const email = emailInput.value.trim();
+                if (email && email.includes('@') && email.includes('.')) {
+                    btn.textContent = 'Subscribed ✓';
+                    btn.style.background = '#00cc88';
+                    btn.style.color = '#fff';
+                    emailInput.value = '';
+                    setTimeout(() => {
+                        btn.textContent = 'Subscribe';
+                        btn.style.background = '#fff';
+                        btn.style.color = 'var(--accent-primary)';
+                    }, 3000);
+                } else {
+                    emailInput.style.borderColor = '#ff4444';
+                    emailInput.focus();
+                    setTimeout(() => {
+                        emailInput.style.borderColor = 'rgba(255,255,255,0.2)';
+                    }, 2000);
+                }
+            });
+
+            emailInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') btn.click();
+            });
+        }
+
+        /* ==========================================================
+           URL PARAMETER PARSING
+           ========================================================== */
+        function parseURLParams() {
+            const params = new URLSearchParams(window.location.search);
+            const cat = params.get('cat');
+            const tag = params.get('tag');
+
+            if (cat) {
+                state.activeCategory = cat;
+                const catItem = document.querySelector(`#categoryFilters .sidebar-categories__item[data-cat="${cat}"]`);
+                if (catItem) {
+                    document.querySelectorAll('#categoryFilters .sidebar-categories__item').forEach(el => el.classList.remove('sidebar-categories__item--active'));
+                    catItem.classList.add('sidebar-categories__item--active');
+                }
+            }
+
+            if (tag) {
+                state.activeTag = tag;
+                const tagEl = document.querySelector(`#tagFilters .sidebar-tags__tag[data-tag="${tag}"]`);
+                if (tagEl) tagEl.classList.add('sidebar-tags__tag--active');
+            }
+        }
+
+        /* ==========================================================
+           INIT
+           ========================================================== */
+        function init() {
+            parseURLParams();
+            initCategoryFilters();
+            initTagFilters();
+            initSearch();
+            initSort();
+            initResetFilters();
+            initNewsletter();
+            renderNewsCards();
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+
+    })();
+    </script>
+
+</body>
+</html>

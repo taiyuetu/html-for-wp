@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Showcase | Verdant Tea</title>
+    <meta
+      name="description"
+      content="Browse the Verdant Tea image showcase with estate scenes, product photography, tea rooms, and export presentation imagery."
+    />
+    <meta name="author" content="Verdant Tea Co." />
+    <meta property="og:title" content="Image Showcase | Verdant Tea" />
+    <meta
+      property="og:description"
+      content="A curated Verdant Tea image gallery with filters, pagination, and lightbox viewing."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Nunito+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- AOS (Animate On Scroll) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="nav-shell container">
+        <a href="./index.html" class="brand">VERDANT<span>.</span></a>
+        <div class="nav-links desktop-only">
+          <a href="./about.html">Our Story</a>
+          <div class="nav-item has-submenu">
+            <a href="./products.html">Teas</a>
+            <div class="submenu mega-menu" aria-label="Teas submenu">
+              <a class="mega-link" href="./products.html">
+                <img src="./src/assets/product-chunmee.jpg" alt="Product archive preview" />
+                <div>
+                  <p class="mega-link__title">Product Archive</p>
+                  <p class="mega-link__meta">Browse the full collection</p>
+                </div>
+              </a>
+              <a class="mega-link" href="./product.html">
+                <img src="./src/assets/product-packaging.jpg" alt="Featured product preview" />
+                <div>
+                  <p class="mega-link__title">Featured Product</p>
+                  <p class="mega-link__meta">Single product spotlight</p>
+                </div>
+              </a>
+              <a class="mega-link" href="./gallery.html">
+                <img src="./src/assets/tea-lifestyle.jpg" alt="Gallery showcase preview" />
+                <div>
+                  <p class="mega-link__title">Gallery Showcase</p>
+                  <p class="mega-link__meta">Visual tea archive</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./news.html">News</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Open search" data-search-toggle>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5" stroke-width="1.8"></circle>
+              <path d="M16 16L21 21" stroke-width="1.8" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <a href="./about.html">Our Story</a>
+        <div class="mobile-menu-group">
+          <a href="./products.html">Teas</a>
+          <div class="mobile-submenu">
+            <a href="./products.html">Product Archive</a>
+            <a href="./product.html">Featured Product</a>
+            <a href="./gallery.html">Gallery Showcase</a>
+          </div>
+        </div>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./news.html">News</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+    <div id="site-search" class="search-panel" hidden data-search-panel>
+      <div class="container search-panel__inner">
+        <button class="search-close" type="button" aria-label="Close search" data-search-close>&times;</button>
+        <form class="search-form">
+          <input type="search" name="search" placeholder="Search teas, news, or pages..." aria-label="Search site" />
+          <button class="button button-gold" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <section class="page-banner" aria-labelledby="page-title">
+        <div class="page-banner__media">
+          <img src="./src/assets/tea-lifestyle.jpg" alt="Verdant Tea visual showcase with teaware and tea leaves" />
+        </div>
+        <div class="page-banner__overlay"></div>
+        <div class="container page-banner__content">
+          <ol class="breadcrumb-list" aria-label="Breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li>/</li>
+            <li><span aria-current="page">Gallery</span></li>
+          </ol>
+          <p class="section-subheading light-subheading">Image Showcase</p>
+          <h1 id="page-title" class="page-banner__title">A visual archive of estates, products, rituals, and trade presentation.</h1>
+          <p class="page-banner__copy">
+            Browse curated images from the tea mountains, packaging studio, tasting room, and export collection, with filterable categories and lightbox viewing.
+          </p>
+        </div>
+      </section>
+
+      <section class="archive-section">
+        <div class="container" data-showcase data-page-size="6">
+          <div class="showcase-controls">
+            <div class="filter-bar" aria-label="Gallery filters">
+              <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="filter-button" type="button" data-filter="estate" aria-pressed="false">Estate</button>
+              <button class="filter-button" type="button" data-filter="product" aria-pressed="false">Product</button>
+              <button class="filter-button" type="button" data-filter="ritual" aria-pressed="false">Ritual</button>
+              <button class="filter-button" type="button" data-filter="trade" aria-pressed="false">Trade</button>
+            </div>
+            <p class="archive-result-count" data-result-count>Showing 12 images</p>
+          </div>
+
+          <div class="showcase-grid">
+            <article class="showcase-card" data-showcase-item data-category="estate" data-image="./src/assets/hero-tea-plantation.jpg" data-alt="Misty tea plantation at sunrise" data-caption="Estate | Morning mist settling over the spring terraces.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/hero-tea-plantation.jpg" alt="Misty tea plantation at sunrise" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Estate</p>
+                  <h2 class="showcase-card__title">Spring Mountain Rows</h2>
+                  <p class="showcase-card__copy">Early light across the terraces where the first leaf is gathered.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="ritual" data-image="./src/assets/tea-serving.jpg" data-alt="Tea service on a wooden table" data-caption="Ritual | A composed service setting for trade tastings and hospitality.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/tea-serving.jpg" alt="Tea service on a wooden table" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Ritual</p>
+                  <h2 class="showcase-card__title">Service Table</h2>
+                  <p class="showcase-card__copy">An editorial view of tea service with cup, leaf, and vessel balance.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="product" data-image="./src/assets/product-chunmee.jpg" data-alt="Chunmee tea product image" data-caption="Product | Chunmee reserve leaf prepared for archive presentation.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/product-chunmee.jpg" alt="Chunmee tea product image" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Product</p>
+                  <h2 class="showcase-card__title">Chunmee Reserve</h2>
+                  <p class="showcase-card__copy">Curved eyebrow-style leaf photographed for seasonal presentation.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="trade" data-image="./src/assets/export-map.jpg" data-alt="Export map for tea distribution" data-caption="Trade | Export routes and market planning overview.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/export-map.jpg" alt="Export map for tea distribution" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Trade</p>
+                  <h2 class="showcase-card__title">Export Map</h2>
+                  <p class="showcase-card__copy">Distribution planning visual used in trade presentations.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="estate" data-image="./src/assets/tea-room.jpg" data-alt="Tea room and calm interior" data-caption="Estate | An interior mood study from the tea house.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/tea-room.jpg" alt="Tea room and calm interior" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Estate</p>
+                  <h2 class="showcase-card__title">Quiet Room</h2>
+                  <p class="showcase-card__copy">A composed interior where tastings and private meetings are held.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="product" data-image="./src/assets/product-packaging.jpg" data-alt="Tea packaging boxes and tins" data-caption="Product | Packaging study for retail and private label formats.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/product-packaging.jpg" alt="Tea packaging boxes and tins" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Product</p>
+                  <h2 class="showcase-card__title">Retail Series</h2>
+                  <p class="showcase-card__copy">Gift cartons, tins, and premium shelf-ready tea packaging.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="ritual" data-image="./src/assets/tea-brewing.jpg" data-alt="Tea being brewed and poured" data-caption="Ritual | Brewing sequence captured for education and hospitality storytelling.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/tea-brewing.jpg" alt="Tea being brewed and poured" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Ritual</p>
+                  <h2 class="showcase-card__title">Brewing Moment</h2>
+                  <p class="showcase-card__copy">The infusion stage where aroma and clarity begin to open.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="product" data-image="./src/assets/product-gunpowder.jpg" data-alt="Gunpowder tea pearls close-up" data-caption="Product | Gunpowder pearl structure and surface detail.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/product-gunpowder.jpg" alt="Gunpowder tea pearls close-up" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Product</p>
+                  <h2 class="showcase-card__title">Temple Gunpowder</h2>
+                  <p class="showcase-card__copy">Rolled pearl leaf photographed for product archive use.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="trade" data-image="./src/assets/tea-lifestyle.jpg" data-alt="Tea brand presentation and styled scene" data-caption="Trade | Editorial lifestyle direction for brand programs.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/tea-lifestyle.jpg" alt="Tea brand presentation and styled scene" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Trade</p>
+                  <h2 class="showcase-card__title">Brand Storytelling</h2>
+                  <p class="showcase-card__copy">A lifestyle frame used to shape private label visual language.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="estate" data-image="./src/assets/craftsmanship-drying.jpg" data-alt="Tea drying stage in the workshop" data-caption="Estate | Drying stage in the tea workshop.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/craftsmanship-drying.jpg" alt="Tea drying stage in the workshop" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Estate</p>
+                  <h2 class="showcase-card__title">Drying Floor</h2>
+                  <p class="showcase-card__copy">Leaf finishing captured during the final stabilization phase.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="ritual" data-image="./src/assets/tea-leaves-macro.jpg" data-alt="Macro photography of loose tea leaves" data-caption="Ritual | Leaf texture study for tasting education.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/tea-leaves-macro.jpg" alt="Macro photography of loose tea leaves" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Ritual</p>
+                  <h2 class="showcase-card__title">Leaf Detail</h2>
+                  <p class="showcase-card__copy">A close read of shape, twist, and surface texture before infusion.</p>
+                </div>
+              </button>
+            </article>
+
+            <article class="showcase-card" data-showcase-item data-category="trade" data-image="./src/assets/product-organic.jpg" data-alt="Organic tea packaging and leaf presentation" data-caption="Trade | Organic positioning for clean-label retail programs.">
+              <button class="showcase-card__button" type="button" data-lightbox-trigger>
+                <img src="./src/assets/product-organic.jpg" alt="Organic tea packaging and leaf presentation" />
+                <div class="showcase-card__body">
+                  <p class="showcase-card__meta">Trade</p>
+                  <h2 class="showcase-card__title">Organic Program</h2>
+                  <p class="showcase-card__copy">Visuals prepared for organic retail and hospitality presentations.</p>
+                </div>
+              </button>
+            </article>
+          </div>
+
+          <nav class="pagination" aria-label="Pagination" data-pagination></nav>
+
+          <div class="lightbox" hidden data-lightbox>
+            <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Image preview">
+              <button class="lightbox__close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
+              <img class="lightbox__image" src="" alt="" data-lightbox-image />
+              <p class="lightbox__caption" data-lightbox-caption></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">VERDANT<span>.</span></p>
+          <p class="footer-copy">Premium green tea cultivated with care, crafted with heritage, delivered with excellence.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Navigation</p>
+          <div class="footer-links">
+            <a href="./about.html">Our Story</a>
+            <a href="./products.html">The Collection</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./news.html">News</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <div class="footer-contact">
+            <p>info@verdanttea.com</p>
+            <p>+86 571 8888 9999</p>
+            <p>Hangzhou, Zhejiang Province<br />China</p>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Verdant Tea Co. All rights reserved.</p>
+        <p>From mountain to cup, with reverence.</p>
+      </div>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

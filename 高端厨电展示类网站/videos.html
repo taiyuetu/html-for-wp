@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Library | Elementum Precision Culinary Engineering</title>
+    <meta name="description"
+        content="Explore our complete video library featuring product demonstrations, installation guides, design inspiration, and customer stories.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">ELEMENTUM</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Collection</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-search">
+                        <button class="search-toggle" id="searchToggle" aria-label="Open Search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <div class="container">
+                <div class="search-bar">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="search" id="searchInput" placeholder="Search products, articles, or pages..." autocomplete="off">
+                    <button class="search-close" id="searchClose" aria-label="Close Search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-suggestions">
+                    <div class="suggestions-section">
+                        <h4>Popular Searches</h4>
+                        <ul class="suggestions-list">
+                            <li><a href="products.html">Series X Pro Oven</a></li>
+                            <li><a href="products.html">Induction Cooktops</a></li>
+                            <li><a href="products.html">Wine Cellars</a></li>
+                            <li><a href="about.html">Warranty Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="suggestions-section">
+                        <h4>Quick Links</h4>
+                        <ul class="suggestions-list">
+                            <li><a href="products.html">All Products</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="news.html">News & Updates</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner videos-banner">
+            <div class="banner-bg">
+                <img src="assets/images/hero_luxury_kitchen.png" alt="Video Library">
+            </div>
+            <div class="banner-overlay"></div>
+            <div class="container banner-content">
+                <span class="eyebrow">Media Center</span>
+                <h1>Video <br><span>Library</span></h1>
+            </div>
+        </section>
+
+        <!-- Breadcrumbs -->
+        <div class="product-breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Videos</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Video Filter & Search -->
+        <section class="video-filter-section">
+            <div class="container">
+                <div class="video-toolbar">
+                    <div class="video-info">
+                        <h2>Video Collection</h2>
+                        <p class="video-count"><span id="videoCount">18</span> Videos Available</p>
+                    </div>
+                    <div class="video-search-bar">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="videoSearch" placeholder="Search videos...">
+                    </div>
+                </div>
+                <div class="video-filters">
+                    <button class="filter-btn active" data-category="all">All Videos</button>
+                    <button class="filter-btn" data-category="products">Products</button>
+                    <button class="filter-btn" data-category="manufacturing">Manufacturing</button>
+                    <button class="filter-btn" data-category="installation">Installation</button>
+                    <button class="filter-btn" data-category="design">Design</button>
+                    <button class="filter-btn" data-category="testimonials">Testimonials</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Video -->
+        <section class="featured-video-section section-padding">
+            <div class="container">
+                <div class="featured-video-card reveal-on-scroll">
+                    <div class="featured-video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Featured: The Elementum Story" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="featured-video-info">
+                        <span class="video-badge">Featured</span>
+                        <span class="video-category">Brand Story</span>
+                        <h2>The Elementum Story</h2>
+                        <p>Discover the journey of precision engineering and culinary innovation. From our Swiss headquarters to kitchens around the world, see how we're redefining luxury appliances.</p>
+                        <div class="video-meta">
+                            <span class="video-duration">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                8:42
+                            </span>
+                            <span class="video-date">January 15, 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Grid -->
+        <section class="video-grid-section section-padding bg-alt">
+            <div class="container">
+                <div class="video-grid" id="videoGrid">
+                    <!-- Video Item 1 -->
+                    <article class="video-card" data-category="products">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+                                title="Series X Pro Oven Overview" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">5:23</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Products</span>
+                            <h3>Series X Pro Oven Overview</h3>
+                            <p>Explore precision thermal control and steam injection technology.</p>
+                            <span class="video-date">January 10, 2026</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 2 -->
+                    <article class="video-card" data-category="manufacturing">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/9bZkp7q19f0" 
+                                title="Swiss Manufacturing Excellence" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">7:15</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Manufacturing</span>
+                            <h3>Swiss Manufacturing Excellence</h3>
+                            <p>Behind the scenes at our Zurich facility.</p>
+                            <span class="video-date">January 5, 2026</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 3 -->
+                    <article class="video-card" data-category="design">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+                                title="Design Philosophy" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">6:30</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Design</span>
+                            <h3>Design Philosophy</h3>
+                            <p>Timeless aesthetic meets functional innovation.</p>
+                            <span class="video-date">December 28, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 4 -->
+                    <article class="video-card" data-category="installation">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/eKFjWR7X5dU" 
+                                title="White Glove Installation" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">4:45</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Installation</span>
+                            <h3>White Glove Installation</h3>
+                            <p>Professional installation process from start to finish.</p>
+                            <span class="video-date">December 20, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 5 -->
+                    <article class="video-card" data-category="testimonials">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/LXb3EKWsInQ" 
+                                title="Client Stories" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">8:12</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Testimonials</span>
+                            <h3>Client Stories: Manhattan Penthouse</h3>
+                            <p>Hear from satisfied customers about their experience.</p>
+                            <span class="video-date">December 15, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 6 -->
+                    <article class="video-card" data-category="products">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Induction Technology Deep Dive" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">6:55</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Products</span>
+                            <h3>Induction Technology Deep Dive</h3>
+                            <p>Understanding adaptive heating zones and sapphire glass.</p>
+                            <span class="video-date">December 10, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 7 -->
+                    <article class="video-card" data-category="products">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+                                title="Vintner Series Wine Cellars" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">5:40</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Products</span>
+                            <h3>Vintner Series Wine Cellars</h3>
+                            <p>Climate-controlled perfection for your collection.</p>
+                            <span class="video-date">December 5, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 8 -->
+                    <article class="video-card" data-category="manufacturing">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/9bZkp7q19f0" 
+                                title="Quality Control Process" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">4:20</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Manufacturing</span>
+                            <h3>127 Quality Control Points</h3>
+                            <p>Our rigorous testing and inspection process.</p>
+                            <span class="video-date">November 28, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 9 -->
+                    <article class="video-card" data-category="design">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+                                title="Material Selection" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">5:15</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Design</span>
+                            <h3>Premium Materials & Finishes</h3>
+                            <p>From brushed steel to hand-finished copper.</p>
+                            <span class="video-date">November 20, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 10 -->
+                    <article class="video-card" data-category="installation">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/eKFjWR7X5dU" 
+                                title="Pre-Installation Checklist" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">3:50</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Installation</span>
+                            <h3>Pre-Installation Checklist</h3>
+                            <p>Preparing your space for Elementum appliances.</p>
+                            <span class="video-date">November 15, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 11 -->
+                    <article class="video-card" data-category="testimonials">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/LXb3EKWsInQ" 
+                                title="Architect Testimonial" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">6:20</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Testimonials</span>
+                            <h3>Architect Perspective</h3>
+                            <p>How Elementum integrates in luxury projects.</p>
+                            <span class="video-date">November 10, 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video Item 12 -->
+                    <article class="video-card" data-category="products">
+                        <div class="video-thumbnail">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Smart Kitchen Integration" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                            <span class="video-duration-badge">7:05</span>
+                        </div>
+                        <div class="video-card-content">
+                            <span class="video-category">Products</span>
+                            <h3>Smart Kitchen Integration</h3>
+                            <p>Connected intelligence for your home.</p>
+                            <span class="video-date">November 5, 2025</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="btn btn-outline btn-large" id="loadMoreBtn">Load More Videos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="video-cta-section section-padding">
+            <div class="container">
+                <div class="cta-content centered">
+                    <span class="eyebrow">Get Started</span>
+                    <h2>Ready to Experience Elementum?</h2>
+                    <p>Schedule a consultation with our team or visit a showroom to see our appliances in person.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Book Consultation</a>
+                        <a href="products.html" class="btn btn-outline btn-large">Explore Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer dark-bg">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">ELEMENTUM</a>
+                    <p>Global Headquarters<br>Zurich, Switzerland</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-form">
+                    <h4>Stay Informed</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" aria-label="Email Address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elementum Appliances. All rights reserved.</p>
+                <div class="legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

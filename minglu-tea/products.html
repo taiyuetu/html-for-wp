@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Míng Lù Products Archive — Our complete collection of rare single-origin green teas." />
+  <title>Products Archive — Míng Lù</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAV -->
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-logo">Míng Lù</a>
+    <ul class="nav-links">
+      <li><a href="index.html#origin">Origin</a></li>
+      <li><a href="index.html#harvest">Harvest</a></li>
+      <li class="nav-item-has-children">
+        <a href="products.html">Products</a>
+        <span class="nav-dropdown-toggle"></span>
+        <div class="mega-menu">
+          <div class="mega-menu__inner">
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Green Teas</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Dragon Well (Longjing)</a></li>
+                <li><a href="products.html">Snail Spring (Biluochun)</a></li>
+                <li><a href="products.html">Jade Dew (Gyokuro)</a></li>
+                <li><a href="products.html">White Leaf (Anji Bai)</a></li>
+                <li><a href="products.html">Cloud Mist (Yunwu)</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Oolong</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Da Hong Pao</a></li>
+                <li><a href="products.html">Tie Guan Yin</a></li>
+                <li><a href="products.html">Phoenix Oolong</a></li>
+                <li><a href="products.html">Dong Ding Oolong</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Pu-erh</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Raw Pu-erh (Sheng)</a></li>
+                <li><a href="products.html">Ripe Pu-erh (Shou)</a></li>
+                <li><a href="products.html">Aged Collection</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section mega-menu__section--featured">
+              <h4 class="mega-menu__title">Featured</h4>
+              <p class="mega-menu__desc">Our limited spring harvest selection. Pre-orders now open.</p>
+              <a href="products.html" class="mega-menu__cta">View Collection →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="index.html#quality">Quality</a></li>
+      <li><a href="index.html#contact">Enquire</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="search-container">
+        <button class="search-toggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <div class="search-dropdown">
+          <form class="search-form">
+            <input type="text" class="search-input" placeholder="Search teas..." />
+            <button type="submit" class="search-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ PAGE BANNER -->
+  <section class="page-banner" id="pageBanner">
+    <div class="page-banner__bg">
+      <div class="page-banner__img-placeholder">
+        <div class="page-banner__img-inner"></div>
+      </div>
+      <div class="page-banner__overlay"></div>
+    </div>
+    <div class="page-banner__content">
+      <h1 class="page-banner__title reveal-up">
+        Our<br/><em>Collection</em>.
+      </h1>
+      <p class="page-banner__sub reveal-fade delay-1">
+        A curated archive of exceptional single-origin teas, each reflecting its own distinct terroir and season.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ PRODUCTS WITH SIDEBAR -->
+  <section class="products-archive section">
+    <div class="products-archive__container">
+      
+      <!-- SIDEBAR -->
+      <aside class="products-archive__sidebar reveal-left">
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">Categories</h3>
+          <ul class="sidebar-menu">
+            <li><a href="#" class="sidebar-menu__link active">All Products</a></li>
+            <li><a href="#" class="sidebar-menu__link">Dragon Well</a></li>
+            <li><a href="#" class="sidebar-menu__link">Snail Spring</a></li>
+            <li><a href="#" class="sidebar-menu__link">Jade Dew</a></li>
+            <li><a href="#" class="sidebar-menu__link">White Leaf</a></li>
+            <li><a href="#" class="sidebar-menu__link">Phoenix Oolong</a></li>
+            <li><a href="#" class="sidebar-menu__link">Mountain Reserve</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card sidebar-card--featured">
+          <h3 class="sidebar-card__title">About Our Teas</h3>
+          <p class="sidebar-card__text">
+            Each tea in our collection represents a single harvest from carefully selected gardens. We work directly with families who have stewarded these mountains for generations.
+          </p>
+          <a href="index.html#origin" class="sidebar-card__link">Learn More →</a>
+        </div>
+      </aside>
+
+      <!-- PRODUCTS GRID -->
+      <main class="products-archive__main">
+        
+        <div class="products-grid">
+
+          <!-- Product 1 -->
+          <article class="product-card reveal-up">
+            <div class="product-card__image">
+              <div class="img-placeholder img-placeholder--tea-longjing">
+                <span class="product-card__badge">Spring Harvest</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Dragon Well</span>
+              <h3 class="product-card__name">Lóng Jǐng<br/>Pre-Qīngmíng</h3>
+              <div class="product-card__origin">Hangzhou · Zhejiang</div>
+              <p class="product-card__desc">Pressed flat needles with chestnut sweetness. Harvested before the Qingming festival — the most prized window of the year.</p>
+              <div class="product-card__meta">
+                <span>Green · Unoxidised</span>
+                <span>First Flush</span>
+              </div>
+              <a href="product-detail.html" class="product-card__cta">View Details</a>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card reveal-up delay-1">
+            <div class="product-card__image">
+              <div class="img-placeholder img-placeholder--tea-biluochun">
+                <span class="product-card__badge">Spring Harvest</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Snail Spring</span>
+              <h3 class="product-card__name">Bì Luó Chūn<br/>Ancient Grove</h3>
+              <div class="product-card__origin">Dongting · Jiangsu</div>
+              <p class="product-card__desc">Tightly spiraled with fine silver down. Grown among peach and plum trees — a floral, fruit-kissed sweetness.</p>
+              <div class="product-card__meta">
+                <span>Green · Unoxidised</span>
+                <span>First Flush</span>
+              </div>
+              <a href="product-detail.html" class="product-card__cta">View Details</a>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card reveal-up delay-2">
+            <div class="product-card__image">
+              <div class="img-placeholder img-placeholder--tea-gyokuro">
+                <span class="product-card__badge">Spring Harvest</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Jade Dew</span>
+              <h3 class="product-card__name">Gyokuro<br/>Hoshino Reserve</h3>
+              <div class="product-card__origin">Uji · Kyoto</div>
+              <p class="product-card__desc">Shade-grown for 30 days before harvest. Deep umami, oceanic depth, velvet finish. The pinnacle of Japanese craftsmanship.</p>
+              <div class="product-card__meta">
+                <span>Green · Shaded</span>
+                <span>Ichibancha</span>
+              </div>
+              <a href="product-detail.html" class="product-card__cta">View Details</a>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card reveal-up delay-1">
+            <div class="product-card__image">
+              <div class="img-placeholder img-placeholder--tea-mao">
+                <span class="product-card__badge">Spring Harvest</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">White Leaf</span>
+              <h3 class="product-card__name">Ānjí Bái Chá<br/>Jade Valley</h3>
+              <div class="product-card__origin">Anji · Zhejiang</div>
+              <p class="product-card__desc">Pale yellow-green liquor of extraordinary delicacy. Low bitterness, exceptionally high in theanine for calm clarity.</p>
+              <div class="product-card__meta">
+                <span>White · Minimal Oxidation</span>
+                <span>Spring Flush</span>
+              </div>
+              <a href="product-detail.html" class="product-card__cta">View Details</a>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card reveal-up delay-2">
+            <div class="product-card__image">
+              <div class="img-placeholder img-placeholder--tea-dancong">
+                <span class="product-card__badge">Autumn Harvest</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Phoenix Oolong</span>
+              <h3 class="product-card__name">Da Hong Pao<br/>Mountain Legend</h3>
+              <div class="product-card__origin">Wuyi Mountains · Fujian</div>
+              <p class="product-card__desc">Legend holds the original trees were guarded by monks. Our reserve captures deep orchid notes, mineral complexity, and burnished amber sweetness.</p>
+              <div class="product-card__meta">
+                <span>Oolong · Roasted</span>
+                <span>Autumn Selection</span>
+              </div>
+              <a href="product-detail.html" class="product-card__cta">View Details</a>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card reveal-up">
+            <div class="product-card__image">
+              <div class="img-placeholder img-placeholder--tea-shengpu">
+                <span class="product-card__badge">Heritage</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Mountain Reserve</span>
+              <h3 class="product-card__name">Lao Ban Zhang<br/>Ancient Stock</h3>
+              <div class="product-card__origin">Yunnan · 2,200m</div>
+              <p class="product-card__desc">From trees older than memory. Thick body, profound sweetness, and a finish that lingers for hours. A living connection to these mountains.</p>
+              <div class="product-card__meta">
+                <span>Pu-erh · Raw</span>
+                <span>Premium Selection</span>
+              </div>
+              <a href="product-detail.html" class="product-card__cta">View Details</a>
+            </div>
+          </article>
+
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__col">
+        <h4 class="footer__heading">Míng Lù</h4>
+        <p class="footer__text">Rare single-origin green teas from ancient mountain gardens, sourced with reverence and crafted with patience.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Connect</h4>
+        <ul class="footer__links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WeChat</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Míng Lù. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

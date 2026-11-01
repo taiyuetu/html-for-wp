@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Míng Lù — Rare single-origin green teas from ancient mountain gardens. Sourced with reverence, crafted with patience." />
+  <title>Míng Lù — Ancient Green Teas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAV -->
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-logo">Míng Lù</a>
+    <ul class="nav-links">
+      <li><a href="about-us.html">About</a></li>
+      <li class="nav-item-has-children">
+        <a href="products.html">Products</a>
+        <span class="nav-dropdown-toggle"></span>
+        <div class="mega-menu">
+          <div class="mega-menu__inner">
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Green Teas</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Dragon Well (Longjing)</a></li>
+                <li><a href="products.html">Snail Spring (Biluochun)</a></li>
+                <li><a href="products.html">Jade Dew (Gyokuro)</a></li>
+                <li><a href="products.html">White Leaf (Anji Bai)</a></li>
+                <li><a href="products.html">Cloud Mist (Yunwu)</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Oolong</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Da Hong Pao</a></li>
+                <li><a href="products.html">Tie Guan Yin</a></li>
+                <li><a href="products.html">Phoenix Oolong</a></li>
+                <li><a href="products.html">Dong Ding Oolong</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Pu-erh</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Raw Pu-erh (Sheng)</a></li>
+                <li><a href="products.html">Ripe Pu-erh (Shou)</a></li>
+                <li><a href="products.html">Aged Collection</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section mega-menu__section--featured">
+              <h4 class="mega-menu__title">Featured</h4>
+              <p class="mega-menu__desc">Our limited spring harvest selection. Pre-orders now open.</p>
+              <a href="products.html" class="mega-menu__cta">View Collection →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="#harvest">Heritage</a></li>
+      <li><a href="#quality">Quality</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="search-container">
+        <button class="search-toggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <div class="search-dropdown">
+          <form class="search-form">
+            <input type="text" class="search-input" placeholder="Search teas..." />
+            <button type="submit" class="search-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__img-placeholder">
+        <div class="hero__img-inner"></div>
+      </div>
+      <div class="hero__fog"></div>
+      <div class="hero__vignette"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-fade">Single Origin · High Mountain · Ancient Gardens</p>
+      <h1 class="hero__title reveal-up">
+        Where mist<br/><em>becomes</em><br/>leaf.
+      </h1>
+      <p class="hero__sub reveal-fade delay-3">
+        Teas of rare altitude, harvested by families<br/>who have tended these mountains for generations.
+      </p>
+      <a href="#teas" class="btn-ghost reveal-fade delay-4">Discover the Collection</a>
+    </div>
+    <div class="hero__scroll-cue">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ ORIGIN -->
+  <section class="origin section" id="origin">
+    <div class="origin__layout">
+      <div class="origin__image-col">
+        <div class="img-frame img-frame--tall reveal-left">
+          <div class="img-placeholder img-placeholder--mountain">
+            <div class="img-label">Yunnan · 1,800m</div>
+          </div>
+        </div>
+        <div class="img-frame img-frame--small img-frame--offset reveal-left delay-2">
+          <div class="img-placeholder img-placeholder--terrace"></div>
+        </div>
+      </div>
+      <div class="origin__text-col">
+        <span class="section-num reveal-fade">01</span>
+        <h2 class="section-heading reveal-up">
+          Born from<br/><em>ancient</em><br/>mountains.
+        </h2>
+        <div class="divider-leaf reveal-fade delay-2"></div>
+        <p class="body-text reveal-fade delay-3">
+          Our gardens sit above the clouds in Yunnan's ancient tea-growing regions — where mineral-rich soils, cool mountain air, and centuries of knowledge converge into a leaf of singular character.
+        </p>
+        <p class="body-text reveal-fade delay-4">
+          Every harvest originates from trees more than 80 years old, their roots reaching deep into earth untouched by industrial farming. This depth of root gives our teas their complexity — a quiet conversation between soil, sky, and time.
+        </p>
+        <div class="origin__detail reveal-fade delay-5">
+          <div class="origin__detail-item">
+            <strong>1,800 – 2,400m</strong>
+            <span>Garden altitude</span>
+          </div>
+          <div class="origin__detail-item">
+            <strong>80+ Years</strong>
+            <span>Average tree age</span>
+          </div>
+          <div class="origin__detail-item">
+            <strong>3 Regions</strong>
+            <span>Single-origin gardens</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="origin__quote reveal-up delay-2">
+      <blockquote>"The mountain does not hurry. Neither does our tea."</blockquote>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ HARVEST -->
+  <section class="harvest section" id="harvest">
+    <div class="harvest__header">
+      <span class="section-num reveal-fade">02</span>
+      <h2 class="section-heading reveal-up">
+        Hands that<br/><em>know</em><br/>the leaf.
+      </h2>
+    </div>
+    <div class="harvest__grid">
+      <div class="harvest__main-image reveal-left">
+        <div class="img-frame img-frame--wide">
+          <div class="img-placeholder img-placeholder--harvest">
+            <div class="img-label">First Flush · Spring</div>
+          </div>
+        </div>
+      </div>
+      <div class="harvest__story">
+        <p class="harvest__pull-quote reveal-up delay-2">
+          "One bud,<br/>two leaves —<br/>nothing more."
+        </p>
+        <p class="body-text reveal-fade delay-3">
+          Our farmers harvest by hand during the first flush of spring — a narrow window of days when the new shoots carry the highest concentration of amino acids and natural sweetness.
+        </p>
+        <p class="body-text reveal-fade delay-4">
+          No machine can replicate this discernment. The selection happens in the field, one cluster at a time, by families who have read these plants for their entire lives.
+        </p>
+      </div>
+      <div class="harvest__secondary-images">
+        <div class="img-frame reveal-up delay-2">
+          <div class="img-placeholder img-placeholder--hands"></div>
+        </div>
+        <div class="img-frame reveal-up delay-3">
+          <div class="img-placeholder img-placeholder--basket"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CRAFT -->
+  <section class="craft section" id="craft">
+    <div class="craft__intro">
+      <span class="section-num reveal-fade">03</span>
+      <h2 class="section-heading craft__heading reveal-up">
+        Craft as<br/><em>ceremony</em>.
+      </h2>
+      <p class="body-text craft__intro-text reveal-fade delay-2">
+        Between leaf and cup lies a process of precise attention — each step a form of respect for the raw material.
+      </p>
+    </div>
+
+    <div class="craft__steps">
+      <div class="craft__step reveal-left">
+        <div class="img-frame img-frame--landscape">
+          <div class="img-placeholder img-placeholder--wither">
+            <div class="img-label">Withering · 12–18 hrs</div>
+          </div>
+        </div>
+        <div class="craft__step-text">
+          <h3>Withering</h3>
+          <p>Freshly picked leaves are laid on bamboo trays in shaded air. Moisture slowly releases. The leaf softens, concentrating flavour.</p>
+        </div>
+      </div>
+
+      <div class="craft__step craft__step--alt reveal-right">
+        <div class="craft__step-text">
+          <h3>De-enzyming</h3>
+          <p>Brief exposure to high heat arrests oxidation — preserving the vivid green chlorophyll and delicate vegetal sweetness unique to green tea.</p>
+        </div>
+        <div class="img-frame img-frame--landscape">
+          <div class="img-placeholder img-placeholder--roast">
+            <div class="img-label">Pan-firing · Traditional Wok</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="craft__step reveal-left">
+        <div class="img-frame img-frame--landscape">
+          <div class="img-placeholder img-placeholder--roll">
+            <div class="img-label">Rolling · Shape & Release</div>
+          </div>
+        </div>
+        <div class="craft__step-text">
+          <h3>Rolling &amp; Shaping</h3>
+          <p>Hand-rolling breaks the cell walls gently, releasing essential oils. Each tea's characteristic form — needle, spiral, flat — is created here.</p>
+        </div>
+      </div>
+
+      <div class="craft__step craft__step--alt reveal-right">
+        <div class="craft__step-text">
+          <h3>Final Drying</h3>
+          <p>Low, slow heat over charcoal draws out residual moisture. The tea is sealed — its flavour, aroma, and character locked within the leaf.</p>
+        </div>
+        <div class="img-frame img-frame--landscape">
+          <div class="img-placeholder img-placeholder--dry">
+            <div class="img-label">Drying · Charcoal Kiln</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ TEAS -->
+  <section class="teas section" id="teas">
+    <div class="teas__header">
+      <span class="section-num reveal-fade">04</span>
+      <h2 class="section-heading reveal-up">
+        The<br/><em>Collection</em>.
+      </h2>
+      <p class="body-text teas__sub reveal-fade delay-2">
+        Six teas. Each from a single garden, a single harvest, a single intent.
+      </p>
+    </div>
+
+    <div class="teas__grid">
+
+      <article class="tea-card reveal-up">
+        <div class="tea-card__image">
+          <div class="img-placeholder img-placeholder--tea-longjing">
+            <div class="tea-card__origin-badge">Hangzhou · Zhejiang</div>
+          </div>
+        </div>
+        <div class="tea-card__body">
+          <span class="tea-card__type">Dragon Well</span>
+          <h3 class="tea-card__name">Lóng Jǐng<br/>Pre-Qīngmíng</h3>
+          <p class="tea-card__desc">Pressed flat needles. Chesnut sweetness. A tea harvested before the Qingming festival — the most prized window of the year.</p>
+          <div class="tea-card__meta">
+            <span>Green · Unoxidised</span>
+            <span>Spring · First Flush</span>
+          </div>
+          <a href="#contact" class="tea-card__cta">Request Sample</a>
+        </div>
+      </article>
+
+      <article class="tea-card tea-card--featured reveal-up delay-1">
+        <div class="tea-card__image">
+          <div class="img-placeholder img-placeholder--tea-biluochun">
+            <div class="tea-card__origin-badge">Dongting · Jiangsu</div>
+          </div>
+        </div>
+        <div class="tea-card__body">
+          <span class="tea-card__type">Snail Spring</span>
+          <h3 class="tea-card__name">Bì Luó Chūn<br/>Ancient Grove</h3>
+          <p class="tea-card__desc">Tightly spiraled with fine silver down. Grown among peach and plum trees — a floral, fruit-kissed sweetness unlike any other green tea.</p>
+          <div class="tea-card__meta">
+            <span>Green · Unoxidised</span>
+            <span>Spring · First Flush</span>
+          </div>
+          <a href="#contact" class="tea-card__cta">Request Sample</a>
+        </div>
+      </article>
+
+      <article class="tea-card reveal-up delay-2">
+        <div class="tea-card__image">
+          <div class="img-placeholder img-placeholder--tea-gyokuro">
+            <div class="tea-card__origin-badge">Uji · Kyoto</div>
+          </div>
+        </div>
+        <div class="tea-card__body">
+          <span class="tea-card__type">Jade Dew</span>
+          <h3 class="tea-card__name">Gyokuro<br/>Hoshino Reserve</h3>
+          <p class="tea-card__desc">Shade-grown for 30 days before harvest. Deep umami, oceanic depth, velvet finish. The pinnacle of Japanese green tea craftsmanship.</p>
+          <div class="tea-card__meta">
+            <span>Green · Shaded</span>
+            <span>Spring · Ichibancha</span>
+          </div>
+          <a href="#contact" class="tea-card__cta">Request Sample</a>
+        </div>
+      </article>
+
+      <article class="tea-card reveal-up delay-1">
+        <div class="tea-card__image">
+          <div class="img-placeholder img-placeholder--tea-mao">
+            <div class="tea-card__origin-badge">Anji · Zhejiang</div>
+          </div>
+        </div>
+        <div class="tea-card__body">
+          <span class="tea-card__type">White Leaf</span>
+          <h3 class="tea-card__name">Ānjí Bái Chá<br/>Jade Valley</h3>
+          <p class="tea-card__desc">Pale yellow-green liquor of extraordinary delicacy. Low bitterness. Exceptionally high in theanine — calm clarity in every sip.</p>
+          <div class="tea-card__meta">
+            <span>Green · White-leaf Cultivar</span>
+            <span>Spring · Limited</span>
+          </div>
+          <a href="#contact" class="tea-card__cta">Request Sample</a>
+        </div>
+      </article>
+
+      <article class="tea-card reveal-up delay-2">
+        <div class="tea-card__image">
+          <div class="img-placeholder img-placeholder--tea-huang">
+            <div class="tea-card__origin-badge">Yunnan · High Mountain</div>
+          </div>
+        </div>
+        <div class="tea-card__body">
+          <span class="tea-card__type">Cloud Mist</span>
+          <h3 class="tea-card__name">Yún Wù<br/>Míng Lù Reserve</h3>
+          <p class="tea-card__desc">Our house tea. Grown at 2,100m in perpetual cloud, harvested by third-generation farmers. A tea of quiet complexity and lingering finish.</p>
+          <div class="tea-card__meta">
+            <span>Green · High Altitude</span>
+            <span>Spring & Autumn</span>
+          </div>
+          <a href="#contact" class="tea-card__cta">Request Sample</a>
+        </div>
+      </article>
+
+      <article class="tea-card reveal-up delay-3">
+        <div class="tea-card__image">
+          <div class="img-placeholder img-placeholder--tea-matcha">
+            <div class="tea-card__origin-badge">Nishio · Aichi</div>
+          </div>
+        </div>
+        <div class="tea-card__body">
+          <span class="tea-card__type">Stone Ground</span>
+          <h3 class="tea-card__name">Ceremonial<br/>Matcha · Ōka</h3>
+          <p class="tea-card__desc">Ground on granite stone mills at 40 rotations per minute. Vivid green. Creamy foam. Made for the tea bowl, not a latte.</p>
+          <div class="tea-card__meta">
+            <span>Matcha · Ceremonial Grade</span>
+            <span>Spring · First Harvest</span>
+          </div>
+          <a href="#contact" class="tea-card__cta">Request Sample</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="experience__header">
+      <span class="section-num reveal-fade">05</span>
+      <h2 class="section-heading reveal-up">
+        The act<br/>of <em>brewing</em>.
+      </h2>
+    </div>
+    <div class="experience__mosaic">
+      <div class="exp-block exp-block--a reveal-fade">
+        <div class="img-placeholder img-placeholder--brew1"></div>
+      </div>
+      <div class="exp-block exp-block--b reveal-up delay-1">
+        <div class="img-placeholder img-placeholder--brew2"></div>
+      </div>
+      <div class="exp-block exp-block--c reveal-fade delay-2">
+        <div class="img-placeholder img-placeholder--brew3"></div>
+      </div>
+      <div class="exp-block exp-block--text reveal-up delay-1">
+        <h3>A ritual of presence.</h3>
+        <p>Green tea does not ask to be rushed. It asks only for warm water at the right temperature, a quiet moment, and an unhurried hand. In return, it offers clarity.</p>
+        <p>We include a brewing guide with every order — not instructions, but an invitation.</p>
+      </div>
+      <div class="exp-block exp-block--d reveal-fade delay-3">
+        <div class="img-placeholder img-placeholder--brew4"></div>
+      </div>
+      <div class="exp-block exp-block--e reveal-up delay-2">
+        <div class="img-placeholder img-placeholder--brew5"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ QUALITY -->
+  <section class="quality section" id="quality">
+    <div class="quality__inner">
+      <div class="quality__text-side">
+        <span class="section-num reveal-fade">06</span>
+        <h2 class="section-heading reveal-up">
+          Integrity<br/>in every<br/><em>detail</em>.
+        </h2>
+        <p class="body-text reveal-fade delay-2">
+          We do not trade in volume. We trade in trust. Every lot is traced from garden to dispatch — with independent testing for pesticide residue, heavy metals, and microbial safety.
+        </p>
+        <p class="body-text reveal-fade delay-3">
+          Our certifications are not marketing. They are a record of how we work.
+        </p>
+        <div class="quality__certs reveal-fade delay-4">
+          <div class="cert-item">
+            <div class="cert-icon">⬡</div>
+            <span>EU Organic Certified</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">⬡</div>
+            <span>ISO 22000 Food Safety</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">⬡</div>
+            <span>Rainforest Alliance</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">⬡</div>
+            <span>SGS Laboratory Tested</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">⬡</div>
+            <span>Full Batch Traceability</span>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">⬡</div>
+            <span>USDA NOP Compliant</span>
+          </div>
+        </div>
+      </div>
+      <div class="quality__image-side">
+        <div class="img-frame img-frame--portrait reveal-right">
+          <div class="img-placeholder img-placeholder--quality"></div>
+        </div>
+        <div class="quality__stat-overlay reveal-fade delay-3">
+          <div class="quality__stat">
+            <strong>Zero</strong>
+            <span>Pesticide violations<br/>in 12 years</span>
+          </div>
+          <div class="quality__stat">
+            <strong>100%</strong>
+            <span>Garden-to-cup<br/>traceability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ GLOBAL -->
+  <section class="global section" id="global">
+    <div class="global__inner">
+      <div class="global__header">
+        <span class="section-num reveal-fade">07</span>
+        <h2 class="section-heading reveal-up">
+          A quiet<br/><em>presence</em><br/>worldwide.
+        </h2>
+        <p class="body-text reveal-fade delay-2">
+          Míng Lù teas are found in fine hotels, specialty tea houses, and private collections across 28 countries. We work only with partners who share our commitment to the leaf.
+        </p>
+      </div>
+      <div class="global__map-area reveal-fade delay-2">
+        <div class="global__map-placeholder">
+          <div class="global__map-inner">
+            <!-- Simplified SVG world map suggestion -->
+            <svg viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg" class="world-map-svg">
+              <ellipse cx="450" cy="225" rx="440" ry="210" fill="none" stroke="var(--jade)" stroke-width="0.5" opacity="0.3"/>
+              <!-- Dot markers for presence -->
+              <circle cx="130" cy="140" r="3" fill="var(--gold)" opacity="0.8"/>
+              <circle cx="160" cy="160" r="2.5" fill="var(--gold)" opacity="0.6"/>
+              <circle cx="200" cy="155" r="3" fill="var(--gold)" opacity="0.8"/>
+              <circle cx="430" cy="110" r="4" fill="var(--gold)" opacity="0.9"/>
+              <circle cx="460" cy="120" r="3" fill="var(--gold)" opacity="0.8"/>
+              <circle cx="490" cy="115" r="2.5" fill="var(--gold)" opacity="0.7"/>
+              <circle cx="520" cy="130" r="3" fill="var(--gold)" opacity="0.8"/>
+              <circle cx="550" cy="125" r="2.5" fill="var(--gold)" opacity="0.6"/>
+              <circle cx="620" cy="140" r="4" fill="var(--gold)" opacity="1"/>
+              <circle cx="650" cy="150" r="4.5" fill="var(--gold)" opacity="1"/>
+              <circle cx="680" cy="145" r="3.5" fill="var(--gold)" opacity="0.9"/>
+              <circle cx="700" cy="160" r="3" fill="var(--gold)" opacity="0.8"/>
+              <circle cx="730" cy="155" r="4" fill="var(--gold)" opacity="0.9"/>
+              <circle cx="760" cy="148" r="3" fill="var(--gold)" opacity="0.7"/>
+              <circle cx="350" cy="200" r="2.5" fill="var(--gold)" opacity="0.6"/>
+              <circle cx="375" cy="190" r="3" fill="var(--gold)" opacity="0.7"/>
+              <circle cx="310" cy="210" r="2" fill="var(--gold)" opacity="0.5"/>
+              <circle cx="250" cy="230" r="2.5" fill="var(--gold)" opacity="0.5"/>
+              <circle cx="800" cy="200" r="3" fill="var(--gold)" opacity="0.6"/>
+              <circle cx="820" cy="220" r="2.5" fill="var(--gold)" opacity="0.5"/>
+            </svg>
+            <div class="global__map-label">28 Countries · Growing</div>
+          </div>
+        </div>
+      </div>
+      <div class="global__figures reveal-up delay-3">
+        <div class="global__figure">
+          <strong>28</strong>
+          <span>Countries</span>
+        </div>
+        <div class="global__sep"></div>
+        <div class="global__figure">
+          <strong>340+</strong>
+          <span>Retail Partners</span>
+        </div>
+        <div class="global__sep"></div>
+        <div class="global__figure">
+          <strong>12</strong>
+          <span>Years Trading</span>
+        </div>
+        <div class="global__sep"></div>
+        <div class="global__figure">
+          <strong>3</strong>
+          <span>Origin Gardens</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="contact__layout">
+      <div class="contact__image-side">
+        <div class="img-frame img-frame--full reveal-left">
+          <div class="img-placeholder img-placeholder--contact"></div>
+        </div>
+        <div class="contact__image-caption">
+          "Every partnership begins<br/>with a cup."
+        </div>
+      </div>
+      <div class="contact__form-side">
+        <span class="section-num reveal-fade">08</span>
+        <h2 class="section-heading reveal-up">
+          Begin a<br/><em>conversation</em>.
+        </h2>
+        <p class="body-text reveal-fade delay-2">
+          Whether you are a retailer, restaurateur, hotel buyer, or private collector — we welcome enquiries from partners who appreciate what makes a tea truly exceptional.
+        </p>
+        <form class="contact-form reveal-up delay-3" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="fcompany">Organisation</label>
+              <input type="text" id="fcompany" name="company" placeholder="Company or title" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="ftype">Nature of Enquiry</label>
+            <select id="ftype" name="type">
+              <option value="">Select one</option>
+              <option>Wholesale Import</option>
+              <option>Hotel / Restaurant Supply</option>
+              <option>Private Collection</option>
+              <option>Retail Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="4" placeholder="Tell us about your interest…"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Enquiry</button>
+        </form>
+        <div class="contact__confirmation" id="formConfirm">
+          <p>Thank you. We will be in touch within two working days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Míng Lù</span>
+        <span class="footer__tagline">Ancient Teas · Rare Origins</span>
+      </div>
+      <div class="footer__links">
+        <a href="#origin">Origin</a>
+        <a href="#harvest">Harvest</a>
+        <a href="#craft">Craft</a>
+        <a href="#teas">Collection</a>
+        <a href="#quality">Quality</a>
+        <a href="#contact">Enquire</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer__contact">
+        <span>trade@minglu-tea.com</span>
+        <span>Yunnan · Shanghai · Singapore</span>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© 2025 Míng Lù Tea · All rights reserved</span>
+      <span class="footer__lang">明路 · The Clear Path</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

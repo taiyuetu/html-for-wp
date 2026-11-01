@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Apex Bearing Technologies — 20+ years manufacturing premium wheel hub bearings. IATF 16949 certified, 4000+ SKU, exporting to 80+ countries. Our story, mission, and manufacturing excellence.">
+    <meta name="keywords" content="about apex bearing, wheel bearing manufacturer, automotive bearing company, OEM bearing supplier, bearing factory China">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="About Us | Apex Bearing Technologies — Premium Wheel Hub Bearing Manufacturer">
+    <meta property="og:description" content="20+ years of bearing manufacturing excellence. IATF 16949 certified. Meet the team behind 4000+ SKUs exported to 80+ countries.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+
+    <title>About Us | Apex Bearing Technologies — Premium Wheel Hub Bearing Manufacturer</title>
+
+    <!-- JSON-LD Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Apex Bearing Technologies",
+        "url": "https://www.apexbearing.com",
+        "description": "Global manufacturer of premium wheel hub bearings and wheel hub assembly units. 20+ years experience, 4000+ SKU, IATF 16949 certified.",
+        "foundingDate": "2004",
+        "foundingLocation": "Zhejiang, China",
+        "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": "200", "maxValue": "500" },
+        "address": { "@type": "PostalAddress", "addressCountry": "CN", "addressRegion": "Zhejiang" },
+        "contactPoint": { "@type": "ContactPoint", "contactType": "Sales", "telephone": "+86-138-0000-0000" },
+        "sameAs": ["https://www.linkedin.com/company/apex-bearing", "https://www.facebook.com/apexbearing"]
+    }
+    </script>
+
+    <!-- About Page Styles -->
+    <style>
+        /* ==========================================================
+           PAGE BANNER
+           ========================================================== */
+        .page-banner {
+            position: relative;
+            height: 420px;
+            overflow: hidden;
+            margin-top: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-banner__bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .page-banner__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 40%;
+        }
+
+        .page-banner__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.7) 60%, var(--bg-primary) 100%);
+            z-index: 1;
+        }
+
+        .page-banner__content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: var(--space-3xl) var(--space-xl);
+        }
+
+        .page-banner__breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            font-size: var(--text-sm);
+            color: var(--text-tertiary);
+            margin-bottom: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .page-banner__breadcrumb a { color: var(--text-secondary); transition: color var(--transition-fast); }
+        .page-banner__breadcrumb a:hover { color: var(--accent-primary); }
+        .page-banner__breadcrumb .sep { color: var(--text-muted); user-select: none; }
+        .page-banner__breadcrumb .current { color: var(--accent-primary); font-weight: 600; }
+
+        .page-banner__title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .page-banner__title .text-accent {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-primary-hover));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @media (max-width: 768px) {
+            .page-banner { height: 300px; }
+        }
+
+        /* ==========================================================
+           SECTION: STORY (Two-Column)
+           ========================================================== */
+        .about-story {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .about-story__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4xl);
+            align-items: center;
+        }
+
+        .about-story__image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .about-story__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-story__image-accent {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 120px;
+            height: 120px;
+            background: var(--gradient-accent);
+            border-radius: var(--radius-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 2;
+            box-shadow: 0 8px 30px rgba(0,102,204,0.4);
+        }
+
+        .about-story__image-accent strong {
+            font-size: var(--text-3xl);
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .about-story__image-accent span {
+            font-size: var(--text-xs);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .about-story__content .section-tag {
+            display: inline-block;
+            font-size: var(--text-xs);
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent-primary);
+            background: var(--accent-primary-glow);
+            padding: 6px 16px;
+            border-radius: 100px;
+            margin-bottom: var(--space-md);
+        }
+
+        .about-story__content h2 {
+            font-size: var(--text-3xl);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: var(--space-lg);
+        }
+
+        .about-story__content h2 .text-accent {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-primary-hover));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-story__content p {
+            font-size: var(--text-base);
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--space-md);
+        }
+
+        .about-story__stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .about-story__stat strong {
+            display: block;
+            font-size: var(--text-2xl);
+            font-weight: 900;
+            color: var(--accent-primary);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .about-story__stat span {
+            font-size: var(--text-xs);
+            color: var(--text-tertiary);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 1024px) {
+            .about-story__grid { grid-template-columns: 1fr; }
+            .about-story__image { order: -1; max-width: 600px; margin: 0 auto; }
+        }
+
+        /* ==========================================================
+           SECTION: MISSION & VISION
+           ========================================================== */
+        .about-mission {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .about-mission__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-xl);
+        }
+
+        .about-mission__card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl);
+            text-align: center;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-mission__card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+            transform: scaleX(0);
+            transition: transform var(--transition-base);
+            transform-origin: left;
+        }
+
+        .about-mission__card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-glow), var(--shadow-lg);
+            border-color: var(--accent-primary);
+        }
+
+        .about-mission__card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .about-mission__icon {
+            display: inline-flex;
+            padding: var(--space-lg);
+            background: var(--accent-primary-glow);
+            border-radius: 50%;
+            color: var(--accent-primary);
+            margin-bottom: var(--space-lg);
+            transition: all var(--transition-base);
+        }
+
+        .about-mission__card:hover .about-mission__icon {
+            background: var(--accent-primary);
+            color: #fff;
+        }
+
+        .about-mission__card h3 {
+            font-size: var(--text-xl);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-mission__card p {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .about-mission__grid { grid-template-columns: 1fr; }
+        }
+
+        /* ==========================================================
+           SECTION: TIMELINE (Company History)
+           ========================================================== */
+        .about-history {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .about-history__timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-history__line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, var(--accent-primary), var(--accent-primary), transparent);
+            transform: translateX(-50%);
+        }
+
+        .about-history__item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--space-3xl);
+            position: relative;
+        }
+
+        .about-history__item:last-child { margin-bottom: 0; }
+
+        .about-history__dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--bg-primary);
+            border: 3px solid var(--accent-primary);
+            z-index: 2;
+            box-shadow: 0 0 16px var(--accent-primary-glow);
+        }
+
+        .about-history__card {
+            width: calc(50% - 40px);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            transition: all var(--transition-base);
+        }
+
+        .about-history__card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .about-history__item:nth-child(odd) .about-history__card { margin-right: auto; text-align: right; }
+        .about-history__item:nth-child(even) .about-history__card { margin-left: auto; }
+
+        .about-history__year {
+            display: inline-block;
+            font-size: var(--text-sm);
+            font-weight: 800;
+            color: #fff;
+            background: var(--gradient-accent);
+            padding: 4px 14px;
+            border-radius: 100px;
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-history__card h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-history__card p {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .about-history__line { left: 24px; }
+            .about-history__dot { left: 24px; }
+            .about-history__card { width: calc(100% - 60px); margin-left: 60px !important; text-align: left !important; }
+        }
+
+        /* ==========================================================
+           SECTION: VALUES
+           ========================================================== */
+        .about-values {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .about-values__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-xl);
+        }
+
+        .about-values__item {
+            text-align: center;
+            padding: var(--space-2xl) var(--space-lg);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+        }
+
+        .about-values__item:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .about-values__num {
+            font-size: var(--text-3xl);
+            font-weight: 900;
+            color: var(--accent-primary);
+            opacity: 0.2;
+            line-height: 1;
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-values__item h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-values__item p {
+            font-size: var(--text-xs);
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1024px) {
+            .about-values__grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .about-values__grid { grid-template-columns: 1fr; }
+        }
+
+        /* ==========================================================
+           SECTION: CERTIFICATIONS
+           ========================================================== */
+        .about-certs {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .about-certs__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-xl);
+            text-align: center;
+        }
+
+        .about-certs__item {
+            padding: var(--space-2xl);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+        }
+
+        .about-certs__item:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-4px);
+        }
+
+        .about-certs__icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-lg);
+            border-radius: 50%;
+            background: var(--accent-primary-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-primary);
+        }
+
+        .about-certs__item h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .about-certs__item span {
+            font-size: var(--text-xs);
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 1024px) {
+            .about-certs__grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .about-certs__grid { grid-template-columns: 1fr; }
+        }
+
+        /* ==========================================================
+           SECTION: TEAM
+           ========================================================== */
+        .about-team {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .about-team__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-xl);
+        }
+
+        .about-team__card {
+            text-align: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl) var(--space-lg);
+            transition: all var(--transition-base);
+        }
+
+        .about-team__card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .about-team__avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto var(--space-lg);
+            background: var(--gradient-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-2xl);
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .about-team__card h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .about-team__role {
+            font-size: var(--text-xs);
+            color: var(--accent-primary);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .about-team__card p {
+            font-size: var(--text-xs);
+            color: var(--text-secondary);
+            margin-top: var(--space-sm);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1024px) {
+            .about-team__grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .about-team__grid { grid-template-columns: 1fr; }
+        }
+
+        /* ==========================================================
+           SECTION: GLOBAL PRESENCE
+           ========================================================== */
+        .about-global {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .about-global__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-md);
+            text-align: center;
+        }
+
+        .about-global__region {
+            padding: var(--space-2xl) var(--space-lg);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+        }
+
+        .about-global__region:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-4px);
+        }
+
+        .about-global__flag {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-global__region h4 {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .about-global__region span {
+            font-size: var(--text-xs);
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 1024px) {
+            .about-global__grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .about-global__grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__ring"><div class="loader__ring-inner"></div></div>
+        <span class="loader__text">APEX BEARING</span>
+    </div>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo" aria-label="Apex Bearing Technologies Home">
+                <svg class="header__logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                </svg>
+                <div class="header__logo-text">
+                    <span class="header__logo-name">APEX</span>
+                    <span class="header__logo-sub">BEARING TECHNOLOGIES</span>
+                </div>
+            </a>
+            <nav class="header__nav" id="mainNav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--mega">
+                        <a href="products-archive.html" class="header__nav-link">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu__grid">
+                                <div class="mega-menu__col"><h4 class="mega-menu__title">By Category</h4><ul class="mega-menu__links"><li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearings</a></li><li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li><li><a href="products-archive.html?cat=gen1">Gen 1 Hub Units</a></li><li><a href="products-archive.html?cat=gen2">Gen 2 Hub Units</a></li><li><a href="products-archive.html?cat=gen3">Gen 3 Hub Units</a></li><li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li></ul></div>
+                                <div class="mega-menu__col"><h4 class="mega-menu__title">By Brand</h4><ul class="mega-menu__links"><li><a href="products-archive.html?brand=toyota">Toyota · Honda · Nissan</a></li><li><a href="products-archive.html?brand=bmw">BMW · Mercedes · Audi</a></li><li><a href="products-archive.html?brand=hyundai">Hyundai · Kia</a></li><li><a href="products-archive.html?brand=ford">Ford · Chevrolet</a></li><li><a href="products-archive.html?brand=ev-brands">BYD · Tesla · Geely</a></li></ul></div>
+                                <div class="mega-menu__col mega-menu__col--featured"><div class="mega-menu__card"><img src="https://images.unsplash.com/photo-1565043666747-69f6646db118?w=400&q=80" alt="Featured" loading="lazy"><span>New: EV Hub Bearings</span><a href="products-archive.html?cat=ev">Explore →</a></div></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link" style="color:var(--accent-primary)">About</a></li>
+                    <li class="header__nav-item"><a href="index.html#manufacturing" class="header__nav-link">Manufacturing</a></li>
+                    <li class="header__nav-item"><a href="index.html#quality" class="header__nav-link">Quality</a></li>
+                    <li class="header__nav-item"><a href="index.html#distributor" class="header__nav-link">Distributors</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="header__action-btn" id="searchToggle" aria-label="Toggle search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+                <button class="header__action-btn" id="themeToggle" aria-label="Toggle dark/light mode"><svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+                <button class="header__action-btn header__lang" aria-label="Language"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>EN</span></button>
+                <button class="header__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="search-overlay" id="searchOverlay"><div class="search-overlay__box"><input type="text" class="search-overlay__input" placeholder="Search OEM number, vehicle model, keywords..." aria-label="Search"><button class="search-overlay__close" id="searchClose" aria-label="Close search">&times;</button></div></div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul>
+                <li><a href="products-archive.html">Products Catalog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#manufacturing">Manufacturing</a></li>
+                <li><a href="index.html#quality">Quality</a></li>
+                <li><a href="index.html#distributor">Distributors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu__cta">
+                <a href="contact.html" class="btn btn--primary">Request Quote</a>
+                <a href="#" class="btn btn--outline">Download Catalog</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main>
+
+        <!-- PAGE BANNER -->
+        <section class="page-banner">
+            <div class="page-banner__bg">
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&q=80" alt="Apex Bearing manufacturing facility">
+            </div>
+            <div class="page-banner__overlay"></div>
+            <div class="page-banner__content">
+                <nav class="page-banner__breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a><span class="sep">/</span><span class="current">About Us</span>
+                </nav>
+                <h1 class="page-banner__title">Driving <span class="text-accent">Global Mobility</span> Since 2004</h1>
+            </div>
+        </section>
+
+        <!-- OUR STORY -->
+        <section class="about-story">
+            <div class="container">
+                <div class="about-story__grid">
+                    <div class="about-story__content" data-aos="fade-right">
+                        <span class="section-tag">Our Story</span>
+                        <h2>20+ Years of <span class="text-accent">Bearing Excellence</span></h2>
+                        <p>Founded in 2004 in the heart of China's bearing industrial zone in Zhejiang Province, Apex Bearing Technologies began as a small workshop with a singular mission: to manufacture wheel hub bearings that match or exceed OE specifications at accessible prices.</p>
+                        <p>Over two decades, we've grown into a 50,000 m² state-of-the-art manufacturing facility with 200+ skilled employees, 6 automated production lines, and an in-house R&D center. Today, we export to over 80 countries across six continents, serving distributors, importers, automotive parts chains, and OEM buyers worldwide.</p>
+                        <div class="about-story__stats">
+                            <div class="about-story__stat"><strong>2004</strong><span>Founded</span></div>
+                            <div class="about-story__stat"><strong>50,000 m²</strong><span>Facility</span></div>
+                            <div class="about-story__stat"><strong>200+</strong><span>Employees</span></div>
+                            <div class="about-story__stat"><strong>80+</strong><span>Export Countries</span></div>
+                        </div>
+                    </div>
+                    <div class="about-story__image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="Precision bearing manufacturing">
+                        <div class="about-story__image-accent">
+                            <strong>20+</strong>
+                            <span>Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION & VISION -->
+        <section class="about-mission">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">Our Purpose</span>
+                    <h2 class="section-header__title">Mission, Vision <span class="text-accent">&amp; Promise</span></h2>
+                </div>
+                <div class="about-mission__grid">
+                    <div class="about-mission__card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="about-mission__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <h3>Our Mission</h3>
+                        <p>To deliver precision-engineered wheel hub bearings that empower global automotive aftermarket distributors with OE-quality products at competitive prices, backed by exceptional service and technical support.</p>
+                    </div>
+                    <div class="about-mission__card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="about-mission__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                        <h3>Our Vision</h3>
+                        <p>To become the world's most trusted wheel hub bearing manufacturer — the first choice for automotive distributors seeking reliability, innovation, and partnership in every market we serve.</p>
+                    </div>
+                    <div class="about-mission__card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="about-mission__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <h3>Our Promise</h3>
+                        <p>Every bearing that leaves our factory is 100% inspected. We stand behind our products with full warranty, technical documentation, and a commitment to zero-defect delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPANY HISTORY TIMELINE -->
+        <section class="about-history">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">Our Journey</span>
+                    <h2 class="section-header__title">Company <span class="text-accent">History</span></h2>
+                </div>
+                <div class="about-history__timeline">
+                    <div class="about-history__line"></div>
+
+                    <div class="about-history__item" data-aos="fade-right"><div class="about-history__dot"></div>
+                        <div class="about-history__card"><span class="about-history__year">2004</span><h4>Company Founded</h4><p>Apex Bearing established in Zhejiang bearing industrial zone with initial focus on tapered roller bearings for commercial vehicles.</p></div>
+                    </div>
+                    <div class="about-history__item" data-aos="fade-left"><div class="about-history__dot"></div>
+                        <div class="about-history__card"><span class="about-history__year">2008</span><h4>ISO 9001 Certified</h4><p>Achieved ISO 9001:2008 certification. Expanded product range to include wheel hub assemblies for passenger vehicles.</p></div>
+                    </div>
+                    <div class="about-history__item" data-aos="fade-right"><div class="about-history__dot"></div>
+                        <div class="about-history__card"><span class="about-history__year">2012</span><h4>First Export Markets</h4><p>Began exporting to Southeast Asia and Middle East. Established first international distribution partnerships.</p></div>
+                    </div>
+                    <div class="about-history__item" data-aos="fade-left"><div class="about-history__dot"></div>
+                        <div class="about-history__card"><span class="about-history__year">2016</span><h4>IATF 16949 Certified</h4><p>Achieved IATF 16949 automotive quality management certification. Opened new 30,000 m² production facility.</p></div>
+                    </div>
+                    <div class="about-history__item" data-aos="fade-right"><div class="about-history__dot"></div>
+                        <div class="about-history__card"><span class="about-history__year">2020</span><h4>4,000 SKU Milestone</h4><p>Reached 4,000+ SKU catalog covering 99% of passenger vehicles. Expanded into European and African markets.</p></div>
+                    </div>
+                    <div class="about-history__item" data-aos="fade-left"><div class="about-history__dot"></div>
+                        <div class="about-history__card"><span class="about-history__year">2024</span><h4>EV &amp; Global Expansion</h4><p>Launched dedicated EV hub bearing line. Expanded to 80+ export countries. 50,000 m² total facility with 6 automated lines.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORE VALUES -->
+        <section class="about-values">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">What Drives Us</span>
+                    <h2 class="section-header__title">Our Core <span class="text-accent">Values</span></h2>
+                </div>
+                <div class="about-values__grid">
+                    <div class="about-values__item" data-aos="fade-up"><div class="about-values__num">01</div><h4>Quality First</h4><p>Zero-defect mindset. Every bearing undergoes 6-stage inspection and 100% NVH testing before shipment.</p></div>
+                    <div class="about-values__item" data-aos="fade-up" data-aos-delay="100"><div class="about-values__num">02</div><h4>Customer Partnership</h4><p>We grow when our distributors grow. Long-term relationships built on trust, transparency, and mutual success.</p></div>
+                    <div class="about-values__item" data-aos="fade-up" data-aos-delay="200"><div class="about-values__num">03</div><h4>Continuous Innovation</h4><p>Investing in R&D for next-generation bearings. Low-friction EV designs, advanced sealing, and smart manufacturing.</p></div>
+                    <div class="about-values__item" data-aos="fade-up" data-aos-delay="300"><div class="about-values__num">04</div><h4>Global Responsibility</h4><p>Sustainable manufacturing practices. ISO 14001 environmental management. Ethical supply chain and fair labor.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="about-certs">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">Credentials</span>
+                    <h2 class="section-header__title">Quality <span class="text-accent">Certifications</span></h2>
+                </div>
+                <div class="about-certs__grid">
+                    <div class="about-certs__item" data-aos="fade-up">
+                        <div class="about-certs__icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+                        <h4>IATF 16949</h4>
+                        <span>Automotive Quality Management</span>
+                    </div>
+                    <div class="about-certs__item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="about-certs__icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                        <h4>ISO 9001:2015</h4>
+                        <span>Quality Management Systems</span>
+                    </div>
+                    <div class="about-certs__item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="about-certs__icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <h4>ISO 14001</h4>
+                        <span>Environmental Management</span>
+                    </div>
+                    <div class="about-certs__item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="about-certs__icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                        <h4>RoHS Compliant</h4>
+                        <span>Hazardous Substance Free</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEADERSHIP TEAM -->
+        <section class="about-team">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">Leadership</span>
+                    <h2 class="section-header__title">Meet Our <span class="text-accent">Team</span></h2>
+                </div>
+                <div class="about-team__grid">
+                    <div class="about-team__card" data-aos="fade-up">
+                        <div class="about-team__avatar">WL</div>
+                        <h4>Wang Lei</h4>
+                        <span class="about-team__role">CEO &amp; Founder</span>
+                        <p>30+ years in bearing industry. Founded Apex in 2004 with a vision for global manufacturing excellence.</p>
+                    </div>
+                    <div class="about-team__card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="about-team__avatar">CZ</div>
+                        <h4>Chen Zheng</h4>
+                        <span class="about-team__role">Chief Engineer</span>
+                        <p>PhD in Mechanical Engineering. Leads R&D and quality assurance with 18+ years of bearing design expertise.</p>
+                    </div>
+                    <div class="about-team__card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="about-team__avatar">SL</div>
+                        <h4>Sarah Li</h4>
+                        <span class="about-team__role">Export Director</span>
+                        <p>Manages global distribution network. Speaks English, Spanish, and Arabic. 15 years in international trade.</p>
+                    </div>
+                    <div class="about-team__card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="about-team__avatar">MK</div>
+                        <h4>Michael Kong</h4>
+                        <span class="about-team__role">Operations Director</span>
+                        <p>Oversees 6 production lines and 200+ staff. Lean manufacturing specialist with Six Sigma Black Belt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GLOBAL PRESENCE -->
+        <section class="about-global">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">Global Reach</span>
+                    <h2 class="section-header__title">Serving <span class="text-accent">80+ Countries</span> Worldwide</h2>
+                </div>
+                <div class="about-global__grid">
+                    <div class="about-global__region" data-aos="fade-up"><div class="about-global__flag">🌏</div><h4>Asia Pacific</h4><span>15+ countries</span></div>
+                    <div class="about-global__region" data-aos="fade-up" data-aos-delay="100"><div class="about-global__flag">🌍</div><h4>Middle East &amp; Africa</h4><span>20+ countries</span></div>
+                    <div class="about-global__region" data-aos="fade-up" data-aos-delay="200"><div class="about-global__flag">🌎</div><h4>Latin America</h4><span>12+ countries</span></div>
+                    <div class="about-global__region" data-aos="fade-up" data-aos-delay="300"><div class="about-global__flag">🇪🇺</div><h4>Europe &amp; CIS</h4><span>18+ countries</span></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--about">
+                    <a href="index.html" class="footer__logo"><svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg><span>APEX BEARING TECHNOLOGIES</span></a>
+                    <p>Global manufacturer of premium wheel hub bearings and wheel hub assembly units. IATF 16949 certified. Serving 80+ countries worldwide.</p>
+                    <div class="footer__social"><a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+                </div>
+                <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products-archive.html">Products</a></li><li><a href="index.html#manufacturing">Manufacturing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer__col"><h4>Products</h4><ul><li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearing</a></li><li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li><li><a href="products-archive.html?cat=gen1">Gen 1 Hub Unit</a></li><li><a href="products-archive.html?cat=gen2">Gen 2 Hub Unit</a></li><li><a href="products-archive.html?cat=gen3">Gen 3 Hub Unit</a></li><li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li></ul></div>
+                <div class="footer__col"><h4>Contact</h4><ul class="footer__contact-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+86 138 0000 0000</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>export@apexbearing.com</span></li></ul></div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2024-2026 Apex Bearing Technologies. All rights reserved.</p><div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Trade</a></div></div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS -->
+    <a href="https://wa.me/8613800000000" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg><span class="floating-whatsapp__pulse"></span></a>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

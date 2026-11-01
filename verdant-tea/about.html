@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Verdant Tea</title>
+    <meta
+      name="description"
+      content="Learn about Verdant Tea, our mountain heritage, tea-making philosophy, and export-focused commitment to premium tea craftsmanship."
+    />
+    <meta name="author" content="Verdant Tea Co." />
+    <meta property="og:title" content="About Verdant Tea" />
+    <meta
+      property="og:description"
+      content="A refined introduction to Verdant Tea, our story, values, and mountain-grown tea heritage."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Nunito+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- AOS (Animate On Scroll) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="nav-shell container">
+        <a href="./index.html" class="brand">VERDANT<span>.</span></a>
+        <div class="nav-links desktop-only">
+          <a href="./about.html">Our Story</a>
+          <div class="nav-item has-submenu">
+            <a href="./products.html">Teas</a>
+            <div class="submenu mega-menu" aria-label="Teas submenu">
+              <a class="mega-link" href="./products.html">
+                <img src="./src/assets/product-chunmee.jpg" alt="Product archive preview" />
+                <div>
+                  <p class="mega-link__title">Product Archive</p>
+                  <p class="mega-link__meta">Browse the full collection</p>
+                </div>
+              </a>
+              <a class="mega-link" href="./product.html">
+                <img src="./src/assets/product-packaging.jpg" alt="Featured product preview" />
+                <div>
+                  <p class="mega-link__title">Featured Product</p>
+                  <p class="mega-link__meta">Single product spotlight</p>
+                </div>
+              </a>
+              <a class="mega-link" href="./gallery.html">
+                <img src="./src/assets/tea-lifestyle.jpg" alt="Gallery showcase preview" />
+                <div>
+                  <p class="mega-link__title">Gallery Showcase</p>
+                  <p class="mega-link__meta">Visual tea archive</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./news.html">News</a>
+          <a href="./index.html#craftsmanship">Craftsmanship</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Open search" data-search-toggle>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5" stroke-width="1.8"></circle>
+              <path d="M16 16L21 21" stroke-width="1.8" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <a href="./about.html">Our Story</a>
+        <div class="mobile-menu-group">
+          <a href="./products.html">Teas</a>
+          <div class="mobile-submenu">
+            <a href="./products.html">Product Archive</a>
+            <a href="./product.html">Featured Product</a>
+            <a href="./gallery.html">Gallery Showcase</a>
+          </div>
+        </div>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./news.html">News</a>
+        <a href="./index.html#craftsmanship">Craftsmanship</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+    <div id="site-search" class="search-panel" hidden data-search-panel>
+      <div class="container search-panel__inner">
+        <button class="search-close" type="button" aria-label="Close search" data-search-close>&times;</button>
+        <form class="search-form">
+          <input type="search" name="search" placeholder="Search teas, news, or pages..." aria-label="Search site" />
+          <button class="button button-gold" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <section class="page-banner" aria-labelledby="page-title">
+        <div class="page-banner__media">
+          <img src="./src/assets/tea-lifestyle.jpg" alt="Tea service and loose leaves arranged in a calm interior" />
+        </div>
+        <div class="page-banner__overlay"></div>
+        <div class="container page-banner__content">
+          <ol class="breadcrumb-list" aria-label="Breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li>/</li>
+            <li><span aria-current="page">About Us</span></li>
+          </ol>
+          <p class="section-subheading light-subheading">About Verdant</p>
+          <h1 id="page-title" class="page-banner__title">A tea house shaped by mountain weather, patience, and old craft.</h1>
+          <p class="page-banner__copy">
+            Verdant Tea partners with estates, tea makers, and global buyers who value origin, clarity, and a quietly luxurious drinking experience.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container story-grid">
+          <div class="image-frame portrait-frame">
+            <img src="./src/assets/tea-room.jpg" alt="Traditional tea room with porcelain teaware" />
+          </div>
+          <div class="story-stack">
+            <div>
+              <p class="section-subheading">Our Philosophy</p>
+              <h2 class="section-heading">We treat tea as an agricultural art, not a commodity line.</h2>
+              <div class="gold-divider align-left"></div>
+            </div>
+            <p class="section-body">
+              From the first spring harvest to the final packed carton, every decision is made to preserve the identity of the leaf. We work with mountain-grown teas that carry distinct aroma, shape, and cup structure, then build export-ready programs around that character rather than diluting it.
+            </p>
+            <p class="section-body">
+              Our collections are designed for partners who want more than generic supply. We help tea rooms, specialty retail, hospitality groups, and private label brands source teas that feel rooted, elegant, and commercially dependable.
+            </p>
+            <p class="signature-note">"Quietly refined tea, prepared for modern trade."</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-subheading">Our Journey</p>
+            <h2 class="section-heading">A brief timeline of Verdant Tea</h2>
+            <div class="gold-divider"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <div class="timeline-year">1892</div>
+                <div>
+                  <h3>Mountain beginnings</h3>
+                  <p>Our story begins with hillside plantings cultivated in mist-rich terrain known for slow leaf development and aromatic depth.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">1958</div>
+                <div>
+                  <h3>Craft refined for export</h3>
+                  <p>Processing standards were formalized for consistency, allowing traditional styles to travel well into international tea programs.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2008</div>
+                <div>
+                  <h3>Private label expansion</h3>
+                  <p>Verdant began offering branded packaging and tailored collections for specialty retailers and boutique hospitality clients.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">Today</div>
+                <div>
+                  <h3>Heritage with precision</h3>
+                  <p>We continue to combine origin-led sourcing with modern documentation, packaging support, and export coordination.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-subheading">Our Values</p>
+            <h2 class="section-heading">What defines the Verdant standard</h2>
+            <div class="gold-divider"></div>
+          </div>
+          <div class="value-grid">
+            <article class="value-card">
+              <h3>Origin First</h3>
+              <p>We prioritize teas with a clear geographic identity, distinct cup signature, and traceable production story.</p>
+            </article>
+            <article class="value-card">
+              <h3>Elegant Utility</h3>
+              <p>Our product programs are beautiful, but they are built to work across retail, hospitality, and export realities.</p>
+            </article>
+            <article class="value-card">
+              <h3>Long-Term Trust</h3>
+              <p>We value stable partnerships, honest specifications, and responsive communication over one-off transactions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <p class="section-subheading">Work With Us</p>
+              <h2 class="section-heading">Looking for a tea sourcing partner with heritage and trade fluency?</h2>
+              <p class="section-body">
+                We can assemble sample sets, retail concepts, and private label recommendations based on your market and channel needs.
+              </p>
+            </div>
+            <a class="button button-dark" href="./contact.html">Start a Conversation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">VERDANT<span>.</span></p>
+          <p class="footer-copy">Premium green tea cultivated with care, crafted with heritage, delivered with excellence.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Navigation</p>
+          <div class="footer-links">
+            <a href="./about.html">Our Story</a>
+            <a href="./products.html">The Collection</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./news.html">News</a>
+            <a href="./index.html#craftsmanship">Craftsmanship</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <div class="footer-contact">
+            <p>info@verdanttea.com</p>
+            <p>+86 571 8888 9999</p>
+            <p>Hangzhou, Zhejiang Province<br />China</p>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Verdant Tea Co. All rights reserved.</p>
+        <p>From mountain to cup, with reverence.</p>
+      </div>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

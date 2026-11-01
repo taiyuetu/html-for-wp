@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lumière Scented Candles</title>
+    <meta name="description" content="Get in touch with Lumière - We'd love to hear from you">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-fire"></i>
+                Lumière
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    
+                    <!-- Collections with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index.html#collections" class="nav__link">
+                            <span>Collections</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Botanical Garden</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Oriental Spice</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-lemon"></i>
+                                    <span>Citrus Refresh</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Cozy Comfort</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Products with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="products.html" class="nav__link">
+                            <span>Products</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-star"></i>
+                                    <span>Best Sellers</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-sparkles"></i>
+                                    <span>New Arrivals</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-gift"></i>
+                                    <span>Gift Sets</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-percent"></i>
+                                    <span>Sale Items</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Services with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index.html#services" class="nav__link">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Custom Fragrances</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-box-open"></i>
+                                    <span>Private Labeling</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Bulk Manufacturing</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Consultation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link active-link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__search" id="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav__cart" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="nav__cart-count">0</span>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-bar__container container">
+                <form class="search-bar__form" id="search-form">
+                    <input type="search" class="search-bar__input" placeholder="Search for products, collections..." aria-label="Search">
+                    <button type="submit" class="search-bar__submit" aria-label="Submit search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button class="search-bar__close" id="search-close" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header__content">
+                <h1 class="page-header__title">Get In Touch</h1>
+                <p class="page-header__description">We'd love to hear from you. Send us a message!</p>
+                <div class="breadcrumb">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
+                    <span class="breadcrumb__separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="breadcrumb__current">Contact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-info-card__title">Visit Us</h3>
+                    <p class="contact-info-card__text">123 Candle Street<br>Artisan District<br>Paris, France 75001</p>
+                </div>
+                
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card__icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-info-card__title">Call Us</h3>
+                    <p class="contact-info-card__text">
+                        <a href="tel:+33123456789">+33 1 23 45 67 89</a><br>
+                        <a href="tel:+33198765432">+33 1 98 76 54 32</a>
+                    </p>
+                    <small>Mon-Fri: 9am-6pm CET</small>
+                </div>
+                
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info-card__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-info-card__title">Email Us</h3>
+                    <p class="contact-info-card__text">
+                        <a href="mailto:info@lumiere.com">info@lumiere.com</a><br>
+                        <a href="mailto:support@lumiere.com">support@lumiere.com</a>
+                    </p>
+                </div>
+                
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-info-card__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="contact-info-card__title">Business Hours</h3>
+                    <p class="contact-info-card__text">
+                        Monday - Friday: 9am - 6pm<br>
+                        Saturday: 10am - 4pm<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="section bg-cream">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <div class="section__header">
+                        <h2 class="section__title">Send Us a Message</h2>
+                        <p class="section__description">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select id="subject" class="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="order">Order Status</option>
+                                    <option value="wholesale">Wholesale/B2B</option>
+                                    <option value="custom">Custom Orders</option>
+                                    <option value="support">Customer Support</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" class="form-input form-textarea" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--large">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Map & Info -->
+                <div class="contact-map-wrapper" data-aos="fade-left">
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615674073!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <div class="contact-extra-info">
+                        <h3>Why Choose Lumière?</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Handcrafted with premium ingredients</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>100% natural soy wax</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Eco-friendly & sustainable</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free shipping on orders over $75</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>30-day satisfaction guarantee</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="social-links">
+                            <h4>Follow Us</h4>
+                            <div class="social-buttons">
+                                <a href="#" class="social-btn" aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-btn" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-btn" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-btn" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__subtitle">FAQ</span>
+                <h2 class="section__title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-column">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="faq-item__question">
+                            <i class="fas fa-question-circle"></i>
+                            What are your candles made of?
+                        </h3>
+                        <p class="faq-item__answer">Our candles are made with 100% natural soy wax, premium fragrance oils, and cotton wicks. All ingredients are non-toxic and eco-friendly.</p>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="faq-item__question">
+                            <i class="fas fa-question-circle"></i>
+                            Do you offer wholesale pricing?
+                        </h3>
+                        <p class="faq-item__answer">Yes! We offer competitive wholesale pricing for bulk orders. Please contact us at wholesale@lumiere.com for more information.</p>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="faq-item__question">
+                            <i class="fas fa-question-circle"></i>
+                            Can I create a custom scent?
+                        </h3>
+                        <p class="faq-item__answer">Absolutely! We offer custom fragrance development services. Contact our team to discuss your vision and requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-column">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="faq-item__question">
+                            <i class="fas fa-question-circle"></i>
+                            What is your shipping policy?
+                        </h3>
+                        <p class="faq-item__answer">We offer free shipping on orders over $75 within the US. International shipping is available. Orders are processed within 1-2 business days.</p>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="faq-item__question">
+                            <i class="fas fa-question-circle"></i>
+                            What is your return policy?
+                        </h3>
+                        <p class="faq-item__answer">We offer a 30-day satisfaction guarantee. If you're not completely satisfied, contact us for a full refund or exchange.</p>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="faq-item__question">
+                            <i class="fas fa-question-circle"></i>
+                            Are your candles cruelty-free?
+                        </h3>
+                        <p class="faq-item__answer">Yes, all our products are 100% cruelty-free and vegan. We never test on animals and use only plant-based ingredients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-fire"></i>
+                        Lumière
+                    </a>
+                    <p class="footer__description">
+                        Crafting premium scented candles that transform spaces into sanctuaries of peace and beauty.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <div class="footer__links">
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="news.html">News & Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Customer Care</h3>
+                    <div class="footer__links">
+                        <a href="#">Shipping Info</a>
+                        <a href="#">Returns</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <p class="footer__newsletter-text">Subscribe for exclusive offers and updates</p>
+                    <form class="footer__newsletter">
+                        <input type="email" class="footer__newsletter-input" placeholder="Your email" required>
+                        <button type="submit" class="footer__newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 Lumière. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

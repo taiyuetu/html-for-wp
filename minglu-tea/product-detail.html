@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Míng Lù — Product Details" />
+  <title>Product Details — Míng Lù</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAV -->
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-logo">Míng Lù</a>
+    <ul class="nav-links">
+      <li><a href="index.html#origin">Origin</a></li>
+      <li><a href="index.html#harvest">Harvest</a></li>
+      <li class="nav-item-has-children">
+        <a href="products.html">Products</a>
+        <span class="nav-dropdown-toggle"></span>
+        <div class="mega-menu">
+          <div class="mega-menu__inner">
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Green Teas</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Dragon Well (Longjing)</a></li>
+                <li><a href="products.html">Snail Spring (Biluochun)</a></li>
+                <li><a href="products.html">Jade Dew (Gyokuro)</a></li>
+                <li><a href="products.html">White Leaf (Anji Bai)</a></li>
+                <li><a href="products.html">Cloud Mist (Yunwu)</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Oolong</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Da Hong Pao</a></li>
+                <li><a href="products.html">Tie Guan Yin</a></li>
+                <li><a href="products.html">Phoenix Oolong</a></li>
+                <li><a href="products.html">Dong Ding Oolong</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section">
+              <h4 class="mega-menu__title">Pu-erh</h4>
+              <ul class="mega-menu__list">
+                <li><a href="products.html">Raw Pu-erh (Sheng)</a></li>
+                <li><a href="products.html">Ripe Pu-erh (Shou)</a></li>
+                <li><a href="products.html">Aged Collection</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__section mega-menu__section--featured">
+              <h4 class="mega-menu__title">Featured</h4>
+              <p class="mega-menu__desc">Our limited spring harvest selection. Pre-orders now open.</p>
+              <a href="products.html" class="mega-menu__cta">View Collection →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="index.html#quality">Quality</a></li>
+      <li><a href="index.html#contact">Enquire</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="search-container">
+        <button class="search-toggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <div class="search-dropdown">
+          <form class="search-form">
+            <input type="text" class="search-input" placeholder="Search teas..." />
+            <button type="submit" class="search-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ BREADCRUMB -->
+  <div class="breadcrumb" id="breadcrumb">
+    <div class="breadcrumb__container">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb__sep">/</span>
+      <a href="products.html">Products</a>
+      <span class="breadcrumb__sep">/</span>
+      <span id="breadcrumbTitle">Lóng Jǐng Pre-Qīngmíng</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ PRODUCT DETAIL -->
+  <section class="product-detail section" id="productDetail">
+    <div class="product-detail__container">
+      
+      <!-- IMAGE COLUMN -->
+      <div class="product-detail__images reveal-left">
+        <div class="product-detail__main-image">
+          <div class="img-placeholder img-placeholder--tea-longjing" id="mainImage">
+            <div class="product-detail__badge">Spring Harvest</div>
+          </div>
+        </div>
+        <div class="product-detail__thumbnails">
+          <div class="product-detail__thumbnail active" data-image="longjing">
+            <div class="img-placeholder img-placeholder--tea-longjing"></div>
+          </div>
+          <div class="product-detail__thumbnail" data-image="longjing-2">
+            <div class="img-placeholder" style="background: linear-gradient(160deg, #0f2a1f 0%, #1a5040 40%, #3d8a62 80%, #8aba90 100%);"></div>
+          </div>
+          <div class="product-detail__thumbnail" data-image="longjing-3">
+            <div class="img-placeholder" style="background: linear-gradient(160deg, #1a3a2f 0%, #2a5a50 40%, #4a8a72 80%, #7a9a8a 100%);"></div>
+          </div>
+          <div class="product-detail__thumbnail" data-image="longjing-4">
+            <div class="img-placeholder" style="background: linear-gradient(160deg, #0a2a18 0%, #1a4a32 40%, #3a7a5a 80%, #6aaa82 100%);"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO COLUMN -->
+      <div class="product-detail__info reveal-up">
+        
+        <!-- Header -->
+        <div class="product-detail__header">
+          <span class="product-detail__category">Dragon Well</span>
+          <h1 class="product-detail__title">Lóng Jǐng<br/>Pre-Qīngmíng</h1>
+          <div class="product-detail__rating">
+            <div class="product-detail__stars">★★★★★</div>
+            <span class="product-detail__reviews">(24 reviews)</span>
+          </div>
+        </div>
+
+        <!-- Origin & Quick Info -->
+        <div class="product-detail__quick-info">
+          <div class="quick-info-item">
+            <span class="quick-info-label">Origin</span>
+            <span class="quick-info-value">Hangzhou · Zhejiang</span>
+          </div>
+          <div class="quick-info-item">
+            <span class="quick-info-label">Elevation</span>
+            <span class="quick-info-value">1,200–1,800m</span>
+          </div>
+          <div class="quick-info-item">
+            <span class="quick-info-label">Harvest</span>
+            <span class="quick-info-value">Spring · Pre-Qīngmíng</span>
+          </div>
+          <div class="quick-info-item">
+            <span class="quick-info-label">Processing</span>
+            <span class="quick-info-value">Pan-fired · Pressed Flat</span>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="product-detail__description">
+          <h3 class="product-detail__section-title">About This Tea</h3>
+          <p>
+            Lóng Jǐng, or Dragon Well, represents one of China's most celebrated green teas. Our Pre-Qīngmíng selection is harvested in the fleeting days before the Qīngmíng festival — a window of mere days that captures the finest leaves at their peak of delicate complexity.
+          </p>
+          <p>
+            Pressed into distinctive flat, sword-like shapes, these leaves unfurl to reveal a pale, luminous liquor of remarkable clarity. The first infusion brings notes of fresh chestnuts and spring blossoms, evolving into deeper mineral notes reminiscent of wet stones after rain.
+          </p>
+        </div>
+
+        <!-- Flavor Profile -->
+        <div class="product-detail__flavor-profile">
+          <h3 class="product-detail__section-title">Flavor Profile</h3>
+          <div class="flavor-tags">
+            <span class="flavor-tag">Chestnut</span>
+            <span class="flavor-tag">Floral</span>
+            <span class="flavor-tag">Mineral</span>
+            <span class="flavor-tag">Sweet</span>
+            <span class="flavor-tag">Herbaceous</span>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="product-detail__cta">
+          <button class="btn-primary" id="requestSampleBtn">Request Sample</button>
+          <button class="btn-secondary" id="shareBtn">Share</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ SPECIFICATIONS -->
+  <section class="product-specs section reveal-up">
+    <div class="product-specs__container">
+      <h2 class="section-heading reveal-up">
+        Tea<br/><em>Specifications</em>
+      </h2>
+
+      <div class="specs-grid">
+        <div class="spec-card reveal-up">
+          <div class="spec-card__icon">🍃</div>
+          <h4 class="spec-card__title">Tea Type</h4>
+          <p class="spec-card__text">Green Tea · Unoxidised</p>
+        </div>
+
+        <div class="spec-card reveal-up delay-1">
+          <div class="spec-card__icon">🌡️</div>
+          <h4 class="spec-card__title">Brew Temperature</h4>
+          <p class="spec-card__text">165–175°F (75–80°C)</p>
+        </div>
+
+        <div class="spec-card reveal-up delay-2">
+          <div class="spec-card__icon">⏱️</div>
+          <h4 class="spec-card__title">Brew Time</h4>
+          <p class="spec-card__text">2–3 minutes (first infusion)<br/>30–45 seconds (subsequent)</p>
+        </div>
+
+        <div class="spec-card reveal-up delay-3">
+          <div class="spec-card__icon">🔄</div>
+          <h4 class="spec-card__title">Infusions</h4>
+          <p class="spec-card__text">5–7 infusions<br/>(re-infusion recommended)</p>
+        </div>
+
+        <div class="spec-card reveal-up delay-1">
+          <div class="spec-card__icon">💧</div>
+          <h4 class="spec-card__title">Water Quality</h4>
+          <p class="spec-card__text">Filtered water recommended<br/>Avoid chlorinated water</p>
+        </div>
+
+        <div class="spec-card reveal-up delay-2">
+          <div class="spec-card__icon">📦</div>
+          <h4 class="spec-card__title">Storage</h4>
+          <p class="spec-card__text">Cool, dry place<br/>Sealed container preferred</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ SOURCING -->
+  <section class="sourcing section reveal-left" id="sourcing">
+    <div class="sourcing__layout">
+      <div class="sourcing__image-col">
+        <div class="img-frame img-frame--tall reveal-left">
+          <div class="img-placeholder img-placeholder--mountain"></div>
+        </div>
+      </div>
+      <div class="sourcing__text-col">
+        <h2 class="section-heading reveal-up">
+          Sourced from<br/><em>ancient</em><br/>mountains.
+        </h2>
+        <div class="divider-leaf reveal-fade delay-2"></div>
+        <p class="body-text reveal-fade delay-3">
+          Our Lóng Jǐng comes from family gardens in the West Lake region of Hangzhou, where tea cultivation has flourished for over 1,200 years. The unique microclimate — cool mornings, afternoon mist, and mineral-rich soils — creates conditions ideally suited to producing teas of unparalleled complexity.
+        </p>
+        <p class="body-text reveal-fade delay-4">
+          We work directly with the farming families, many of whom have stewarded these specific plots for generations. Each harvest is carefully monitored to ensure we select only the most prized picking window — the pre-Qīngmíng period — capturing leaves at their absolute peak of refinement.
+        </p>
+        <a href="index.html#origin" class="btn-ghost reveal-fade delay-5">Learn About Our Sourcing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ RELATED PRODUCTS -->
+  <section class="related-products section reveal-up">
+    <div class="related-products__container">
+      <h2 class="section-heading reveal-up">
+        You Might<br/><em>Also Like</em>
+      </h2>
+
+      <div class="related-products__grid">
+        
+        <article class="product-card reveal-up">
+          <div class="product-card__image">
+            <div class="img-placeholder img-placeholder--tea-biluochun">
+              <span class="product-card__badge">Spring Harvest</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Snail Spring</span>
+            <h3 class="product-card__name">Bì Luó Chūn<br/>Ancient Grove</h3>
+            <div class="product-card__origin">Dongting · Jiangsu</div>
+            <p class="product-card__desc">Tightly spiraled with fine silver down. Floral, fruit-kissed sweetness.</p>
+            <a href="product-detail.html" class="product-card__cta">View Details</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal-up delay-1">
+          <div class="product-card__image">
+            <div class="img-placeholder img-placeholder--tea-gyokuro">
+              <span class="product-card__badge">Spring Harvest</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Jade Dew</span>
+            <h3 class="product-card__name">Gyokuro<br/>Hoshino Reserve</h3>
+            <div class="product-card__origin">Uji · Kyoto</div>
+            <p class="product-card__desc">Shade-grown for 30 days. Deep umami, oceanic depth, velvet finish.</p>
+            <a href="product-detail.html" class="product-card__cta">View Details</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal-up delay-2">
+          <div class="product-card__image">
+            <div class="img-placeholder img-placeholder--tea-mao">
+              <span class="product-card__badge">Spring Harvest</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">White Leaf</span>
+            <h3 class="product-card__name">Ānjí Bái Chá<br/>Jade Valley</h3>
+            <div class="product-card__origin">Anji · Zhejiang</div>
+            <p class="product-card__desc">Pale yellow-green liquor. Low bitterness, high theanine.</p>
+            <a href="product-detail.html" class="product-card__cta">View Details</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__col">
+        <h4 class="footer__heading">Míng Lù</h4>
+        <p class="footer__text">Rare single-origin green teas from ancient mountain gardens, sourced with reverence and crafted with patience.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Connect</h4>
+        <ul class="footer__links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WeChat</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Míng Lù. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Thumbnail gallery interaction
+    document.querySelectorAll('.product-detail__thumbnail').forEach(thumb => {
+      thumb.addEventListener('click', function() {
+        document.querySelectorAll('.product-detail__thumbnail').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Request sample button
+    document.getElementById('requestSampleBtn')?.addEventListener('click', function() {
+      document.querySelector('a[href="index.html#contact"]').click();
+    });
+
+    // Share button
+    document.getElementById('shareBtn')?.addEventListener('click', function() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Míng Lù — Lóng Jǐng Pre-Qīngmíng',
+          text: 'Check out this exceptional green tea from ancient mountain gardens.',
+          url: window.location.href
+        });
+      } else {
+        alert('Share: ' + window.location.href);
+      }
+    });
+  </script>
+</body>
+</html>

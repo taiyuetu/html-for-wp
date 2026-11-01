@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Image Gallery - Explore our manufacturing facilities, products, and innovations">
+    <title>Image Gallery | Precision Materials Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery-styles.css">
+    <link rel="stylesheet" href="icons.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="welcome-message">Welcome to Precision Materials - Advanced Manufacturing Solutions</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="top-bar-contact">
+                    <a href="tel:+15551234567">
+                        <span>📞</span>
+                        <span>+1 (555) 123-4567</span>
+                    </a>
+                    <a href="mailto:info@precisionmaterials.com">
+                        <span>✉️</span>
+                        <span>info@precisionmaterials.com</span>
+                    </a>
+                </div>
+                <div class="social-links-top">
+                    <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-link" title="Twitter" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="social-link" title="Facebook" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" title="YouTube" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">PRECISION MATERIALS</span>
+                    <span class="logo-tagline">Advanced Manufacturing Solutions</span>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#advantages" class="nav-link">Advantages</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="index.html#applications" class="nav-link">Applications</a></li>
+                    <li><a href="index.html#quality" class="nav-link">Quality</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="page-banner-background">
+                <div class="hero-image-placeholder"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="page-banner-content">
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>Gallery</span>
+                    </div>
+                    <h1 class="banner-title">Image Gallery</h1>
+                    <p class="banner-subtitle">Explore our world-class facilities, products, and innovations</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter-section">
+            <div class="container">
+                <div class="filter-toolbar">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Images</button>
+                        <button class="filter-btn" data-filter="facilities">Facilities</button>
+                        <button class="filter-btn" data-filter="products">Products</button>
+                        <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+                        <button class="filter-btn" data-filter="team">Team</button>
+                        <button class="filter-btn" data-filter="quality">Quality Control</button>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="results-count">Showing <strong id="imageCount">24</strong> images</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-category="facilities" data-title="Modern Manufacturing Facility" data-description="State-of-the-art production facility with advanced automation">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Modern Manufacturing Facility</h3>
+                            <span class="gallery-category">Facilities</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-category="products" data-title="Aluminum Brazing Rods" data-description="High-purity aluminum brazing rods in various diameters">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Aluminum Brazing Rods</h3>
+                            <span class="gallery-category">Products</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-category="manufacturing" data-title="Production Line" data-description="Automated production line for flux-cored filler manufacturing">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Production Line</h3>
+                            <span class="gallery-category">Manufacturing</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-category="team" data-title="Engineering Team" data-description="Our experienced engineering team at work">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Engineering Team</h3>
+                            <span class="gallery-category">Team</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-category="quality" data-title="Quality Testing Lab" data-description="Advanced quality control and testing laboratory">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Quality Testing Lab</h3>
+                            <span class="gallery-category">Quality Control</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-category="products" data-title="Flux-Cored Fillers" data-description="Self-fluxing aluminum filler products">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Flux-Cored Fillers</h3>
+                            <span class="gallery-category">Products</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item" data-category="facilities" data-title="R&D Innovation Center" data-description="Research and development facility for new alloy formulations">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>R&D Innovation Center</h3>
+                            <span class="gallery-category">Facilities</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item" data-category="manufacturing" data-title="Wire Drawing Machine" data-description="Precision wire drawing equipment for brazing wire production">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Wire Drawing Machine</h3>
+                            <span class="gallery-category">Manufacturing</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 9 -->
+                    <div class="gallery-item" data-category="products" data-title="Silver Brazing Alloys" data-description="Premium silver-based brazing alloys">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Silver Brazing Alloys</h3>
+                            <span class="gallery-category">Products</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 10 -->
+                    <div class="gallery-item" data-category="quality" data-title="Microscopy Analysis" data-description="Metallurgical microscopy for quality assurance">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Microscopy Analysis</h3>
+                            <span class="gallery-category">Quality Control</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 11 -->
+                    <div class="gallery-item" data-category="team" data-title="Production Team" data-description="Skilled production team ensuring quality">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Production Team</h3>
+                            <span class="gallery-category">Team</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 12 -->
+                    <div class="gallery-item" data-category="facilities" data-title="Warehouse & Logistics" data-description="Modern warehouse facility for efficient distribution">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Warehouse & Logistics</h3>
+                            <span class="gallery-category">Facilities</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 13 -->
+                    <div class="gallery-item" data-category="manufacturing" data-title="Melting Furnace" data-description="High-precision melting furnace for alloy production">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Melting Furnace</h3>
+                            <span class="gallery-category">Manufacturing</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 14 -->
+                    <div class="gallery-item" data-category="products" data-title="Copper Alloy Products" data-description="Phosphor copper brazing alloys">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Copper Alloy Products</h3>
+                            <span class="gallery-category">Products</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 15 -->
+                    <div class="gallery-item" data-category="quality" data-title="Tensile Testing" data-description="Mechanical properties testing equipment">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Tensile Testing</h3>
+                            <span class="gallery-category">Quality Control</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 16 -->
+                    <div class="gallery-item" data-category="team" data-title="Quality Assurance Team" data-description="Dedicated QA team ensuring excellence">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Quality Assurance Team</h3>
+                            <span class="gallery-category">Team</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 17 -->
+                    <div class="gallery-item" data-category="facilities" data-title="Office Building" data-description="Modern corporate headquarters">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Office Building</h3>
+                            <span class="gallery-category">Facilities</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 18 -->
+                    <div class="gallery-item" data-category="manufacturing" data-title="Packaging Line" data-description="Automated packaging and labeling system">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Packaging Line</h3>
+                            <span class="gallery-category">Manufacturing</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 19 -->
+                    <div class="gallery-item" data-category="products" data-title="Specialty Alloys" data-description="Custom formulated specialty alloys">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Specialty Alloys</h3>
+                            <span class="gallery-category">Products</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 20 -->
+                    <div class="gallery-item" data-category="quality" data-title="Chemical Analysis" data-description="Spectrometer for chemical composition analysis">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Chemical Analysis</h3>
+                            <span class="gallery-category">Quality Control</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 21 -->
+                    <div class="gallery-item" data-category="team" data-title="R&D Scientists" data-description="Research scientists developing new formulations">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>R&D Scientists</h3>
+                            <span class="gallery-category">Team</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 22 -->
+                    <div class="gallery-item" data-category="manufacturing" data-title="Quality Inspection" data-description="In-line quality inspection and testing">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Quality Inspection</h3>
+                            <span class="gallery-category">Manufacturing</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 23 -->
+                    <div class="gallery-item" data-category="products" data-title="Product Packaging" data-description="Professional packaging and labeling">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Product Packaging</h3>
+                            <span class="gallery-category">Products</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 24 -->
+                    <div class="gallery-item" data-category="facilities" data-title="Solar Panel Installation" data-description="Sustainable energy solutions for our facilities">
+                        <div class="gallery-image">
+                            <div class="image-placeholder"></div>
+                            <div class="gallery-overlay">
+                                <button class="zoom-btn" aria-label="View image">🔍</button>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">
+                            <h3>Solar Panel Installation</h3>
+                            <span class="gallery-category">Facilities</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination">
+                    <button class="pagination-btn" id="prevBtn" aria-label="Previous page">
+                        <span class="icon-chevron-left"></span>
+                    </button>
+                    <div class="pagination-numbers" id="paginationNumbers">
+                        <!-- Page numbers will be generated by JavaScript -->
+                    </div>
+                    <button class="pagination-btn" id="nextBtn" aria-label="Next page">
+                        <span class="icon-chevron-right"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+                <span class="icon-close"></span>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+                <span class="icon-chevron-left-white"></span>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+                <span class="icon-chevron-right-white"></span>
+            </button>
+            
+            <div class="lightbox-image-container">
+                <div class="lightbox-image" id="lightboxImage">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+            
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle">Image Title</h3>
+                <p id="lightboxDescription">Image description</p>
+                <span id="lightboxCounter" class="lightbox-counter">1 / 24</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-text">PRECISION MATERIALS</span>
+                        </div>
+                        <p class="footer-desc">Leading manufacturer of premium industrial brazing materials and thermal joining solutions for global manufacturing excellence.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="products.html">Aluminum Brazing</a></li>
+                            <li><a href="products.html">Flux-Cored Fillers</a></li>
+                            <li><a href="products.html">Copper Alloys</a></li>
+                            <li><a href="products.html">Silver Alloys</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="index.html#quality">Quality</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Technical Resources</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Certifications</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <ul class="footer-contact">
+                            <li>Email: info@precisionmaterials.com</li>
+                            <li>Phone: +1 (555) 123-4567</li>
+                            <li>Technical: tech@precisionmaterials.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Precision Materials Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery-script.js"></script>
+</body>
+</html>

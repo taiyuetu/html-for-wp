@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Apex Bearing Technologies — premium wheel hub bearing manufacturer. Request distributor pricing, technical support, or product inquiries. WhatsApp, email, phone. Response within 24 hours.">
+    <meta name="keywords" content="contact apex bearing, wheel bearing inquiry, OEM bearing quote, distributor application, automotive bearing supplier contact">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Contact Us | Apex Bearing Technologies">
+    <meta property="og:description" content="Get in touch for wheel hub bearing distributor pricing, technical inquiries, and partnership opportunities. Response within 24 hours.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+
+    <title>Contact Us | Apex Bearing Technologies — Request Distributor Pricing</title>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Apex Bearing Technologies",
+            "contactPoint": [
+                { "@type": "ContactPoint", "contactType": "Sales", "telephone": "+86-138-0000-0000", "email": "export@apexbearing.com", "availableLanguage": ["English", "Chinese", "Spanish", "Arabic"] },
+                { "@type": "ContactPoint", "contactType": "Technical Support", "telephone": "+86-138-0000-0001", "email": "tech@apexbearing.com" }
+            ],
+            "address": { "@type": "PostalAddress", "streetAddress": "No. 88, Bearing Industrial Zone", "addressRegion": "Zhejiang", "addressCountry": "CN" }
+        }
+    }
+    </script>
+
+    <!-- Contact Page Styles -->
+    <style>
+        /* ==========================================================
+           PAGE BANNER
+           ========================================================== */
+        .page-banner {
+            position: relative;
+            height: 380px;
+            overflow: hidden;
+            margin-top: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-banner__bg { position: absolute; inset: 0; z-index: 0; }
+        .page-banner__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+        .page-banner__overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.7) 60%, var(--bg-primary) 100%); z-index: 1; }
+
+        .page-banner__content { position: relative; z-index: 2; text-align: center; padding: var(--space-3xl) var(--space-xl); }
+        .page-banner__breadcrumb { display: flex; align-items: center; justify-content: center; gap: var(--space-sm); font-size: var(--text-sm); color: var(--text-tertiary); margin-bottom: var(--space-lg); flex-wrap: wrap; }
+        .page-banner__breadcrumb a { color: var(--text-secondary); transition: color var(--transition-fast); }
+        .page-banner__breadcrumb a:hover { color: var(--accent-primary); }
+        .page-banner__breadcrumb .sep { color: var(--text-muted); user-select: none; }
+        .page-banner__breadcrumb .current { color: var(--accent-primary); font-weight: 600; }
+        .page-banner__title { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 900; letter-spacing: -1px; }
+        .page-banner__title .text-accent { background: linear-gradient(135deg, var(--accent-primary), var(--accent-primary-hover)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .page-banner__desc { font-size: var(--text-lg); color: var(--text-secondary); max-width: 600px; margin: var(--space-md) auto 0; }
+        @media (max-width: 768px) { .page-banner { height: 300px; } }
+
+        /* ==========================================================
+           CONTACT LAYOUT
+           ========================================================== */
+        .contact-layout {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .contact-layout__grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: var(--space-4xl);
+            align-items: start;
+        }
+
+        /* ==========================================================
+           FORM
+           ========================================================== */
+        .contact-form-wrap {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-3xl);
+        }
+
+        .contact-form__section-title {
+            font-size: var(--text-xl);
+            font-weight: 700;
+            margin-bottom: var(--space-xs);
+        }
+
+        .contact-form__section-desc {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            margin-bottom: var(--space-2xl);
+            padding-bottom: var(--space-xl);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .contact-form__row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-lg);
+        }
+
+        .contact-form__field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .contact-form__field label {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .contact-form__field label .required {
+            color: #ff4444;
+        }
+
+        .contact-form__field input,
+        .contact-form__field select,
+        .contact-form__field textarea {
+            padding: 13px 16px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: var(--text-base);
+            color: var(--text-primary);
+            outline: none;
+            transition: all var(--transition-fast);
+        }
+
+        .contact-form__field input:focus,
+        .contact-form__field select:focus,
+        .contact-form__field textarea:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--accent-primary-glow);
+        }
+
+        .contact-form__field input::placeholder,
+        .contact-form__field textarea::placeholder { color: var(--text-tertiary); }
+
+        .contact-form__field select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23a0a0a0' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+            cursor: pointer;
+        }
+
+        .contact-form__field textarea { resize: vertical; min-height: 120px; }
+
+        .contact-form__field--error input,
+        .contact-form__field--error select,
+        .contact-form__field--error textarea { border-color: #ff4444; }
+
+        .contact-form__error { font-size: var(--text-xs); color: #ff4444; min-height: 1.1em; }
+
+        .contact-form__submit-row {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border-color);
+            flex-wrap: wrap;
+        }
+
+        .contact-form__success {
+            display: none;
+            text-align: center;
+            padding: var(--space-3xl) var(--space-xl);
+        }
+
+        .contact-form__success.show { display: block; }
+
+        .contact-form__success-icon {
+            width: 80px; height: 80px; margin: 0 auto var(--space-lg);
+            border-radius: 50%; background: rgba(0,204,136,0.15);
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        .contact-form__success h3 { font-size: var(--text-2xl); color: var(--accent-secondary); margin-bottom: var(--space-sm); }
+        .contact-form__success p { color: var(--text-secondary); margin-bottom: var(--space-lg); }
+
+        /* ==========================================================
+           INFO SIDEBAR
+           ========================================================== */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .contact-info__card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            transition: all var(--transition-base);
+            display: flex;
+            gap: var(--space-lg);
+        }
+
+        .contact-info__card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .contact-info__icon {
+            flex-shrink: 0;
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            background: var(--accent-primary-glow);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent-primary);
+        }
+
+        .contact-info__text h4 {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .contact-info__text a, .contact-info__text p {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .contact-info__text a {
+            color: var(--accent-primary);
+            font-weight: 500;
+            display: block;
+        }
+
+        .contact-info__text a:hover { text-decoration: underline; }
+
+        .contact-info__text .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #25D366;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: var(--text-xs);
+            font-weight: 700;
+            margin-top: 8px;
+            text-decoration: none;
+        }
+
+        .contact-info__text .whatsapp-link:hover {
+            background: #20bd5a;
+            text-decoration: none;
+        }
+
+        /* ==========================================================
+           MAP PLACEHOLDER
+           ========================================================== */
+        .contact-map {
+            padding: 0 0 var(--space-5xl);
+            background: var(--bg-primary);
+        }
+
+        .contact-map__placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-md);
+            color: var(--text-tertiary);
+        }
+
+        .contact-map__placeholder svg { opacity: 0.3; }
+
+        .contact-map__placeholder strong {
+            font-size: var(--text-lg);
+            color: var(--text-secondary);
+        }
+
+        .contact-map__placeholder span {
+            font-size: var(--text-sm);
+            color: var(--text-tertiary);
+        }
+
+        /* ==========================================================
+           FAQ ACCORDION
+           ========================================================== */
+        .contact-faq {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .contact-faq__list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-faq__item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-md);
+            overflow: hidden;
+            transition: all var(--transition-fast);
+        }
+
+        .contact-faq__item:hover {
+            border-color: rgba(0,102,204,0.3);
+        }
+
+        .contact-faq__question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-lg) var(--space-xl);
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--text-primary);
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            font-family: inherit;
+            gap: var(--space-md);
+        }
+
+        .contact-faq__question:hover { color: var(--accent-primary); }
+
+        .contact-faq__icon {
+            flex-shrink: 0;
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+            font-size: 18px;
+            color: var(--text-tertiary);
+            line-height: 1;
+        }
+
+        .contact-faq__item--open .contact-faq__icon {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: #fff;
+            transform: rotate(45deg);
+        }
+
+        .contact-faq__answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 350ms ease, padding 350ms ease;
+        }
+
+        .contact-faq__item--open .contact-faq__answer {
+            max-height: 300px;
+        }
+
+        .contact-faq__answer-inner {
+            padding: 0 var(--space-xl) var(--space-xl);
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* ==========================================================
+           REGIONAL OFFICES
+           ========================================================== */
+        .contact-regions {
+            padding: var(--space-5xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .contact-regions__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-xl);
+        }
+
+        .contact-regions__card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl);
+            transition: all var(--transition-base);
+        }
+
+        .contact-regions__card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-4px);
+        }
+
+        .contact-regions__flag {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .contact-regions__card h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+        }
+
+        .contact-regions__card p {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 4px;
+        }
+
+        .contact-regions__card .email {
+            font-size: var(--text-xs);
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .contact-regions__grid { grid-template-columns: 1fr; }
+        }
+
+        /* ==========================================================
+           RESPONSIVE
+           ========================================================== */
+        @media (max-width: 1024px) {
+            .contact-layout__grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .contact-form__row { grid-template-columns: 1fr; }
+            .contact-form__submit-row { flex-direction: column; }
+            .contact-form__submit-row .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__ring"><div class="loader__ring-inner"></div></div>
+        <span class="loader__text">APEX BEARING</span>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo" aria-label="Apex Bearing Technologies Home">
+                <svg class="header__logo-icon" viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+                <div class="header__logo-text"><span class="header__logo-name">APEX</span><span class="header__logo-sub">BEARING TECHNOLOGIES</span></div>
+            </a>
+            <nav class="header__nav" id="mainNav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--mega"><a href="products-archive.html" class="header__nav-link">Products</a><div class="mega-menu"><div class="mega-menu__grid"><div class="mega-menu__col"><h4 class="mega-menu__title">By Category</h4><ul class="mega-menu__links"><li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearings</a></li><li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li><li><a href="products-archive.html?cat=gen1">Gen 1 Hub Units</a></li><li><a href="products-archive.html?cat=gen2">Gen 2 Hub Units</a></li><li><a href="products-archive.html?cat=gen3">Gen 3 Hub Units</a></li><li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li></ul></div><div class="mega-menu__col"><h4 class="mega-menu__title">By Brand</h4><ul class="mega-menu__links"><li><a href="products-archive.html?brand=toyota">Toyota · Honda · Nissan</a></li><li><a href="products-archive.html?brand=bmw">BMW · Mercedes · Audi</a></li><li><a href="products-archive.html?brand=hyundai">Hyundai · Kia</a></li><li><a href="products-archive.html?brand=ford">Ford · Chevrolet</a></li><li><a href="products-archive.html?brand=ev-brands">BYD · Tesla · Geely</a></li></ul></div><div class="mega-menu__col mega-menu__col--featured"><div class="mega-menu__card"><img src="https://images.unsplash.com/photo-1565043666747-69f6646db118?w=400&q=80" alt="Featured" loading="lazy"><span>New: EV Hub Bearings</span><a href="products-archive.html?cat=ev">Explore →</a></div></div></div></div></li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="index.html#manufacturing" class="header__nav-link">Manufacturing</a></li>
+                    <li class="header__nav-item"><a href="index.html#distributor" class="header__nav-link">Distributors</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link" style="color:var(--accent-primary)">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="header__action-btn" id="searchToggle" aria-label="Toggle search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+                <button class="header__action-btn" id="themeToggle" aria-label="Toggle dark/light mode"><svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/></svg><svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+                <button class="header__action-btn header__lang" aria-label="Language"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>EN</span></button>
+                <button class="header__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="search-overlay" id="searchOverlay"><div class="search-overlay__box"><input type="text" class="search-overlay__input" placeholder="Search OEM number, vehicle model..." aria-label="Search"><button class="search-overlay__close" id="searchClose" aria-label="Close search">&times;</button></div></div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul><li><a href="products-archive.html">Products</a></li><li><a href="about.html">About</a></li><li><a href="index.html#manufacturing">Manufacturing</a></li><li><a href="index.html#distributor">Distributors</a></li><li><a href="contact.html">Contact</a></li></ul>
+            <div class="mobile-menu__cta"><a href="contact.html" class="btn btn--primary">Get a Quote</a></div>
+        </nav>
+    </div>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main>
+
+        <!-- PAGE BANNER -->
+        <section class="page-banner">
+            <div class="page-banner__bg"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Contact Apex Bearing"></div>
+            <div class="page-banner__overlay"></div>
+            <div class="page-banner__content">
+                <nav class="page-banner__breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Contact Us</span></nav>
+                <h1 class="page-banner__title">Get in <span class="text-accent">Touch</span></h1>
+                <p class="page-banner__desc">Our export team responds within 24 hours. Reach us by form, WhatsApp, email, or phone.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM + INFO -->
+        <section class="contact-layout">
+            <div class="container">
+                <div class="contact-layout__grid">
+
+                    <!-- FORM -->
+                    <div class="contact-form-wrap" data-aos="fade-right">
+                        <h2 class="contact-form__section-title">Send Us a Message</h2>
+                        <p class="contact-form__section-desc">Fill in the form below and our export team will get back to you within 24 hours.</p>
+
+                        <form id="contactForm" novalidate>
+                            <!-- Contact Details -->
+                            <div class="contact-form__row">
+                                <div class="contact-form__field">
+                                    <label for="fullName">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+                                    <span class="contact-form__error" data-error="fullName"></span>
+                                </div>
+                                <div class="contact-form__field">
+                                    <label for="companyName">Company Name <span class="required">*</span></label>
+                                    <input type="text" id="companyName" name="companyName" placeholder="Your company" required>
+                                    <span class="contact-form__error" data-error="companyName"></span>
+                                </div>
+                            </div>
+
+                            <div class="contact-form__row">
+                                <div class="contact-form__field">
+                                    <label for="emailAddr">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="emailAddr" name="emailAddr" placeholder="you@company.com" required>
+                                    <span class="contact-form__error" data-error="emailAddr"></span>
+                                </div>
+                                <div class="contact-form__field">
+                                    <label for="phone">Phone / WhatsApp <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+ Country code - Number" required>
+                                    <span class="contact-form__error" data-error="phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="contact-form__row">
+                                <div class="contact-form__field">
+                                    <label for="countrySelect">Country <span class="required">*</span></label>
+                                    <select id="countrySelect" name="country" required>
+                                        <option value="">Select your country...</option>
+                                        <option value="BR">Brazil</option><option value="MX">Mexico</option><option value="US">United States</option>
+                                        <option value="AE">UAE</option><option value="SA">Saudi Arabia</option><option value="DE">Germany</option>
+                                        <option value="IT">Italy</option><option value="ES">Spain</option><option value="RU">Russia</option>
+                                        <option value="ID">Indonesia</option><option value="TH">Thailand</option><option value="NG">Nigeria</option>
+                                        <option value="ZA">South Africa</option><option value="IN">India</option><option value="TR">Turkey</option>
+                                        <option value="GB">UK</option><option value="FR">France</option><option value="AU">Australia</option><option value="OTHER">Other</option>
+                                    </select>
+                                    <span class="contact-form__error" data-error="country"></span>
+                                </div>
+                                <div class="contact-form__field">
+                                    <label for="interestSelect">I'm Interested In <span class="required">*</span></label>
+                                    <select id="interestSelect" name="interest" required>
+                                        <option value="">Select topic...</option>
+                                        <option value="distributor">Becoming a Distributor</option>
+                                        <option value="pricing">Product Pricing &amp; Quotation</option>
+                                        <option value="catalog">Product Catalog Request</option>
+                                        <option value="technical">Technical Question</option>
+                                        <option value="sample">Sample Order</option>
+                                        <option value="oem">OEM / Private Label</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <span class="contact-form__error" data-error="interest"></span>
+                                </div>
+                            </div>
+
+                            <div class="contact-form__field">
+                                <label for="messageBox">Your Message <span class="required">*</span></label>
+                                <textarea id="messageBox" name="message" placeholder="Tell us about your requirements — target market, annual volume, specific products of interest, and any other details..." required></textarea>
+                                <span class="contact-form__error" data-error="message"></span>
+                            </div>
+
+                            <div class="contact-form__submit-row">
+                                <button type="submit" class="btn btn--primary btn--lg">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                    Send Message
+                                </button>
+                                <a href="https://wa.me/8613800000000" class="btn btn--accent btn--lg" target="_blank" rel="noopener">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </form>
+
+                        <!-- Success State -->
+                        <div class="contact-form__success" id="formSuccess">
+                            <div class="contact-form__success-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00cc88" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. Our export team will review your inquiry and respond within 24 hours. For urgent matters, please contact us directly via WhatsApp.</p>
+                            <button class="btn btn--outline" id="sendAnother">Send Another Message</button>
+                        </div>
+                    </div>
+
+                    <!-- INFO SIDEBAR -->
+                    <div class="contact-info" data-aos="fade-left">
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                            <div class="contact-info__text">
+                                <h4>Sales &amp; Export</h4>
+                                <a href="tel:+8613800000000">+86 138 0000 0000</a>
+                                <a href="mailto:export@apexbearing.com">export@apexbearing.com</a>
+                                <a href="https://wa.me/8613800000000" target="_blank" rel="noopener" class="whatsapp-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg> Chat on WhatsApp</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                            <div class="contact-info__text">
+                                <h4>Technical Support</h4>
+                                <a href="mailto:tech@apexbearing.com">tech@apexbearing.com</a>
+                                <p>Application matching, failure analysis, fitment verification, and technical documentation.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div class="contact-info__text">
+                                <h4>Headquarters</h4>
+                                <p>No. 88, Bearing Industrial Zone<br>Zhejiang Province, China</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                            <div class="contact-info__text">
+                                <h4>Business Hours (CST)</h4>
+                                <p>Mon – Fri: 08:00 – 18:00<br>Sat: 09:00 – 14:00<br>Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP PLACEHOLDER -->
+        <section class="contact-map">
+            <div class="container">
+                <div class="contact-map__placeholder">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <strong>Headquarters Location</strong>
+                    <span>No. 88, Bearing Industrial Zone, Zhejiang Province, China</span>
+                    <span style="margin-top:8px;font-size:var(--text-xs);">📍 Interactive map available on request — contact us for a factory visit</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="contact-faq">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">FAQ</span>
+                    <h2 class="section-header__title">Frequently Asked <span class="text-accent">Questions</span></h2>
+                </div>
+                <div class="contact-faq__list" data-aos="fade-up">
+                    <div class="contact-faq__item">
+                        <button class="contact-faq__question" aria-expanded="false">
+                            What is your minimum order quantity (MOQ)?
+                            <span class="contact-faq__icon">+</span>
+                        </button>
+                        <div class="contact-faq__answer"><div class="contact-faq__answer-inner">Our standard MOQ is 100 units per SKU. However, we offer flexible terms for new distributors and can arrange sample orders of 10-20 units for quality verification. Contact our sales team for customized arrangements based on your market requirements.</div></div>
+                    </div>
+                    <div class="contact-faq__item">
+                        <button class="contact-faq__question" aria-expanded="false">
+                            How long does delivery take?
+                            <span class="contact-faq__icon">+</span>
+                        </button>
+                        <div class="contact-faq__answer"><div class="contact-faq__answer-inner">Stock orders ship within 7-15 days. Production orders typically take 25-40 days depending on quantity and specifications. We offer sea freight (most economical, 25-45 days), air freight (5-10 days), and rail freight to Europe/Central Asia (15-20 days).</div></div>
+                    </div>
+                    <div class="contact-faq__item">
+                        <button class="contact-faq__question" aria-expanded="false">
+                            Do you offer OEM / private labeling?
+                            <span class="contact-faq__icon">+</span>
+                        </button>
+                        <div class="contact-faq__answer"><div class="contact-faq__answer-inner">Yes. We provide full OEM/ODM services including custom packaging with your brand logo, private-label laser etching on bearings, custom barcoding, and bespoke specifications. Minimum quantities apply for custom branding. Our engineering team will work with you to meet exact requirements.</div></div>
+                    </div>
+                    <div class="contact-faq__item">
+                        <button class="contact-faq__question" aria-expanded="false">
+                            What quality certifications do you hold?
+                            <span class="contact-faq__icon">+</span>
+                        </button>
+                        <div class="contact-faq__answer"><div class="contact-faq__answer-inner">We are IATF 16949 (automotive quality management), ISO 9001:2015, and ISO 14001 (environmental management) certified. Our products comply with SAE, DIN, and JIS standards. Full material certifications, inspection reports, and batch traceability documentation are provided with every shipment.</div></div>
+                    </div>
+                    <div class="contact-faq__item">
+                        <button class="contact-faq__question" aria-expanded="false">
+                            How do I become an authorized distributor?
+                            <span class="contact-faq__icon">+</span>
+                        </button>
+                        <div class="contact-faq__answer"><div class="contact-faq__answer-inner">Complete the contact form above selecting "Becoming a Distributor" as your interest, or email us directly at export@apexbearing.com. Our team will review your application and schedule a call to discuss territory availability, pricing, and partnership terms. We offer exclusive territory protection, marketing support, and stable inventory for qualified partners.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REGIONAL OFFICES -->
+        <section class="contact-regions">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-header__tag">Regional Contacts</span>
+                    <h2 class="section-header__title">Our <span class="text-accent">Global</span> Offices</h2>
+                </div>
+                <div class="contact-regions__grid" data-aos="fade-up">
+                    <div class="contact-regions__card">
+                        <div class="contact-regions__flag">🇦🇪</div>
+                        <h4>Middle East Office</h4>
+                        <p>Jebel Ali Free Zone, Dubai, UAE</p>
+                        <p>+971 4 123 4567</p>
+                        <span class="email">me@apexbearing.com</span>
+                    </div>
+                    <div class="contact-regions__card">
+                        <div class="contact-regions__flag">🇧🇷</div>
+                        <h4>Latin America Office</h4>
+                        <p>São Paulo, Brazil</p>
+                        <p>+55 11 3456 7890</p>
+                        <span class="email">latam@apexbearing.com</span>
+                    </div>
+                    <div class="contact-regions__card">
+                        <div class="contact-regions__flag">🇩🇪</div>
+                        <h4>European Office</h4>
+                        <p>Hamburg, Germany</p>
+                        <p>+49 40 1234 5678</p>
+                        <span class="email">europe@apexbearing.com</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--about">
+                    <a href="index.html" class="footer__logo"><svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg><span>APEX BEARING TECHNOLOGIES</span></a>
+                    <p>Global manufacturer of premium wheel hub bearings. IATF 16949 certified. Serving 80+ countries.</p>
+                    <div class="footer__social"><a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+                </div>
+                <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products-archive.html">Products</a></li><li><a href="index.html#manufacturing">Manufacturing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer__col"><h4>Products</h4><ul><li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearing</a></li><li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li><li><a href="products-archive.html?cat=gen1">Gen 1 Hub Unit</a></li><li><a href="products-archive.html?cat=gen2">Gen 2 Hub Unit</a></li><li><a href="products-archive.html?cat=gen3">Gen 3 Hub Unit</a></li><li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li></ul></div>
+                <div class="footer__col"><h4>Contact</h4><ul class="footer__contact-list"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+86 138 0000 0000</span></li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>export@apexbearing.com</span></li></ul></div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2024-2026 Apex Bearing Technologies.</p><div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Trade</a></div></div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS -->
+    <a href="https://wa.me/8613800000000" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg><span class="floating-whatsapp__pulse"></span></a>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+    <script src="script.js"></script>
+
+    <!-- Contact Page JS -->
+    <script>
+    (function(){
+        'use strict';
+
+        /* ==========================================================
+           FORM VALIDATION
+           ========================================================== */
+        const form = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+        const sendAnother = document.getElementById('sendAnother');
+
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                clearErrors();
+
+                const errors = validate();
+
+                if (errors.length === 0) {
+                    showSuccess();
+                } else {
+                    errors.forEach(err => {
+                        const field = form.querySelector(`#${err.field}`);
+                        const errorEl = form.querySelector(`[data-error="${err.field}"]`);
+                        if (field) field.closest('.contact-form__field').classList.add('contact-form__field--error');
+                        if (errorEl) errorEl.textContent = err.message;
+                    });
+                }
+            });
+
+            // Real-time validation on blur
+            form.querySelectorAll('input, select, textarea').forEach(field => {
+                field.addEventListener('blur', () => {
+                    const wrapper = field.closest('.contact-form__field');
+                    const errorEl = wrapper?.querySelector('.contact-form__error');
+                    const name = field.name;
+                    const value = field.value.trim();
+                    const isRequired = field.hasAttribute('required');
+
+                    if (isRequired && !value) {
+                        wrapper?.classList.add('contact-form__field--error');
+                        if (errorEl) errorEl.textContent = getLabel(name) + ' is required';
+                    } else if (name === 'emailAddr' && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                        wrapper?.classList.add('contact-form__field--error');
+                        if (errorEl) errorEl.textContent = 'Please enter a valid email';
+                    } else {
+                        wrapper?.classList.remove('contact-form__field--error');
+                        if (errorEl) errorEl.textContent = '';
+                    }
+                });
+            });
+        }
+
+        function validate() {
+            const errors = [];
+            const required = [
+                { id: 'fullName', label: 'Full Name' },
+                { id: 'companyName', label: 'Company Name' },
+                { id: 'emailAddr', label: 'Email Address' },
+                { id: 'phone', label: 'Phone / WhatsApp' },
+                { id: 'countrySelect', label: 'Country' },
+                { id: 'interestSelect', label: 'Interest' },
+                { id: 'messageBox', label: 'Message' },
+            ];
+
+            required.forEach(r => {
+                const val = form.querySelector(`#${r.id}`)?.value?.trim();
+                if (!val) errors.push({ field: r.id, message: r.label + ' is required' });
+            });
+
+            const email = form.querySelector('#emailAddr')?.value?.trim();
+            if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                errors.push({ field: 'emailAddr', message: 'Please enter a valid email address' });
+            }
+
+            return errors;
+        }
+
+        function clearErrors() {
+            form.querySelectorAll('.contact-form__field--error').forEach(el => el.classList.remove('contact-form__field--error'));
+            form.querySelectorAll('.contact-form__error').forEach(el => el.textContent = '');
+        }
+
+        function getLabel(name) {
+            const map = { fullName: 'Full Name', companyName: 'Company Name', emailAddr: 'Email Address', phone: 'Phone', country: 'Country', interest: 'Interest', message: 'Message' };
+            return map[name] || name;
+        }
+
+        function showSuccess() {
+            form.querySelectorAll('.contact-form__row, .contact-form__field, .contact-form__submit-row').forEach(el => el.style.display = 'none');
+            form.querySelector('h2') ? form.querySelector('.contact-form__section-title').style.display = 'none' : null;
+            form.querySelector('.contact-form__section-desc') ? form.querySelector('.contact-form__section-desc').style.display = 'none' : null;
+            formSuccess.classList.add('show');
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        if (sendAnother) {
+            sendAnother.addEventListener('click', () => {
+                formSuccess.classList.remove('show');
+                form.querySelectorAll('.contact-form__row, .contact-form__field, .contact-form__submit-row').forEach(el => el.style.display = '');
+                const title = form.querySelector('.contact-form__section-title');
+                const desc = form.querySelector('.contact-form__section-desc');
+                if (title) title.style.display = '';
+                if (desc) desc.style.display = '';
+                form.reset();
+                clearErrors();
+            });
+        }
+
+        /* ==========================================================
+           FAQ ACCORDION
+           ========================================================== */
+        document.querySelectorAll('.contact-faq__question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.contact-faq__item');
+                const isOpen = item.classList.contains('contact-faq__item--open');
+
+                // Close all
+                document.querySelectorAll('.contact-faq__item').forEach(el => {
+                    el.classList.remove('contact-faq__item--open');
+                    el.querySelector('.contact-faq__question').setAttribute('aria-expanded', 'false');
+                });
+
+                // Open clicked (if not already open)
+                if (!isOpen) {
+                    item.classList.add('contact-faq__item--open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        console.log('%c📬 Contact Page Ready', 'color:#0066cc;font-weight:bold');
+    })();
+    </script>
+</body>
+</html>

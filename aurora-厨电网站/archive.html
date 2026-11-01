@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections | Atelier Home Premium Appliances</title>
+    <meta
+      name="description"
+      content="Browse our curated collection of precision-crafted luxury home appliances."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container nav-inner">
+        <a href="index.html#top" class="brand">Atelier</a>
+        <div class="nav-links desktop-nav">
+          <a href="archive.html">Products</a>
+          <a href="index.html#smart-living">Smart Living</a>
+          <a href="index.html#craftsmanship">Craftsmanship</a>
+          <a href="index.html#sustainability">Sustainability</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div id="mobile-nav" class="mobile-nav">
+        <a href="archive.html">Products</a>
+        <a href="index.html#smart-living">Smart Living</a>
+        <a href="index.html#craftsmanship">Craftsmanship</a>
+        <a href="index.html#sustainability">Sustainability</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="archive-header">
+      <div class="archive-banner">
+        <img src="https://placehold.co/1920x400/2e343d/f8f5f1?text=Our+Collections" alt="Collections Banner" />
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumb-bar">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">/</span>
+            <span class="current">Products</span>
+          </nav>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container archive-layout">
+          <!-- Sidebar -->
+          <aside class="archive-sidebar">
+            <div class="sidebar-block">
+              <h4 class="sidebar-title">Categories</h4>
+              <ul class="filter-list">
+                <li><a href="#" class="active">All Products</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Laundry</a></li>
+                <li><a href="#">Cooling</a></li>
+                <li><a href="#">Air Care</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-block">
+              <h4 class="sidebar-title">Price Range</h4>
+              <div class="range-inputs">
+                <label>
+                  <span>Min ($)</span>
+                  <input type="number" placeholder="0" />
+                </label>
+                <label>
+                  <span>Max ($)</span>
+                  <input type="number" placeholder="10000" />
+                </label>
+              </div>
+            </div>
+
+            <div class="sidebar-block">
+              <h4 class="sidebar-title">Sort By</h4>
+              <select class="custom-select">
+                <option>Newest First</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Popularity</option>
+              </select>
+            </div>
+          </aside>
+
+          <!-- Main Content -->
+          <div class="archive-content">
+            <div class="product-grid-archive">
+              <!-- Product Item 1 -->
+              <article class="reveal product-card">
+                <div class="media-frame card-media square light-panel">
+                  <img src="https://placehold.co/600x600/e6e3dd/1c1f25?text=Serie+Noire+Oven" alt="Serie Noire Oven" class="contain" />
+                </div>
+                <div class="product-info">
+                  <p class="category-tag">Kitchen</p>
+                  <h3>Serie Noire Oven</h3>
+                  <p class="price">$2,499.00</p>
+                  <a href="#" class="button button-outline button-small">View Details</a>
+                </div>
+              </article>
+
+              <!-- Product Item 2 -->
+              <article class="reveal reveal-delay-1 product-card">
+                <div class="media-frame card-media square light-panel">
+                  <img src="https://placehold.co/600x600/e6e3dd/1c1f25?text=Frost-Free+Column" alt="Frost-Free Column" class="contain" />
+                </div>
+                <div class="product-info">
+                  <p class="category-tag">Cooling</p>
+                  <h3>Frost-Free Column</h3>
+                  <p class="price">$3,850.00</p>
+                  <a href="#" class="button button-outline button-small">View Details</a>
+                </div>
+              </article>
+
+              <!-- Product Item 3 -->
+              <article class="reveal reveal-delay-2 product-card">
+                <div class="media-frame card-media square light-panel">
+                  <img src="https://placehold.co/600x600/e6e3dd/1c1f25?text=AirSense+Pro" alt="AirSense Pro" class="contain" />
+                </div>
+                <div class="product-info">
+                  <p class="category-tag">Air Care</p>
+                  <h3>AirSense Pro</h3>
+                  <p class="price">$1,200.00</p>
+                  <a href="#" class="button button-outline button-small">View Details</a>
+                </div>
+              </article>
+
+              <!-- Product Item 4 -->
+              <article class="reveal product-card">
+                <div class="media-frame card-media square light-panel">
+                  <img src="https://placehold.co/600x600/e6e3dd/1c1f25?text=MasterWash+X12" alt="MasterWash X12" class="contain" />
+                </div>
+                <div class="product-info">
+                  <p class="category-tag">Laundry</p>
+                  <h3>MasterWash X12</h3>
+                  <p class="price">$1,899.00</p>
+                  <a href="#" class="button button-outline button-small">View Details</a>
+                </div>
+              </article>
+
+              <!-- Product Item 5 -->
+              <article class="reveal reveal-delay-1 product-card">
+                <div class="media-frame card-media square light-panel">
+                  <img src="https://placehold.co/600x600/e6e3dd/1c1f25?text=Induction+Pro+Gen3" alt="Induction Pro Gen3" class="contain" />
+                </div>
+                <div class="product-info">
+                  <p class="category-tag">Kitchen</p>
+                  <h3>Induction Pro Gen3</h3>
+                  <p class="price">$2,150.00</p>
+                  <a href="#" class="button button-outline button-small">View Details</a>
+                </div>
+              </article>
+
+              <!-- Product Item 6 -->
+              <article class="reveal reveal-delay-2 product-card">
+                <div class="media-frame card-media square light-panel">
+                  <img src="https://placehold.co/600x600/e6e3dd/1c1f25?text=DryStream+Elite" alt="DryStream Elite" class="contain" />
+                </div>
+                <div class="product-info">
+                  <p class="category-tag">Laundry</p>
+                  <h3>DryStream Elite</h3>
+                  <p class="price">$1,450.00</p>
+                  <a href="#" class="button button-outline button-small">View Details</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="pagination" aria-label="Pagination Navigation">
+              <a href="#" class="pagination-link disabled" aria-disabled="true">Previous</a>
+              <div class="pagination-numbers">
+                <a href="#" class="pagination-number active">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+                <span class="pagination-dots">...</span>
+                <a href="#" class="pagination-number">12</a>
+              </div>
+              <a href="#" class="pagination-link">Next</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <p class="brand">Atelier</p>
+            <p>
+              Precision-crafted home appliances for those who appreciate the
+              finer details of modern living.
+            </p>
+          </div>
+
+          <div>
+            <p class="footer-heading">Products</p>
+            <ul>
+              <li><a href="archive.html">Kitchen</a></li>
+              <li><a href="archive.html">Laundry</a></li>
+              <li><a href="archive.html">Cooling</a></li>
+              <li><a href="archive.html">Air Care</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="footer-heading">Company</p>
+            <ul>
+              <li><a href="index.html#top">Our Story</a></li>
+              <li><a href="index.html#contact">Careers</a></li>
+              <li><a href="index.html#contact">Press</a></li>
+              <li><a href="index.html#sustainability">Sustainability</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="footer-heading">Support</p>
+            <ul>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#contact">Warranty</a></li>
+              <li><a href="index.html#contact">Service</a></li>
+              <li><a href="index.html#contact">Find a Dealer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Atelier Home. All rights reserved.</p>
+          <div class="footer-meta">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

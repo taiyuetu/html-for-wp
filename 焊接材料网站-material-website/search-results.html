@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search results for Precision Materials products and services.">
+    <title>Search Results | Precision Materials Co.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span class="welcome-message">Welcome to Precision Materials - Advanced Manufacturing Solutions</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="top-bar-contact">
+                    <a href="tel:+15551234567">
+                        <span>📞</span>
+                        <span>+1 (555) 123-4567</span>
+                    </a>
+                    <a href="mailto:info@precisionmaterials.com">
+                        <span>✉️</span>
+                        <span>info@precisionmaterials.com</span>
+                    </a>
+                </div>
+                <div class="social-links-top">
+                    <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-link" title="Twitter" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="social-link" title="Facebook" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" title="YouTube" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">PRECISION MATERIALS</span>
+                    <span class="logo-tagline">Advanced Manufacturing Solutions</span>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#advantages" class="nav-link">Advantages</a></li>
+                    <li><a href="index.html#products" class="nav-link">Products</a></li>
+                    <li><a href="index.html#applications" class="nav-link">Applications</a></li>
+                    <li><a href="index.html#quality" class="nav-link">Quality</a></li>
+                    <li><a href="index.html#news" class="nav-link">Insights</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="language-dropdown">
+                    <button class="lang-btn" id="langBtn" aria-expanded="false">
+                        EN <span class="arrow"></span>
+                    </button>
+                    <ul class="lang-menu" id="langMenu">
+                        <li><a href="#" class="lang-item active">English</a></li>
+                        <li><a href="#" class="lang-item">Chinese</a></li>
+                        <li><a href="#" class="lang-item">Spanish</a></li>
+                    </ul>
+                </div>
+                <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <div class="header-cta">
+                    <a href="index.html#contact" class="btn btn-primary">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="search-bar-container" id="searchBarContainer">
+                <div class="container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" class="search-input" placeholder="Search materials, alloys, or standards..."
+                            aria-label="Search">
+                        <button type="submit" class="search-submit-btn">Search</button>
+                        <button type="button" class="search-close-btn" id="searchCloseBtn" aria-label="Close search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Search Results</h1>
+                <p class="page-subtitle">Showing results for: <span id="searchQueryDisplay">"..."</span></p>
+            </div>
+        </section>
+
+        <section class="search-results-section">
+            <div class="container">
+                <div class="results-layout">
+                    <!-- Filters Sidebar -->
+                    <aside class="results-filters">
+                        <h3 class="filter-title">Filter By</h3>
+                        <div class="filter-group">
+                            <h4 class="filter-subtitle">Category</h4>
+                            <div class="filter-checkbox">
+                                <input type="checkbox" id="cat-alloys" checked>
+                                <label for="cat-alloys">Alloys</label>
+                            </div>
+                            <div class="filter-checkbox">
+                                <input type="checkbox" id="cat-equipment" checked>
+                                <label for="cat-equipment">Equipment</label>
+                            </div>
+                            <div class="filter-checkbox">
+                                <input type="checkbox" id="cat-news" checked>
+                                <label for="cat-news">News & Insights</label>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Results List -->
+                    <div class="results-content">
+                        <div class="results-count">Found <span id="resultsCount">0</span> matches</div>
+                        <div class="results-list" id="resultsList">
+                            <!-- Results will be injected here via JS -->
+                            <!-- Example Item -->
+                            <div class="result-item">
+                                <div class="result-category">Aluminum Alloys</div>
+                                <h3 class="result-title"><a href="#">Al-Si Brazing Rods (PM-AL-4047)</a></h3>
+                                <p class="result-snippet">High-purity aluminum-silicon brazing rods designed for HVAC
+                                    and heat exchanger applications with superior thermal conductivity.</p>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <button class="page-btn active">1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                            <span class="page-dots">...</span>
+                            <button class="page-btn">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container-wide">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">PRECISION MATERIALS</div>
+                        <p class="footer-desc">
+                            Global leader in advanced brazing materials and industrial joining solutions.
+                            Engineering bonds that build the future.
+                        </p>
+                        <div class="social-links-footer">
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">𝕏</a>
+                            <a href="#" class="social-link">f</a>
+                            <a href="#" class="social-link">▶</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html#products">Products</a></li>
+                            <li><a href="index.html#applications">Applications</a></li>
+                            <li><a href="index.html#quality">Quality Assurance</a></li>
+                            <li><a href="index.html#news">News & Insights</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Technical Data Sheets</a></li>
+                            <li><a href="#">Application Guides</a></li>
+                            <li><a href="#">Material Selection Tool</a></li>
+                            <li><a href="#">Certifications</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Newsletter</h4>
+                        <p class="footer-newsletter-text">Receive technical updates and industry insights</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-secondary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-wide">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2026 Precision Materials Co., Ltd. All rights reserved.</p>
+                    <ul class="footer-legal">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Widget -->
+    <div class="floating-widget">
+        <div class="widget-item whatsapp-item">
+            <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer"
+                class="widget-btn whatsapp-btn" aria-label="Contact on WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+            </a>
+            <div class="widget-popup qr-popup">
+                <div class="qr-code-placeholder">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="white" />
+                        <path
+                            d="M10 10h20v20h-20zM40 10h10v10h-10zM60 10h10v10h-10zM80 10h10v10h-10zM10 40h20v20h-20zM40 40h10v10h-10zM60 40h10v10h-10zM80 40h10v10h-10zM10 70h20v20h-20zM40 70h10v10h-10zM60 70h10v10h-10zM80 70h10v10h-10z"
+                            fill="#000" opacity="0.2" />
+                        <rect x="20" y="20" width="60" height="60" rx="4" fill="#E80717" />
+                        <text x="50" y="55" text-anchor="middle" fill="white" font-size="10" font-family="sans-serif">QR
+                            CODE</text>
+                    </svg>
+                </div>
+                <span class="popup-label">Scan to Chat</span>
+            </div>
+        </div>
+
+        <div class="widget-item email-item">
+            <a href="mailto:info@precisionmaterials.com" class="widget-btn email-btn" aria-label="Send Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </a>
+            <div class="widget-popup email-popup">
+                <span class="email-address">info@precisionmaterials.com</span>
+            </div>
+        </div>
+
+        <button class="widget-btn to-top-btn" id="scrollTopBtn" aria-label="Scroll to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

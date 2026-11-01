@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <!-- ============================================================
+    Premium Automotive Industrial Manufacturer Website
+    Page: Single News Post / Article
+    Company: Apex Bearing Technologies
+    ============================================================ -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the full article from Apex Bearing Technologies. Latest news, technical insights, and product updates in the wheel hub bearing industry.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="News Article | Apex Bearing Technologies">
+    <meta property="og:description" content="Stay updated with the latest wheel hub bearing news and technical insights from Apex Bearing Technologies.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=1200">
+    <meta property="og:type" content="article">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+
+    <title>News Article — Apex Bearing Technologies</title>
+
+    <!-- Article JSON-LD Structured Data -->
+    <script type="application/ld+json" id="articleSchema">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "",
+        "description": "",
+        "image": "",
+        "datePublished": "",
+        "author": {
+            "@type": "Person",
+            "name": ""
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Apex Bearing Technologies",
+            "logo": {
+                "@type": "ImageObject",
+                "url": ""
+            }
+        }
+    }
+    </script>
+
+    <!-- Page-Specific Styles -->
+    <style>
+        /* ==========================================================
+           PAGE BANNER (Compact for single post)
+           ========================================================== */
+        .page-banner {
+            position: relative;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: var(--header-height);
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .page-banner__bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .page-banner__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.15;
+            filter: grayscale(0.4) brightness(0.5);
+        }
+
+        .page-banner__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(10,10,10,0.25) 50%, var(--bg-primary) 100%);
+            z-index: 1;
+        }
+
+        .page-banner__content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: var(--space-2xl) var(--space-xl);
+            max-width: 800px;
+        }
+
+        .page-banner__breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            font-size: var(--text-sm);
+            color: var(--text-tertiary);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .page-banner__breadcrumb a {
+            color: var(--text-secondary);
+            transition: color var(--transition-fast);
+        }
+
+        .page-banner__breadcrumb a:hover {
+            color: var(--accent-primary);
+        }
+
+        .page-banner__breadcrumb .sep {
+            color: var(--text-muted);
+            user-select: none;
+        }
+
+        .page-banner__breadcrumb .current {
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        .page-banner__category {
+            display: inline-block;
+            font-size: 0.625rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 100px;
+            margin-bottom: var(--space-md);
+        }
+
+        .page-banner__category--press { background: var(--accent-primary); color: #fff; }
+        .page-banner__category--product { background: var(--accent-secondary); color: #fff; }
+        .page-banner__category--trade { background: var(--accent-warning); color: #fff; }
+        .page-banner__category--insight { background: #8833cc; color: #fff; }
+
+        .page-banner__title {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+        }
+
+        .page-banner__meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+            font-size: var(--text-sm);
+            color: var(--text-tertiary);
+        }
+
+        .page-banner__meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .page-banner__meta-item svg {
+            flex-shrink: 0;
+        }
+
+        /* ==========================================================
+           ARTICLE LAYOUT (Content + Sidebar)
+           ========================================================== */
+        .article {
+            padding: var(--space-4xl) 0;
+            background: var(--bg-primary);
+        }
+
+        .article__layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: var(--space-3xl);
+            align-items: start;
+        }
+
+        /* ==========================================================
+           ARTICLE CONTENT
+           ========================================================== */
+        .article__content {
+            min-width: 0;
+        }
+
+        /* Featured Image */
+        .article__featured-img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-2xl);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .article__featured-img img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Article Header */
+        .article__header {
+            margin-bottom: var(--space-2xl);
+            padding-bottom: var(--space-xl);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article__header-top {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .article__category-tag {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 4px 12px;
+            border-radius: 100px;
+        }
+
+        .article__category-tag--press { background: var(--accent-primary); color: #fff; }
+        .article__category-tag--product { background: var(--accent-secondary); color: #fff; }
+        .article__category-tag--trade { background: var(--accent-warning); color: #fff; }
+        .article__category-tag--insight { background: #8833cc; color: #fff; }
+
+        .article__views {
+            font-size: var(--text-xs);
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .article__title {
+            font-size: var(--text-3xl);
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin-bottom: var(--space-lg);
+        }
+
+        .article__byline {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .article__author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .article__author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: var(--bg-tertiary);
+            flex-shrink: 0;
+            border: 2px solid var(--border-color);
+        }
+
+        .article__author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article__author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article__author-name {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .article__author-role {
+            font-size: var(--text-xs);
+            color: var(--text-tertiary);
+        }
+
+        .article__date {
+            font-size: var(--text-sm);
+            color: var(--text-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .article__reading-time {
+            font-size: var(--text-xs);
+            color: var(--text-muted);
+            padding: 4px 10px;
+            background: var(--bg-tertiary);
+            border-radius: 100px;
+        }
+
+        /* Article Body Typography */
+        .article__body {
+            font-size: var(--text-base);
+            line-height: 1.85;
+            color: var(--text-secondary);
+        }
+
+        .article__body h2 {
+            font-size: var(--text-2xl);
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: var(--space-2xl) 0 var(--space-md);
+            letter-spacing: -0.5px;
+        }
+
+        .article__body h3 {
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: var(--space-xl) 0 var(--space-sm);
+        }
+
+        .article__body p {
+            margin-bottom: var(--space-md);
+        }
+
+        .article__body strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .article__body a {
+            color: var(--accent-primary);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: color var(--transition-fast);
+        }
+
+        .article__body a:hover {
+            color: var(--accent-primary-hover);
+        }
+
+        .article__body ul,
+        .article__body ol {
+            margin: var(--space-md) 0 var(--space-md) var(--space-xl);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .article__body li {
+            padding-left: var(--space-sm);
+        }
+
+        .article__body ul li::marker {
+            color: var(--accent-primary);
+        }
+
+        .article__body blockquote {
+            margin: var(--space-xl) 0;
+            padding: var(--space-lg) var(--space-xl);
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-primary);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            font-style: italic;
+            color: var(--text-primary);
+            font-size: var(--text-lg);
+            line-height: 1.7;
+        }
+
+        .article__body blockquote cite {
+            display: block;
+            margin-top: var(--space-sm);
+            font-size: var(--text-sm);
+            color: var(--text-tertiary);
+            font-style: normal;
+        }
+
+        .article__body img {
+            width: 100%;
+            border-radius: var(--radius-md);
+            margin: var(--space-xl) 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .article__body .image-caption {
+            font-size: var(--text-xs);
+            color: var(--text-tertiary);
+            text-align: center;
+            margin-top: -16px;
+            margin-bottom: var(--space-xl);
+            font-style: italic;
+        }
+
+        /* Info Box */
+        .article__info-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            margin: var(--space-xl) 0;
+        }
+
+        .article__info-box-title {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-primary);
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .article__info-box p {
+            font-size: var(--text-sm);
+            margin-bottom: 0;
+            color: var(--text-secondary);
+        }
+
+        /* Key Takeaways */
+        .article__takeaways {
+            background: var(--gradient-accent-dark);
+            border: none;
+            color: #fff;
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            margin: var(--space-xl) 0;
+        }
+
+        .article__takeaways-title {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            color: rgba(255,255,255,0.9);
+        }
+
+        .article__takeaways ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .article__takeaways li {
+            padding: var(--space-sm) 0;
+            padding-left: var(--space-xl);
+            position: relative;
+            color: rgba(255,255,255,0.85);
+            font-size: var(--text-sm);
+            line-height: 1.6;
+        }
+
+        .article__takeaways li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #fff;
+            font-weight: 700;
+            font-size: var(--text-sm);
+        }
+
+        /* ==========================================================
+           ARTICLE FOOTER (Tags + Share + Nav)
+           ========================================================== */
+        .article__footer {
+            margin-top: var(--space-3xl);
+            padding-top: var(--space-2xl);
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Tags */
+        .article__tags {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-xl);
+        }
+
+        .article__tags-label {
+            font-size: var(--text-xs);
+            font-weight: 700;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-right: var(--space-sm);
+        }
+
+        .article__tag {
+            font-size: var(--text-xs);
+            padding: 5px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 100px;
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+            background: var(--bg-card);
+        }
+
+        .article__tag:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            background: var(--accent-primary-glow);
+        }
+
+        /* Share Buttons */
+        .article__share {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+            flex-wrap: wrap;
+        }
+
+        .article__share-label {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--text-secondary);
+        }
+
+        .article__share-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+        }
+
+        .article__share-btn:hover {
+            border-color: var(--accent-primary);
+            background: var(--accent-primary);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,102,204,0.3);
+        }
+
+        /* Post Navigation (Prev / Next) */
+        .article__nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .article__nav-item {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+            padding: var(--space-lg);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .article__nav-item:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .article__nav-item--prev {
+            align-items: flex-start;
+        }
+
+        .article__nav-item--next {
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .article__nav-label {
+            font-size: var(--text-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .article__nav-title {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* ==========================================================
+           ARTICLE SIDEBAR
+           ========================================================== */
+        .article__sidebar {
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-xl));
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .sidebar-widget {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            transition: border-color var(--transition-fast);
+        }
+
+        .sidebar-widget:hover {
+            border-color: rgba(0,102,204,0.25);
+        }
+
+        .sidebar-widget__title {
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .sidebar-widget__title .icon {
+            color: var(--accent-primary);
+        }
+
+        /* Related Articles */
+        .sidebar-related {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .sidebar-related__item {
+            display: flex;
+            gap: var(--space-md);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--border-color);
+            transition: opacity var(--transition-fast);
+        }
+
+        .sidebar-related__item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .sidebar-related__item:hover {
+            opacity: 0.8;
+        }
+
+        .sidebar-related__thumb {
+            width: 80px;
+            height: 60px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            flex-shrink: 0;
+            background: var(--bg-tertiary);
+        }
+
+        .sidebar-related__thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-related__info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .sidebar-related__title {
+            font-size: var(--text-xs);
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--text-primary);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 4px;
+        }
+
+        .sidebar-related__date {
+            font-size: 0.675rem;
+            color: var(--text-tertiary);
+        }
+
+        /* Table of Contents */
+        .sidebar-toc {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .sidebar-toc__item {
+            font-size: var(--text-xs);
+            color: var(--text-secondary);
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+            border-left: 2px solid transparent;
+        }
+
+        .sidebar-toc__item:hover,
+        .sidebar-toc__item--active {
+            background: var(--accent-primary-glow);
+            color: var(--accent-primary);
+            border-left-color: var(--accent-primary);
+        }
+
+        /* CTA Widget */
+        .sidebar-cta {
+            background: var(--gradient-accent-dark);
+            border: none;
+            color: #fff;
+            text-align: center;
+        }
+
+        .sidebar-cta__icon {
+            margin-bottom: var(--space-md);
+            display: inline-flex;
+            padding: var(--space-md);
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+        }
+
+        .sidebar-cta h4 {
+            font-size: var(--text-base);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .sidebar-cta p {
+            font-size: var(--text-xs);
+            color: rgba(255,255,255,0.75);
+            margin-bottom: var(--space-lg);
+            line-height: 1.6;
+        }
+
+        .sidebar-cta .btn {
+            width: 100%;
+            background: #fff;
+            color: var(--accent-primary);
+            font-weight: 700;
+            font-size: var(--text-sm);
+            padding: 12px 20px;
+            border: none;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: inline-block;
+        }
+
+        .sidebar-cta .btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Back to News */
+        .article__back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            color: var(--accent-primary);
+            margin-bottom: var(--space-2xl);
+            transition: gap var(--transition-fast);
+        }
+
+        .article__back-link:hover {
+            gap: var(--space-md);
+        }
+
+        /* ==========================================================
+           RESPONSIVE
+           ========================================================== */
+        @media (max-width: 1024px) {
+            .article__layout {
+                grid-template-columns: 1fr;
+            }
+
+            .article__sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-md);
+            }
+
+            .sidebar-cta {
+                grid-column: 1 / -1;
+            }
+
+            .article__nav {
+                grid-template-columns: 1fr;
+            }
+
+            .article__nav-item--next {
+                align-items: flex-start;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .page-banner {
+                min-height: 240px;
+            }
+
+            .article__sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .article__byline {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-sm);
+            }
+
+            .article__title {
+                font-size: var(--text-2xl);
+            }
+
+            .article__body {
+                font-size: var(--text-sm);
+            }
+
+            .article__body blockquote {
+                font-size: var(--text-base);
+                padding: var(--space-md) var(--space-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__ring">
+            <div class="loader__ring-inner"></div>
+        </div>
+        <span class="loader__text">APEX BEARING</span>
+    </div>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo" aria-label="Apex Bearing Technologies Home">
+                <svg class="header__logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                </svg>
+                <div class="header__logo-text">
+                    <span class="header__logo-name">APEX</span>
+                    <span class="header__logo-sub">BEARING TECHNOLOGIES</span>
+                </div>
+            </a>
+
+            <nav class="header__nav" id="mainNav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--mega">
+                        <a href="products-archive.html" class="header__nav-link">Products</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu__grid">
+                                <div class="mega-menu__col">
+                                    <h4 class="mega-menu__title">By Category</h4>
+                                    <ul class="mega-menu__links">
+                                        <li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearings</a></li>
+                                        <li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li>
+                                        <li><a href="products-archive.html?cat=gen1">Gen 1 Hub Units</a></li>
+                                        <li><a href="products-archive.html?cat=gen2">Gen 2 Hub Units</a></li>
+                                        <li><a href="products-archive.html?cat=gen3">Gen 3 Hub Units</a></li>
+                                        <li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu__col">
+                                    <h4 class="mega-menu__title">By Vehicle Brand</h4>
+                                    <ul class="mega-menu__links">
+                                        <li><a href="products-archive.html?brand=toyota">Toyota · Honda · Nissan</a></li>
+                                        <li><a href="products-archive.html?brand=bmw">BMW · Mercedes · Audi</a></li>
+                                        <li><a href="products-archive.html?brand=hyundai">Hyundai · Kia</a></li>
+                                        <li><a href="products-archive.html?brand=ford">Ford · Chevrolet</a></li>
+                                        <li><a href="products-archive.html?brand=ev-brands">BYD · Tesla · Geely</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu__col mega-menu__col--featured">
+                                    <div class="mega-menu__card">
+                                        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db118?w=400&q=80" alt="Featured" loading="lazy">
+                                        <span>New: EV Hub Bearings</span>
+                                        <a href="products-archive.html?cat=ev">Explore →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
+                    <li class="header__nav-item"><a href="index.html#manufacturing" class="header__nav-link">Manufacturing</a></li>
+                    <li class="header__nav-item"><a href="index.html#quality" class="header__nav-link">Quality</a></li>
+                    <li class="header__nav-item"><a href="news-list.html" class="header__nav-link" style="color:var(--accent-primary)">News</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="header__action-btn" id="searchToggle" aria-label="Toggle search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <button class="header__action-btn" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="header__action-btn header__lang" aria-label="Language">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <span>EN</span>
+                </button>
+                <button class="header__hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-overlay__box">
+                <input type="text" class="search-overlay__input" placeholder="Search news articles..." aria-label="Search articles">
+                <button class="search-overlay__close" id="searchClose" aria-label="Close search">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    MOBILE MENU
+    ============================================================ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul>
+                <li><a href="products-archive.html">Products Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#manufacturing">Manufacturing</a></li>
+                <li><a href="index.html#quality">Quality</a></li>
+                <li><a href="news-list.html">News & Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu__cta">
+                <a href="contact.html" class="btn btn--primary">Become a Distributor</a>
+                <a href="#" class="btn btn--outline">Download Catalog</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main>
+
+        <!-- ========================================================
+        PAGE BANNER (Compact — for article header)
+        ========================================================= -->
+        <section class="page-banner" id="postBanner">
+            <div class="page-banner__bg">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=1920&q=80" alt="" id="bannerBg">
+            </div>
+            <div class="page-banner__overlay"></div>
+            <div class="page-banner__content">
+                <nav class="page-banner__breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="sep">/</span>
+                    <a href="news-list.html">News &amp; Insights</a>
+                    <span class="sep">/</span>
+                    <span class="current" id="breadcrumbCat">Article</span>
+                </nav>
+                <span class="page-banner__category" id="bannerCategory">Article</span>
+                <h1 class="page-banner__title" id="bannerTitle">Loading Article...</h1>
+                <div class="page-banner__meta" id="bannerMeta">
+                    <span class="page-banner__meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        —
+                    </span>
+                    <span class="page-banner__meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        —
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+        ARTICLE CONTENT
+        ========================================================= -->
+        <section class="article">
+            <div class="container">
+                <!-- Back Link -->
+                <a href="news-list.html" class="article__back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                    Back to News &amp; Insights
+                </a>
+
+                <div class="article__layout">
+
+                    <!-- ============================================
+                    ARTICLE MAIN CONTENT
+                    ============================================ -->
+                    <div class="article__content">
+
+                        <!-- Featured Image -->
+                        <div class="article__featured-img">
+                            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&q=80" alt="" id="featuredImage">
+                        </div>
+
+                        <!-- Article Header -->
+                        <div class="article__header">
+                            <div class="article__header-top">
+                                <span class="article__category-tag" id="articleCategory">Press Release</span>
+                                <span class="article__views" id="articleViews">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                    — views
+                                </span>
+                            </div>
+                            <h1 class="article__title" id="articleTitle">Loading Article...</h1>
+                            <div class="article__byline">
+                                <div class="article__author" id="articleAuthor">
+                                    <div class="article__author-avatar">
+                                        <img src="" alt="" id="authorAvatar">
+                                    </div>
+                                    <div class="article__author-info">
+                                        <span class="article__author-name" id="authorName">—</span>
+                                        <span class="article__author-role">Apex Bearing Technologies</span>
+                                    </div>
+                                </div>
+                                <span class="article__date" id="articleDate">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    —
+                                </span>
+                                <span class="article__reading-time" id="readingTime">—</span>
+                            </div>
+                        </div>
+
+                        <!-- Article Body -->
+                        <div class="article__body" id="articleBody">
+                            <p>Loading article content...</p>
+                        </div>
+
+                        <!-- Article Footer: Tags + Share + Navigation -->
+                        <div class="article__footer">
+                            <!-- Tags -->
+                            <div class="article__tags" id="articleTags">
+                                <span class="article__tags-label">Tags:</span>
+                            </div>
+
+                            <!-- Share -->
+                            <div class="article__share">
+                                <span class="article__share-label">Share this article:</span>
+                                <a href="#" class="article__share-btn" id="shareTwitter" aria-label="Share on Twitter" target="_blank" rel="noopener">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                </a>
+                                <a href="#" class="article__share-btn" id="shareLinkedIn" aria-label="Share on LinkedIn" target="_blank" rel="noopener">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </a>
+                                <a href="#" class="article__share-btn" id="shareFacebook" aria-label="Share on Facebook" target="_blank" rel="noopener">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                                </a>
+                                <a href="#" class="article__share-btn" id="shareEmail" aria-label="Share via Email">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </a>
+                                <button class="article__share-btn" id="copyLinkBtn" aria-label="Copy link" title="Copy link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                                </button>
+                            </div>
+
+                            <!-- Prev / Next Navigation -->
+                            <div class="article__nav" id="articleNav">
+                                <a href="#" class="article__nav-item article__nav-item--prev" id="prevPost" style="display:none;">
+                                    <span class="article__nav-label">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                                        Previous Article
+                                    </span>
+                                    <span class="article__nav-title"></span>
+                                </a>
+                                <a href="#" class="article__nav-item article__nav-item--next" id="nextPost" style="display:none;">
+                                    <span class="article__nav-label">
+                                        Next Article
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                                    </span>
+                                    <span class="article__nav-title"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div><!-- /article__content -->
+
+                    <!-- ============================================
+                    ARTICLE SIDEBAR
+                    ============================================ -->
+                    <aside class="article__sidebar">
+
+                        <!-- Table of Contents -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">
+                                <span>In This Article</span>
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                            </h3>
+                            <nav class="sidebar-toc" id="tableOfContents">
+                                <span style="font-size:var(--text-xs);color:var(--text-muted);">Scroll to read...</span>
+                            </nav>
+                        </div>
+
+                        <!-- Related Articles -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-widget__title">
+                                <span>Related Articles</span>
+                                <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </h3>
+                            <div class="sidebar-related" id="relatedArticles">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- CTA Widget -->
+                        <div class="sidebar-widget sidebar-cta">
+                            <div class="sidebar-cta__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+                            </div>
+                            <h4>Become a Distributor</h4>
+                            <p>Get factory-direct pricing, exclusive territory protection, and priority access to new products.</p>
+                            <a href="contact.html" class="btn">Apply Now</a>
+                        </div>
+                    </aside>
+
+                </div><!-- /article__layout -->
+            </div><!-- /container -->
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--about">
+                    <a href="index.html" class="footer__logo">
+                        <svg viewBox="0 0 40 40" width="40" height="40">
+                            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                        </svg>
+                        <span>APEX BEARING TECHNOLOGIES</span>
+                    </a>
+                    <p>Global manufacturer of premium wheel hub bearings and wheel hub assembly units. IATF 16949 certified. Serving 80+ countries worldwide.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products-archive.html">Product Catalog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#manufacturing">Manufacturing</a></li>
+                        <li><a href="news-list.html">News &amp; Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products-archive.html?cat=wheel-hub-bearing">Wheel Hub Bearing</a></li>
+                        <li><a href="products-archive.html?cat=wheel-hub-assembly">Wheel Hub Assembly</a></li>
+                        <li><a href="products-archive.html?cat=gen1">Generation 1 Hub Unit</a></li>
+                        <li><a href="products-archive.html?cat=gen2">Generation 2 Hub Unit</a></li>
+                        <li><a href="products-archive.html?cat=gen3">Generation 3 Hub Unit</a></li>
+                        <li><a href="products-archive.html?cat=ev">EV Hub Bearings</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+86 138 0000 0000</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>export@apexbearing.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024-2026 Apex Bearing Technologies. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Trade</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    FLOATING BUTTONS
+    ============================================================ -->
+    <a href="https://wa.me/8613800000000" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+        <span class="floating-whatsapp__pulse"></span>
+    </a>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="script.js"></script>
+
+    <!-- Single Post Page Specific JavaScript -->
+    <script>
+    (function () {
+        'use strict';
+
+        /* ==========================================================
+           ARTICLE DATA (Shared with news-list.html)
+           Full content for each article is defined here.
+           ========================================================== */
+        const articles = [
+            {
+                id: 1,
+                slug: 'apex-launches-ev-hub-bearing-line',
+                title: 'Apex Launches Next-Generation EV Hub Bearing Line for 2026',
+                excerpt: 'Our new low-friction, low-noise hub bearing assemblies are purpose-engineered for electric vehicles, delivering 15% greater energy efficiency and 8 dB noise reduction.',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-06-20',
+                dateFormatted: 'June 20, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['EV', 'Product Launch', 'R&D'],
+                featured: true,
+                image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&q=80',
+                views: 1240,
+                content: `
+                    <p><strong>Apex Bearing Technologies</strong> proudly announces the official launch of our next-generation EV Hub Bearing Line — a purpose-engineered solution designed specifically for the unique demands of electric and hybrid vehicles.</p>
+
+                    <p>After 18 months of intensive R&D and collaboration with leading EV manufacturers, the new line delivers measurable improvements across three critical performance vectors: <strong>energy efficiency, noise reduction, and extended service life</strong>.</p>
+
+                    <h2>Purpose-Built for Electric Vehicles</h2>
+
+                    <p>Electric vehicles present unique challenges for wheel hub bearings that traditional internal combustion engine (ICE) components simply weren't designed to handle:</p>
+
+                    <ul>
+                        <li><strong>Higher torque loads</strong> from instant electric motor delivery</li>
+                        <li><strong>Increased vehicle weight</strong> due to battery packs (often 300–500 kg heavier than ICE equivalents)</li>
+                        <li><strong>Near-silent cabins</strong> that make any bearing noise immediately noticeable</li>
+                        <li><strong>Regenerative braking</strong> that introduces bidirectional load patterns</li>
+                    </ul>
+
+                    <div class="article__takeaways">
+                        <div class="article__takeaways-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Key Performance Highlights
+                        </div>
+                        <ul>
+                            <li><strong>15% Greater Energy Efficiency</strong> — Low-friction seals and optimized raceway geometry reduce parasitic losses</li>
+                            <li><strong>8 dB Noise Reduction</strong> — Specialized polymer cages and ultra-precision ball grading minimize vibration</li>
+                            <li><strong>200,000+ km Design Life</strong> — Advanced heat treatment and premium bearing steel ensure longevity</li>
+                            <li><strong>Integrated Sensor-Ready Design</strong> — Compatible with ABS, traction control, and autonomous driving sensor suites</li>
+                        </ul>
+                    </div>
+
+                    <h2>Engineering Behind the Efficiency</h2>
+
+                    <p>Our engineering team focused on three core innovations:</p>
+
+                    <h3>1. Ultra-Low-Friction Seal Design</h3>
+
+                    <p>Traditional bearing seals account for up to 30% of bearing friction. Our new triple-lip seal with PTFE coating reduces seal drag by 40% while maintaining IP69K-level contamination resistance — critical for vehicles operating in varied climates and road conditions.</p>
+
+                    <h3>2. Optimized Raceway Geometry</h3>
+
+                    <p>Using advanced finite element analysis (FEA) and machine-learning-optimized surface profiles, we achieved a 12% reduction in contact stress at the ball-raceway interface. This reduces friction torque by 0.15 Nm per bearing — translating to measurable range gains in EVs.</p>
+
+                    <blockquote>
+                        "This EV hub bearing line represents the most significant advancement in our product portfolio in over a decade. Every component has been rethought from first principles for the electric era."
+                        <cite>— Dr. Li Wei, Chief Engineer, Apex Bearing Technologies</cite>
+                    </blockquote>
+
+                    <h3>3. Next-Generation Grease Technology</h3>
+
+                    <p>We partnered with a leading lubricant manufacturer to develop a custom low-viscosity synthetic grease that maintains film strength at high temperatures while minimizing churning losses at low temperatures — critical for EVs that must perform from -30°C Nordic winters to +50°C Middle Eastern summers.</p>
+
+                    <h2>Product Range and Availability</h2>
+
+                    <p>The EV Hub Bearing Line launches with coverage for the following platforms:</p>
+
+                    <ul>
+                        <li><strong>Tesla Model 3 / Model Y</strong> — Gen 3 hub assembly with integrated ABS sensor</li>
+                        <li><strong>BYD Atto 3 / Seal / Dolphin</strong> — Optimized for BYD's e-Platform 3.0</li>
+                        <li><strong>Volkswagen ID.4 / ID.3</strong> — MEB platform compatibility</li>
+                        <li><strong>Hyundai Ioniq 5 / Kia EV6</strong> — E-GMP platform Gen 2 hub units</li>
+                        <li><strong>Universal Gen 1–3 EV kits</strong> — For aftermarket and retrofit applications</li>
+                    </ul>
+
+                    <div class="article__info-box">
+                        <div class="article__info-box-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            Distributor Information
+                        </div>
+                        <p>Distributors and importers can request EV Hub Bearing pricing, technical datasheets, and sample evaluation units through our <a href="contact.html">distributor portal</a>. Volume pricing and exclusive territory rights are available for qualified partners.</p>
+                    </div>
+
+                    <h2>Commitment to the Electric Future</h2>
+
+                    <p>This launch is part of Apex Bearing Technologies' broader commitment to supporting the global transition to electric mobility. By 2028, we aim for EV-specific products to represent 35% of our total SKU portfolio, backed by continuous investment in R&D and manufacturing capabilities.</p>
+
+                    <p>For more information about the EV Hub Bearing Line or to schedule a technical consultation, please <a href="contact.html">contact our export team</a>.</p>
+                `,
+                toc: ['Purpose-Built for Electric Vehicles', 'Engineering Behind the Efficiency', 'Product Range and Availability', 'Commitment to the Electric Future']
+            },
+            {
+                id: 2,
+                slug: 'iatf-16949-recertification-2026',
+                title: 'Apex Bearing Achieves IATF 16949 Recertification with Zero Non-Conformities',
+                excerpt: 'Our quality management system once again passes the rigorous IATF 16949 audit with a perfect score, reinforcing our commitment to automotive excellence.',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-06-10',
+                dateFormatted: 'June 10, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '3 min read',
+                tags: ['Quality', 'Certification', 'Manufacturing'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200&q=80',
+                views: 980,
+                content: `
+                    <p>Apex Bearing Technologies is proud to announce that we have successfully completed our IATF 16949:2016 recertification audit with <strong>zero non-conformities</strong> — the highest possible result in the automotive quality management standard.</p>
+
+                    <h2>What IATF 16949 Certification Means</h2>
+
+                    <p>IATF 16949 is the global technical specification and quality management standard for the automotive industry, developed by the International Automotive Task Force (IATF). It aligns with ISO 9001 but adds specific requirements for automotive production and relevant service parts organizations.</p>
+
+                    <p>Achieving recertification with zero non-conformities demonstrates that our quality systems operate at the highest level across every aspect of our organization — from raw material sourcing to final inspection and customer delivery.</p>
+
+                    <h2>Audit Scope and Results</h2>
+
+                    <p>The comprehensive 5-day audit covered:</p>
+
+                    <ul>
+                        <li><strong>Manufacturing Process Control</strong> — Statistical process control (SPC), measurement system analysis (MSA), and process capability studies</li>
+                        <li><strong>Supplier Quality Management</strong> — Raw material traceability and supplier PPAP compliance</li>
+                        <li><strong>Product Safety</strong> — Risk assessment, failure mode and effects analysis (FMEA), and control plans</li>
+                        <li><strong>Continuous Improvement</strong> — Kaizen initiatives, corrective action systems, and management review processes</li>
+                    </ul>
+
+                    <blockquote>
+                        "Zero non-conformities isn't just a score — it's a testament to our team's relentless focus on quality at every stage. This result gives our OEM and distributor partners absolute confidence in our products."
+                        <cite>— Michael Torres, Quality Director, Apex Bearing Technologies</cite>
+                    </blockquote>
+
+                    <p>This recertification reinforces Apex Bearing's position as a trusted Tier 1 and Tier 2 supplier to global automotive manufacturers.</p>
+                `,
+                toc: ['What IATF 16949 Certification Means', 'Audit Scope and Results']
+            },
+            {
+                id: 3,
+                slug: 'automechanika-frankfurt-2026',
+                title: 'Visit Apex at Automechanika Frankfurt 2026 — Hall 4.1, Booth C22',
+                excerpt: 'Join us at the world\'s leading trade fair for the automotive aftermarket. We\'ll showcase our complete hub bearing lineup and offer exclusive distributor pricing.',
+                category: 'trade',
+                categoryLabel: 'Trade Show',
+                date: '2026-05-28',
+                dateFormatted: 'May 28, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '5 min read',
+                tags: ['Automechanika', 'Trade Show', 'Global'],
+                featured: true,
+                image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80',
+                views: 1560,
+                content: `
+                    <p>Apex Bearing Technologies is excited to announce our participation in <strong>Automechanika Frankfurt 2026</strong>, the world's leading international trade fair for the automotive aftermarket, taking place September 8–12 at Messe Frankfurt.</p>
+
+                    <h2>What to Expect at Our Booth</h2>
+
+                    <p>Visit us at <strong>Hall 4.1, Booth C22</strong> to experience:</p>
+
+                    <ul>
+                        <li><strong>Live Product Demonstrations</strong> — See our complete hub bearing lineup with cutaway displays showing internal engineering</li>
+                        <li><strong>EV Hub Bearing Showcase</strong> — First public display of our new electric vehicle hub bearing line</li>
+                        <li><strong>Interactive Cross-Reference Tool</strong> — Search 4,000+ SKUs by OEM number, vehicle model, or dimensions</li>
+                        <li><strong>Exclusive Show Pricing</strong> — Special distributor terms for orders placed during the exhibition</li>
+                        <li><strong>Technical Consultations</strong> — Meet our engineering team for one-on-one technical discussions</li>
+                    </ul>
+
+                    <div class="article__info-box">
+                        <div class="article__info-box-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            Event Details
+                        </div>
+                        <p><strong>Event:</strong> Automechanika Frankfurt 2026<br>
+                        <strong>Dates:</strong> September 8–12, 2026<br>
+                        <strong>Location:</strong> Messe Frankfurt, Germany<br>
+                        <strong>Booth:</strong> Hall 4.1, Stand C22<br>
+                        <strong>Hours:</strong> 09:00 – 18:00 daily</p>
+                    </div>
+
+                    <h2>Schedule a Meeting</h2>
+
+                    <p>To ensure dedicated time with our team, we recommend scheduling a meeting in advance. Contact us at <a href="mailto:export@apexbearing.com">export@apexbearing.com</a> with your preferred date and time.</p>
+
+                    <p>We look forward to welcoming our distributor partners, customers, and industry colleagues to Booth C22!</p>
+                `,
+                toc: ['What to Expect at Our Booth', 'Schedule a Meeting']
+            },
+            {
+                id: 4,
+                slug: 'gen3-hub-unit-advancements',
+                title: 'Technical Deep-Dive: Gen 3 Hub Unit Advancements and ABS Integration',
+                excerpt: 'Explore the engineering behind Generation 3 hub units with fully integrated ABS sensors — improving safety, reliability, and assembly efficiency for modern vehicles.',
+                category: 'insight',
+                categoryLabel: 'Technical Insight',
+                date: '2026-05-15',
+                dateFormatted: 'May 15, 2026',
+                author: 'Dr. Li Wei',
+                authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80',
+                readingTime: '7 min read',
+                tags: ['R&D', 'Manufacturing', 'Quality'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1565043666747-69f6646db118?w=1200&q=80',
+                views: 720,
+                content: `
+                    <p>The evolution from Generation 1 to Generation 3 hub units represents one of the most significant engineering advances in modern automotive suspension design. In this technical deep-dive, we explore how Gen 3 hub units with integrated ABS sensors improve vehicle safety, reduce assembly complexity, and enhance overall reliability.</p>
+
+                    <h2>Understanding Hub Unit Generations</h2>
+
+                    <p>Hub unit "generations" describe increasing levels of integration between the bearing, hub flange, and sensor systems:</p>
+
+                    <ul>
+                        <li><strong>Gen 1:</strong> Bearing only — separate hub and sensor installation required</li>
+                        <li><strong>Gen 2:</strong> Bearing with integrated hub flange — sensor remains external</li>
+                        <li><strong>Gen 3:</strong> Fully integrated unit with bearing, hub flange, and ABS sensor in one assembly</li>
+                    </ul>
+
+                    <h2>Key Engineering Advantages of Gen 3</h2>
+
+                    <h3>1. Integrated Magnetic Encoder Ring</h3>
+
+                    <p>Gen 3 units feature a magnetic encoder ring integrated directly into the bearing seal. This eliminates the need for a separate tone ring and external sensor mounting, reducing parts count by 4–6 components per corner.</p>
+
+                    <h3>2. Pre-Set Bearing Clearance</h3>
+
+                    <p>Unlike Gen 1 units that require careful clearance adjustment during assembly, Gen 3 units arrive with factory-set clearance optimized through orbital forming. This ensures consistent preload and eliminates installation-induced failures.</p>
+
+                    <blockquote>
+                        "The transition to Gen 3 hub units reduces assembly line time by an average of 3.2 minutes per vehicle — a significant efficiency gain for high-volume manufacturers."
+                        <cite>— Automotive Engineering International, 2025</cite>
+                    </blockquote>
+
+                    <h3>3. Enhanced ABS/ESC Performance</h3>
+
+                    <p>The integrated sensor design provides a stronger, more consistent magnetic signal with less susceptibility to contamination and mechanical damage. This improves ABS and electronic stability control (ESC) response time by up to 15 milliseconds — a meaningful safety margin in emergency situations.</p>
+
+                    <h2>Application Recommendations</h2>
+
+                    <p>Gen 3 hub units are standard equipment on most vehicles manufactured from 2015 onward. For aftermarket distributors, we recommend stocking Gen 3 units for:</p>
+
+                    <ul>
+                        <li>European luxury vehicles (BMW, Mercedes, Audi) — 2012+ model years</li>
+                        <li>Japanese/Korean mainstream (Toyota, Honda, Hyundai) — 2015+ model years</li>
+                        <li>American trucks and SUVs — 2018+ model years</li>
+                    </ul>
+
+                    <p>Contact our technical support team for cross-reference assistance and application-specific recommendations.</p>
+                `,
+                toc: ['Understanding Hub Unit Generations', 'Key Engineering Advantages of Gen 3', 'Application Recommendations']
+            },
+            {
+                id: 5,
+                slug: 'warehouse-expansion-zhejiang-2026',
+                title: 'Announcing 50,000 m² Warehouse Expansion in Zhejiang Province',
+                excerpt: 'Our new smart warehouse facility increases storage capacity by 200% and features automated inventory management, enabling same-day dispatch for 90% of orders.',
+                category: 'product',
+                categoryLabel: 'Product Update',
+                date: '2026-04-22',
+                dateFormatted: 'April 22, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['Manufacturing', 'Global', 'Logistics'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80',
+                views: 850,
+                content: `
+                    <p>Apex Bearing Technologies is pleased to announce the completion of our <strong>50,000 m² smart warehouse expansion</strong> at our Zhejiang manufacturing campus — more than doubling our previous storage and logistics capacity.</p>
+
+                    <h2>Smart Warehouse Capabilities</h2>
+
+                    <p>The new facility features state-of-the-art automation and inventory management systems:</p>
+
+                    <ul>
+                        <li><strong>Automated Storage & Retrieval System (AS/RS)</strong> — 18-meter-high racking with robotic picking</li>
+                        <li><strong>RFID Inventory Tracking</strong> — Real-time stock visibility across 100% of SKUs</li>
+                        <li><strong>Climate-Controlled Storage</strong> — Dedicated zones for premium and sensitive bearing products</li>
+                        <li><strong>Same-Day Dispatch</strong> — 90% of orders ship same-day when received before 14:00 CST</li>
+                    </ul>
+
+                    <div class="article__takeaways">
+                        <div class="article__takeaways-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Benefits for Distributors
+                        </div>
+                        <ul>
+                            <li><strong>Faster Order Fulfillment</strong> — Average processing time reduced from 48 hours to 6 hours</li>
+                            <li><strong>Higher Fill Rates</strong> — 99.2% SKU availability with real-time stock updates</li>
+                            <li><strong>Reduced Shipping Costs</strong> — Optimized packaging and consolidated shipments</li>
+                            <li><strong>Priority Allocation</strong> — Automated stock reservation for contracted distributor volumes</li>
+                        </ul>
+                    </div>
+
+                    <p>This investment reflects our commitment to providing world-class logistics support to our distributor network across 80+ countries. For more information about our distribution capabilities, please <a href="contact.html">contact us</a>.</p>
+                `,
+                toc: ['Smart Warehouse Capabilities']
+            },
+            {
+                id: 6,
+                slug: 'low-noise-bearing-technology',
+                title: 'How Low-Noise Bearing Technology Is Shaping the Premium Vehicle Aftermarket',
+                excerpt: 'An analysis of how advanced sealing, precision grinding, and optimized raceway geometries are reducing cabin noise by up to 4 dB in premium vehicles.',
+                category: 'insight',
+                categoryLabel: 'Technical Insight',
+                date: '2026-04-08',
+                dateFormatted: 'April 8, 2026',
+                author: 'Dr. Li Wei',
+                authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80',
+                readingTime: '6 min read',
+                tags: ['R&D', 'Quality', 'Sustainability'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=1200&q=80',
+                views: 680,
+                content: `
+                    <p>As vehicle cabins become increasingly quiet — especially in the EV era — the acoustic performance of rotating components like wheel hub bearings has moved from a secondary consideration to a primary engineering requirement. This article examines how advanced manufacturing processes reduce bearing noise and what it means for the premium aftermarket.</p>
+
+                    <h2>Sources of Bearing Noise</h2>
+
+                    <p>Wheel hub bearing noise originates from several sources:</p>
+
+                    <ul>
+                        <li><strong>Raceway waviness</strong> — Microscopic surface variations that create vibration at rotational frequencies</li>
+                        <li><strong>Ball size variation</strong> — Even 0.1μm diameter differences between balls create periodic noise</li>
+                        <li><strong>Cage rattle</strong> — Polymer or steel cage impacts against rolling elements</li>
+                        <li><strong>Seal friction</strong> — Stick-slip behavior at the seal-lip interface</li>
+                    </ul>
+
+                    <h2>Our Low-Noise Manufacturing Approach</h2>
+
+                    <p>At Apex Bearing Technologies, we employ a multi-layered approach to noise reduction:</p>
+
+                    <h3>Precision Grinding (Ra ≤ 0.05 μm)</h3>
+
+                    <p>Our CNC grinding centers achieve raceway surface roughness below 0.05 μm Ra — comparable to optical-grade finishing. Tighter surface finish directly correlates with lower vibration amplitudes.</p>
+
+                    <h3>Ball Grading to G5 Tolerance</h3>
+
+                    <p>We grade all bearing balls to G5 precision (variation ≤ 0.13 μm within a batch), exceeding the industry standard G10 requirement. This reduces periodic noise caused by ball diameter variation by up to 60%.</p>
+
+                    <h3>Optimized Polymer Cages</h3>
+
+                    <p>Our glass-fiber-reinforced polyamide cages feature precision-molded ball pockets with controlled clearance, eliminating cage rattle while maintaining low friction.</p>
+
+                    <blockquote>
+                        "In an EV traveling at 100 km/h with the audio system off, wheel bearing noise can account for 30% of total cabin noise. Reducing that by even 2–3 dB makes a noticeable difference to the driver experience."
+                        <cite>— SAE International, NVH Conference 2025</cite>
+                    </blockquote>
+
+                    <p>For distributors serving the premium vehicle segment, low-noise bearings represent a significant value-add opportunity. Contact us for technical specifications and application guides.</p>
+                `,
+                toc: ['Sources of Bearing Noise', 'Our Low-Noise Manufacturing Approach']
+            },
+            {
+                id: 7,
+                slug: 'new-oem-partnership-2026',
+                title: 'Apex Secures OEM Supply Agreement with Major European Automaker',
+                excerpt: 'We\'re proud to announce a multi-year OEM supply agreement for wheel hub bearing assemblies, starting with a European luxury vehicle platform launching in 2027.',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-03-18',
+                dateFormatted: 'March 18, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '3 min read',
+                tags: ['OEM', 'Partnership', 'Global'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80',
+                views: 1120,
+                content: `
+                    <p>Apex Bearing Technologies is proud to announce a <strong>multi-year OEM supply agreement</strong> with one of Europe's leading luxury vehicle manufacturers. Under the agreement, Apex will supply Gen 3 wheel hub bearing assemblies for a next-generation vehicle platform launching in 2027.</p>
+
+                    <h2>Strategic Significance</h2>
+
+                    <p>This partnership represents a major milestone in Apex Bearing's strategy to expand our OEM business alongside our established aftermarket distribution network. Key highlights:</p>
+
+                    <ul>
+                        <li><strong>Multi-year contract</strong> covering an estimated 1.2 million units over the platform lifecycle</li>
+                        <li><strong>Gen 3 hub assemblies</strong> with integrated ABS sensors, manufactured to the automaker's exact specifications</li>
+                        <li><strong>Just-in-sequence delivery</strong> to European assembly plants through our established logistics network</li>
+                        <li><strong>Joint engineering collaboration</strong> on future bearing technologies, including EV-specific designs</li>
+                    </ul>
+
+                    <blockquote>
+                        "This agreement validates our 'dual-track' strategy — supplying both OEM production lines and the global aftermarket. It demonstrates that Apex Bearing meets the exacting standards of the world's most demanding automakers."
+                        <cite>— Sarah Chen, VP of Global Sales, Apex Bearing Technologies</cite>
+                    </blockquote>
+
+                    <p>The agreement takes effect immediately, with pre-production validation units shipping in Q3 2026. This partnership is expected to create additional economies of scale that benefit our entire product range and customer base.</p>
+                `,
+                toc: ['Strategic Significance']
+            },
+            {
+                id: 8,
+                slug: 'sustainability-report-2025',
+                title: '2025 Sustainability Report: Carbon Footprint Reduced by 22%',
+                excerpt: 'Our annual sustainability report highlights major progress: 22% carbon reduction, 95% waste recycling rate, and 40% renewable energy usage across manufacturing facilities.',
+                category: 'press',
+                categoryLabel: 'Press Release',
+                date: '2026-02-28',
+                dateFormatted: 'February 28, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '5 min read',
+                tags: ['Sustainability', 'Manufacturing'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80',
+                views: 760,
+                content: `
+                    <p>Apex Bearing Technologies has released its <strong>2025 Annual Sustainability Report</strong>, highlighting significant progress across environmental, social, and governance (ESG) metrics. The report confirms a <strong>22% reduction in carbon footprint</strong> compared to our 2022 baseline.</p>
+
+                    <h2>Key Sustainability Metrics (2025)</h2>
+
+                    <ul>
+                        <li><strong>Carbon Reduction:</strong> 22% decrease vs. 2022 baseline (Scope 1 & 2 emissions)</li>
+                        <li><strong>Renewable Energy:</strong> 40% of total electricity now from on-site solar and grid renewables</li>
+                        <li><strong>Waste Recycling Rate:</strong> 95% of manufacturing waste diverted from landfill</li>
+                        <li><strong>Water Conservation:</strong> 30% reduction in water usage through closed-loop cooling systems</li>
+                        <li><strong>Green Packaging:</strong> 100% recyclable packaging for aftermarket products</li>
+                    </ul>
+
+                    <h2>On-Site Solar Installation</h2>
+
+                    <p>A major driver of carbon reduction was the commissioning of our <strong>4.2 MW rooftop solar installation</strong> at the Zhejiang manufacturing campus. Completed in Q2 2025, the system generates approximately 4,800 MWh annually — equivalent to powering 1,200 average households.</p>
+
+                    <h2>Looking Ahead: 2030 Targets</h2>
+
+                    <p>Our sustainability roadmap targets:</p>
+
+                    <ul>
+                        <li><strong>50% carbon reduction</strong> by 2028 (vs. 2022 baseline)</li>
+                        <li><strong>Carbon neutrality</strong> for Scope 1 & 2 emissions by 2030</li>
+                        <li><strong>100% renewable electricity</strong> across all operations by 2028</li>
+                        <li><strong>Zero waste to landfill</strong> by 2027</li>
+                    </ul>
+
+                    <p>We remain committed to environmentally responsible manufacturing while delivering the high-quality bearing products our customers depend on.</p>
+                `,
+                toc: ['Key Sustainability Metrics (2025)', 'On-Site Solar Installation', 'Looking Ahead: 2030 Targets']
+            },
+            {
+                id: 9,
+                slug: 'bearing-failure-analysis-guide',
+                title: 'Common Hub Bearing Failure Modes and How to Prevent Them',
+                excerpt: 'A practical guide for distributors and mechanics: identifying premature wear, contamination, improper installation, and lubrication failure in wheel hub bearings.',
+                category: 'insight',
+                categoryLabel: 'Technical Insight',
+                date: '2026-02-10',
+                dateFormatted: 'February 10, 2026',
+                author: 'Dr. Li Wei',
+                authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80',
+                readingTime: '8 min read',
+                tags: ['Quality', 'Technical', 'Training'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1625047509168-a7e6e2c4d5a4?w=1200&q=80',
+                views: 1450,
+                content: `
+                    <p>Understanding bearing failure modes is essential for distributors and mechanics who diagnose issues and recommend replacements. This guide covers the five most common failure modes, their root causes, and preventive measures.</p>
+
+                    <h2>1. Contamination Failure</h2>
+
+                    <p><strong>Appearance:</strong> Brinelling (dents) on raceways, abrasive wear patterns, discolored grease.</p>
+
+                    <p><strong>Root Cause:</strong> Water, dirt, or debris entering the bearing through damaged or improperly installed seals. Contamination accounts for approximately 35% of premature bearing failures.</p>
+
+                    <p><strong>Prevention:</strong></p>
+                    <ul>
+                        <li>Always inspect and replace seals when servicing hub assemblies</li>
+                        <li>Use manufacturer-specified torque values to avoid seal deformation</li>
+                        <li>Store bearings in sealed packaging until installation</li>
+                    </ul>
+
+                    <h2>2. Improper Installation</h2>
+
+                    <p><strong>Appearance:</strong> Uneven wear patterns, cage damage, excessive noise immediately after installation.</p>
+
+                    <p><strong>Root Cause:</strong> Over/under-torquing of axle nuts, misalignment during press-fit installation, or using impact tools on bearing races.</p>
+
+                    <p><strong>Prevention:</strong></p>
+                    <ul>
+                        <li>Always use a calibrated torque wrench — never impact guns for final tightening</li>
+                        <li>Follow vehicle-specific torque specifications exactly</li>
+                        <li>Use proper installation tools (bearing drivers, not hammers)</li>
+                    </ul>
+
+                    <div class="article__info-box">
+                        <div class="article__info-box-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            Pro Tip
+                        </div>
+                        <p>Gen 3 hub units are pre-assembled and pre-greased — do not attempt to disassemble or re-grease them. Replace as a complete unit only.</p>
+                    </div>
+
+                    <h2>3. Lubrication Failure</h2>
+
+                    <p><strong>Appearance:</strong> Discolored (blue/brown) raceways, dried or carbonized grease, surface spalling.</p>
+
+                    <p><strong>Root Cause:</strong> High operating temperatures breaking down grease, or water contamination emulsifying the lubricant.</p>
+
+                    <p><strong>Prevention:</strong> Use bearings with appropriate grease specifications for the application. Our premium bearings use synthetic polyurea-thickened grease rated for -40°C to +180°C.</p>
+
+                    <h2>4. Fatigue Spalling</h2>
+
+                    <p><strong>Appearance:</strong> Flaking or pitting on raceway surfaces, often in a localized area.</p>
+
+                    <p><strong>Root Cause:</strong> Normal end-of-life wear after extended service (150,000–250,000 km typical). Can be accelerated by overloading, misalignment, or inadequate lubrication.</p>
+
+                    <h2>5. Corrosion</h2>
+
+                    <p><strong>Appearance:</strong> Red/brown rust on bearing surfaces, etching on raceways.</p>
+
+                    <p><strong>Root Cause:</strong> Moisture ingress, road salt exposure, or storage in humid conditions.</p>
+
+                    <p><strong>Prevention:</strong> Use sealed hub units for vehicles in coastal or winter-salt regions. Our premium bearings feature nickel-plated surfaces for enhanced corrosion resistance.</p>
+
+                    <p>For detailed technical support or failure analysis services, contact our engineering team at <a href="mailto:sales@apexbearing.com">sales@apexbearing.com</a>.</p>
+                `,
+                toc: ['1. Contamination Failure', '2. Improper Installation', '3. Lubrication Failure', '4. Fatigue Spalling', '5. Corrosion']
+            },
+            {
+                id: 10,
+                slug: 'truck-heavy-duty-hub-launch',
+                title: 'New Heavy-Duty Hub Assembly for Commercial Truck Applications',
+                excerpt: 'Introducing our heavy-duty wheel hub assembly line designed for commercial trucks and buses, with 500,000 km service life and enhanced load capacity.',
+                category: 'product',
+                categoryLabel: 'Product Update',
+                date: '2026-01-25',
+                dateFormatted: 'January 25, 2026',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['Product Launch', 'OEM', 'Manufacturing'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1631531892256-3eb5b6234883?w=1200&q=80',
+                views: 920,
+                content: `
+                    <p>Apex Bearing Technologies introduces our new <strong>Heavy-Duty Commercial Hub Assembly Line</strong> — purpose-built for trucks, buses, and commercial fleet vehicles demanding extended service intervals and maximum reliability.</p>
+
+                    <h2>Product Specifications</h2>
+
+                    <ul>
+                        <li><strong>Service Life:</strong> 500,000 km design life under normal operating conditions</li>
+                        <li><strong>Load Rating:</strong> Up to 12,500 kg dynamic load capacity (per axle)</li>
+                        <li><strong>Bearing Type:</strong> Double-row tapered roller with optimized contact geometry</li>
+                        <li><strong>Sealing:</strong> Quad-lip cassette seal with labyrinth design for extreme contamination protection</li>
+                        <li><strong>Material:</strong> Vacuum-degassed bearing steel with case-hardened raceways</li>
+                    </ul>
+
+                    <h2>Coverage</h2>
+
+                    <p>Initial launch coverage includes:</p>
+                    <ul>
+                        <li>Ford F-Series Super Duty (F-250 through F-550)</li>
+                        <li>Mercedes-Benz Sprinter / Freightliner Sprinter</li>
+                        <li>Iveco Daily / Eurocargo</li>
+                        <li>Isuzu N-Series / F-Series</li>
+                        <li>Hino 300 / 500 Series</li>
+                    </ul>
+
+                    <p>Additional applications for Volvo, Scania, and MAN trucks are under development for Q3 2026 release.</p>
+
+                    <p>Contact our commercial vehicle team for pricing, technical datasheets, and fleet program information.</p>
+                `,
+                toc: ['Product Specifications', 'Coverage']
+            },
+            {
+                id: 11,
+                slug: 'aapex-las-vegas-2026-recap',
+                title: 'AAPEX Las Vegas 2026: Key Takeaways and Customer Highlights',
+                excerpt: 'Our team returns from AAPEX Las Vegas with record booth traffic, 200+ new distributor leads, and positive feedback on our expanded Gen 3 product range.',
+                category: 'trade',
+                categoryLabel: 'Trade Show',
+                date: '2026-01-12',
+                dateFormatted: 'January 12, 2026',
+                author: 'Michael Torres',
+                authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80',
+                readingTime: '4 min read',
+                tags: ['Trade Show', 'Global', 'Partnership'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80',
+                views: 600,
+                content: `
+                    <p>The Apex Bearing Technologies team has returned from <strong>AAPEX Las Vegas 2026</strong> with outstanding results. Here's a recap of the highlights from North America's premier automotive aftermarket trade show.</p>
+
+                    <h2>By the Numbers</h2>
+
+                    <ul>
+                        <li><strong>200+ new distributor leads</strong> from 35 countries</li>
+                        <li><strong>85 scheduled follow-up meetings</strong> confirmed for Q1-Q2 2026</li>
+                        <li><strong>3 new distributor agreements</strong> signed on-site</li>
+                        <li><strong>1,200+ product samples</strong> distributed</li>
+                    </ul>
+
+                    <h2>Most Requested Products</h2>
+
+                    <p>Three product categories generated the most interest:</p>
+
+                    <ol>
+                        <li><strong>Gen 3 Hub Assemblies</strong> — Particularly for European vehicles (BMW, Mercedes, Audi)</li>
+                        <li><strong>EV Hub Bearings</strong> — Strong interest from North American distributors preparing for the EV transition</li>
+                        <li><strong>Heavy-Duty Commercial Truck Bearings</strong> — Driven by fleet maintenance demand</li>
+                    </ol>
+
+                    <p>Thank you to everyone who visited our booth. We look forward to building on these connections throughout 2026!</p>
+                `,
+                toc: ['By the Numbers', 'Most Requested Products']
+            },
+            {
+                id: 12,
+                slug: 'digital-catalog-platform-2026',
+                title: 'Launching Our Interactive Digital Product Catalog Platform',
+                excerpt: 'Our new digital catalog platform features cross-reference search, 3D model viewing, and real-time stock availability — accessible 24/7 for distributors worldwide.',
+                category: 'product',
+                categoryLabel: 'Product Update',
+                date: '2025-12-15',
+                dateFormatted: 'December 15, 2025',
+                author: 'Sarah Chen',
+                authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80',
+                readingTime: '3 min read',
+                tags: ['Digital', 'Global', 'Innovation'],
+                featured: false,
+                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
+                views: 540,
+                content: `
+                    <p>Apex Bearing Technologies is excited to announce the launch of our <strong>Interactive Digital Product Catalog Platform</strong> — a new online tool designed to help distributors find the right bearing products faster and more accurately.</p>
+
+                    <h2>Platform Features</h2>
+
+                    <ul>
+                        <li><strong>Cross-Reference Search:</strong> Enter any OEM part number to find the matching Apex Bearing product instantly</li>
+                        <li><strong>3D Model Viewer:</strong> Rotate, zoom, and inspect bearing assemblies in 3D before ordering</li>
+                        <li><strong>Real-Time Stock:</strong> See current inventory levels and estimated lead times</li>
+                        <li><strong>Technical Datasheets:</strong> Download PDFs with full specifications, dimensions, and installation guides</li>
+                        <li><strong>Multi-Language Support:</strong> Available in English, Spanish, Arabic, Chinese, and Russian</li>
+                    </ul>
+
+                    <h2>How to Access</h2>
+
+                    <p>Registered distributors can access the platform through our partner portal. New distributor inquiries: <a href="contact.html">contact our sales team</a> for access credentials.</p>
+
+                    <p>Paper catalogs remain available upon request, but we encourage all distributors to take advantage of the real-time accuracy and convenience of the digital platform.</p>
+                `,
+                toc: ['Platform Features', 'How to Access']
+            }
+        ];
+
+        /* ==========================================================
+           CATEGORY CONFIG
+           ========================================================== */
+        const categoryConfig = {
+            press: { label: 'Press Release', cssClass: 'article__category-tag--press', bannerClass: 'page-banner__category--press' },
+            product: { label: 'Product Update', cssClass: 'article__category-tag--product', bannerClass: 'page-banner__category--product' },
+            trade: { label: 'Trade Show', cssClass: 'article__category-tag--trade', bannerClass: 'page-banner__category--trade' },
+            insight: { label: 'Technical Insight', cssClass: 'article__category-tag--insight', bannerClass: 'page-banner__category--insight' }
+        };
+
+        /* ==========================================================
+           LOAD ARTICLE FROM URL PARAMETER
+           ========================================================== */
+        function getArticleById() {
+            const params = new URLSearchParams(window.location.search);
+            const id = parseInt(params.get('id'), 10);
+            if (id) {
+                return articles.find(a => a.id === id) || articles[0];
+            }
+            return articles[0]; // Default to first article
+        }
+
+        /* ==========================================================
+           RENDER THE ARTICLE
+           ========================================================== */
+        function renderArticle(article) {
+            const catConfig = categoryConfig[article.category] || { label: article.categoryLabel };
+
+            // Update document title
+            document.title = `${article.title} — Apex Bearing Technologies`;
+
+            // Update meta description
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', article.excerpt);
+
+            // Update OG tags
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            if (ogTitle) ogTitle.setAttribute('content', article.title);
+            const ogDesc = document.querySelector('meta[property="og:description"]');
+            if (ogDesc) ogDesc.setAttribute('content', article.excerpt);
+            const ogImage = document.querySelector('meta[property="og:image"]');
+            if (ogImage) ogImage.setAttribute('content', article.image);
+
+            // Update JSON-LD Schema
+            const schemaScript = document.getElementById('articleSchema');
+            if (schemaScript) {
+                const schema = {
+                    "@context": "https://schema.org",
+                    "@type": "Article",
+                    "headline": article.title,
+                    "description": article.excerpt,
+                    "image": article.image,
+                    "datePublished": article.date,
+                    "dateModified": article.date,
+                    "author": {
+                        "@type": "Person",
+                        "name": article.author
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Apex Bearing Technologies"
+                    }
+                };
+                schemaScript.textContent = JSON.stringify(schema, null, 2);
+            }
+
+            // Banner
+            document.getElementById('bannerBg').src = article.image;
+            document.getElementById('bannerBg').alt = article.title;
+            document.getElementById('breadcrumbCat').textContent = catConfig.label;
+            const bannerCategory = document.getElementById('bannerCategory');
+            bannerCategory.textContent = catConfig.label;
+            bannerCategory.className = 'page-banner__category ' + (catConfig.bannerClass || '');
+            document.getElementById('bannerTitle').textContent = article.title;
+
+            const bannerMeta = document.getElementById('bannerMeta');
+            bannerMeta.innerHTML = `
+                <span class="page-banner__meta-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    ${article.dateFormatted}
+                </span>
+                <span class="page-banner__meta-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    ${article.readingTime}
+                </span>
+            `;
+
+            // Featured image
+            document.getElementById('featuredImage').src = article.image;
+            document.getElementById('featuredImage').alt = article.title;
+
+            // Category tag
+            const catTag = document.getElementById('articleCategory');
+            catTag.textContent = catConfig.label;
+            catTag.className = 'article__category-tag ' + catConfig.cssClass;
+
+            // Views
+            document.getElementById('articleViews').innerHTML = `
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                ${article.views.toLocaleString()} views
+            `;
+
+            // Title
+            document.getElementById('articleTitle').textContent = article.title;
+
+            // Author
+            document.getElementById('authorAvatar').src = article.authorAvatar;
+            document.getElementById('authorAvatar').alt = article.author;
+            document.getElementById('authorName').textContent = article.author;
+
+            // Date & reading time
+            document.getElementById('articleDate').innerHTML = `
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                ${article.dateFormatted}
+            `;
+            document.getElementById('readingTime').textContent = article.readingTime;
+
+            // Article body
+            document.getElementById('articleBody').innerHTML = article.content;
+
+            // Table of Contents
+            renderTableOfContents(article);
+
+            // Tags
+            const tagsContainer = document.getElementById('articleTags');
+            const tagsHTML = article.tags.map(tag =>
+                `<a href="news-list.html?tag=${encodeURIComponent(tag)}" class="article__tag">${tag}</a>`
+            ).join('');
+            tagsContainer.innerHTML = '<span class="article__tags-label">Tags:</span>' + tagsHTML;
+
+            // Related articles
+            renderRelatedArticles(article);
+
+            // Prev / Next navigation
+            renderPrevNextNav(article);
+
+            // Share URL setup
+            setupShareButtons(article);
+        }
+
+        /* ==========================================================
+           TABLE OF CONTENTS
+           ========================================================== */
+        function renderTableOfContents(article) {
+            const tocContainer = document.getElementById('tableOfContents');
+            if (!article.toc || article.toc.length === 0) {
+                tocContainer.innerHTML = '<span style="font-size:var(--text-xs);color:var(--text-muted);">Scroll to read...</span>';
+                return;
+            }
+
+            tocContainer.innerHTML = article.toc.map((item, i) => {
+                const id = 'section-' + i;
+                return `<a href="#${id}" class="sidebar-toc__item" data-target="${id}">${item}</a>`;
+            }).join('');
+
+            // Scroll spy: highlight active TOC item
+            const tocItems = tocContainer.querySelectorAll('.sidebar-toc__item');
+
+            // Create IDs for h2 headings in the article body
+            const h2s = document.querySelectorAll('.article__body h2');
+            h2s.forEach((h2, i) => {
+                if (i < article.toc.length) {
+                    h2.id = 'section-' + i;
+                }
+            });
+
+            tocItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = item.dataset.target;
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Scroll spy
+            let scrollSpyTimeout;
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollSpyTimeout);
+                scrollSpyTimeout = setTimeout(() => {
+                    let currentId = '';
+                    h2s.forEach(h2 => {
+                        const rect = h2.getBoundingClientRect();
+                        if (rect.top <= 120) {
+                            currentId = h2.id;
+                        }
+                    });
+                    tocItems.forEach(item => {
+                        item.classList.toggle('sidebar-toc__item--active', item.dataset.target === currentId);
+                    });
+                }, 100);
+            }, { passive: true });
+        }
+
+        /* ==========================================================
+           RELATED ARTICLES
+           ========================================================== */
+        function renderRelatedArticles(currentArticle) {
+            const container = document.getElementById('relatedArticles');
+
+            // Related = same category or overlapping tags, excluding current
+            const related = articles
+                .filter(a => a.id !== currentArticle.id)
+                .map(a => {
+                    let score = 0;
+                    if (a.category === currentArticle.category) score += 3;
+                    const tagOverlap = a.tags.filter(t => currentArticle.tags.includes(t)).length;
+                    score += tagOverlap * 2;
+                    return { article: a, score };
+                })
+                .sort((a, b) => b.score - a.score)
+                .slice(0, 3);
+
+            if (related.length === 0) {
+                container.innerHTML = '<span style="font-size:var(--text-xs);color:var(--text-muted);">No related articles.</span>';
+                return;
+            }
+
+            container.innerHTML = related.map(r => `
+                <a href="news-post.html?id=${r.article.id}" class="sidebar-related__item" style="text-decoration:none;color:inherit;">
+                    <div class="sidebar-related__thumb">
+                        <img src="${r.article.image}" alt="${r.article.title}" loading="lazy">
+                    </div>
+                    <div class="sidebar-related__info">
+                        <div class="sidebar-related__title">${r.article.title}</div>
+                        <span class="sidebar-related__date">${r.article.dateFormatted}</span>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        /* ==========================================================
+           PREV / NEXT NAVIGATION
+           ========================================================== */
+        function renderPrevNextNav(currentArticle) {
+            const prevContainer = document.getElementById('prevPost');
+            const nextContainer = document.getElementById('nextPost');
+
+            // Sort articles by date desc
+            const sorted = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
+            const currentIndex = sorted.findIndex(a => a.id === currentArticle.id);
+
+            // Previous (older) article
+            if (currentIndex < sorted.length - 1) {
+                const prev = sorted[currentIndex + 1];
+                prevContainer.style.display = 'flex';
+                prevContainer.href = `news-post.html?id=${prev.id}`;
+                prevContainer.querySelector('.article__nav-title').textContent = prev.title;
+            } else {
+                prevContainer.style.display = 'none';
+            }
+
+            // Next (newer) article
+            if (currentIndex > 0) {
+                const next = sorted[currentIndex - 1];
+                nextContainer.style.display = 'flex';
+                nextContainer.href = `news-post.html?id=${next.id}`;
+                nextContainer.querySelector('.article__nav-title').textContent = next.title;
+            } else {
+                nextContainer.style.display = 'none';
+            }
+        }
+
+        /* ==========================================================
+           SHARE BUTTONS
+           ========================================================== */
+        function setupShareButtons(article) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(article.title);
+            const excerpt = encodeURIComponent(article.excerpt);
+
+            document.getElementById('shareTwitter').href = `https://twitter.com/intent/tweet?text=${title}&url=${url}`;
+            document.getElementById('shareLinkedIn').href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+            document.getElementById('shareFacebook').href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            document.getElementById('shareEmail').href = `mailto:?subject=${title}&body=${excerpt}%0A%0A${url}`;
+
+            // Copy link button
+            document.getElementById('copyLinkBtn').addEventListener('click', () => {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    const btn = document.getElementById('copyLinkBtn');
+                    const originalHTML = btn.innerHTML;
+                    btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00cc88" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>';
+                    btn.style.borderColor = '#00cc88';
+                    btn.style.color = '#00cc88';
+                    setTimeout(() => {
+                        btn.innerHTML = originalHTML;
+                        btn.style.borderColor = '';
+                        btn.style.color = '';
+                    }, 2000);
+                });
+            });
+        }
+
+        /* ==========================================================
+           INIT
+           ========================================================== */
+        function init() {
+            const article = getArticleById();
+            renderArticle(article);
+
+            // Scroll to top on load (for direct page access)
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+
+    })();
+    </script>
+
+</body>
+</html>

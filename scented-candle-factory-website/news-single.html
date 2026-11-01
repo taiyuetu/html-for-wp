@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey to 100% Sustainable Candle Production - Lumière</title>
+    <meta name="description" content="Discover how Lumière transformed its production to be completely sustainable">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-fire"></i>
+                Lumière
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    
+                    <!-- Collections with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index.html#collections" class="nav__link">
+                            <span>Collections</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Botanical Garden</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Oriental Spice</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-lemon"></i>
+                                    <span>Citrus Refresh</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Cozy Comfort</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Products with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="products.html" class="nav__link">
+                            <span>Products</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-star"></i>
+                                    <span>Best Sellers</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-sparkles"></i>
+                                    <span>New Arrivals</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-gift"></i>
+                                    <span>Gift Sets</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-percent"></i>
+                                    <span>Sale Items</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Services with Dropdown -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index.html#services" class="nav__link">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Custom Fragrances</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-box-open"></i>
+                                    <span>Private Labeling</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Bulk Manufacturing</span>
+                                </a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="#" class="nav__dropdown-link">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Consultation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav__item"><a href="news.html" class="nav__link active-link">News</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__search" id="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav__cart" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="nav__cart-count">0</span>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-bar__container container">
+                <form class="search-bar__form" id="search-form">
+                    <input type="search" class="search-bar__input" placeholder="Search for products, collections..." aria-label="Search">
+                    <button type="submit" class="search-bar__submit" aria-label="Submit search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button class="search-bar__close" id="search-close" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section class="section">
+        <div class="container">
+            <div class="article-layout">
+                
+                <!-- Article Content -->
+                <article class="article-content" data-aos="fade-up">
+                    
+                    <!-- Article Header -->
+                    <div class="article-header">
+                        <div class="breadcrumb">
+                            <a href="index.html" class="breadcrumb__link">Home</a>
+                            <span class="breadcrumb__separator"><i class="fas fa-chevron-right"></i></span>
+                            <a href="news.html" class="breadcrumb__link">News</a>
+                            <span class="breadcrumb__separator"><i class="fas fa-chevron-right"></i></span>
+                            <span class="breadcrumb__current">Article</span>
+                        </div>
+                        
+                        <h1 class="article-title">The Journey to 100% Sustainable Candle Production</h1>
+                        
+                        <div class="article-meta">
+                            <div class="article-meta__author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&q=80" alt="Author" class="article-meta__avatar">
+                                <div>
+                                    <strong>Marie Laurent</strong>
+                                    <span>Founder & CEO</span>
+                                </div>
+                            </div>
+                            <div class="article-meta__info">
+                                <span><i class="far fa-calendar"></i> December 15, 2023</span>
+                                <span><i class="far fa-clock"></i> 8 min read</span>
+                                <span><i class="far fa-eye"></i> 2,345 views</span>
+                            </div>
+                        </div>
+                        
+                        <div class="article-tags">
+                            <span class="article-tag">Sustainability</span>
+                            <span class="article-tag">Eco-Friendly</span>
+                            <span class="article-tag">Innovation</span>
+                        </div>
+                    </div>
+
+                    <!-- Featured Image -->
+                    <figure class="article-featured-image">
+                        <img src="https://images.unsplash.com/photo-1602874801006-39554e952551?w=1200&q=80" alt="Sustainable Candle Production">
+                        <figcaption>Our sustainable production facility in Paris, France</figcaption>
+                    </figure>
+
+                    <!-- Article Body -->
+                    <div class="article-body">
+                        <p class="lead">
+                            In 2023, Lumière achieved a milestone we've been working towards for years: 100% sustainable candle production. This transformation wasn't just about meeting environmental standards—it was about reimagining every aspect of how we create our beloved candles.
+                        </p>
+
+                        <h2>The Beginning of Our Sustainability Journey</h2>
+                        <p>
+                            When I founded Lumière in 2010, sustainability was already at the core of our mission. However, as we grew, we realized that true sustainability required more than good intentions—it demanded comprehensive action across every stage of production.
+                        </p>
+
+                        <p>
+                            Our journey began with a simple question: "Can we create luxury candles that are completely carbon-neutral?" The answer, we discovered, was yes—but it would require innovation, investment, and unwavering commitment.
+                        </p>
+
+                        <blockquote class="article-quote">
+                            "Sustainability isn't a destination; it's a continuous journey of improvement and innovation. Every decision we make considers its impact on our planet and future generations."
+                            <cite>- Marie Laurent, Founder</cite>
+                        </blockquote>
+
+                        <h2>Key Initiatives in Our Transformation</h2>
+                        
+                        <h3>1. Renewable Soy Wax</h3>
+                        <p>
+                            We transitioned from traditional paraffin wax to 100% renewable soy wax sourced from certified sustainable farms. This change alone reduced our carbon footprint by 65% and provided a cleaner, longer-lasting burn for our customers.
+                        </p>
+
+                        <h3>2. Zero-Waste Packaging</h3>
+                        <p>
+                            Every piece of packaging is now recyclable, compostable, or reusable. Our signature boxes are made from post-consumer recycled paper, and we've eliminated all plastic from our shipping materials.
+                        </p>
+
+                        <div class="article-image-grid">
+                            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=600&q=80" alt="Eco-friendly packaging">
+                            <img src="https://images.unsplash.com/photo-1586104895927-a8b90def3584?w=600&q=80" alt="Sustainable materials">
+                        </div>
+
+                        <h3>3. Renewable Energy</h3>
+                        <p>
+                            Our production facility now runs entirely on solar and wind power. We installed 500 solar panels on our roof and partnered with local wind farms to ensure a consistent supply of renewable energy.
+                        </p>
+
+                        <h3>4. Ethical Sourcing</h3>
+                        <p>
+                            All our fragrance oils are sourced from suppliers who meet strict ethical and environmental standards. We work directly with farmers and distilleries that practice sustainable harvesting and fair labor practices.
+                        </p>
+
+                        <h2>The Impact So Far</h2>
+                        
+                        <div class="info-box">
+                            <h4><i class="fas fa-leaf"></i> Environmental Impact</h4>
+                            <ul>
+                                <li>Reduced carbon emissions by 85%</li>
+                                <li>Eliminated 50 tons of plastic waste annually</li>
+                                <li>Preserved 10,000 trees through sustainable sourcing</li>
+                                <li>Achieved carbon-neutral certification</li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            The response from our customers has been overwhelmingly positive. Not only do they appreciate our commitment to the planet, but they've also noticed improvements in burn quality, scent throw, and overall product experience.
+                        </p>
+
+                        <h2>Looking Forward</h2>
+                        <p>
+                            While achieving 100% sustainable production is a major milestone, our work is far from over. We're now focused on:
+                        </p>
+
+                        <ul>
+                            <li>Expanding our renewable energy initiatives</li>
+                            <li>Developing biodegradable wick materials</li>
+                            <li>Creating a candle recycling program</li>
+                            <li>Partnering with reforestation projects</li>
+                            <li>Educating our industry peers on sustainable practices</li>
+                        </ul>
+
+                        <h2>Join Us on This Journey</h2>
+                        <p>
+                            Sustainability is a collective effort. Every candle you purchase supports our mission to protect the planet while bringing beauty and fragrance into your home. Together, we can prove that luxury and sustainability are not mutually exclusive—they're complementary.
+                        </p>
+
+                        <p>
+                            We invite you to be part of this journey. Share your thoughts, ask questions, and help us continue improving. Because at Lumière, we believe the best way to predict the future is to create it—sustainably.
+                        </p>
+                    </div>
+
+                    <!-- Article Footer -->
+                    <div class="article-footer">
+                        <div class="article-share">
+                            <h4>Share this article</h4>
+                            <div class="share-buttons">
+                                <a href="#" class="share-btn share-btn--facebook" aria-label="Share on Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="share-btn share-btn--twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="share-btn share-btn--linkedin" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="share-btn share-btn--pinterest" aria-label="Share on Pinterest">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="share-btn share-btn--email" aria-label="Share via Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Author Bio -->
+                    <div class="author-bio">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80" alt="Marie Laurent" class="author-bio__image">
+                        <div class="author-bio__content">
+                            <h3 class="author-bio__name">Marie Laurent</h3>
+                            <p class="author-bio__role">Founder & CEO</p>
+                            <p class="author-bio__description">
+                                Marie is the visionary founder of Lumière and a passionate advocate for sustainable luxury. With over 15 years of experience in artisan candle making, she has led the company's transformation into an industry leader in eco-friendly production.
+                            </p>
+                            <div class="author-bio__social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <h3 class="comments-section__title">Comments (12)</h3>
+                        
+                        <div class="comment">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&q=80" alt="Commenter" class="comment__avatar">
+                            <div class="comment__content">
+                                <div class="comment__header">
+                                    <strong class="comment__author">John Smith</strong>
+                                    <span class="comment__date">2 days ago</span>
+                                </div>
+                                <p class="comment__text">
+                                    This is inspiring! I've been a Lumière customer for years, and it's amazing to see your commitment to sustainability. Keep up the great work!
+                                </p>
+                                <button class="comment__reply">
+                                    <i class="fas fa-reply"></i> Reply
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&q=80" alt="Commenter" class="comment__avatar">
+                            <div class="comment__content">
+                                <div class="comment__header">
+                                    <strong class="comment__author">Sarah Johnson</strong>
+                                    <span class="comment__date">3 days ago</span>
+                                </div>
+                                <p class="comment__text">
+                                    Would love to learn more about your candle recycling program. When will that be available?
+                                </p>
+                                <button class="comment__reply">
+                                    <i class="fas fa-reply"></i> Reply
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Form -->
+                        <form class="comment-form">
+                            <h4>Leave a Comment</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" class="form-input" placeholder="Your Name *" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-input" placeholder="Your Email *" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-input form-textarea" rows="5" placeholder="Your Comment *" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary">
+                                Post Comment
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </article>
+
+                <!-- Sidebar -->
+                <aside class="article-sidebar">
+                    
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left">
+                        <h3 class="sidebar-widget__title">Search Blog</h3>
+                        <form class="sidebar-search">
+                            <input type="search" class="sidebar-search__input" placeholder="Search articles...">
+                            <button type="submit" class="sidebar-search__button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="100">
+                        <h3 class="sidebar-widget__title">Categories</h3>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-list__item">
+                                <a href="#">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Sustainability</span>
+                                    <span class="count">(8)</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <a href="#">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Tips & Tricks</span>
+                                    <span class="count">(6)</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list__item">
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                    <span>Collections</span>
+                                    <span class="count">(5)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Related Posts Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="200">
+                        <h3 class="sidebar-widget__title">Related Articles</h3>
+                        <div class="popular-posts">
+                            <article class="popular-post">
+                                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=100&q=80" alt="Related Post" class="popular-post__image">
+                                <div class="popular-post__content">
+                                    <h4 class="popular-post__title">
+                                        <a href="#">Why Soy Wax is Better</a>
+                                    </h4>
+                                    <span class="popular-post__date"><i class="far fa-calendar"></i> Dec 10, 2023</span>
+                                </div>
+                            </article>
+                            
+                            <article class="popular-post">
+                                <img src="https://images.unsplash.com/photo-1586104895927-a8b90def3584?w=100&q=80" alt="Related Post" class="popular-post__image">
+                                <div class="popular-post__content">
+                                    <h4 class="popular-post__title">
+                                        <a href="#">Eco-Friendly Packaging</a>
+                                    </h4>
+                                    <span class="popular-post__date"><i class="far fa-calendar"></i> Dec 08, 2023</span>
+                                </div>
+                            </article>
+                            
+                            <article class="popular-post">
+                                <img src="https://images.unsplash.com/photo-1603006904175-6e5de05f9b39?w=100&q=80" alt="Related Post" class="popular-post__image">
+                                <div class="popular-post__content">
+                                    <h4 class="popular-post__title">
+                                        <a href="#">Carbon Neutral Business</a>
+                                    </h4>
+                                    <span class="popular-post__date"><i class="far fa-calendar"></i> Dec 05, 2023</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="300">
+                        <h3 class="sidebar-widget__title">Tags</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">Sustainability</a>
+                            <a href="#" class="tag">Eco-Friendly</a>
+                            <a href="#" class="tag">Innovation</a>
+                            <a href="#" class="tag">Green Energy</a>
+                            <a href="#" class="tag">Zero Waste</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget sidebar-widget--highlight" data-aos="fade-left" data-aos-delay="400">
+                        <div class="newsletter-box">
+                            <i class="fas fa-envelope-open-text newsletter-box__icon"></i>
+                            <h3 class="newsletter-box__title">Stay Updated</h3>
+                            <p class="newsletter-box__text">Get the latest articles delivered to your inbox.</p>
+                            <form class="newsletter-form">
+                                <input type="email" class="newsletter-form__input" placeholder="Your email" required>
+                                <button type="submit" class="btn btn--primary btn--block">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-fire"></i>
+                        Lumière
+                    </a>
+                    <p class="footer__description">
+                        Crafting premium scented candles that transform spaces into sanctuaries of peace and beauty.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <div class="footer__links">
+                        <a href="about.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="news.html">News & Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Customer Care</h3>
+                    <div class="footer__links">
+                        <a href="#">Shipping Info</a>
+                        <a href="#">Returns</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <p class="footer__newsletter-text">Subscribe for exclusive offers and updates</p>
+                    <form class="footer__newsletter">
+                        <input type="email" class="footer__newsletter-input" placeholder="Your email" required>
+                        <button type="submit" class="footer__newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 Lumière. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
